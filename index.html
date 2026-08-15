@@ -961,15 +961,24 @@
       });
   }
 
+  // 一度取得した位置情報はページ内でキャッシュし、5分ごとの自動更新のたびに
+  // 許可ダイアログを再要求しないようにする（位置情報は短時間では変わらないため）
+  var cachedWeatherCoords = null;
+
   // 現在地の天気を優先し、位置情報が取得できない場合は大阪の天気にフォールバックする
   function initWeatherLocation(){
+    if (cachedWeatherCoords){
+      loadLiveWeatherByCoords(cachedWeatherCoords.lat, cachedWeatherCoords.lon);
+      return;
+    }
     if (!navigator.geolocation){
       loadLiveWeather();
       return;
     }
     navigator.geolocation.getCurrentPosition(
       function(pos){
-        loadLiveWeatherByCoords(pos.coords.latitude, pos.coords.longitude);
+        cachedWeatherCoords = {lat: pos.coords.latitude, lon: pos.coords.longitude};
+        loadLiveWeatherByCoords(cachedWeatherCoords.lat, cachedWeatherCoords.lon);
       },
       function(err){
         console.warn('[live] geolocation unavailable, falling back to Osaka:', err);
