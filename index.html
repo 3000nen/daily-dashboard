@@ -965,14 +965,30 @@
         var cur = data.current, daily = data.daily, hourly = data.hourly;
         if (!cur || !daily) throw new Error('unexpected open-meteo response');
 
-        var wc = weatherCodeWMO(daily.weather_code[0]);
+        // 現在時刻に最も近い時間ごとデータのインデックス（降水確率は現在値としてhourlyから取る。
+        // Open-Meteoのcurrentには降水確率は含まれないため）
+        var startIdx = 0, nowPop = null;
+        if (hourly && hourly.time && hourly.time.length){
+          var nowMs = Date.now();
+          var idx = hourly.time.findIndex(function(t){
+            return new Date(t + ':00+09:00').getTime() >= nowMs - 30*60000;
+          });
+          startIdx = idx === -1 ? 0 : idx;
+          nowPop = hourly.precipitation_probability[startIdx] != null ? Math.round(hourly.precipitation_probability[startIdx]) : null;
+        }
+
+        var wc = weatherCodeWMO(cur.weather_code);
+        var curTemp = Math.round(cur.temperature_2m);
         var hi = Math.round(daily.temperature_2m_max[0]);
         var lo = Math.round(daily.temperature_2m_min[0]);
-        var pop = daily.precipitation_probability_max[0] != null ? Math.round(daily.precipitation_probability_max[0]) : 0;
+        var pop = nowPop != null ? nowPop : 0;
+        var dayPop = daily.precipitation_probability_max[0] != null ? Math.round(daily.precipitation_probability_max[0]) : pop;
         var uv = daily.uv_index_max[0] != null ? Math.round(daily.uv_index_max[0]) : null;
 
+        // 「現在」の気温・天気アイコン・降水確率は、上部の代表表示と時間ごとの「現在」カードで
+        // 完全に同じ値を使う（別々に計算するとズレが生じるため）
         document.getElementById('wIconBig').textContent = wc[0];
-        document.getElementById('wTempBig').innerHTML = hi + '<sup>℃</sup>';
+        document.getElementById('wTempBig').innerHTML = curTemp + '<sup>℃</sup>';
         document.getElementById('wCond').textContent = wc[1] + '・体感' + Math.round(cur.apparent_temperature) + '℃';
         document.getElementById('wHi').textContent = hi + '℃';
         document.getElementById('wLo').textContent = lo + '℃';
@@ -982,23 +998,20 @@
         if (uv !== null) document.getElementById('wUv').textContent = uv + '・' + uvLabelJa(uv);
 
         var adviceSpan = document.querySelector('#wAdvice span');
-        if (adviceSpan) adviceSpan.textContent = buildWeatherAdvice(pop, hi);
+        if (adviceSpan) adviceSpan.textContent = buildWeatherAdvice(dayPop, hi);
 
         if (hourly && hourly.time && hourly.time.length){
-          var nowMs = Date.now();
-          var startIdx = hourly.time.findIndex(function(t){
-            return new Date(t + ':00+09:00').getTime() >= nowMs - 30*60000;
-          });
-          if (startIdx === -1) startIdx = 0;
           var liveHourly = hourly.time.slice(startIdx, startIdx + 24).map(function(t, idx){
             var i = startIdx + idx;
+            if (idx === 0){
+              return {time:'現在', icon:wc[0], temp:curTemp, pop:pop, now:true};
+            }
             var hc = weatherCodeWMO(hourly.weather_code[i]);
             return {
-              time: idx === 0 ? '現在' : (parseInt(t.split('T')[1].split(':')[0], 10) + '時'),
+              time: parseInt(t.split('T')[1].split(':')[0], 10) + '時',
               icon: hc[0],
               temp: Math.round(hourly.temperature_2m[i]),
-              pop: hourly.precipitation_probability[i] != null ? Math.round(hourly.precipitation_probability[i]) : null,
-              now: idx === 0
+              pop: hourly.precipitation_probability[i] != null ? Math.round(hourly.precipitation_probability[i]) : null
             };
           });
           renderHourlyRow(liveHourly);
