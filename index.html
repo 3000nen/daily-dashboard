@@ -828,7 +828,7 @@
         })
         .catch(function(err){ console.warn('[live] company feed failed:', q, err); return []; });
     })).then(function(resultsPerCompany){
-      var all = [].concat.apply([], resultsPerCompany);
+      var all = [].concat.apply([], resultsPerCompany).filter(function(it){ return it.hoursAgo <= 72; });
       var container = document.getElementById('companyGrid');
       if (!all.length){
         container.innerHTML = '<p style="font-size:12px;color:var(--text-tertiary);padding:4px 2px;">現在、該当するニュースは見つかりませんでした。</p>';
