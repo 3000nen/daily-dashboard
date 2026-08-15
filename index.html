@@ -249,6 +249,12 @@
   .section-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:7px;gap:10px;}
   .section-head h2{font-size:14px;border-left:3px solid var(--accent);padding-left:7px;}
   .section-head .section-desc{font-size:10px;color:var(--text-tertiary);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .live-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--good);margin-right:4px;flex:0 0 auto;vertical-align:middle;}
+  .live-badge{color:var(--good);font-weight:700;}
+  @media (prefers-reduced-motion: no-preference){
+    .live-dot{animation:live-pulse 2s ease-in-out infinite;}
+  }
+  @keyframes live-pulse{0%,100%{opacity:1;}50%{opacity:.35;}}
 
   .card-grid{display:flex;flex-direction:column;gap:5px;}
 
@@ -606,7 +612,7 @@
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <p>ニュース記事は作成時点で実在する記事への直リンクですが、内容は自動更新されないため時間経過とともに古くなります。経済セクションの指数・株価等は表示構造確認用のサンプル値で、実勢とは異なります。実データに常時接続するには外部APIとの連携が必要です。</p>
+    <p>「<span class="live-dot" style="margin-right:2px;"></span>ライブ更新」が付いたセクション（天気・主要ニュース・仕事・AI・スポーツ・ガジェット・為替/金価格）は、ページを開いたときと1時間ごとに気象庁・各社RSS・為替/金価格APIから無料公開データを取得しています（APIキー不要）。取得に失敗した場合は直前のスナップショットを表示します。日経平均・TOPIX・NYダウ・NASDAQ・S&P500・オルカン基準価額、および音楽・大阪関西セクションは、無料でkeyless・CORS対応の実データAPIが見つからなかったためサンプル値・作成時点の実記事のままです。常時接続するには有料/要キーAPIとサーバー側プロキシが必要です。</p>
   </div>
 </footer>
 
@@ -773,7 +779,10 @@
   ];
 
   var ALL_BY_ID = {};
-  [].concat(NEWS, WORK, AI_NEWS, MUSIC, SPORTS, GADGET, OSAKA).forEach(function(n){ ALL_BY_ID[n.id] = n; });
+  var ID_TO_SECTION = {};
+  [[NEWS,'sec-news'],[WORK,'sec-work'],[AI_NEWS,'sec-ai'],[MUSIC,'sec-music'],[SPORTS,'sec-sports'],[GADGET,'sec-gadget'],[OSAKA,'sec-osaka']].forEach(function(pair){
+    pair[0].forEach(function(n){ ALL_BY_ID[n.id] = n; ID_TO_SECTION[n.id] = pair[1]; });
+  });
 
   function byImportanceDesc(list){
     return list.slice().sort(function(a,b){ return (b.importance||0) - (a.importance||0); });
@@ -891,14 +900,17 @@
 
   function renderWeather(){
     document.getElementById('hourlyChartWrap').appendChild(buildLineChart(HOURLY));
-    var weekly = document.getElementById('weeklyRow');
-    weekly.innerHTML = WEEKLY.map(function(d){
+    renderWeeklyRow(WEEKLY);
+  }
+
+  function renderWeeklyRow(list){
+    document.getElementById('weeklyRow').innerHTML = list.map(function(d){
       return '<div class="weekly-day'+(d.today?' today':'')+'">' +
         '<span class="wd-name">'+d.d+'</span>' +
         '<span class="wd-icon">'+d.icon+'</span>' +
         '<span class="wd-hi tabular">'+d.hi+'°</span>' +
         '<span class="wd-lo tabular">'+d.lo+'°</span>' +
-        '<span class="wd-pop tabular">☔'+d.pop+'%</span>' +
+        '<span class="wd-pop tabular">☔'+(d.pop!==null?d.pop:'—')+'%</span>' +
       '</div>';
     }).join('');
   }
@@ -1011,11 +1023,14 @@
   function renderMarket(){
     var list = document.getElementById('marketList');
     list.innerHTML = MARKET.map(function(m){
+      var deltaCell = m.pct === null
+        ? '<span class="live-badge"><span class="live-dot"></span>LIVE</span>'
+        : (m.up?'▲':'▼')+' '+m.pct;
       return '<div class="market-row">' +
         '<div class="m-name"><span class="m-name-text">'+m.name+'</span><span class="m-sub">'+m.sub+'</span></div>' +
         '<div class="m-value tabular">'+m.value+'</div>' +
-        '<div class="m-delta tabular" style="color:'+(m.up?'var(--market-up)':'var(--market-down)')+'">'+m.delta+'</div>' +
-        '<div class="m-pill '+(m.up?'up':'down')+'">'+(m.up?'▲':'▼')+' '+m.pct+'</div>' +
+        '<div class="m-delta tabular" style="color:'+(m.pct===null?'var(--text-tertiary)':(m.up?'var(--market-up)':'var(--market-down)'))+'">'+(m.delta||'')+'</div>' +
+        '<div class="m-pill '+(m.pct===null?'':(m.up?'up':'down'))+'">'+deltaCell+'</div>' +
       '</div>';
     }).join('');
     document.getElementById('marketCommentary').querySelector('span').textContent = MARKET_COMMENT;
@@ -1038,7 +1053,7 @@
     c.innerHTML = RECO.map(function(r,i){
       var n = ALL_BY_ID[r.ref];
       if (!n) return '';
-      return '<div class="reco-item" data-target="card-'+n.id+'">' +
+      return '<div class="reco-item" data-target="card-'+n.id+'" data-section="'+(ID_TO_SECTION[n.id]||'')+'">' +
         '<span class="reco-rank">'+(i+1)+'</span>' +
         '<div class="reco-body"><div class="reco-title">'+n.title+'</div><div class="reco-why">'+r.why+'</div></div>' +
       '</div>';
@@ -1047,12 +1062,219 @@
       item.addEventListener('click', function(){
         var targetId = item.getAttribute('data-target');
         var cardEl = document.getElementById(targetId);
-        if (!cardEl) return;
         setActiveCategory('all');
-        cardEl.scrollIntoView({behavior:'smooth', block:'center'});
-        cardEl.classList.remove('flash'); void cardEl.offsetWidth; cardEl.classList.add('flash');
+        if (cardEl){
+          cardEl.scrollIntoView({behavior:'smooth', block:'center'});
+          cardEl.classList.remove('flash'); void cardEl.offsetWidth; cardEl.classList.add('flash');
+        } else {
+          // ライブ更新でカードが差し替わった場合はセクション先頭へ
+          var sectionId = item.getAttribute('data-section');
+          var section = sectionId && document.getElementById(sectionId);
+          if (section) section.scrollIntoView({behavior:'smooth', block:'start'});
+        }
       });
     });
+  }
+
+  /* ============================================================
+     LIVE DATA — 無料・APIキー不要・CORS対応の公開APIから取得
+     ページを開いたとき、および1時間ごとに以下を取得して表示を差し替える。
+     取得に失敗した場合（オフライン・CORS変更・障害等）は、直前の表示
+     （実データのスナップショット）をそのまま維持し、UIを壊さない。
+       ・天気　　 : 気象庁（JMA）公式 防災情報JSON
+       ・為替　　 : Frankfurter API（ECB系列・無料keyless）
+       ・金価格　 : gold-api.com（無料keyless）
+       ・ニュース : 各社RSSフィードを rss2json 経由でJSON化
+     日経平均/TOPIX/NYダウ/NASDAQ/S&P500/オルカン基準価額は、無料で
+     keyless・CORS対応の実データAPIが見つからなかったため、引き続き
+     サンプル値です（有料/要キーAPIとの契約とサーバー側プロキシが必要）。
+  ============================================================ */
+  var RSS2JSON = 'https://api.rss2json.com/v1/api.json?rss_url=';
+  var JMA_URL = 'https://www.jma.go.jp/bosai/forecast/data/forecast/270000.json';
+
+  var LIVE_FEEDS = {
+    news:   {url:'https://www3.nhk.or.jp/rss/news/cat0.xml', source:'NHKニュース', count:7, containerId:'newsGrid', sectionId:'sec-news', sort:true},
+    work:   {url:'https://www.lnews.jp/feed', source:'LNEWS', count:6, containerId:'workGrid', sectionId:'sec-work', sort:true},
+    ai:     {url:'https://rss.itmedia.co.jp/rss/2.0/itmedia_all.xml', source:'ITmedia', count:4, containerId:'aiGrid', sectionId:'sec-ai', sort:true,
+             keywords:['AI','Claude','ChatGPT','Copilot','Anthropic','OpenAI','Gemini','生成AI','エージェント','LLM']},
+    sports: {url:'https://www3.nhk.or.jp/rss/news/cat7.xml', source:'NHKニュース', count:4, containerId:'sportsGrid', sectionId:'sec-sports', sort:false},
+    gadget: {url:'https://pc.watch.impress.co.jp/data/rss/1.0/pcw/feed.rdf', source:'PC Watch', count:4, containerId:'gadgetGrid', sectionId:'sec-gadget', sort:false}
+  };
+
+  function stripHtml(html){
+    var d = document.createElement('div');
+    d.innerHTML = html || '';
+    return (d.textContent || '').replace(/\s+/g,' ').trim();
+  }
+
+  function hoursAgoFromPubDate(pubDate){
+    var t = Date.parse(/[zZ]|[+-]\d\d:?\d\d$/.test(pubDate) ? pubDate : pubDate.replace(' ','T')+'Z');
+    if (isNaN(t)) return 6;
+    return Math.max(0, (Date.now() - t) / 3600000);
+  }
+
+  function markLiveSection(sectionId){
+    var section = document.getElementById(sectionId);
+    if (!section) return;
+    var h2 = section.querySelector('.section-head h2');
+    if (h2 && !h2.dataset.live){
+      h2.insertAdjacentHTML('beforeend', ' <span class="live-dot" title="ライブ更新"></span>');
+      h2.dataset.live = '1';
+    }
+  }
+
+  function loadLiveFeed(key){
+    var cfg = LIVE_FEEDS[key];
+    fetch(RSS2JSON + encodeURIComponent(cfg.url))
+      .then(function(r){ return r.json(); })
+      .then(function(data){
+        if (data.status !== 'ok' || !data.items || !data.items.length) throw new Error('feed unavailable');
+        var items = data.items;
+        if (cfg.keywords){
+          items = items.filter(function(it){
+            var title = it.title || '';
+            return cfg.keywords.some(function(k){ return title.indexOf(k) !== -1; });
+          });
+        }
+        if (!items.length) throw new Error('no relevant items in feed');
+        items = items.slice(0, cfg.count);
+        var cards = items.map(function(it, i){
+          var summary = stripHtml(it.description || it.content || '');
+          if (summary.length > 90) summary = summary.slice(0, 88) + '…';
+          return {
+            id: key + '-live-' + i,
+            title: stripHtml(it.title),
+            source: cfg.source,
+            hoursAgo: hoursAgoFromPubDate(it.pubDate),
+            summary: summary || '詳細は元記事でご確認ください。',
+            importance: i === 0 ? 4 : 3,
+            url: it.link
+          };
+        });
+        if (cfg.sort) cards = byImportanceDesc(cards);
+        renderList(cfg.containerId, cards);
+        markLiveSection(cfg.sectionId);
+      })
+      .catch(function(err){ console.warn('[live] feed failed, keeping existing data:', key, err); });
+  }
+
+  function weatherCodeIcon(code){
+    var c = String(code || '').charAt(0);
+    if (c === '1') return '☀️';
+    if (c === '2') return '☁️';
+    if (c === '3') return '🌧️';
+    if (c === '4') return '❄️';
+    return '☁️';
+  }
+
+  function loadLiveWeather(){
+    fetch(JMA_URL)
+      .then(function(r){ return r.json(); })
+      .then(function(data){
+        var short = data[0], week = data[1];
+        var wArea = short.timeSeries[0].areas[0];
+        var pArea = short.timeSeries[1].areas[0];
+        var tArea = short.timeSeries[2].areas[0];
+        var wkWeather = week.timeSeries[0].areas[0];
+        var wkTemp = week.timeSeries[1].areas[0];
+
+        var icon = weatherCodeIcon(wArea.weatherCodes[0]);
+        var cond = wArea.weathers[0].replace(/\s+/g,'');
+        var temps = tArea.temps.filter(function(v){ return v !== ''; }).map(Number);
+        var hi = Math.round(Math.max.apply(null, temps));
+        var lo = Math.round(Math.min.apply(null, temps));
+        var pops = pArea.pops.filter(function(v){ return v !== ''; }).map(Number);
+        var pop = pops.length ? Math.max.apply(null, pops.slice(0,2)) : 0;
+
+        document.getElementById('wIconBig').textContent = icon;
+        document.getElementById('wTempBig').innerHTML = hi + '<sup>℃</sup>';
+        document.getElementById('wCond').textContent = cond;
+        document.getElementById('wHi').textContent = hi + '℃';
+        document.getElementById('wLo').textContent = lo + '℃';
+        document.getElementById('wPop').textContent = pop + '%';
+
+        var advice = [];
+        if (pop >= 50) advice.push('降水確率'+pop+'%。折りたたみ傘があると安心です。');
+        if (hi >= 35) advice.push('最高'+hi+'℃の猛暑。熱中症に厳重に注意してください。');
+        else if (hi >= 32) advice.push('最高'+hi+'℃。屋外では休憩と水分補給をこまめに。');
+        if (!advice.length) advice.push('大きな崩れの予報はありません。');
+        var adviceSpan = document.querySelector('#wAdvice span');
+        if (adviceSpan) adviceSpan.textContent = advice.join(' ');
+
+        var liveWeekly = [{d:'今日', icon:icon, hi:hi, lo:lo, pop:pop, today:true}];
+
+        // 明日（短期ブロックの2件目の温度・天気から算出）
+        if (temps.length >= 4){
+          var tmrwDate = new Date(short.timeSeries[0].timeDefines[1]);
+          liveWeekly.push({
+            d: (tmrwDate.getMonth()+1)+'月'+tmrwDate.getDate()+'日('+YOUBI[tmrwDate.getDay()]+')',
+            icon: weatherCodeIcon(wArea.weatherCodes[1]),
+            hi: Math.round(temps[3]),
+            lo: Math.round(temps[2]),
+            pop: pops.length >= 6 ? Math.max.apply(null, pops.slice(2,6)) : null
+          });
+        }
+
+        // 明後日以降（週間ブロック）
+        var wCodes = wkWeather.weatherCodes, wPops = wkWeather.pops, defines = wkWeather.timeDefines;
+        var tMax = wkTemp.tempsMax, tMin = wkTemp.tempsMin;
+        defines.forEach(function(dstr, i){
+          if (tMax[i] === '' || tMax[i] === undefined) return;
+          var d = new Date(dstr);
+          liveWeekly.push({
+            d: (d.getMonth()+1)+'月'+d.getDate()+'日('+YOUBI[d.getDay()]+')',
+            icon: weatherCodeIcon(wCodes[i]),
+            hi: Math.round(Number(tMax[i])),
+            lo: Math.round(Number(tMin[i])),
+            pop: wPops[i] !== '' ? Number(wPops[i]) : null
+          });
+        });
+        renderWeeklyRow(liveWeekly.slice(0,7));
+        markLiveSection('sec-weather');
+      })
+      .catch(function(err){ console.warn('[live] JMA weather fetch failed, keeping snapshot data:', err); });
+  }
+
+  function updateMarketRow(name, patch){
+    var row = MARKET.filter(function(m){ return m.name === name; })[0];
+    if (!row) return;
+    Object.keys(patch).forEach(function(k){ row[k] = patch[k]; });
+    renderMarket();
+    markLiveSection('sec-economy');
+  }
+
+  function loadLiveMarket(){
+    var yesterday = new Date(Date.now() - 86400000).toISOString().slice(0,10);
+
+    ['USD','EUR'].forEach(function(base){
+      var rowName = base === 'USD' ? 'ドル/円' : 'ユーロ/円';
+      Promise.all([
+        fetch('https://api.frankfurter.dev/v1/latest?from='+base+'&to=JPY').then(function(r){ return r.json(); }),
+        fetch('https://api.frankfurter.dev/v1/'+yesterday+'?from='+base+'&to=JPY').then(function(r){ return r.json(); })
+      ]).then(function(res){
+        var today = res[0].rates.JPY, prev = res[1].rates.JPY;
+        var delta = today - prev, pct = prev ? (delta/prev*100) : 0;
+        updateMarketRow(rowName, {
+          value: '￥'+today.toFixed(2),
+          delta: (delta>=0?'+':'')+delta.toFixed(2),
+          pct: (pct>=0?'+':'')+pct.toFixed(2)+'%',
+          up: delta >= 0
+        });
+      }).catch(function(err){ console.warn('[live] forex fetch failed:', base, err); });
+    });
+
+    fetch('https://api.gold-api.com/price/XAU')
+      .then(function(r){ return r.json(); })
+      .then(function(g){
+        updateMarketRow('金 (Gold)', {value:'$'+g.price.toFixed(2), delta:'', pct:null, up:true});
+      })
+      .catch(function(err){ console.warn('[live] gold fetch failed:', err); });
+  }
+
+  function loadAllLiveData(){
+    loadLiveWeather();
+    loadLiveMarket();
+    Object.keys(LIVE_FEEDS).forEach(function(key){ loadLiveFeed(key); });
   }
 
   /* ============================================================
@@ -1084,8 +1306,8 @@
 
   /* ============================================================
      REFRESH（1時間ごと）
-     本来はここで DATA.* を実APIの最新レスポンスに差し替えて再描画する。
-     現状はモックのため、更新時刻と各記事の相対時刻表示のみを再計算する。
+     まず手元のスナップショットで相対時刻表示を再計算し、続けて
+     loadAllLiveData() で実APIから最新データを再取得して上書きする。
   ============================================================ */
   function refreshData(){
     updateHeaderClock();
@@ -1096,6 +1318,7 @@
     renderList('sportsGrid', SPORTS);
     renderList('gadgetGrid', GADGET);
     renderList('osakaGrid', OSAKA);
+    loadAllLiveData();
   }
 
   /* ============================================================
@@ -1119,6 +1342,7 @@
     renderReco();
     initTheme();
     updateHeaderClock();
+    loadAllLiveData();
     setInterval(refreshData, 60 * 60 * 1000);
   }
 
