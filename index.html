@@ -380,7 +380,7 @@
 
     <section class="section" data-cat="weather" id="sec-weather">
       <div class="section-head">
-        <h2>天気 — 大阪</h2>
+        <h2>天気 — <span id="wLocName">大阪</span></h2>
         <p class="section-desc">生活アドバイスはAIが自動生成</p>
       </div>
       <div class="weather-hero">
@@ -476,7 +476,7 @@
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <p>「<span class="live-dot" style="margin-right:2px;"></span>ライブ更新」が付いたセクション（天気・主要ニュース・仕事・AI・スポーツ・ガジェット・会社情報）は、ページを開いたときと5分ごとに気象庁・各社RSS・Googleニュース検索から無料公開データを取得しています（APIキー不要）。経済セクションはドル/円・ユーロ/円・金価格をブラウザから直接取得し、日経平均・TOPIX（連動ETF）・NYダウ・NASDAQ・S&P500はYahoo FinanceのデータをGitHub Actionsが5分ごとにサーバー側で取得してmarket-data.jsonとして保存し、それをページが読み込んでいます（Yahoo Finance自体はブラウザから直接fetchできないCORS制限があるため）。取得に失敗した場合は直前の表示を維持します。このページに掲載する情報は、自動で取得・更新できるもののみに限定しています。</p>
+    <p>「<span class="live-dot" style="margin-right:2px;"></span>ライブ更新」が付いたセクション（天気・主要ニュース・仕事・AI・スポーツ・ガジェット・会社情報）は、ページを開いたときと5分ごとに無料公開データを取得しています（APIキー不要）。天気はブラウザの位置情報が許可された場合は現在地（Open-Meteo）、許可されない・取得できない場合は大阪（気象庁）を表示します。その他は各社RSS・Googleニュース検索から取得しています。経済セクションはドル/円・ユーロ/円・金価格をブラウザから直接取得し、日経平均・TOPIX（連動ETF）・NYダウ・NASDAQ・S&P500はYahoo FinanceのデータをGitHub Actionsが5分ごとにサーバー側で取得してmarket-data.jsonとして保存し、それをページが読み込んでいます（Yahoo Finance自体はブラウザから直接fetchできないCORS制限があるため）。取得に失敗した場合は直前の表示を維持します。このページに掲載する情報は、自動で取得・更新できるもののみに限定しています。</p>
   </div>
 </footer>
 
@@ -710,7 +710,8 @@
      ページを開いたとき、および1時間ごとに以下を取得して表示を差し替える。
      取得に失敗した場合（オフライン・CORS変更・障害等）は、直前の表示
      （実データのスナップショット）をそのまま維持し、UIを壊さない。
-       ・天気　　 : 気象庁（JMA）公式 防災情報JSON
+       ・天気　　 : ブラウザのGeolocationで現在地を取得できればOpen-Meteo API（無料keyless）、
+                    取得できない場合は気象庁（JMA）公式 防災情報JSON（大阪）にフォールバック
        ・為替　　 : Frankfurter API（ECB系列・無料keyless）
        ・金価格　 : gold-api.com（無料keyless）
        ・ニュース : 各社RSSフィードを rss2json 経由でJSON化
@@ -721,6 +722,8 @@
   ============================================================ */
   var RSS2JSON = 'https://api.rss2json.com/v1/api.json?rss_url=';
   var JMA_URL = 'https://www.jma.go.jp/bosai/forecast/data/forecast/270000.json';
+  var OPEN_METEO_URL = 'https://api.open-meteo.com/v1/forecast';
+  var REVERSE_GEOCODE_URL = 'https://nominatim.openstreetmap.org/reverse';
 
   var LIVE_FEEDS = {
     news:   {url:'https://www3.nhk.or.jp/rss/news/cat0.xml', source:'NHKニュース', count:7, containerId:'newsGrid', sectionId:'sec-news', sort:true},
@@ -852,10 +855,138 @@
     return '☁️';
   }
 
+  // Open-Meteo（WMO weather code）用のアイコン・天候ラベル変換
+  function weatherCodeWMO(code){
+    var map = {
+      0:['☀️','快晴'], 1:['🌤️','晴れ'], 2:['⛅','晴れ時々曇り'], 3:['☁️','曇り'],
+      45:['🌫️','霧'], 48:['🌫️','霧'],
+      51:['🌦️','小雨'], 53:['🌦️','小雨'], 55:['🌦️','小雨'],
+      56:['🌨️','着氷性の霧雨'], 57:['🌨️','着氷性の霧雨'],
+      61:['🌧️','雨'], 63:['🌧️','雨'], 65:['🌧️','強い雨'],
+      66:['🌨️','着氷性の雨'], 67:['🌨️','着氷性の雨'],
+      71:['❄️','雪'], 73:['❄️','雪'], 75:['❄️','大雪'], 77:['❄️','雪'],
+      80:['🌧️','にわか雨'], 81:['🌧️','にわか雨'], 82:['🌧️','激しいにわか雨'],
+      85:['❄️','にわか雪'], 86:['❄️','にわか雪'],
+      95:['⛈️','雷雨'], 96:['⛈️','雷雨（ひょう）'], 99:['⛈️','雷雨（ひょう）']
+    };
+    return map[code] || ['☁️', '曇り'];
+  }
+
+  function degToCompassJa(deg){
+    var dirs = ['北','北北東','北東','東北東','東','東南東','南東','南南東','南','南南西','南西','西南西','西','西北西','北西','北北西'];
+    return dirs[Math.round((deg % 360) / 22.5) % 16];
+  }
+
+  function uvLabelJa(uv){
+    if (uv >= 11) return '極端に強い';
+    if (uv >= 8) return '非常に強い';
+    if (uv >= 6) return '強い';
+    if (uv >= 3) return '中程度';
+    return '弱い';
+  }
+
+  function buildWeatherAdvice(pop, hi){
+    var advice = [];
+    if (pop >= 50) advice.push('降水確率'+pop+'%。折りたたみ傘があると安心です。');
+    if (hi >= 35) advice.push('最高'+hi+'℃の猛暑。熱中症に厳重に注意してください。');
+    else if (hi >= 32) advice.push('最高'+hi+'℃。屋外では休憩と水分補給をこまめに。');
+    if (!advice.length) advice.push('大きな崩れの予報はありません。');
+    return advice.join(' ');
+  }
+
+  // ブラウザのGeolocationで取得した現在地の緯度経度から地名を逆引きする（失敗時は「現在地」のまま）
+  function updateWeatherLocationName(lat, lon){
+    fetch(REVERSE_GEOCODE_URL + '?format=json&lat=' + lat + '&lon=' + lon + '&accept-language=ja&zoom=10')
+      .then(function(r){ return r.json(); })
+      .then(function(data){
+        var a = data && data.address;
+        var name = a && (a.city || a.town || a.village || a.suburb || a.county);
+        if (name){
+          var el = document.getElementById('wLocName');
+          if (el) el.textContent = name;
+        }
+      })
+      .catch(function(err){ console.warn('[live] reverse geocode failed:', err); });
+  }
+
+  function loadLiveWeatherByCoords(lat, lon){
+    var url = OPEN_METEO_URL + '?latitude=' + lat + '&longitude=' + lon +
+      '&current=temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m,wind_direction_10m' +
+      '&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,uv_index_max' +
+      '&timezone=Asia%2FTokyo&forecast_days=7';
+    fetch(url)
+      .then(function(r){ return r.json(); })
+      .then(function(data){
+        var cur = data.current, daily = data.daily;
+        if (!cur || !daily) throw new Error('unexpected open-meteo response');
+
+        var wc = weatherCodeWMO(daily.weather_code[0]);
+        var hi = Math.round(daily.temperature_2m_max[0]);
+        var lo = Math.round(daily.temperature_2m_min[0]);
+        var pop = daily.precipitation_probability_max[0] != null ? Math.round(daily.precipitation_probability_max[0]) : 0;
+        var uv = daily.uv_index_max[0] != null ? Math.round(daily.uv_index_max[0]) : null;
+
+        document.getElementById('wIconBig').textContent = wc[0];
+        document.getElementById('wTempBig').innerHTML = hi + '<sup>℃</sup>';
+        document.getElementById('wCond').textContent = wc[1] + '・体感' + Math.round(cur.apparent_temperature) + '℃';
+        document.getElementById('wHi').textContent = hi + '℃';
+        document.getElementById('wLo').textContent = lo + '℃';
+        document.getElementById('wPop').textContent = pop + '%';
+        document.getElementById('wHum').textContent = Math.round(cur.relative_humidity_2m) + '%';
+        document.getElementById('wWind').textContent = degToCompassJa(cur.wind_direction_10m) + ' ' + cur.wind_speed_10m.toFixed(1) + 'm/s';
+        if (uv !== null) document.getElementById('wUv').textContent = uv + '・' + uvLabelJa(uv);
+
+        var adviceSpan = document.querySelector('#wAdvice span');
+        if (adviceSpan) adviceSpan.textContent = buildWeatherAdvice(pop, hi);
+
+        var liveWeekly = daily.time.map(function(dstr, i){
+          var d = new Date(dstr + 'T00:00:00+09:00');
+          var dc = weatherCodeWMO(daily.weather_code[i]);
+          return {
+            d: i === 0 ? '今日' : (d.getMonth()+1)+'月'+d.getDate()+'日('+YOUBI[d.getDay()]+')',
+            icon: dc[0],
+            hi: Math.round(daily.temperature_2m_max[i]),
+            lo: Math.round(daily.temperature_2m_min[i]),
+            pop: daily.precipitation_probability_max[i] != null ? Math.round(daily.precipitation_probability_max[i]) : null,
+            today: i === 0
+          };
+        });
+        renderWeeklyRow(liveWeekly.slice(0,7));
+        markLiveSection('sec-weather');
+        updateWeatherLocationName(lat, lon);
+      })
+      .catch(function(err){
+        console.warn('[live] Open-Meteo weather fetch failed, falling back to Osaka:', err);
+        loadLiveWeather();
+      });
+  }
+
+  // 現在地の天気を優先し、位置情報が取得できない場合は大阪の天気にフォールバックする
+  function initWeatherLocation(){
+    if (!navigator.geolocation){
+      loadLiveWeather();
+      return;
+    }
+    navigator.geolocation.getCurrentPosition(
+      function(pos){
+        loadLiveWeatherByCoords(pos.coords.latitude, pos.coords.longitude);
+      },
+      function(err){
+        console.warn('[live] geolocation unavailable, falling back to Osaka:', err);
+        var el = document.getElementById('wLocName');
+        if (el) el.textContent = '大阪';
+        loadLiveWeather();
+      },
+      {timeout:8000, maximumAge:600000}
+    );
+  }
+
   function loadLiveWeather(){
     fetch(JMA_URL)
       .then(function(r){ return r.json(); })
       .then(function(data){
+        var locEl = document.getElementById('wLocName');
+        if (locEl) locEl.textContent = '大阪';
         var short = data[0], week = data[1];
         var wArea = short.timeSeries[0].areas[0];
         var pArea = short.timeSeries[1].areas[0];
@@ -878,13 +1009,8 @@
         document.getElementById('wLo').textContent = lo + '℃';
         document.getElementById('wPop').textContent = pop + '%';
 
-        var advice = [];
-        if (pop >= 50) advice.push('降水確率'+pop+'%。折りたたみ傘があると安心です。');
-        if (hi >= 35) advice.push('最高'+hi+'℃の猛暑。熱中症に厳重に注意してください。');
-        else if (hi >= 32) advice.push('最高'+hi+'℃。屋外では休憩と水分補給をこまめに。');
-        if (!advice.length) advice.push('大きな崩れの予報はありません。');
         var adviceSpan = document.querySelector('#wAdvice span');
-        if (adviceSpan) adviceSpan.textContent = advice.join(' ');
+        if (adviceSpan) adviceSpan.textContent = buildWeatherAdvice(pop, hi);
 
         var liveWeekly = [{d:'今日', icon:icon, hi:hi, lo:lo, pop:pop, today:true}];
 
@@ -993,7 +1119,7 @@
   }
 
   function loadAllLiveData(){
-    loadLiveWeather();
+    initWeatherLocation();
     loadLiveStockIndices();
     loadLiveMarket();
     loadLiveCompanyNews();
