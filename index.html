@@ -462,7 +462,7 @@
       <div class="card-grid" id="gadgetGrid"></div>
     </section>
 
-    <section class="section" id="sec-company">
+    <section class="section" data-cat="company" id="sec-company">
       <div class="section-head">
         <h2>会社情報</h2>
         <p class="section-desc">日本ペイントグループ・ハウス食品グループ・F-LINE・ハウス物流サービス・モノタロウ・山善・アイカ工業</p>
@@ -503,7 +503,8 @@
     {key:'economy',  label:'経済'},
     {key:'weather',  label:'天気'},
     {key:'sports',   label:'スポーツ'},
-    {key:'gadget',   label:'ガジェット'}
+    {key:'gadget',   label:'ガジェット'},
+    {key:'company',  label:'会社情報'}
   ];
 
   var NEWS = [
@@ -644,7 +645,7 @@
     document.querySelectorAll('.tab-pill').forEach(function(p){ p.classList.toggle('active', p.getAttribute('data-cat')===key); });
     document.querySelectorAll('.section').forEach(function(s){
       var c = s.getAttribute('data-cat');
-      if (!c) return; // カテゴリーを持たないセクション（会社情報など）は常時表示
+      if (!c) return;
       s.classList.toggle('hidden', !(key==='all' || c===key));
     });
   }
