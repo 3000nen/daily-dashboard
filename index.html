@@ -205,7 +205,6 @@
 
   main.center{display:flex;flex-direction:column;gap:14px;min-width:0;}
 
-  .top-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
 
   /* ============ SUMMARY STRIP ============ */
   .summary-strip{
@@ -414,18 +413,6 @@
   .reco-body .reco-title{font-size:11.5px;font-weight:700;line-height:1.4;}
   .reco-body .reco-why{font-size:10px;color:var(--text-tertiary);line-height:1.45;margin-top:2px;}
 
-  .todo-item{display:flex;align-items:flex-start;gap:7px;padding:5px 0;cursor:pointer;}
-  .todo-item:first-child{padding-top:0;}
-  .todo-check{
-    flex:0 0 auto;width:14px;height:14px;border-radius:4px;border:1.5px solid var(--border);
-    margin-top:1px;display:flex;align-items:center;justify-content:center;transition:all .12s;
-  }
-  .todo-check svg{width:9px;height:9px;stroke:#fff;opacity:0;transition:opacity .1s;}
-  .todo-item.done .todo-check{background:var(--accent);border-color:var(--accent);}
-  .todo-item.done .todo-check svg{opacity:1;}
-  .todo-item.done .todo-text{color:var(--text-tertiary);text-decoration:line-through;}
-  .todo-text{font-size:11px;line-height:1.45;}
-
   footer.site-footer{
     max-width:1200px;margin:0 auto;padding:0 18px 24px;
     color:var(--text-tertiary);font-size:10px;line-height:1.6;
@@ -435,7 +422,6 @@
   /* ============ RESPONSIVE ============ */
   @media (max-width:760px){
     .weather-hero{grid-template-columns:1fr;}
-    .top-actions{grid-template-columns:1fr;}
   }
   @media (max-width:430px){
     .header-top{padding:8px 12px 6px;}
@@ -489,15 +475,9 @@
 
   <main class="center">
 
-    <section class="top-actions">
-      <div class="rail-card" id="sec-reco">
-        <h3>あなたへのおすすめ TOP5</h3>
-        <div id="recoList"></div>
-      </div>
-      <div class="rail-card">
-        <h3>今日やっておくと良いこと</h3>
-        <div id="todoList"></div>
-      </div>
+    <section class="rail-card" id="sec-reco">
+      <h3>あなたへのおすすめ TOP5</h3>
+      <div id="recoList"></div>
     </section>
 
     <section class="summary-strip" id="summaryStrip"></section>
@@ -518,25 +498,25 @@
       <div class="weather-hero">
         <div class="weather-now">
           <div class="weather-now-top">
-            <div class="weather-icon-big" id="wIconBig">⛅</div>
+            <div class="weather-icon-big" id="wIconBig">☁️</div>
             <div>
-              <div class="weather-temp-big" id="wTempBig">33<sup>℃</sup></div>
-              <div class="weather-cond" id="wCond">晴れ時々くもり・体感39℃</div>
+              <div class="weather-temp-big" id="wTempBig">32<sup>℃</sup></div>
+              <div class="weather-cond" id="wCond">曇り・体感37℃</div>
             </div>
           </div>
           <div class="weather-hilo">
-            <span>最高 <b id="wHi">35℃</b></span>
-            <span>最低 <b id="wLo">27℃</b></span>
-            <span>降水 <b id="wPop">30%</b></span>
+            <span>最高 <b id="wHi">33℃</b></span>
+            <span>最低 <b id="wLo">25℃</b></span>
+            <span>降水 <b id="wPop">60%</b></span>
           </div>
           <div class="weather-stat-grid">
-            <div class="weather-stat"><span class="ws-label">湿度</span><span class="ws-value" id="wHum">68%</span></div>
+            <div class="weather-stat"><span class="ws-label">湿度</span><span class="ws-value" id="wHum">72%</span></div>
             <div class="weather-stat"><span class="ws-label">風</span><span class="ws-value" id="wWind">南西 3m/s</span></div>
-            <div class="weather-stat"><span class="ws-label">UV指数</span><span class="ws-value" id="wUv">9・非常に強い</span></div>
+            <div class="weather-stat"><span class="ws-label">UV指数</span><span class="ws-value" id="wUv">8・非常に強い</span></div>
           </div>
           <div class="weather-advice" id="wAdvice">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 16.5h.01M10.3 3.9 2.7 17a2 2 0 0 0 1.7 3h15.2a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>
-            <span>午後2時以降、大阪北部で雷雨の可能性。折りたたみ傘を携帯し、15〜17時の移動は避けるのが無難。最高35℃予想、日中は日陰と休憩をこまめに。</span>
+            <span>14時〜17時にかけて雨の予報（16時は本降り）。外出には折りたたみ傘を。日中は蒸し暑さが続くため、屋外では休憩と水分補給をこまめに。</span>
           </div>
         </div>
         <div class="weather-chart-block">
@@ -626,7 +606,7 @@
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <p>本ダッシュボードは表示構造の確認用にサンプルデータで構成されています。ニュース本文・数値は実在の記事や相場を保証するものではありません。</p>
+    <p>ニュース記事は作成時点で実在する記事への直リンクですが、内容は自動更新されないため時間経過とともに古くなります。経済セクションの指数・株価等は表示構造確認用のサンプル値で、実勢とは異なります。実データに常時接続するには外部APIとの連携が必要です。</p>
   </div>
 </footer>
 
@@ -660,45 +640,45 @@
   ];
 
   var NEWS = [
-    {id:'n1', sub:'国内', title:'国交省、宅配便の再配達率が3年連続で低下と発表', source:'NHK', hoursAgo:2, summary:'置き配指定の普及と時間帯指定の精緻化が寄与。物流事業者の負担軽減にもつながるとの分析。', importance:3, url:'https://www3.nhk.or.jp/'},
-    {id:'n2', sub:'国際', title:'米FRB、次回会合の金利据え置き観測が優勢に', source:'ロイター', hoursAgo:4, summary:'直近の雇用統計を受け、市場では利下げ時期の後ろ倒し観測がやや強まっている。', importance:4, url:'https://jp.reuters.com/'},
-    {id:'n3', sub:'経済', title:'関西万博跡地の再開発、大手デベロッパー3社が名乗り', source:'日本経済新聞', hoursAgo:5, summary:'跡地活用は物流・研究開発拠点を含む複合案が有力とされ、周辺交通インフラへの影響も注目される。', importance:3, url:'https://www.nikkei.com/'},
-    {id:'n4', sub:'社会', title:'近畿地方、来週にかけ厳しい残暑続く見通し', source:'気象庁', hoursAgo:6, summary:'週間を通じて最高気温34〜36℃の予想。熱中症警戒アラートの発表頻度が高まる可能性。', importance:3, url:'https://www.jma.go.jp/'},
-    {id:'n5', sub:'政治', title:'臨時国会、物流・運送業の賃上げ関連法案が焦点に', source:'共同通信', hoursAgo:8, summary:'2024年問題以降の担い手不足を背景に、運賃転嫁のルール整備が与野党の争点となる見通し。', importance:4, url:'https://www.kyodonews.jp/'},
-    {id:'n6', sub:'テクノロジー', title:'国内主要3キャリア、法人向け生成AI基盤を共同整備へ', source:'ITmedia', hoursAgo:9, summary:'中小企業のAI導入コストを下げる狙い。業務システムとの連携APIも順次公開予定。', importance:3, url:'https://www.itmedia.co.jp/'},
-    {id:'n7', sub:'国内', title:'南海トラフ地震臨時情報、想定運用の見直し議論が進む', source:'読売新聞', hoursAgo:24, summary:'関西圏の自治体からは避難計画の具体化を求める声。物流BCPの観点でも注視すべき論点。', importance:2, url:'https://www.yomiuri.co.jp/'}
+    {id:'n1', sub:'国内', title:'中継 終戦81年の全国戦没者追悼式', source:'Yahoo!ニュース', hoursAgo:4, summary:'終戦の日にあたる8月15日、日本武道館で全国戦没者追悼式が営まれている。式典の模様を中継。', importance:3, url:'https://news.yahoo.co.jp/pickup/6591791'},
+    {id:'n2', sub:'国際', title:'インドネシアM7.7 建物倒壊で2人死亡', source:'Yahoo!ニュース', hoursAgo:5, summary:'インドネシアで発生したマグニチュード7.7の地震で建物が倒壊し、2人が死亡したと伝えられている。', importance:4, url:'https://news.yahoo.co.jp/pickup/6591798'},
+    {id:'n3', sub:'経済', title:'単独では限界 日米協調介入の内幕', source:'Yahoo!ニュース', hoursAgo:14, summary:'為替市場の変動を受け、日本単独での為替介入には限界があるとして日米協調の内幕を報じる。', importance:3, url:'https://news.yahoo.co.jp/pickup/6591671'},
+    {id:'n4', sub:'社会', title:'千葉の豪雨で河川監視ライブカメラが水没', source:'ITmedia NEWS', hoursAgo:15, summary:'千葉県内の豪雨により村田川の監視カメラが水中に沈む異例の事態が発生。豪雨の激しさを物語る。', importance:3, url:'https://news.yahoo.co.jp/articles/d500dbc070d1456ae16f100da3736801998e5e99'},
+    {id:'n5', sub:'政治', title:'高市首相が長文投稿、物価高対策の成果を説明', source:'Bloomberg', hoursAgo:17, summary:'高市首相がSNS上で長文を投稿し、これまでの物価高対策の成果について説明したと報じられている。', importance:4, url:'https://news.yahoo.co.jp/articles/36dfd8212249bb2c466134fa9400213f1bdb4d9b'},
+    {id:'n6', sub:'テクノロジー', title:'ニコニコ動画、有料会員数が90万人割れ', source:'オタク総研', hoursAgo:3, summary:'有料会員数がこの1年で10万人減少。直近の月額値上げ（790円→990円）で収益性改善を目指す。', importance:2, url:'https://news.yahoo.co.jp/articles/d2e7f2fc72baa1fdba0e5893ec2f6a6b363c7ef2'},
+    {id:'n7', sub:'社会', title:'初任給100万円の会社 応募1300人', source:'Yahoo!ニュース', hoursAgo:10, summary:'初任給100万円を提示した企業に応募が殺到し、1300人規模になったことが話題になっている。', importance:2, url:'https://news.yahoo.co.jp/pickup/6591715'}
   ];
 
   var WORK = [
-    {id:'w1', sub:'物流2024年問題', title:'標準的運賃、再改定へ 中小事業者への浸透が焦点', source:'物流ニュース', hoursAgo:3,
-     summary:'国交省が運賃転嫁の実態調査結果を公表。荷主・元請けとの価格交渉力の格差が依然大きいと指摘。',
-     importance:5, url:'https://lnews.jp/'},
-    {id:'w2', sub:'倉庫自動化', title:'大手倉庫、AMR（自律走行搬送ロボット）を全国50拠点に拡大導入', source:'日刊工業新聞', hoursAgo:5,
-     summary:'ピッキング効率が従来比で最大1.4倍に。人手不足が深刻な夜間帯のシフト体制も見直し中。',
-     importance:4, url:'https://www.nikkan.co.jp/'},
-    {id:'w3', sub:'SCM/在庫最適化', title:'需要予測AI、天候連動モデルの精度向上で導入企業が倍増', source:'ロジスティクス総合研究所', hoursAgo:7,
-     summary:'気象データを組み込んだ需要予測モデルにより、欠品率と過剰在庫の同時削減事例が報告されている。',
-     importance:4, url:'https://www.lls.co.jp/'},
-    {id:'w4', sub:'CLO/組織', title:'CLO（最高物流責任者）設置企業、上場企業で前年比1.6倍に', source:'日本経済新聞', hoursAgo:9,
-     summary:'物流を経営アジェンダとして扱う企業が増加。調達・生産・販売を横断する権限設計が課題との指摘も。',
-     importance:3, url:'https://www.nikkei.com/'},
-    {id:'w5', sub:'法規制', title:'改正省エネ法、物流事業者の中間目標達成率が公表', source:'国土交通省', hoursAgo:11,
-     summary:'輸送効率化計画の提出義務対象がさらに拡大される方向で調整中。共同輸配送の実績が評価軸に。',
-     importance:4, url:'https://www.mlit.go.jp/'},
-    {id:'w6', sub:'配送最適化', title:'配送ルート最適化SaaS、中堅企業向けプランが相次ぎ登場', source:'LOGI-BIZ', hoursAgo:24,
-     summary:'初期導入費を抑えた月額課金モデルが主流に。既存WMS/TMSとのAPI連携を前提とした設計が増えている。',
-     importance:3, url:'https://www.logi-biz.com/'}
+    {id:'w1', sub:'決算/運賃動向', title:'丸全昭和運輸 決算／4～6月の売上高4.7％増、営業利益3.2％減', source:'LNEWS', hoursAgo:24,
+     summary:'物流大手の四半期決算。増収ながら燃料費・人件費上昇の影響で営業利益は減益となった。',
+     importance:4, url:'https://www.lnews.jp/2026/08/s0814101.html'},
+    {id:'w2', sub:'倉庫自動化', title:'GROUND／AMRとデジタルピッキングの連携でロジスティクス大賞「現場革新特別賞」', source:'LNEWS', hoursAgo:216,
+     summary:'AMR（自律走行搬送ロボット）とデジタルピッキングを連携させた現場改善の取り組みが表彰された。',
+     importance:5, url:'https://www.lnews.jp/2026/08/s0806603.html'},
+    {id:'w3', sub:'国際物流/SCM', title:'近鉄GHD／国際物流の売上高が18.7％増、営業利益は585.9％増', source:'LNEWS', hoursAgo:24,
+     summary:'国際物流セグメントが大幅増収増益。サプライチェーンの国際輸送需要の強さがうかがえる。',
+     importance:3, url:'https://www.lnews.jp/2026/08/s0814705.html'},
+    {id:'w4', sub:'経営/組織', title:'SBSHD／「統合報告書（Integrated report）2026」を発行', source:'LNEWS', hoursAgo:120,
+     summary:'物流大手が経営戦略やサステナビリティ方針をまとめた統合報告書を発行。経営の透明性強化の一環。',
+     importance:2, url:'https://www.lnews.jp/2026/08/s0810107.html'},
+    {id:'w5', sub:'法規制/政策', title:'国交省幹部人事／物流・自動車局長に舟本浩氏、物流政策課長に正岡孝氏', source:'LNEWS', hoursAgo:360,
+     summary:'国土交通省の物流政策を統括する幹部人事が発表された。今後の物流関連法規制の運用に関わる布陣。',
+     importance:3, url:'https://www.lnews.jp/2026/07/s0731102.html'},
+    {id:'w6', sub:'配送最適化', title:'ヤマト運輸／7月の小口貨物取扱実績、宅配便は4.9％減、ゆうパケットは15.8％増', source:'LNEWS', hoursAgo:216,
+     summary:'宅配便が減少する一方、小型・薄型荷物向けサービスが伸長。消費者の購買行動の変化を映す実績。',
+     importance:4, url:'https://www.lnews.jp/2026/08/s0806606.html'}
   ];
 
   var AI_NEWS = [
-    {id:'ai1', sub:'Anthropic', title:'Claude、業務システム連携向けのコネクタ機能を拡充', source:'ITmedia NEWS', hoursAgo:3,
-     summary:'社内ドキュメントや業務データベースを参照した回答生成が可能に。導入企業では問い合わせ対応の一次回答時間短縮の報告も。', importance:4, url:'https://www.itmedia.co.jp/'},
-    {id:'ai2', sub:'業務効率化', title:'生成AIによる需要予測レポート自動作成、物流業界での採用が加速', source:'日経クロステック', hoursAgo:6,
-     summary:'週次レポート作成にかかる時間を大幅に削減した事例が複数報告されている。テンプレート設計が定着のカギ。', importance:4, url:'https://xtech.nikkei.com/'},
-    {id:'ai3', sub:'Microsoft', title:'Copilot、Excel・Outlookでのエージェント機能を国内向けに正式提供', source:'Impress Watch', hoursAgo:8,
-     summary:'定型メール作成やデータ集計の自動化がノーコードで設定可能に。中小企業向けプランの価格改定も同時発表。', importance:3, url:'https://www.watch.impress.co.jp/'},
-    {id:'ai4', sub:'OpenAI', title:'ChatGPT、社内データ検索向けの管理者向け権限設定を強化', source:'ITmedia', hoursAgo:10,
-     summary:'部門ごとのアクセス制御が細かく設定可能になり、情報漏えいリスクを抑えた導入がしやすくなった。', importance:3, url:'https://www.itmedia.co.jp/'}
+    {id:'ai1', sub:'Anthropic', title:'Anthropic、「Claude」生成テキストに“見えない透かし” 日本含むグローバルに適用へ', source:'ITmedia NEWS', hoursAgo:72,
+     summary:'Claudeが生成したテキストに電子透かしと来歴メタデータを付与。EU規制対応が発端で世界的に展開される。', importance:4, url:'https://www.itmedia.co.jp/news/article/2608/12/2000000497/'},
+    {id:'ai2', sub:'業務効率化', title:'物流業界の生成AI活用事例10選！メリットや導入ステップも解説', source:'AINOW', hoursAgo:1800,
+     summary:'需要予測・配車・問い合わせ対応など、物流現場での生成AI活用事例をまとめた解説記事。', importance:3, url:'https://ainow.ai/2026/05/30/278121/'},
+    {id:'ai3', sub:'Microsoft', title:'日本製鉄、DXを加速。Microsoft 365 Copilotを戦略的導入し生産性と効率化の成果を最大化', source:'Microsoft Customer Stories', hoursAgo:96,
+     summary:'日本製鉄が全社的にCopilotを段階導入。文書作成や議事録作成など間接業務の効率化を進めている。', importance:4, url:'https://www.microsoft.com/ja-jp/customers/story/23624-nippon-steel-corporation-microsoft-365-copilot'},
+    {id:'ai4', sub:'業界調査', title:'【2026年生成AIツール利用実態】法人導入率1位は「Microsoft Copilot」、実務レベル不足の指摘も', source:'SDEパートナーズ（PR TIMES）', hoursAgo:48,
+     summary:'法人の生成AI導入率調査。Copilot・ChatGPTがほぼ同率で首位となる一方、8割以上が実務活用の不足を指摘。', importance:3, url:'https://prtimes.jp/main/html/rd/p/000000003.000178927.html'}
   ];
 
   var AI_TOOLS = [
@@ -715,72 +695,66 @@
     {name:'S&P 500', sub:'NY・前日終値', value:'5,612.44', delta:'+9.88', pct:'+0.18%', up:true},
     {name:'ドル/円', sub:'東京外国為替', value:'￥152.34', delta:'+0.42', pct:'+0.28%', up:true},
     {name:'ユーロ/円', sub:'東京外国為替', value:'￥164.10', delta:'-0.18', pct:'-0.11%', up:false},
-    {name:'金 (Gold)', sub:'NY先物', value:'$2,486.30', delta:'+11.20', pct:'+0.45%', up:true}
+    {name:'金 (Gold)', sub:'NY先物', value:'$2,486.30', delta:'+11.20', pct:'+0.45%', up:true},
+    {name:'オルカン', sub:'eMAXIS Slim全世界株式', value:'39,019円', delta:'+221', pct:'+0.57%', up:true}
   ];
   var MARKET_COMMENT = '日銀の追加利上げ観測を背景に円が底堅く推移。輸出関連より内需・物流関連銘柄への資金シフトが指摘されており、国内景気敏感セクターの値動きに注目が集まっています。';
 
   var MUSIC = [
-    {id:'m1', sub:'ジャズ', title:'関西の老舗ジャズクラブ、開業40周年記念のビッグバンド特集を開催', source:'ぴあ', hoursAgo:5,
-     summary:'9月にかけて関西ゆかりのビッグバンドが週替わりで出演。テナー奏者を中心としたセッションデーも設定される。', importance:3, url:'https://www.pia.jp/'},
-    {id:'m2', sub:'サックス新製品', title:'メーカー各社、秋のNAMM関連でテナー用新マウスピースを相次ぎ発表', source:'石橋楽器店', hoursAgo:8,
-     summary:'ハードラバー系で開口をやや広げたモデルが目立つ傾向。ビッグバンドでの抜けの良さを意識した設計とのコメントも。',
-     fitComment:'現行のハードラバー・ミディアムオープン系のセッティングを使っている方なら、リード号数を半段上げる程度で試しやすい設計です。',
-     importance:3, url:'https://www.ishibashi.co.jp/'},
-    {id:'m3', sub:'リード', title:'定番リードブランド、新しいカット形状のシリーズを国内発売', source:'サウンドハウス', hoursAgo:24,
-     summary:'ファイルドカットに近い特性を持たせつつ耐久性を高めたとされる新シリーズ。ビッグバンド奏者からの評価が先行して話題に。',
-     fitComment:'吹奏感が硬めのマウスピースと組み合わせている場合、レスポンスの改善を感じやすい組み合わせです。', importance:2, url:'https://www.soundhouse.co.jp/'},
-    {id:'m4', sub:'関西イベント', title:'大阪・中之島でジャズフェス開催決定、9月中旬の週末2日間', source:'Osaka Info', hoursAgo:24,
-     summary:'屋外ステージと近隣ライブハウスを使った回遊型の編成。地元ビッグバンド編成の出演枠も用意されている。', importance:3, url:'https://www.osaka-info.jp/'},
-    {id:'m5', sub:'奏者', title:'国内テナー奏者、来日ビッグバンドとの共演ツアーを発表', source:'ぴあ', hoursAgo:48,
-     summary:'大阪公演を含む全国5都市ツアー。チケットは今週末から先行受付が始まる予定。', importance:2, url:'https://www.pia.jp/'}
+    {id:'m1', sub:'関西イベント', title:'大阪ビッグバンドジャズフェスティバル2026', source:'BASSON TOP', hoursAgo:48,
+     summary:'大阪で開催されるビッグバンド中心のジャズフェスティバル。関西ゆかりのビッグバンドが多数出演予定。', importance:4, url:'https://www.bassontop.co.jp/event/jazzfes2026/'},
+    {id:'m2', sub:'サックス新製品', title:'テナーサックス用マウスピース 売れ筋商品ランキング', source:'サウンドハウス', hoursAgo:24,
+     summary:'定番モデルから新製品まで、実売データに基づくテナー用マウスピースの売れ筋ランキング。',
+     fitComment:'ハードラバー・ミディアムオープン系のセッティングを使っている方は、ランキング上位モデルとの相性を比較する参考になります。',
+     importance:3, url:'https://www.soundhouse.co.jp/bestseller/small/7086/'},
+    {id:'m3', sub:'リード', title:'サックス用リードのおすすめ人気ランキング【2026年6月】', source:'マイベスト', hoursAgo:1440,
+     summary:'ジャズ演奏向けにはアンファイルドカットが人気。落ち着いたダークな音色を重視した比較記事。',
+     fitComment:'吹奏感が硬めのマウスピースと組み合わせている場合、アンファイルドカット系はレスポンス改善を感じやすい組み合わせです。', importance:2, url:'https://my-best.com/3845'},
+    {id:'m4', sub:'関西イベント', title:'大阪・北新地のジャズクラブ「JAZZ CLUB GALLON」', source:'GALLON', hoursAgo:72,
+     summary:'北新地にある老舗ジャズクラブ。ビッグバンド編成のライブも定期的に開催されている。', importance:2, url:'https://gallonjazz.com/'},
+    {id:'m5', sub:'奏者', title:'12名のベテラン＆若手気鋭ジャズ・サックス奏者が集結「Jazz Momentum」コットンクラブにて3日間開催', source:'Sax world', hoursAgo:240,
+     summary:'国内の実力派サックス奏者が世代を超えて集結する企画公演。ベテランと若手の共演が見どころ。', importance:3, url:'https://saxophoneworld.com/news/jazzmomentum'}
   ];
 
   var SPORTS = [
-    {id:'s1', sub:'サッカー', title:'日本代表FW、アウェイ戦でシーズン初ゴール', source:'日刊スポーツ', hoursAgo:5, summary:'移籍後初となる公式戦ゴールで勝利に貢献。現地メディアも評価するパフォーマンスだった。', next:'次戦: 8月19日(水) 国内リーグ ホーム開催', importance:3, url:'https://www.nikkansports.com/'},
-    {id:'s2', sub:'卓球', title:'日本勢、国際大会で混合ダブルス準決勝進出', source:'日刊スポーツ', hoursAgo:12, summary:'第3セットまでもつれる接戦を制し、大会2日目にして波に乗る内容を見せた。', next:'次戦: 準決勝・8月16日(日)午後', importance:2, url:'https://www.nikkansports.com/'},
-    {id:'s3', sub:'野球', title:'国内プロ野球、セ・パ首位攻防戦は接戦の末サヨナラ決着', source:'スポニチ', hoursAgo:12, summary:'延長10回、代打の一打で決着。優勝マジックにも影響する大きな一勝となった。', next:'次戦: 8月16日(日) 同カード最終戦', importance:2, url:'https://www.sponichi.co.jp/'},
-    {id:'s4', sub:'日本人選手', title:'海外リーグ挑戦中の日本人選手、今季自己最多得点を更新', source:'Number Web', hoursAgo:48, summary:'現地紙も「シーズン後半の主役」と評する活躍ぶり。移籍後最速でのマイルストーン達成。', next:'次戦: 8月20日(木) カンファレンス上位対決', importance:2, url:'https://number.bunshun.jp/'}
+    {id:'s1', sub:'サッカー', title:'21歳日本人が豪快に欧州初ゴール「空いていると思った」 開幕アシストに続く活躍に現地沸騰', source:'football-zone.net', hoursAgo:4, summary:'欧州クラブに所属する21歳の日本人選手が移籍後初ゴールを記録。現地メディアも高く評価している。', importance:3, url:'https://www.football-zone.net/archives/668687'},
+    {id:'s2', sub:'卓球', title:'WTTチャンピオンズ横浜2026 結果速報', source:'olympics.com', hoursAgo:144, summary:'神奈川・横浜で開催されたWTTチャンピオンズ横浜2026で、張本智和・張本美和の兄妹が揃って優勝を果たした。', importance:3, url:'https://www.olympics.com/ja/news/table-tennis-wtt-champions-2026-yokohama-results'},
+    {id:'s3', sub:'野球', title:'【NPB今日の見どころ】リリーフだけで今季9勝のロッテ・八木', source:'Yahoo!ニュース', hoursAgo:6, summary:'中継ぎ登板のみで今季9勝目を狙うロッテ・八木投手。球団記録更新がかかる一戦が注目されている。', importance:2, url:'https://news.yahoo.co.jp/articles/d9db2b1bb5a50525cd01b47010b60257c8ce0eea'},
+    {id:'s4', sub:'日本人選手', title:'ドリブルで独走→繊細アシスト「見事なスルーパス」現地も高評価…23歳日本人が躍動', source:'football-zone.net', hoursAgo:5, summary:'欧州でプレーする23歳の日本人MFがドリブル突破からアシストを記録し、現地紙からも高評価を得た。', importance:2, url:'https://www.football-zone.net/archives/668723'}
   ];
 
   var GADGET = [
-    {id:'g1', sub:'Apple', title:'次期iPhone、カメラ制御チップの刷新が有力視される', source:'Apple Watch (Impress)', hoursAgo:6, summary:'発表は例年通り9月が有力。業務用途では暗所での帳票撮影の精度向上が注目点。', buyPick:true,
-     summary2:'倉庫内での伝票・ラベル撮影が多い方には、実機レビュー待ちで判断する価値がありそうです。', importance:3, url:'https://www.watch.impress.co.jp/'},
-    {id:'g2', sub:'PC', title:'AI PC向け新世代チップ搭載ノート、各社が秋モデルを続々投入', source:'PC Watch', hoursAgo:9, summary:'ローカルAI処理の高速化により、オフライン環境での文書要約・翻訳が実用速度に。', importance:2, url:'https://pc.watch.impress.co.jp/'},
-    {id:'g3', sub:'オーディオ', title:'ノイズキャンセリングイヤホン新型、外音取り込みの自然さが向上', source:'AV Watch', hoursAgo:11, summary:'移動中の音声通話品質も改善。出張の多いビジネス利用に向くとの評価。', buyPick:true,
-     summary2:'新幹線や現場移動が多い働き方なら、外音取り込みの自然さは体感差が出やすいポイントです。', importance:3, url:'https://av.watch.impress.co.jp/'},
-    {id:'g4', sub:'家電', title:'コードレス掃除機、集じん力と静音性を両立した新モデル登場', source:'家電Watch', hoursAgo:24, summary:'夜間の使用を想定した静音モードを搭載。バッテリー持続時間も従来比で延長。', importance:1, url:'https://kaden.watch.impress.co.jp/'}
+    {id:'g1', sub:'Apple', title:'「Apple Upgrade」開始。iPhoneやMacを月額で借りられるサービス', source:'PC Watch', hoursAgo:24, summary:'iPhoneやMacを月額料金で利用できる新サービス。買い替えサイクルの短縮を狙った施策とみられる。', importance:3, url:'https://pc.watch.impress.co.jp/docs/news/2128762.html'},
+    {id:'g2', sub:'PC', title:'メモリ128GBの“怪物”ミニPC「Ryzen AI Halo」現る。AM5版Ryzen AI 400も投入', source:'PC Watch', hoursAgo:120, summary:'大容量メモリを積んだAI処理特化型のミニPCが登場。ローカルAI処理の高速化が期待されている。', importance:2, url:'https://pc.watch.impress.co.jp/docs/news/event/2077186.html'},
+    {id:'g3', sub:'オーディオ', title:'【2026年8月最新】最強のノイズキャンセリングヘッドホンはこれだ！', source:'e☆イヤホン', hoursAgo:24, summary:'専門店が選ぶ最新のノイズキャンセリングモデル比較。上位モデルは遮音性と装着感の両立が進む。', buyPick:true,
+     summary2:'新幹線や現場移動が多い働き方なら、上位モデルの遮音性・外音取り込みの自然さは体感差が出やすいポイントです。', importance:3, url:'https://www.e-earphone.jp/blogs/feature/noise-cancelling-headphone'},
+    {id:'g4', sub:'家電', title:'今売れている「掃除機」おすすめ3選＆ランキング【2026年8月版】', source:'Fav-Log by ITmedia', hoursAgo:24, summary:'日立「ラクかるスティック PV-BL1C4」が首位。軽量1.1kgで片手でも扱いやすいと評価されている。', importance:1, url:'https://nlab.itmedia.co.jp/fav/articles/3961351/'}
   ];
 
   var OSAKA = [
-    {id:'o1', sub:'交通情報', title:'大阪メトロ、来週初めに一部区間で保守点検による間引き運転', source:'大阪メトロ', hoursAgo:3, summary:'早朝・深夜帯が対象。通勤時間帯への影響は限定的とされるが、始発利用者は注意。', importance:2, url:'https://www.osakametro.co.jp/'},
-    {id:'o2', sub:'災害情報', title:'近畿地方、熱中症警戒アラートを本日発表', source:'環境省', hoursAgo:4, summary:'大阪市を含む府内全域が対象。屋外作業・イベントは休憩と水分補給の徹底を呼びかけ。', importance:4, url:'https://www.wbgt.env.go.jp/'},
-    {id:'o3', sub:'イベント', title:'御堂筋周辺で今週末、屋台と音楽の秋先取りイベント開催', source:'Osaka Info', hoursAgo:8, summary:'夕方から夜にかけて屋外ステージあり。周辺道路の一部交通規制が予定されている。', importance:2, url:'https://www.osaka-info.jp/'},
-    {id:'o4', sub:'台風情報', title:'台風の卵、来週後半に西日本接近の可能性で気象庁が注意呼びかけ', source:'気象庁', hoursAgo:10, summary:'現時点の進路予想には幅があり、今後の情報更新に注意が必要な段階。', importance:3, url:'https://www.jma.go.jp/'}
+    {id:'o1', sub:'交通情報', title:'【お詫び】御堂筋線の運行見合わせについて', source:'Osaka Metro', hoursAgo:168, summary:'車内でモバイルバッテリーが発火し、御堂筋線全線で一時運転を見合わせた際の公式なお詫び告知。', importance:2, url:'https://subway.osakametro.co.jp/news/news/other/20260808_midousuji_owabi.php'},
+    {id:'o2', sub:'災害情報', title:'大阪府 警報・注意報情報', source:'OFIX（大阪府国際交流財団）', hoursAgo:20, summary:'大阪市を含む府内で大雨注意報・雷注意報が継続中。今後の気象情報の更新に注意が必要。', importance:4, url:'https://ofix.or.jp/2026/08/14/%E5%BA%9C%E5%85%A8%E5%9F%9F-%E8%AD%A6%E5%A0%B1%E3%83%BB%E6%B3%A8%E6%84%8F%E5%A0%B1%E6%83%85%E5%A0%B1-1142'},
+    {id:'o3', sub:'イベント', title:'大阪市：イベント情報', source:'大阪市', hoursAgo:22, summary:'大阪市公式サイトに掲載されている、市内で開催中・開催予定のイベント一覧。', importance:2, url:'https://www.city.osaka.lg.jp/main/event2/20260814.html'},
+    {id:'o4', sub:'台風情報', title:'台風14号 大阪市が暴風域に入る確率', source:'tenki.jp', hoursAgo:30, summary:'台風14号の進路予想に基づき、大阪市が暴風域に入る確率の推移をまとめた気象情報。', importance:3, url:'https://tenki.jp/bousai/typhoon/storm/2614/6/30/6200/6203/'}
   ];
 
   var RECO = [
-    {ref:'w1', why:'運賃転嫁ルールの見直しは、取引先との価格交渉に直接影響します。今週中に社内共有をおすすめします。'},
-    {ref:'w5', why:'省エネ法対応の報告義務拡大は準備期間が必要です。早めの実績整理が有効です。'},
-    {ref:'n5', why:'国会での賃上げ関連法案の議論は、運送業界全体のコスト構造に波及する可能性があります。'},
-    {ref:'ai1', why:'Claudeの業務システム連携強化は、社内マニュアル検索の効率化に直結しそうです。'},
-    {ref:'o2', why:'今日は大阪府全域で熱中症警戒アラート。外出・現場作業がある場合は最優先で確認を。'}
-  ];
-
-  var TODOS = [
-    '午後は大阪北部で雷雨の可能性。折りたたみ傘を持って出かける',
-    '熱中症警戒アラート発表中。現場作業がある場合は休憩間隔を短めに調整する',
-    '運賃転嫁の標準的運賃改定について、取引先との次回商談前に社内で認識合わせをする',
-    'Claudeのコネクタ機能拡充を確認し、社内マニュアル検索への適用余地を検討する',
-    '中之島ジャズフェスのチケット先行受付が今週末開始。予定を確認しておく'
+    {ref:'w2', why:'AMRとデジタルピッキングの連携による現場改善の受賞事例。自社の倉庫自動化投資の参考になります。'},
+    {ref:'w5', why:'物流政策を担う国交省の幹部人事が固まりました。今後の法規制運用の方向性を注視する材料になります。'},
+    {ref:'n5', why:'政府の物価高対策の説明は、燃料費・資材コストなど自社コストにも波及する可能性があります。'},
+    {ref:'ai1', why:'Claudeで生成した文書に来歴情報が付与されるようになります。社内での生成AI利用ルール整備の参考になります。'},
+    {ref:'o2', why:'大阪府に大雨・雷注意報が継続中。外出・現場作業がある場合は最優先で確認を。'}
   ];
 
   var HOURLY = [
-    {t:'6時', v:27},{t:'9時', v:30},{t:'12時', v:33},{t:'15時', v:35},
-    {t:'18時', v:32},{t:'21時', v:29},{t:'24時', v:27}
+    {t:'6時', v:26, icon:'☀️', pop:10},{t:'9時', v:30, icon:'☁️', pop:10},
+    {t:'12時', v:33, icon:'☁️', pop:40},{t:'15時', v:32, icon:'☁️', pop:60},
+    {t:'18時', v:29, icon:'☁️', pop:20},{t:'21時', v:28, icon:'☁️', pop:40},
+    {t:'24時', v:27, icon:'☁️', pop:10}
   ];
 
   var WEEKLY = [
-    {d:'今日 15日', icon:'⛅', hi:35, lo:27, pop:30, today:true},
+    {d:'今日 15日', icon:'🌧️', hi:33, lo:25, pop:60, today:true},
     {d:'16日(日)', icon:'⛈️', hi:33, lo:26, pop:60},
     {d:'17日(月)', icon:'☀️', hi:36, lo:27, pop:10},
     {d:'18日(火)', icon:'☀️', hi:36, lo:28, pop:10},
@@ -790,11 +764,11 @@
   ];
 
   var SUMMARY_CHIPS = [
-    {label:'天気', value:'33℃ 晴時々曇', sub:'午後は雷雨に注意', target:'sec-weather'},
-    {label:'重要ニュース', value:'賃上げ法案 焦点', sub:'臨時国会', target:'sec-news'},
+    {label:'天気', value:'32℃ 曇り', sub:'14-17時は雨', target:'sec-weather'},
+    {label:'重要ニュース', value:'終戦81年 追悼式', sub:'8月15日', target:'sec-news'},
     {label:'経済', value:'日経 +0.78%', sub:'￥152.34/$', target:'sec-economy'},
-    {label:'仕事', value:'運賃 再改定へ', sub:'重要度★5', target:'sec-work'},
-    {label:'AI/IT', value:'Claude連携拡充', sub:'業務データ参照', target:'sec-ai'},
+    {label:'仕事', value:'AMR現場革新 受賞', sub:'重要度★5', target:'sec-work'},
+    {label:'AI/IT', value:'Claudeに透かし機能', sub:'来歴メタデータ付与', target:'sec-ai'},
     {label:'おすすめ', value:'今日読むべき5件', sub:'右カラム参照', target:'sec-reco'}
   ];
 
@@ -908,9 +882,9 @@
 
   function renderThreeLine(){
     var lines = [
-      '大阪は最高35℃の残暑。午後は雷雨の可能性があるため折りたたみ傘があると安心です。',
-      '仕事面では標準的運賃の再改定が焦点。取引先との価格交渉方針を見直す好機です。',
-      'Claudeの業務連携強化など、AIを使った社内効率化の動きが加速しています。'
+      '大阪は最高33℃。14〜17時は雨の予報のため折りたたみ傘があると安心です。',
+      '仕事面ではAMRとデジタルピッキング連携の受賞事例が話題。倉庫自動化投資の参考になりそうです。',
+      'Claude生成コンテンツへの透かし機能など、生成AIの信頼性を高める動きが進んでいます。'
     ];
     document.getElementById('threeLineSummary').innerHTML = lines.map(function(l){ return '<li>'+l+'</li>'; }).join('');
   }
@@ -930,7 +904,7 @@
   }
 
   function buildLineChart(points){
-    var w = 460, h = 110, padL = 8, padR = 8, padT = 12, padB = 20;
+    var w = 460, h = 154, padL = 8, padR = 8, padT = 32, padB = 36;
     var vals = points.map(function(p){ return p.v; });
     var min = Math.min.apply(null, vals) - 2, max = Math.max.apply(null, vals) + 2;
     var innerW = w - padL - padR, innerH = h - padT - padB;
@@ -995,8 +969,23 @@
       hitArea.style.cursor = 'pointer';
       svg.appendChild(hitArea);
 
+      var iconLabel = document.createElementNS(svgNS,'text');
+      iconLabel.setAttribute('x', cx); iconLabel.setAttribute('y', 18);
+      iconLabel.setAttribute('text-anchor','middle');
+      iconLabel.setAttribute('font-size','13');
+      iconLabel.textContent = p.icon || '';
+      svg.appendChild(iconLabel);
+
+      var popLabel = document.createElementNS(svgNS,'text');
+      popLabel.setAttribute('x', cx); popLabel.setAttribute('y', h-22);
+      popLabel.setAttribute('text-anchor','middle');
+      popLabel.setAttribute('font-size','9');
+      popLabel.setAttribute('fill','var(--accent)');
+      popLabel.textContent = (p.pop!==undefined ? '☔'+p.pop+'%' : '');
+      svg.appendChild(popLabel);
+
       var label = document.createElementNS(svgNS,'text');
-      label.setAttribute('x', cx); label.setAttribute('y', h-5);
+      label.setAttribute('x', cx); label.setAttribute('y', h-6);
       label.setAttribute('text-anchor','middle');
       label.setAttribute('font-size','9.5');
       label.setAttribute('fill','var(--text-tertiary)');
@@ -1004,7 +993,7 @@
       svg.appendChild(label);
 
       function showTip(){
-        tooltip.textContent = p.t + ' ' + p.v + '℃';
+        tooltip.textContent = p.t + ' ' + (p.icon||'') + ' ' + p.v + '℃' + (p.pop!==undefined ? ' 降水'+p.pop+'%' : '');
         tooltip.style.left = (cx / w * 100) + '%';
         tooltip.style.top = (cy / h * 100) + '%';
         tooltip.classList.add('show');
@@ -1063,20 +1052,6 @@
         cardEl.scrollIntoView({behavior:'smooth', block:'center'});
         cardEl.classList.remove('flash'); void cardEl.offsetWidth; cardEl.classList.add('flash');
       });
-    });
-  }
-
-  function renderTodos(){
-    var c = document.getElementById('todoList');
-    var checkIcon = '<svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>';
-    c.innerHTML = TODOS.map(function(t,i){
-      return '<div class="todo-item" data-i="'+i+'">' +
-        '<span class="todo-check">'+checkIcon+'</span>' +
-        '<span class="todo-text">'+t+'</span>' +
-      '</div>';
-    }).join('');
-    c.querySelectorAll('.todo-item').forEach(function(item){
-      item.addEventListener('click', function(){ item.classList.toggle('done'); });
     });
   }
 
@@ -1142,7 +1117,6 @@
     renderList('gadgetGrid', GADGET);
     renderList('osakaGrid', OSAKA);
     renderReco();
-    renderTodos();
     initTheme();
     updateHeaderClock();
     setInterval(refreshData, 60 * 60 * 1000);
