@@ -465,7 +465,7 @@
     <section class="section" id="sec-company">
       <div class="section-head">
         <h2>会社情報</h2>
-        <p class="section-desc">日本ペイントグループ・ハウス食品グループ・F-LINE</p>
+        <p class="section-desc">日本ペイントグループ・ハウス食品グループ・F-LINE・ハウス物流サービス・モノタロウ・山善・アイカ工業</p>
       </div>
       <div class="card-grid" id="companyGrid"></div>
     </section>
@@ -788,7 +788,13 @@
       .catch(function(err){ console.warn('[live] feed failed, keeping existing data:', key, err); });
   }
 
-  var COMPANY_QUERIES = ['日本ペイントグループ', 'ハウス食品グループ', 'F-LINE'];
+  var COMPANY_QUERIES = ['日本ペイントグループ', 'ハウス食品グループ', 'F-LINE', 'ハウス物流サービス', 'モノタロウ', '山善', 'アイカ工業'];
+  var COMPANY_PRIORITY_KEYWORDS = ['役員', '取締役', '代表取締役', '社長', '会長', '執行役員', '人事異動', '就任', '退任',
+    '物流', 'ロジスティクス', '倉庫', '配送', 'IT', 'システム', 'DX', 'デジタル'];
+
+  function companyNewsPriority(text){
+    return COMPANY_PRIORITY_KEYWORDS.some(function(k){ return text.indexOf(k) !== -1; }) ? 1 : 0;
+  }
 
   function splitGNewsTitle(rawTitle){
     var idx = rawTitle.lastIndexOf(' - ');
@@ -804,8 +810,9 @@
         .then(function(r){ return r.json(); })
         .then(function(data){
           if (data.status !== 'ok' || !data.items) return [];
-          return data.items.slice(0, 2).map(function(it, i){
+          return data.items.slice(0, 3).map(function(it, i){
             var parsed = splitGNewsTitle(stripHtml(it.title));
+            var priority = companyNewsPriority(parsed.title);
             return {
               id: 'company-' + q + '-' + i,
               sub: q,
@@ -813,7 +820,8 @@
               source: parsed.source,
               hoursAgo: hoursAgoFromPubDate(it.pubDate),
               summary: q + 'に関する報道です。詳細は元記事でご確認ください。',
-              importance: 3,
+              importance: priority ? 5 : 3,
+              priority: priority,
               url: it.link
             };
           });
@@ -825,8 +833,11 @@
       if (!all.length){
         container.innerHTML = '<p style="font-size:12px;color:var(--text-tertiary);padding:4px 2px;">現在、該当するニュースは見つかりませんでした。</p>';
       } else {
-        all.sort(function(a,b){ return a.hoursAgo - b.hoursAgo; });
-        renderList('companyGrid', all);
+        all.sort(function(a,b){
+          if (b.priority !== a.priority) return b.priority - a.priority;
+          return a.hoursAgo - b.hoursAgo;
+        });
+        renderList('companyGrid', all.slice(0, 10));
       }
       markLiveSection('sec-company');
     });
