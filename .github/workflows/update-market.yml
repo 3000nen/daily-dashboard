@@ -1,0 +1,62 @@
+name: Update market data
+
+on:
+  schedule:
+    - cron: '5 * * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch indices from Yahoo Finance and build market-data.json
+        run: |
+          UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+
+          fetch_json() {
+            curl -sf -H "User-Agent: $UA" \
+              "https://query1.finance.yahoo.com/v8/finance/chart/$1?interval=1d&range=2d" \
+              || echo '{"chart":{"result":null}}'
+          }
+
+          nikkei=$(fetch_json '%5EN225')
+          topix=$(fetch_json '1306.T')
+          dow=$(fetch_json '%5EDJI')
+          nasdaq=$(fetch_json '%5EIXIC')
+          sp500=$(fetch_json '%5EGSPC')
+
+          jq -n \
+            --argjson nikkei "$nikkei" \
+            --argjson topix "$topix" \
+            --argjson dow "$dow" \
+            --argjson nasdaq "$nasdaq" \
+            --argjson sp500 "$sp500" \
+            --arg updatedAt "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+            '
+            def pick: {
+              price:     (try .chart.result[0].meta.regularMarketPrice catch null),
+              prevClose: (try .chart.result[0].meta.chartPreviousClose catch null)
+            };
+            {
+              updatedAt: $updatedAt,
+              nikkei:   ($nikkei | pick),
+              topixEtf: ($topix  | pick),
+              dow:      ($dow    | pick),
+              nasdaq:   ($nasdaq | pick),
+              sp500:    ($sp500  | pick)
+            }' > market-data.json
+
+          cat market-data.json
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add market-data.json
+          git diff --cached --quiet || git commit -m "Update market data"
+          git diff --cached --quiet || git push

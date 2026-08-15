@@ -1,0 +1,23 @@
+{
+  "updatedAt": "2026-08-15T03:48:58Z",
+  "nikkei": {
+    "price": 68713.8,
+    "prevClose": 68308.59
+  },
+  "topixEtf": {
+    "price": 437.8,
+    "prevClose": 435.4
+  },
+  "dow": {
+    "price": 53732.41,
+    "prevClose": 53770.27
+  },
+  "nasdaq": {
+    "price": 26729.164,
+    "prevClose": 26588.49
+  },
+  "sp500": {
+    "price": 7785.76,
+    "prevClose": 7748.5
+  }
+}
