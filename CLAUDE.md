@@ -2,8 +2,8 @@
 
 個人用デイリー情報ダッシュボード（`index.html`）。GitHub Pagesで公開し、スマホから閲覧している。
 
-- リポジトリ: https://github.com/TsubaiMichitoshi/daily-dashboard
-- 公開URL: https://tsubaimichitoshi.github.io/daily-dashboard/
+- リポジトリ: https://github.com/3000nen/daily-dashboard
+- 公開URL: https://3000nen.github.io/daily-dashboard/
 
 ## GitHubへの自動push（恒久許可）
 
