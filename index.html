@@ -760,9 +760,10 @@
      ページを開いたとき、および1時間ごとに以下を取得して表示を差し替える。
      取得に失敗した場合（オフライン・CORS変更・障害等）は、直前の表示
      （実データのスナップショット）をそのまま維持し、UIを壊さない。
-       ・天気　　 : ブラウザのGeolocationで現在地を取得し、Open-Meteo API（無料keyless）から
-                    現在・時間ごと・週間の予報を取得。取得できない場合は大阪の座標で同APIを使用し、
-                    それも失敗した場合のみ気象庁（JMA）公式 防災情報JSON（大阪）にフォールバック
+       ・天気　　 : ブラウザのGeolocationで現在地を取得し、Open-Meteo API（無料keyless、
+                    気象庁JMAの予報モデルを指定）から現在・時間ごと・週間の予報を取得。
+                    取得できない場合は大阪の座標で同APIを使用し、それも失敗した場合のみ
+                    気象庁（JMA）公式 防災情報JSON（大阪）にフォールバック
        ・為替　　 : Frankfurter API（ECB系列・無料keyless）
        ・金価格　 : gold-api.com（無料keyless）
        ・ニュース : 各社RSSフィードを rss2json 経由でJSON化
@@ -966,7 +967,7 @@
       '&current=temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m,wind_direction_10m' +
       '&hourly=temperature_2m,precipitation_probability,weather_code' +
       '&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,uv_index_max' +
-      '&timezone=Asia%2FTokyo&forecast_days=7';
+      '&timezone=Asia%2FTokyo&forecast_days=7&models=jma_seamless';
     fetch(url)
       .then(function(r){ return r.json(); })
       .then(function(data){
