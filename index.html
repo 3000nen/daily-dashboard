@@ -707,11 +707,19 @@
     renderWeeklyRow(WEEKLY);
   }
 
+  // 降水確率が高いほどコマの背景を青く（濃く）する
+  function popBgStyle(pop){
+    if (pop === null || pop === undefined) return '';
+    var p = Math.max(0, Math.min(100, pop));
+    var alpha = (p / 100) * 0.55;
+    return ' style="background-color:rgba(37,99,235,'+alpha.toFixed(2)+')"';
+  }
+
   function renderHourlyRow(list){
     var el = document.getElementById('hourlyRow');
     if (!el) return;
     el.innerHTML = list.map(function(h){
-      return '<div class="hourly-item'+(h.now?' now':'')+'">' +
+      return '<div class="hourly-item'+(h.now?' now':'')+'"'+popBgStyle(h.pop)+'>' +
         '<span class="h-time">'+h.time+'</span>' +
         '<span class="h-icon">'+h.icon+'</span>' +
         '<span class="h-temp tabular">'+h.temp+'°</span>' +
@@ -722,7 +730,7 @@
 
   function renderWeeklyRow(list){
     document.getElementById('weeklyRow').innerHTML = list.map(function(d){
-      return '<div class="weekly-day'+(d.today?' today':'')+'">' +
+      return '<div class="weekly-day'+(d.today?' today':'')+'"'+popBgStyle(d.pop)+'>' +
         '<span class="wd-name">'+d.d+'</span>' +
         '<span class="wd-icon">'+d.icon+'</span>' +
         '<span class="wd-hi tabular">'+d.hi+'°</span>' +
