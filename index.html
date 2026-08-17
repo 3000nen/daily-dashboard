@@ -702,7 +702,17 @@
 
   function renderList(containerId, items){
     var c = document.getElementById(containerId);
+    if (!items.length){
+      c.innerHTML = '<p style="font-size:12px;color:var(--text-tertiary);padding:4px 2px;">現在、24時間以内の記事は見つかりませんでした。</p>';
+      return;
+    }
     c.innerHTML = items.map(function(n){ return newsCardHTML(n); }).join('');
+  }
+
+  // 24時間より前（既定）の情報は表示しない
+  function filterFresh(list, maxHours){
+    var limit = maxHours || 24;
+    return list.filter(function(it){ return (it.hoursAgo||0) <= limit; });
   }
 
   function renderWeather(){
@@ -1266,11 +1276,11 @@
   ============================================================ */
   function refreshData(){
     updateHeaderClock();
-    renderList('newsGrid', byImportanceDesc(NEWS));
-    renderList('workGrid', byImportanceDesc(WORK));
-    renderList('aiGrid', byImportanceDesc(AI_NEWS));
-    renderList('sportsGrid', SPORTS);
-    renderList('gadgetGrid', GADGET);
+    renderList('newsGrid', byImportanceDesc(filterFresh(NEWS)));
+    renderList('workGrid', byImportanceDesc(filterFresh(WORK)));
+    renderList('aiGrid', byImportanceDesc(filterFresh(AI_NEWS)));
+    renderList('sportsGrid', filterFresh(SPORTS));
+    renderList('gadgetGrid', filterFresh(GADGET));
     loadAllLiveData();
   }
 
@@ -1281,12 +1291,12 @@
     renderTabs();
     setActiveCategory('all');
     renderWeather();
-    renderList('newsGrid', byImportanceDesc(NEWS));
-    renderList('workGrid', byImportanceDesc(WORK));
-    renderList('aiGrid', byImportanceDesc(AI_NEWS));
+    renderList('newsGrid', byImportanceDesc(filterFresh(NEWS)));
+    renderList('workGrid', byImportanceDesc(filterFresh(WORK)));
+    renderList('aiGrid', byImportanceDesc(filterFresh(AI_NEWS)));
     renderMarket();
-    renderList('sportsGrid', SPORTS);
-    renderList('gadgetGrid', GADGET);
+    renderList('sportsGrid', filterFresh(SPORTS));
+    renderList('gadgetGrid', filterFresh(GADGET));
     initTheme();
     updateHeaderClock();
     loadAllLiveData();
