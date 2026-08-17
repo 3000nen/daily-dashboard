@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>Daily Briefing</title>
 <style>
   /* ============ TOKENS — consulting-deck palette ============ */
@@ -492,7 +495,7 @@
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <p>「<span class="live-dot" style="margin-right:2px;"></span>ライブ更新」が付いたセクション（天気・主要ニュース・仕事・AI・スポーツ・ガジェット・会社情報）は、ページを開いたときと5分ごとに無料公開データを取得しています（APIキー不要）。天気（現在の気温・時間ごとの気温と降水確率・最高/最低気温・週間予報）はブラウザの位置情報が許可された場合は現在地、許可されない・取得できない場合は大阪をOpen-Meteo APIから表示します。その他は各社RSS・Googleニュース検索から取得しています。経済セクションはドル/円・ユーロ/円・金価格をブラウザから直接取得し、日経平均・TOPIX（連動ETF）・NYダウ・NASDAQ・S&P500はYahoo FinanceのデータをGitHub Actionsが5分ごとにサーバー側で取得してmarket-data.jsonとして保存し、それをページが読み込んでいます（Yahoo Finance自体はブラウザから直接fetchできないCORS制限があるため）。取得に失敗した場合は直前の表示を維持します。このページに掲載する情報は、自動で取得・更新できるもののみに限定しています。</p>
+    <p>「<span class="live-dot" style="margin-right:2px;"></span>ライブ更新」が付いたセクション（天気・主要ニュース・仕事・AI・スポーツ・ガジェット・会社情報）は、ページを開いたときと5分ごとに無料公開データを取得しています（APIキー不要）。天気（現在の気温・時間ごとの気温と降水確率・最高/最低気温・週間予報）はブラウザの位置情報が許可された場合は現在地、許可されない・取得できない場合は大阪をOpen-Meteo APIから表示します。その他は各社RSS・Googleニュース検索から取得しており、主要ニュース・仕事・AI・スポーツ・ガジェットは24時間以内に公開された記事のみ表示します（会社情報は3日以内）。経済セクションはドル/円・ユーロ/円・金価格をブラウザから直接取得し、日経平均・TOPIX（連動ETF）・NYダウ・NASDAQ・S&P500はYahoo FinanceのデータをGitHub Actionsが5分ごとにサーバー側で取得してmarket-data.jsonとして保存し、それをページが読み込んでいます（Yahoo Finance自体はブラウザから直接fetchできないCORS制限があるため）。取得に失敗した場合は直前の表示を維持します。このページに掲載する情報は、自動で取得・更新できるもののみに限定しています。</p>
   </div>
 </footer>
 
@@ -822,7 +825,8 @@
             return cfg.keywords.some(function(k){ return title.indexOf(k) !== -1; });
           });
         }
-        if (!items.length) throw new Error('no relevant items in feed');
+        items = items.filter(function(it){ return hoursAgoFromPubDate(it.pubDate) <= 24; });
+        if (!items.length) throw new Error('no relevant items within 24h');
         items = items.slice(0, cfg.count);
         var cards = items.map(function(it, i){
           var summary = stripHtml(it.description || it.content || '');
