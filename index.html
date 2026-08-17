@@ -495,7 +495,7 @@
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <p>「<span class="live-dot" style="margin-right:2px;"></span>ライブ更新」が付いたセクション（天気・主要ニュース・仕事・AI・スポーツ・ガジェット・会社情報）は、ページを開いたときと2分ごとに無料公開データを取得しています（APIキー不要）。天気（現在の気温・時間ごとの気温と降水確率・最高/最低気温・週間予報）はブラウザの位置情報が許可された場合は現在地、許可されない・取得できない場合は大阪をOpen-Meteo APIから表示します。その他は各社RSS・Googleニュース検索から取得しており、主要ニュース・仕事・AI・スポーツ・ガジェットは原則6時間以内、速報・災害級など特に重要と判断できるものに限り24時間以内に公開された記事のみ表示します（会社情報は3日以内）。経済セクションはドル/円・ユーロ/円・金価格をブラウザから直接取得し、日経平均・TOPIX（連動ETF）・NYダウ・NASDAQ・S&P500はYahoo FinanceのデータをGitHub Actionsが5分ごとにサーバー側で取得してmarket-data.jsonとして保存し、それをページが読み込んでいます（Yahoo Finance自体はブラウザから直接fetchできないCORS制限があるため）。取得に失敗した場合は直前の表示を維持します。このページに掲載する情報は、自動で取得・更新できるもののみに限定しています。</p>
+    <p>「<span class="live-dot" style="margin-right:2px;"></span>ライブ更新」が付いたセクション（天気・主要ニュース・仕事・AI・スポーツ・ガジェット・会社情報）は、ページを開いたときと2分ごとに無料公開データを取得しています（APIキー不要）。天気（現在の気温・時間ごとの気温と降水確率・最高/最低気温・週間予報）はブラウザの位置情報が許可された場合は現在地、許可されない・取得できない場合は大阪をOpen-Meteo APIから表示します。その他は各社RSS・Googleニュース検索から取得しており、主要ニュース・仕事・AI・スポーツ・ガジェットは各5件を目安に、6時間以内→12時間以内→18時間以内→24時間以内の順に該当件数が集まるまで表示範囲を広げます（24時間以内でも5件に満たない場合はある分だけ表示。会社情報は3日以内）。経済セクションはドル/円・ユーロ/円・金価格をブラウザから直接取得し、日経平均・TOPIX（連動ETF）・NYダウ・NASDAQ・S&P500はYahoo FinanceのデータをGitHub Actionsが5分ごとにサーバー側で取得してmarket-data.jsonとして保存し、それをページが読み込んでいます（Yahoo Finance自体はブラウザから直接fetchできないCORS制限があるため）。取得に失敗した場合は直前の表示を維持します。このページに掲載する情報は、自動で取得・更新できるもののみに限定しています。</p>
   </div>
 </footer>
 
@@ -703,25 +703,28 @@
   function renderList(containerId, items){
     var c = document.getElementById(containerId);
     if (!items.length){
-      c.innerHTML = '<p style="font-size:12px;color:var(--text-tertiary);padding:4px 2px;">現在、6時間以内の記事は見つかりませんでした。</p>';
+      c.innerHTML = '<p style="font-size:12px;color:var(--text-tertiary);padding:4px 2px;">現在、24時間以内の記事は見つかりませんでした。</p>';
       return;
     }
     c.innerHTML = items.map(function(n){ return newsCardHTML(n); }).join('');
   }
 
-  // 原則6時間以内のみ表示。よほど重要（速報・災害級など）と判断できるものだけ24時間まで許容する
-  var FRESH_HOURS = 6;
-  var IMPORTANT_FRESH_HOURS = 24;
-  var IMPORTANT_KEYWORDS = ['速報','緊急','地震','津波','噴火','特別警報','警戒','大雨','死亡','事故','首相','重大'];
-  function isImportantTitle(title){
-    var t = title || '';
-    return IMPORTANT_KEYWORDS.some(function(k){ return t.indexOf(k) !== -1; });
+  // 目標件数（既定5件）に届くまで、6→12→18→24時間の順に表示範囲を広げる。
+  // 24時間まで広げても目標に届かない場合は、集まった分だけ表示する。
+  var FRESH_TIERS = [6, 12, 18, 24];
+  var FRESH_TARGET_COUNT = 5;
+  function pickFreshTiered(items, getHoursAgo, count){
+    var target = count || FRESH_TARGET_COUNT;
+    var picked = [];
+    for (var i = 0; i < FRESH_TIERS.length; i++){
+      var within = items.filter(function(it){ return getHoursAgo(it) <= FRESH_TIERS[i]; });
+      picked = within.slice(0, target);
+      if (picked.length >= target || i === FRESH_TIERS.length - 1) break;
+    }
+    return picked;
   }
-  function filterFresh(list){
-    return list.filter(function(it){
-      if ((it.hoursAgo||0) <= FRESH_HOURS) return true;
-      return isImportantTitle(it.title) && (it.hoursAgo||0) <= IMPORTANT_FRESH_HOURS;
-    });
+  function filterFresh(list, count){
+    return pickFreshTiered(list, function(it){ return it.hoursAgo || 0; }, count);
   }
 
   function renderWeather(){
@@ -801,12 +804,12 @@
   var OSAKA_COORDS = {lat: 34.6937, lon: 135.5023};
 
   var LIVE_FEEDS = {
-    news:   {url:'https://www3.nhk.or.jp/rss/news/cat0.xml', source:'NHKニュース', count:7, containerId:'newsGrid', sectionId:'sec-news', sort:true},
-    work:   {url:'https://www.lnews.jp/feed', source:'LNEWS', count:6, containerId:'workGrid', sectionId:'sec-work', sort:true},
-    ai:     {url:'https://rss.itmedia.co.jp/rss/2.0/itmedia_all.xml', source:'ITmedia', count:4, containerId:'aiGrid', sectionId:'sec-ai', sort:true,
+    news:   {url:'https://www3.nhk.or.jp/rss/news/cat0.xml', source:'NHKニュース', containerId:'newsGrid', sectionId:'sec-news', sort:true},
+    work:   {url:'https://www.lnews.jp/feed', source:'LNEWS', containerId:'workGrid', sectionId:'sec-work', sort:true},
+    ai:     {url:'https://rss.itmedia.co.jp/rss/2.0/itmedia_all.xml', source:'ITmedia', containerId:'aiGrid', sectionId:'sec-ai', sort:true,
              keywords:['AI','Claude','ChatGPT','Copilot','Anthropic','OpenAI','Gemini','生成AI','エージェント','LLM']},
-    sports: {url:'https://www3.nhk.or.jp/rss/news/cat7.xml', source:'NHKニュース', count:4, containerId:'sportsGrid', sectionId:'sec-sports', sort:false},
-    gadget: {url:'https://pc.watch.impress.co.jp/data/rss/1.0/pcw/feed.rdf', source:'PC Watch', count:4, containerId:'gadgetGrid', sectionId:'sec-gadget', sort:false}
+    sports: {url:'https://www3.nhk.or.jp/rss/news/cat7.xml', source:'NHKニュース', containerId:'sportsGrid', sectionId:'sec-sports', sort:false},
+    gadget: {url:'https://pc.watch.impress.co.jp/data/rss/1.0/pcw/feed.rdf', source:'PC Watch', containerId:'gadgetGrid', sectionId:'sec-gadget', sort:false}
   };
 
   function stripHtml(html){
@@ -851,13 +854,8 @@
             return cfg.keywords.some(function(k){ return title.indexOf(k) !== -1; });
           });
         }
-        items = items.filter(function(it){
-          var h = hoursAgoFromPubDate(it.pubDate);
-          if (h <= FRESH_HOURS) return true;
-          return isImportantTitle(stripHtml(it.title)) && h <= IMPORTANT_FRESH_HOURS;
-        });
-        if (!items.length) throw new Error('no fresh/important items');
-        items = items.slice(0, cfg.count);
+        items = pickFreshTiered(items, function(it){ return hoursAgoFromPubDate(it.pubDate); }, FRESH_TARGET_COUNT);
+        if (!items.length) throw new Error('no items within 24h');
         var cards = items.map(function(it, i){
           var summary = stripHtml(it.description || it.content || '');
           if (summary.length > 90) summary = summary.slice(0, 88) + '…';
