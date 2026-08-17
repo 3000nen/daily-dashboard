@@ -816,8 +816,15 @@
   }
 
   function hoursAgoFromPubDate(pubDate){
-    var t = Date.parse(/[zZ]|[+-]\d\d:?\d\d$/.test(pubDate) ? pubDate : pubDate.replace(' ','T')+'Z');
-    if (isNaN(t)) return 6;
+    // rss2jsonがタイムゾーンなしの日時（例 "2026-08-15 14:00:00"）を返す場合、
+    // 実体は変換されていない現地時刻（JST）の文字列なのでUTCではなく+09:00として解釈する。
+    // ここをUTC扱いにすると実際より最大9時間新しく計算され、古い記事が鮮度フィルタを
+    // すり抜けてしまう。
+    var hasOffset = /[zZ]|[+-]\d\d:?\d\d$/.test(pubDate);
+    var iso = hasOffset ? pubDate : pubDate.replace(' ','T') + '+09:00';
+    var t = Date.parse(iso);
+    // 日時を解析できない場合は「新しい」とみなさず、鮮度フィルタで確実に除外されるようにする
+    if (isNaN(t)) return Infinity;
     return Math.max(0, (Date.now() - t) / 3600000);
   }
 
