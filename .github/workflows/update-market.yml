@@ -59,5 +59,23 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add market-data.json
-          git diff --cached --quiet || git commit -m "Update market data"
-          git diff --cached --quiet || git push
+
+          if git diff --cached --quiet; then
+            echo "market-data.json に変更なし。コミットしない。"
+            exit 0
+          fi
+
+          git commit -m "Update market data"
+
+          # 他のpushと競合したときのために、rebaseしてから数回リトライする
+          for attempt in 1 2 3; do
+            if git push; then
+              echo "pushed (attempt $attempt)"
+              exit 0
+            fi
+            echo "push に失敗。rebaseして再試行する (attempt $attempt)"
+            git pull --rebase origin main || true
+          done
+
+          echo "3回試しても push できなかった" >&2
+          exit 1
