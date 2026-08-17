@@ -39,8 +39,9 @@ jobs:
             --arg updatedAt "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
             '
             def pick: {
-              price:     (try .chart.result[0].meta.regularMarketPrice catch null),
-              prevClose: (try .chart.result[0].meta.chartPreviousClose catch null)
+              price:      (try .chart.result[0].meta.regularMarketPrice catch null),
+              prevClose:  (try .chart.result[0].meta.chartPreviousClose catch null),
+              marketTime: (try .chart.result[0].meta.regularMarketTime catch null)
             };
             {
               updatedAt: $updatedAt,
