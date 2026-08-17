@@ -495,7 +495,7 @@
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <p>「<span class="live-dot" style="margin-right:2px;"></span>ライブ更新」が付いたセクション（天気・主要ニュース・仕事・AI・スポーツ・ガジェット・会社情報）は、ページを開いたときと5分ごとに無料公開データを取得しています（APIキー不要）。天気（現在の気温・時間ごとの気温と降水確率・最高/最低気温・週間予報）はブラウザの位置情報が許可された場合は現在地、許可されない・取得できない場合は大阪をOpen-Meteo APIから表示します。その他は各社RSS・Googleニュース検索から取得しており、主要ニュース・仕事・AI・スポーツ・ガジェットは24時間以内に公開された記事のみ表示します（会社情報は3日以内）。経済セクションはドル/円・ユーロ/円・金価格をブラウザから直接取得し、日経平均・TOPIX（連動ETF）・NYダウ・NASDAQ・S&P500はYahoo FinanceのデータをGitHub Actionsが5分ごとにサーバー側で取得してmarket-data.jsonとして保存し、それをページが読み込んでいます（Yahoo Finance自体はブラウザから直接fetchできないCORS制限があるため）。取得に失敗した場合は直前の表示を維持します。このページに掲載する情報は、自動で取得・更新できるもののみに限定しています。</p>
+    <p>「<span class="live-dot" style="margin-right:2px;"></span>ライブ更新」が付いたセクション（天気・主要ニュース・仕事・AI・スポーツ・ガジェット・会社情報）は、ページを開いたときと2分ごとに無料公開データを取得しています（APIキー不要）。天気（現在の気温・時間ごとの気温と降水確率・最高/最低気温・週間予報）はブラウザの位置情報が許可された場合は現在地、許可されない・取得できない場合は大阪をOpen-Meteo APIから表示します。その他は各社RSS・Googleニュース検索から取得しており、主要ニュース・仕事・AI・スポーツ・ガジェットは原則6時間以内、速報・災害級など特に重要と判断できるものに限り24時間以内に公開された記事のみ表示します（会社情報は3日以内）。経済セクションはドル/円・ユーロ/円・金価格をブラウザから直接取得し、日経平均・TOPIX（連動ETF）・NYダウ・NASDAQ・S&P500はYahoo FinanceのデータをGitHub Actionsが5分ごとにサーバー側で取得してmarket-data.jsonとして保存し、それをページが読み込んでいます（Yahoo Finance自体はブラウザから直接fetchできないCORS制限があるため）。取得に失敗した場合は直前の表示を維持します。このページに掲載する情報は、自動で取得・更新できるもののみに限定しています。</p>
   </div>
 </footer>
 
@@ -703,16 +703,25 @@
   function renderList(containerId, items){
     var c = document.getElementById(containerId);
     if (!items.length){
-      c.innerHTML = '<p style="font-size:12px;color:var(--text-tertiary);padding:4px 2px;">現在、24時間以内の記事は見つかりませんでした。</p>';
+      c.innerHTML = '<p style="font-size:12px;color:var(--text-tertiary);padding:4px 2px;">現在、6時間以内の記事は見つかりませんでした。</p>';
       return;
     }
     c.innerHTML = items.map(function(n){ return newsCardHTML(n); }).join('');
   }
 
-  // 24時間より前（既定）の情報は表示しない
-  function filterFresh(list, maxHours){
-    var limit = maxHours || 24;
-    return list.filter(function(it){ return (it.hoursAgo||0) <= limit; });
+  // 原則6時間以内のみ表示。よほど重要（速報・災害級など）と判断できるものだけ24時間まで許容する
+  var FRESH_HOURS = 6;
+  var IMPORTANT_FRESH_HOURS = 24;
+  var IMPORTANT_KEYWORDS = ['速報','緊急','地震','津波','噴火','特別警報','警戒','大雨','死亡','事故','首相','重大'];
+  function isImportantTitle(title){
+    var t = title || '';
+    return IMPORTANT_KEYWORDS.some(function(k){ return t.indexOf(k) !== -1; });
+  }
+  function filterFresh(list){
+    return list.filter(function(it){
+      if ((it.hoursAgo||0) <= FRESH_HOURS) return true;
+      return isImportantTitle(it.title) && (it.hoursAgo||0) <= IMPORTANT_FRESH_HOURS;
+    });
   }
 
   function renderWeather(){
@@ -770,7 +779,7 @@
 
   /* ============================================================
      LIVE DATA — 無料・APIキー不要・CORS対応の公開APIから取得
-     ページを開いたとき、および1時間ごとに以下を取得して表示を差し替える。
+     ページを開いたとき、および2分ごとに以下を取得して表示を差し替える。
      取得に失敗した場合（オフライン・CORS変更・障害等）は、直前の表示
      （実データのスナップショット）をそのまま維持し、UIを壊さない。
        ・天気　　 : ブラウザのGeolocationで現在地を取得し、Open-Meteo API（無料keyless、
@@ -835,8 +844,12 @@
             return cfg.keywords.some(function(k){ return title.indexOf(k) !== -1; });
           });
         }
-        items = items.filter(function(it){ return hoursAgoFromPubDate(it.pubDate) <= 24; });
-        if (!items.length) throw new Error('no relevant items within 24h');
+        items = items.filter(function(it){
+          var h = hoursAgoFromPubDate(it.pubDate);
+          if (h <= FRESH_HOURS) return true;
+          return isImportantTitle(stripHtml(it.title)) && h <= IMPORTANT_FRESH_HOURS;
+        });
+        if (!items.length) throw new Error('no fresh/important items');
         items = items.slice(0, cfg.count);
         var cards = items.map(function(it, i){
           var summary = stripHtml(it.description || it.content || '');
@@ -1062,7 +1075,7 @@
       });
   }
 
-  // 一度取得した位置情報はページ内でキャッシュし、5分ごとの自動更新のたびに
+  // 一度取得した位置情報はページ内でキャッシュし、2分ごとの自動更新のたびに
   // 許可ダイアログを再要求しないようにする（位置情報は短時間では変わらないため）
   var cachedWeatherCoords = null;
 
@@ -1270,7 +1283,7 @@
   }
 
   /* ============================================================
-     REFRESH（5分ごと）
+     REFRESH（2分ごと）
      まず手元のスナップショットで相対時刻表示を再計算し、続けて
      loadAllLiveData() で実APIから最新データを再取得して上書きする。
   ============================================================ */
@@ -1300,7 +1313,7 @@
     initTheme();
     updateHeaderClock();
     loadAllLiveData();
-    setInterval(refreshData, 5 * 60 * 1000);
+    setInterval(refreshData, 2 * 60 * 1000);
   }
 
   init();
