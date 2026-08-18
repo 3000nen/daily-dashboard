@@ -497,7 +497,7 @@
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <p>「<span class="live-dot" style="margin-right:2px;"></span>ライブ更新」が付いたセクション（天気・主要ニュース・仕事・AI・スポーツ・ガジェット・会社情報）は、ページを開いたときと2分ごとに無料公開データを取得しています（APIキー不要）。天気（現在の気温・時間ごとの気温と降水確率・最高/最低気温・週間予報）はブラウザの位置情報が許可された場合は現在地、許可されない・取得できない場合は大阪をOpen-Meteo APIから表示します。その他は各社RSS・Googleニュース検索から取得しており、主要ニュース・仕事・AI・スポーツ・ガジェットは各5件を目安に、6時間以内→12時間以内→18時間以内→24時間以内の順に該当件数が集まるまで表示範囲を広げます（24時間以内でも5件に満たない場合はある分だけ表示。会社情報は3日以内）。経済セクションは各指標の銘柄名の下に、その値がいつ時点のものかを日本時間で表示しています（為替はECBが営業日ごとに公表するため日付のみ。ライブ取得が届く前の初期表示は「参考値」と表示します）。ドル/円・ユーロ/円・金価格をブラウザから直接取得し、日経平均・TOPIX（連動ETF）・NYダウ・NASDAQ・S&P500はYahoo FinanceのデータをGitHub Actionsがサーバー側で定期取得してmarket-data.jsonとして保存し、それをページが読み込んでいます（Yahoo Finance自体はブラウザから直接fetchできないCORS制限があるため）。この定期実行はGitHub側のスケジュール事情で間隔が空くことがあり、実際には1時間程度おきの更新になります。取得に失敗した場合は直前の表示を維持します。このページに掲載する情報は、自動で取得・更新できるもののみに限定しています。</p>
+    <p>「<span class="live-dot" style="margin-right:2px;"></span>ライブ更新」が付いたセクション（天気・主要ニュース・仕事・AI・スポーツ・ガジェット・会社情報）は、ページを開いたときと2分ごとに無料公開データを取得しています（APIキー不要）。天気（現在の気温・時間ごとの気温と降水確率・最高/最低気温・週間予報）はブラウザの位置情報が許可された場合は現在地、許可されない・取得できない場合は大阪をOpen-Meteo APIから表示します。その他は各社RSS・Googleニュース検索から取得しており、主要ニュースは10件、仕事・AI・スポーツ・ガジェットは各5件を目安に、6時間以内→12時間以内→18時間以内→24時間以内の順に該当件数が集まるまで表示範囲を広げます（24時間以内でも5件に満たない場合はある分だけ表示。会社情報は3日以内）。経済セクションは各指標の銘柄名の下に、その値がいつ時点のものかを日本時間で表示しています（為替はECBが営業日ごとに公表するため日付のみ。ライブ取得が届く前の初期表示は「参考値」と表示します）。ドル/円・ユーロ/円・金価格をブラウザから直接取得し、日経平均・TOPIX（連動ETF）・NYダウ・NASDAQ・S&P500はYahoo FinanceのデータをGitHub Actionsがサーバー側で定期取得してmarket-data.jsonとして保存し、それをページが読み込んでいます（Yahoo Finance自体はブラウザから直接fetchできないCORS制限があるため）。この定期実行はGitHub側のスケジュール事情で間隔が空くことがあり、実際には1時間程度おきの更新になります。取得に失敗した場合は直前の表示を維持します。このページに掲載する情報は、自動で取得・更新できるもののみに限定しています。</p>
   </div>
 </footer>
 
@@ -713,10 +713,11 @@
     c.innerHTML = items.map(function(n){ return newsCardHTML(n); }).join('');
   }
 
-  // 目標件数（既定5件）に届くまで、6→12→18→24時間の順に表示範囲を広げる。
-  // 24時間まで広げても目標に届かない場合は、集まった分だけ表示する。
+  // 目標件数（既定5件、主要ニュースのみ10件）に届くまで、6→12→18→24時間の順に
+  // 表示範囲を広げる。24時間まで広げても目標に届かない場合は、集まった分だけ表示する。
   var FRESH_TIERS = [6, 12, 18, 24];
   var FRESH_TARGET_COUNT = 5;
+  var NEWS_TARGET_COUNT = 10;
   function pickFreshTiered(items, getHoursAgo, count){
     var target = count || FRESH_TARGET_COUNT;
     var picked = [];
@@ -829,7 +830,7 @@
   var OSAKA_COORDS = {lat: 34.6937, lon: 135.5023};
 
   var LIVE_FEEDS = {
-    news:   {url:'https://www3.nhk.or.jp/rss/news/cat0.xml', source:'NHKニュース', containerId:'newsGrid', sectionId:'sec-news', sort:true},
+    news:   {url:'https://www3.nhk.or.jp/rss/news/cat0.xml', source:'NHKニュース', containerId:'newsGrid', sectionId:'sec-news', sort:true, targetCount:NEWS_TARGET_COUNT},
     work:   {url:'https://www.lnews.jp/feed', source:'LNEWS', containerId:'workGrid', sectionId:'sec-work', sort:true},
     ai:     {url:'https://rss.itmedia.co.jp/rss/2.0/itmedia_all.xml', source:'ITmedia', containerId:'aiGrid', sectionId:'sec-ai', sort:true,
              keywords:['AI','Claude','ChatGPT','Copilot','Anthropic','OpenAI','Gemini','生成AI','エージェント','LLM']},
@@ -879,7 +880,7 @@
             return cfg.keywords.some(function(k){ return title.indexOf(k) !== -1; });
           });
         }
-        items = pickFreshTiered(items, function(it){ return hoursAgoFromPubDate(it.pubDate); }, FRESH_TARGET_COUNT);
+        items = pickFreshTiered(items, function(it){ return hoursAgoFromPubDate(it.pubDate); }, cfg.targetCount);
         if (!items.length) throw new Error('no items within 24h');
         var cards = items.map(function(it, i){
           var summary = stripHtml(it.description || it.content || '');
@@ -1329,7 +1330,7 @@
   ============================================================ */
   function refreshData(){
     updateHeaderClock();
-    renderList('newsGrid', byImportanceDesc(filterFresh(NEWS)));
+    renderList('newsGrid', byImportanceDesc(filterFresh(NEWS, NEWS_TARGET_COUNT)));
     renderList('workGrid', byImportanceDesc(filterFresh(WORK)));
     renderList('aiGrid', byImportanceDesc(filterFresh(AI_NEWS)));
     renderList('sportsGrid', filterFresh(SPORTS));
@@ -1344,7 +1345,7 @@
     renderTabs();
     setActiveCategory('all');
     renderWeather();
-    renderList('newsGrid', byImportanceDesc(filterFresh(NEWS)));
+    renderList('newsGrid', byImportanceDesc(filterFresh(NEWS, NEWS_TARGET_COUNT)));
     renderList('workGrid', byImportanceDesc(filterFresh(WORK)));
     renderList('aiGrid', byImportanceDesc(filterFresh(AI_NEWS)));
     renderMarket();
