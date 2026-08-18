@@ -781,13 +781,23 @@
   var REVERSE_GEOCODE_URL = 'https://nominatim.openstreetmap.org/reverse';
   var OSAKA_COORDS = {lat: 34.6937, lon: 135.5023};
 
+  /* urls は先頭から順に試し、最初に取得できたものを使う。
+     NHKのRSSはクラウド上のサーバーからの繰り返しアクセスを遮断しており、
+     RSS変換API・CORSプロキシのどちらを経由しても取得できない。そのため
+     主要ニュースとスポーツは、同じ構成で実績のあるGoogleニュースを主にし、
+     NHK直URLは将来復活した場合に備えて予備として残している。 */
+  var GNEWS_SUFFIX = '?hl=ja&gl=JP&ceid=JP:ja';
   var LIVE_FEEDS = {
-    news:   {url:'https://www3.nhk.or.jp/rss/news/cat0.xml', source:'NHKニュース', containerId:'newsGrid', sectionId:'sec-news', sort:true, targetCount:NEWS_TARGET_COUNT},
-    work:   {url:'https://www.lnews.jp/feed', source:'LNEWS', containerId:'workGrid', sectionId:'sec-work', sort:true},
-    ai:     {url:'https://rss.itmedia.co.jp/rss/2.0/itmedia_all.xml', source:'ITmedia', containerId:'aiGrid', sectionId:'sec-ai', sort:true,
+    news:   {urls:['https://news.google.com/rss' + GNEWS_SUFFIX,
+                   'https://www3.nhk.or.jp/rss/news/cat0.xml'],
+             source:'Googleニュース', containerId:'newsGrid', sectionId:'sec-news', sort:true, targetCount:NEWS_TARGET_COUNT},
+    work:   {urls:['https://www.lnews.jp/feed'], source:'LNEWS', containerId:'workGrid', sectionId:'sec-work', sort:true},
+    ai:     {urls:['https://rss.itmedia.co.jp/rss/2.0/itmedia_all.xml'], source:'ITmedia', containerId:'aiGrid', sectionId:'sec-ai', sort:true,
              keywords:['AI','Claude','ChatGPT','Copilot','Anthropic','OpenAI','Gemini','生成AI','エージェント','LLM']},
-    sports: {url:'https://www3.nhk.or.jp/rss/news/cat7.xml', source:'NHKニュース', containerId:'sportsGrid', sectionId:'sec-sports', sort:false},
-    gadget: {url:'https://pc.watch.impress.co.jp/data/rss/1.0/pcw/feed.rdf', source:'PC Watch', containerId:'gadgetGrid', sectionId:'sec-gadget', sort:false}
+    sports: {urls:['https://news.google.com/rss/headlines/section/topic/SPORTS' + GNEWS_SUFFIX,
+                   'https://www3.nhk.or.jp/rss/news/cat7.xml'],
+             source:'Googleニュース', containerId:'sportsGrid', sectionId:'sec-sports', sort:false},
+    gadget: {urls:['https://pc.watch.impress.co.jp/data/rss/1.0/pcw/feed.rdf'], source:'PC Watch', containerId:'gadgetGrid', sectionId:'sec-gadget', sort:false}
   };
 
   function stripHtml(html){
@@ -864,6 +874,17 @@
     });
   }
 
+  // 候補URLを先頭から順に試し、最初に取得できたものを {url, items} で返す
+  function fetchFeedItemsFromAny(urls){
+    var chain = Promise.reject(new Error('no feed url'));
+    [].concat(urls).forEach(function(url){
+      chain = chain.catch(function(){
+        return fetchFeedItems(url).then(function(items){ return {url: url, items: items}; });
+      });
+    });
+    return chain;
+  }
+
   function hoursAgoFromPubDate(pubDate){
     if (!pubDate) return Infinity;
     var s = String(pubDate).trim();
@@ -897,8 +918,12 @@
 
   function loadLiveFeed(key){
     var cfg = LIVE_FEEDS[key];
-    fetchFeedItems(cfg.url)
-      .then(function(items){
+    fetchFeedItemsFromAny(cfg.urls)
+      .then(function(res){
+        // Googleニュースは見出しが「タイトル - 媒体名」形式で、説明文は
+        // 関連記事へのリンク集なので、配信元を切り出して説明文は使わない。
+        var fromGNews = res.url.indexOf('news.google.com') !== -1;
+        var items = res.items;
         if (cfg.keywords){
           items = items.filter(function(it){
             var title = it.title || '';
@@ -908,12 +933,20 @@
         items = pickFreshTiered(items, function(it){ return hoursAgoFromPubDate(it.pubDate); }, cfg.targetCount);
         if (!items.length) throw new Error('no items within 24h');
         var cards = items.map(function(it, i){
-          var summary = stripHtml(it.description || '');
+          var rawTitle = stripHtml(it.title);
+          var title = rawTitle, source = cfg.source, summary = '';
+          if (fromGNews){
+            var parsed = splitGNewsTitle(rawTitle);
+            title = parsed.title;
+            source = parsed.source;
+          } else {
+            summary = stripHtml(it.description || '');
+          }
           if (summary.length > 90) summary = summary.slice(0, 88) + '…';
           return {
             id: key + '-live-' + i,
-            title: stripHtml(it.title),
-            source: cfg.source,
+            title: title,
+            source: source,
             hoursAgo: hoursAgoFromPubDate(it.pubDate),
             summary: summary || '詳細は元記事でご確認ください。',
             importance: i === 0 ? 4 : 3,
