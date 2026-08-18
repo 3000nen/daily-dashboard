@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-18T11:54:13Z",
+  "updatedAt": "2026-08-18T14:05:18Z",
   "nikkei": {
     "price": 67460.73,
     "prevClose": 69220.25,
@@ -11,18 +11,18 @@
     "marketTime": 1787034600
   },
   "dow": {
-    "price": 53459.78,
-    "prevClose": 53839.99,
-    "marketTime": 1786999377
+    "price": 53422.54,
+    "prevClose": 53732.41,
+    "marketTime": 1787061917
   },
   "nasdaq": {
-    "price": 26644.91,
-    "prevClose": 26803.03,
-    "marketTime": 1787001359
+    "price": 26348.26,
+    "prevClose": 26729.16,
+    "marketTime": 1787061917
   },
   "sp500": {
-    "price": 7745.06,
-    "prevClose": 7798.99,
-    "marketTime": 1786999347
+    "price": 7709.33,
+    "prevClose": 7785.76,
+    "marketTime": 1787061917
   }
 }
