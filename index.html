@@ -497,7 +497,7 @@
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <p>「<span class="live-dot" style="margin-right:2px;"></span>ライブ更新」が付いたセクション（天気・主要ニュース・仕事・AI・スポーツ・ガジェット・会社情報）は、ページを開いたときと2分ごとに無料公開データを取得しています（APIキー不要）。天気（現在の気温・時間ごとの気温と降水確率・最高/最低気温・週間予報）はブラウザの位置情報が許可された場合は現在地、許可されない・取得できない場合は大阪をOpen-Meteo APIから表示します。その他は各社RSS・Googleニュース検索から取得しており、主要ニュースは10件、仕事・AI・スポーツ・ガジェットは各5件を目安に、6時間以内→12時間以内→18時間以内→24時間以内の順に該当件数が集まるまで表示範囲を広げます（24時間以内でも5件に満たない場合はある分だけ表示。会社情報は3日以内）。経済セクションは各指標の銘柄名の下に、その値がいつ時点のものかを日本時間で表示しています（為替はECBが営業日ごとに公表するため日付のみ。ライブ取得が届く前の初期表示は「参考値」と表示します）。ドル/円・ユーロ/円・金価格をブラウザから直接取得し、日経平均・TOPIX（連動ETF）・NYダウ・NASDAQ・S&P500はYahoo FinanceのデータをGitHub Actionsがサーバー側で定期取得してmarket-data.jsonとして保存し、それをページが読み込んでいます（Yahoo Finance自体はブラウザから直接fetchできないCORS制限があるため）。この定期実行はGitHub側のスケジュール事情で間隔が空くことがあり、実際には1時間程度おきの更新になります。取得に失敗した場合は直前の表示を維持します。このページに掲載する情報は、自動で取得・更新できるもののみに限定しています。</p>
+    <p>「<span class="live-dot" style="margin-right:2px;"></span>ライブ更新」が付いたセクション（天気・主要ニュース・仕事・AI・スポーツ・ガジェット・会社情報）は、ページを開いたときと5分ごと（会社情報のみ30分ごと）に無料公開データを取得しています（APIキー不要）。天気（現在の気温・時間ごとの気温と降水確率・最高/最低気温・週間予報）はブラウザの位置情報が許可された場合は現在地、許可されない・取得できない場合は大阪をOpen-Meteo APIから表示します。その他は各社RSS・Googleニュース検索から取得しており、主要ニュースは10件、仕事・AI・スポーツ・ガジェットは各5件を目安に、6時間以内→12時間以内→18時間以内→24時間以内の順に該当件数が集まるまで表示範囲を広げます（24時間以内でも5件に満たない場合はある分だけ表示。会社情報は3日以内）。経済セクションは各指標の銘柄名の下に、その値がいつ時点のものかを日本時間で表示しています（為替はECBが営業日ごとに公表するため日付のみ。ライブ取得が届く前の初期表示は「参考値」と表示します）。ドル/円・ユーロ/円・金価格をブラウザから直接取得し、日経平均・TOPIX（連動ETF）・NYダウ・NASDAQ・S&P500はYahoo FinanceのデータをGitHub Actionsがサーバー側で定期取得してmarket-data.jsonとして保存し、それをページが読み込んでいます（Yahoo Finance自体はブラウザから直接fetchできないCORS制限があるため）。この定期実行はGitHub側のスケジュール事情で間隔が空くことがあり、実際には1時間程度おきの更新になります。ニュースの取得は変換APIが混雑・制限された場合に備えて2系統用意しており、片方が失敗すると自動的にもう一方へ切り替えます。それでも取得できなかった場合は、古い内容を出し続けずにその旨を表示します。このページに掲載する情報は、自動で取得・更新できるもののみに限定しています。</p>
   </div>
 </footer>
 
@@ -528,47 +528,8 @@
     {key:'company',  label:'会社情報'}
   ];
 
-  var NEWS = [
-    {id:'n1', sub:'国内', title:'中継 終戦81年の全国戦没者追悼式', source:'Yahoo!ニュース', hoursAgo:4, summary:'終戦の日にあたる8月15日、日本武道館で全国戦没者追悼式が営まれている。式典の模様を中継。', importance:3, url:'https://news.yahoo.co.jp/pickup/6591791'},
-    {id:'n2', sub:'国際', title:'インドネシアM7.7 建物倒壊で2人死亡', source:'Yahoo!ニュース', hoursAgo:5, summary:'インドネシアで発生したマグニチュード7.7の地震で建物が倒壊し、2人が死亡したと伝えられている。', importance:4, url:'https://news.yahoo.co.jp/pickup/6591798'},
-    {id:'n3', sub:'経済', title:'単独では限界 日米協調介入の内幕', source:'Yahoo!ニュース', hoursAgo:14, summary:'為替市場の変動を受け、日本単独での為替介入には限界があるとして日米協調の内幕を報じる。', importance:3, url:'https://news.yahoo.co.jp/pickup/6591671'},
-    {id:'n4', sub:'社会', title:'千葉の豪雨で河川監視ライブカメラが水没', source:'ITmedia NEWS', hoursAgo:15, summary:'千葉県内の豪雨により村田川の監視カメラが水中に沈む異例の事態が発生。豪雨の激しさを物語る。', importance:3, url:'https://news.yahoo.co.jp/articles/d500dbc070d1456ae16f100da3736801998e5e99'},
-    {id:'n5', sub:'政治', title:'高市首相が長文投稿、物価高対策の成果を説明', source:'Bloomberg', hoursAgo:17, summary:'高市首相がSNS上で長文を投稿し、これまでの物価高対策の成果について説明したと報じられている。', importance:4, url:'https://news.yahoo.co.jp/articles/36dfd8212249bb2c466134fa9400213f1bdb4d9b'},
-    {id:'n6', sub:'テクノロジー', title:'ニコニコ動画、有料会員数が90万人割れ', source:'オタク総研', hoursAgo:3, summary:'有料会員数がこの1年で10万人減少。直近の月額値上げ（790円→990円）で収益性改善を目指す。', importance:2, url:'https://news.yahoo.co.jp/articles/d2e7f2fc72baa1fdba0e5893ec2f6a6b363c7ef2'},
-    {id:'n7', sub:'社会', title:'初任給100万円の会社 応募1300人', source:'Yahoo!ニュース', hoursAgo:10, summary:'初任給100万円を提示した企業に応募が殺到し、1300人規模になったことが話題になっている。', importance:2, url:'https://news.yahoo.co.jp/pickup/6591715'}
-  ];
 
-  var WORK = [
-    {id:'w1', sub:'決算/運賃動向', title:'丸全昭和運輸 決算／4～6月の売上高4.7％増、営業利益3.2％減', source:'LNEWS', hoursAgo:24,
-     summary:'物流大手の四半期決算。増収ながら燃料費・人件費上昇の影響で営業利益は減益となった。',
-     importance:4, url:'https://www.lnews.jp/2026/08/s0814101.html'},
-    {id:'w2', sub:'倉庫自動化', title:'GROUND／AMRとデジタルピッキングの連携でロジスティクス大賞「現場革新特別賞」', source:'LNEWS', hoursAgo:216,
-     summary:'AMR（自律走行搬送ロボット）とデジタルピッキングを連携させた現場改善の取り組みが表彰された。',
-     importance:5, url:'https://www.lnews.jp/2026/08/s0806603.html'},
-    {id:'w3', sub:'国際物流/SCM', title:'近鉄GHD／国際物流の売上高が18.7％増、営業利益は585.9％増', source:'LNEWS', hoursAgo:24,
-     summary:'国際物流セグメントが大幅増収増益。サプライチェーンの国際輸送需要の強さがうかがえる。',
-     importance:3, url:'https://www.lnews.jp/2026/08/s0814705.html'},
-    {id:'w4', sub:'経営/組織', title:'SBSHD／「統合報告書（Integrated report）2026」を発行', source:'LNEWS', hoursAgo:120,
-     summary:'物流大手が経営戦略やサステナビリティ方針をまとめた統合報告書を発行。経営の透明性強化の一環。',
-     importance:2, url:'https://www.lnews.jp/2026/08/s0810107.html'},
-    {id:'w5', sub:'法規制/政策', title:'国交省幹部人事／物流・自動車局長に舟本浩氏、物流政策課長に正岡孝氏', source:'LNEWS', hoursAgo:360,
-     summary:'国土交通省の物流政策を統括する幹部人事が発表された。今後の物流関連法規制の運用に関わる布陣。',
-     importance:3, url:'https://www.lnews.jp/2026/07/s0731102.html'},
-    {id:'w6', sub:'配送最適化', title:'ヤマト運輸／7月の小口貨物取扱実績、宅配便は4.9％減、ゆうパケットは15.8％増', source:'LNEWS', hoursAgo:216,
-     summary:'宅配便が減少する一方、小型・薄型荷物向けサービスが伸長。消費者の購買行動の変化を映す実績。',
-     importance:4, url:'https://www.lnews.jp/2026/08/s0806606.html'}
-  ];
 
-  var AI_NEWS = [
-    {id:'ai1', sub:'Anthropic', title:'Anthropic、「Claude」生成テキストに“見えない透かし” 日本含むグローバルに適用へ', source:'ITmedia NEWS', hoursAgo:72,
-     summary:'Claudeが生成したテキストに電子透かしと来歴メタデータを付与。EU規制対応が発端で世界的に展開される。', importance:4, url:'https://www.itmedia.co.jp/news/article/2608/12/2000000497/'},
-    {id:'ai2', sub:'業務効率化', title:'物流業界の生成AI活用事例10選！メリットや導入ステップも解説', source:'AINOW', hoursAgo:1800,
-     summary:'需要予測・配車・問い合わせ対応など、物流現場での生成AI活用事例をまとめた解説記事。', importance:3, url:'https://ainow.ai/2026/05/30/278121/'},
-    {id:'ai3', sub:'Microsoft', title:'日本製鉄、DXを加速。Microsoft 365 Copilotを戦略的導入し生産性と効率化の成果を最大化', source:'Microsoft Customer Stories', hoursAgo:96,
-     summary:'日本製鉄が全社的にCopilotを段階導入。文書作成や議事録作成など間接業務の効率化を進めている。', importance:4, url:'https://www.microsoft.com/ja-jp/customers/story/23624-nippon-steel-corporation-microsoft-365-copilot'},
-    {id:'ai4', sub:'業界調査', title:'【2026年生成AIツール利用実態】法人導入率1位は「Microsoft Copilot」、実務レベル不足の指摘も', source:'SDEパートナーズ（PR TIMES）', hoursAgo:48,
-     summary:'法人の生成AI導入率調査。Copilot・ChatGPTがほぼ同率で首位となる一方、8割以上が実務活用の不足を指摘。', importance:3, url:'https://prtimes.jp/main/html/rd/p/000000003.000178927.html'}
-  ];
 
   /* asOf は「その値がいつ時点のものか」。ライブ取得が届くまでは開発時スナップショット
      なので、時刻ではなく「参考値」と明示し、実データと取り違えられないようにする。 */
@@ -583,20 +544,7 @@
     {name:'金 (Gold)', sub:'NY先物', value:'$2,486.30', delta:'+11.20', pct:'+0.45%', up:true, asOf:'参考値'}
   ];
 
-  var SPORTS = [
-    {id:'s1', sub:'サッカー', title:'21歳日本人が豪快に欧州初ゴール「空いていると思った」 開幕アシストに続く活躍に現地沸騰', source:'football-zone.net', hoursAgo:4, summary:'欧州クラブに所属する21歳の日本人選手が移籍後初ゴールを記録。現地メディアも高く評価している。', importance:3, url:'https://www.football-zone.net/archives/668687'},
-    {id:'s2', sub:'卓球', title:'WTTチャンピオンズ横浜2026 結果速報', source:'olympics.com', hoursAgo:144, summary:'神奈川・横浜で開催されたWTTチャンピオンズ横浜2026で、張本智和・張本美和の兄妹が揃って優勝を果たした。', importance:3, url:'https://www.olympics.com/ja/news/table-tennis-wtt-champions-2026-yokohama-results'},
-    {id:'s3', sub:'野球', title:'【NPB今日の見どころ】リリーフだけで今季9勝のロッテ・八木', source:'Yahoo!ニュース', hoursAgo:6, summary:'中継ぎ登板のみで今季9勝目を狙うロッテ・八木投手。球団記録更新がかかる一戦が注目されている。', importance:2, url:'https://news.yahoo.co.jp/articles/d9db2b1bb5a50525cd01b47010b60257c8ce0eea'},
-    {id:'s4', sub:'日本人選手', title:'ドリブルで独走→繊細アシスト「見事なスルーパス」現地も高評価…23歳日本人が躍動', source:'football-zone.net', hoursAgo:5, summary:'欧州でプレーする23歳の日本人MFがドリブル突破からアシストを記録し、現地紙からも高評価を得た。', importance:2, url:'https://www.football-zone.net/archives/668723'}
-  ];
 
-  var GADGET = [
-    {id:'g1', sub:'Apple', title:'「Apple Upgrade」開始。iPhoneやMacを月額で借りられるサービス', source:'PC Watch', hoursAgo:24, summary:'iPhoneやMacを月額料金で利用できる新サービス。買い替えサイクルの短縮を狙った施策とみられる。', importance:3, url:'https://pc.watch.impress.co.jp/docs/news/2128762.html'},
-    {id:'g2', sub:'PC', title:'メモリ128GBの“怪物”ミニPC「Ryzen AI Halo」現る。AM5版Ryzen AI 400も投入', source:'PC Watch', hoursAgo:120, summary:'大容量メモリを積んだAI処理特化型のミニPCが登場。ローカルAI処理の高速化が期待されている。', importance:2, url:'https://pc.watch.impress.co.jp/docs/news/event/2077186.html'},
-    {id:'g3', sub:'オーディオ', title:'【2026年8月最新】最強のノイズキャンセリングヘッドホンはこれだ！', source:'e☆イヤホン', hoursAgo:24, summary:'専門店が選ぶ最新のノイズキャンセリングモデル比較。上位モデルは遮音性と装着感の両立が進む。', buyPick:true,
-     summary2:'新幹線や現場移動が多い働き方なら、上位モデルの遮音性・外音取り込みの自然さは体感差が出やすいポイントです。', importance:3, url:'https://www.e-earphone.jp/blogs/feature/noise-cancelling-headphone'},
-    {id:'g4', sub:'家電', title:'今売れている「掃除機」おすすめ3選＆ランキング【2026年8月版】', source:'Fav-Log by ITmedia', hoursAgo:24, summary:'日立「ラクかるスティック PV-BL1C4」が首位。軽量1.1kgで片手でも扱いやすいと評価されている。', importance:1, url:'https://nlab.itmedia.co.jp/fav/articles/3961351/'}
-  ];
 
   var WEEKLY = [
     {d:'今日 15日', icon:'🌧️', hi:33, lo:25, pop:60, today:true},
@@ -704,10 +652,16 @@
     );
   }
 
+  function renderMessage(containerId, text){
+    var c = document.getElementById(containerId);
+    if (!c) return;
+    c.innerHTML = '<p style="font-size:12px;color:var(--text-tertiary);padding:4px 2px;">'+text+'</p>';
+  }
+
   function renderList(containerId, items){
     var c = document.getElementById(containerId);
     if (!items.length){
-      c.innerHTML = '<p style="font-size:12px;color:var(--text-tertiary);padding:4px 2px;">現在、24時間以内の記事は見つかりませんでした。</p>';
+      renderMessage(containerId, '現在、24時間以内の記事は見つかりませんでした。');
       return;
     }
     c.innerHTML = items.map(function(n){ return newsCardHTML(n); }).join('');
@@ -727,9 +681,6 @@
       if (picked.length >= target || i === FRESH_TIERS.length - 1) break;
     }
     return picked;
-  }
-  function filterFresh(list, count){
-    return pickFreshTiered(list, function(it){ return it.hoursAgo || 0; }, count);
   }
 
   function renderWeather(){
@@ -808,7 +759,7 @@
 
   /* ============================================================
      LIVE DATA — 無料・APIキー不要・CORS対応の公開APIから取得
-     ページを開いたとき、および2分ごとに以下を取得して表示を差し替える。
+     ページを開いたとき、および5分ごと（会社情報は30分ごと）に以下を取得して表示を差し替える。
      取得に失敗した場合（オフライン・CORS変更・障害等）は、直前の表示
      （実データのスナップショット）をそのまま維持し、UIを壊さない。
        ・天気　　 : ブラウザのGeolocationで現在地を取得し、Open-Meteo API（無料keyless、
@@ -824,6 +775,7 @@
      CORS対応の実データAPIが見つからなかったため掲載していません。
   ============================================================ */
   var RSS2JSON = 'https://api.rss2json.com/v1/api.json?rss_url=';
+  var CORS_PROXY = 'https://api.allorigins.win/raw?url=';
   var JMA_URL = 'https://www.jma.go.jp/bosai/forecast/data/forecast/270000.json';
   var OPEN_METEO_URL = 'https://api.open-meteo.com/v1/forecast';
   var REVERSE_GEOCODE_URL = 'https://nominatim.openstreetmap.org/reverse';
@@ -844,14 +796,86 @@
     return (d.textContent || '').replace(/\s+/g,' ').trim();
   }
 
+  /* ============================================================
+     RSS取得 — 経路を2系統用意する
+     rss2json は無料枠に上限があり、混雑・レート制限で落ちることがある。
+     1系統だけに頼るとニュースが丸ごと止まってしまうため、失敗したら
+     CORSプロキシ経由で生のRSS(XML)を取得し、DOMParserで解析する。
+     どちらの経路でも {title, link, pubDate, description} の形にそろえて返す。
+  ============================================================ */
+  function fetchFeedViaRss2Json(url){
+    return fetch(RSS2JSON + encodeURIComponent(url))
+      .then(function(r){ return r.json(); })
+      .then(function(data){
+        if (data.status !== 'ok' || !data.items || !data.items.length){
+          throw new Error('rss2json: ' + (data.message || data.status || 'no items'));
+        }
+        return data.items.map(function(it){
+          return {
+            title: it.title,
+            link: it.link,
+            pubDate: it.pubDate,
+            description: it.description || it.content
+          };
+        });
+      });
+  }
+
+  function fetchFeedViaXml(url){
+    return fetch(CORS_PROXY + encodeURIComponent(url))
+      .then(function(r){
+        if (!r.ok) throw new Error('proxy HTTP ' + r.status);
+        return r.text();
+      })
+      .then(function(text){
+        var doc = new DOMParser().parseFromString(text, 'application/xml');
+        if (doc.getElementsByTagName('parsererror').length) throw new Error('XML parse error');
+        // RSS2.0/RDFの<item>とAtomの<entry>の両方に対応する
+        var nodes = doc.getElementsByTagName('item');
+        if (!nodes.length) nodes = doc.getElementsByTagName('entry');
+        if (!nodes.length) throw new Error('no items in XML');
+
+        return Array.prototype.map.call(nodes, function(n){
+          function text(tag){
+            var e = n.getElementsByTagName(tag)[0];
+            return e ? (e.textContent || '').trim() : '';
+          }
+          // Atomは<link href="...">で本文を持たないため属性も見る
+          var link = text('link');
+          if (!link){
+            var le = n.getElementsByTagName('link')[0];
+            if (le && le.getAttribute('href')) link = le.getAttribute('href');
+          }
+          return {
+            title: text('title'),
+            link: link,
+            // RDF(PC Watch等)はdc:date、Atomはpublished/updatedを使う
+            pubDate: text('pubDate') || text('published') || text('updated') || text('dc:date') || text('date'),
+            description: text('description') || text('summary') || text('content')
+          };
+        });
+      });
+  }
+
+  function fetchFeedItems(url){
+    return fetchFeedViaRss2Json(url).catch(function(err){
+      console.warn('[live] rss2json failed, falling back to XML proxy:', url, err);
+      return fetchFeedViaXml(url);
+    });
+  }
+
   function hoursAgoFromPubDate(pubDate){
-    // rss2jsonがタイムゾーンなしの日時（例 "2026-08-15 14:00:00"）を返す場合、
-    // 実体は変換されていない現地時刻（JST）の文字列なのでUTCではなく+09:00として解釈する。
-    // ここをUTC扱いにすると実際より最大9時間新しく計算され、古い記事が鮮度フィルタを
-    // すり抜けてしまう。
-    var hasOffset = /[zZ]|[+-]\d\d:?\d\d$/.test(pubDate);
-    var iso = hasOffset ? pubDate : pubDate.replace(' ','T') + '+09:00';
-    var t = Date.parse(iso);
+    if (!pubDate) return Infinity;
+    var s = String(pubDate).trim();
+    // RFC822（"Mon, 17 Aug 2026 23:00:00 +0900" / "... GMT"）やISO8601など、
+    // タイムゾーンが分かる形式はそのまま解釈できる。
+    var t = Date.parse(s);
+    // rss2jsonが返すタイムゾーンなしの "YYYY-MM-DD HH:MM:SS" は、変換されていない
+    // 現地時刻（JST）なので明示的に+09:00とみなす。UTC扱いにすると最大9時間新しく
+    // 計算され、古い記事が鮮度フィルタをすり抜けてしまう。
+    if (/^\d{4}-\d{2}-\d{2}[ T]\d{2}:\d{2}(:\d{2})?$/.test(s)){
+      t = Date.parse(s.replace(' ', 'T') + '+09:00');
+    }
     // 日時を解析できない場合は「新しい」とみなさず、鮮度フィルタで確実に除外されるようにする
     if (isNaN(t)) return Infinity;
     return Math.max(0, (Date.now() - t) / 3600000);
@@ -867,13 +891,14 @@
     }
   }
 
+  // 一度でもライブ取得に成功したセクションを覚えておく。取得に失敗したとき、
+  // まだ一度も表示できていなければ理由を出し、既に実データが出ていればそれを残す。
+  var liveLoaded = {};
+
   function loadLiveFeed(key){
     var cfg = LIVE_FEEDS[key];
-    fetch(RSS2JSON + encodeURIComponent(cfg.url))
-      .then(function(r){ return r.json(); })
-      .then(function(data){
-        if (data.status !== 'ok' || !data.items || !data.items.length) throw new Error('feed unavailable');
-        var items = data.items;
+    fetchFeedItems(cfg.url)
+      .then(function(items){
         if (cfg.keywords){
           items = items.filter(function(it){
             var title = it.title || '';
@@ -883,7 +908,7 @@
         items = pickFreshTiered(items, function(it){ return hoursAgoFromPubDate(it.pubDate); }, cfg.targetCount);
         if (!items.length) throw new Error('no items within 24h');
         var cards = items.map(function(it, i){
-          var summary = stripHtml(it.description || it.content || '');
+          var summary = stripHtml(it.description || '');
           if (summary.length > 90) summary = summary.slice(0, 88) + '…';
           return {
             id: key + '-live-' + i,
@@ -898,8 +923,14 @@
         if (cfg.sort) cards = byImportanceDesc(cards);
         renderList(cfg.containerId, cards);
         markLiveSection(cfg.sectionId);
+        liveLoaded[key] = true;
       })
-      .catch(function(err){ console.warn('[live] feed failed, keeping existing data:', key, err); });
+      .catch(function(err){
+        console.warn('[live] feed failed:', key, err);
+        // 古いデータを黙って表示し続けると「更新されている」と誤解されるため、
+        // まだ実データを一度も出せていないセクションには理由をはっきり出す。
+        if (!liveLoaded[key]) renderMessage(cfg.containerId, 'ニュースを取得できませんでした。次の更新で再試行します。');
+      });
   }
 
   var COMPANY_QUERIES = ['日本ペイントグループ', 'ハウス食品グループ', 'F-LINE', 'ハウス物流サービス', 'モノタロウ', '山善', 'アイカ工業'];
@@ -920,11 +951,9 @@
     Promise.all(COMPANY_QUERIES.map(function(q){
       var gnewsUrl = 'https://news.google.com/rss/search?' +
         'q=' + encodeURIComponent(q) + '&hl=ja&gl=JP&ceid=JP:ja';
-      return fetch(RSS2JSON + encodeURIComponent(gnewsUrl))
-        .then(function(r){ return r.json(); })
-        .then(function(data){
-          if (data.status !== 'ok' || !data.items) return [];
-          return data.items.slice(0, 3).map(function(it, i){
+      return fetchFeedItems(gnewsUrl)
+        .then(function(items){
+          return items.slice(0, 3).map(function(it, i){
             var parsed = splitGNewsTitle(stripHtml(it.title));
             var priority = companyNewsPriority(parsed.title);
             return {
@@ -943,9 +972,8 @@
         .catch(function(err){ console.warn('[live] company feed failed:', q, err); return []; });
     })).then(function(resultsPerCompany){
       var all = [].concat.apply([], resultsPerCompany).filter(function(it){ return it.hoursAgo <= 72; });
-      var container = document.getElementById('companyGrid');
       if (!all.length){
-        container.innerHTML = '<p style="font-size:12px;color:var(--text-tertiary);padding:4px 2px;">現在、該当するニュースは見つかりませんでした。</p>';
+        renderMessage('companyGrid', '現在、該当するニュースは見つかりませんでした。');
       } else {
         all.sort(function(a,b){
           if (b.priority !== a.priority) return b.priority - a.priority;
@@ -1288,11 +1316,13 @@
       .catch(function(err){ console.warn('[live] market-data.json fetch failed:', err); });
   }
 
+  /* 会社情報は3日以内の記事が対象で、しかも1社ずつGoogleニュースを引くため
+     リクエスト数が多い。毎回まとめて叩くとRSS変換APIの無料枠を早く使い切り、
+     主要ニュースまで巻き添えで取得できなくなるので、更新間隔を分けている。 */
   function loadAllLiveData(){
     initWeatherLocation();
     loadLiveStockIndices();
     loadLiveMarket();
-    loadLiveCompanyNews();
     Object.keys(LIVE_FEEDS).forEach(function(key){ loadLiveFeed(key); });
   }
 
@@ -1324,17 +1354,13 @@
   }
 
   /* ============================================================
-     REFRESH（2分ごと）
-     まず手元のスナップショットで相対時刻表示を再計算し、続けて
-     loadAllLiveData() で実APIから最新データを再取得して上書きする。
+     REFRESH（5分ごと）
+     実APIから最新データを取得して表示を差し替える。取得に失敗した場合、
+     まだ一度も表示できていないセクションにはその旨を出す（古い内容を
+     黙って出し続けると、更新されているように見えてしまうため）。
   ============================================================ */
   function refreshData(){
     updateHeaderClock();
-    renderList('newsGrid', byImportanceDesc(filterFresh(NEWS, NEWS_TARGET_COUNT)));
-    renderList('workGrid', byImportanceDesc(filterFresh(WORK)));
-    renderList('aiGrid', byImportanceDesc(filterFresh(AI_NEWS)));
-    renderList('sportsGrid', filterFresh(SPORTS));
-    renderList('gadgetGrid', filterFresh(GADGET));
     loadAllLiveData();
   }
 
@@ -1345,16 +1371,18 @@
     renderTabs();
     setActiveCategory('all');
     renderWeather();
-    renderList('newsGrid', byImportanceDesc(filterFresh(NEWS, NEWS_TARGET_COUNT)));
-    renderList('workGrid', byImportanceDesc(filterFresh(WORK)));
-    renderList('aiGrid', byImportanceDesc(filterFresh(AI_NEWS)));
     renderMarket();
-    renderList('sportsGrid', filterFresh(SPORTS));
-    renderList('gadgetGrid', filterFresh(GADGET));
+    // ニュース系は実データが届くまでプレースホルダを出す。開発時のサンプルを
+    // 初期表示に使うと、取得に失敗したときに古い記事が最新のように見えてしまう。
+    ['newsGrid','workGrid','aiGrid','sportsGrid','gadgetGrid','companyGrid'].forEach(function(id){
+      renderMessage(id, '読み込み中…');
+    });
     initTheme();
     updateHeaderClock();
     loadAllLiveData();
-    setInterval(refreshData, 2 * 60 * 1000);
+    loadLiveCompanyNews();
+    setInterval(refreshData, 5 * 60 * 1000);
+    setInterval(loadLiveCompanyNews, 30 * 60 * 1000);
   }
 
   init();
