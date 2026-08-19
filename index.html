@@ -501,7 +501,7 @@
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <p>「<span class="live-dot" style="margin-right:2px;"></span>ライブ更新」が付いたセクション（天気・主要ニュース・仕事・AI・スポーツ・ガジェット・会社情報）は、ページを開いたときと5分ごと（会社情報のみ30分ごと）に無料公開データを取得しています（APIキー不要）。天気（現在の気温・時間ごとの気温と降水確率・最高/最低気温・週間予報）はブラウザの位置情報が許可された場合は現在地、許可されない・取得できない場合は大阪をOpen-Meteo APIから表示します。その他は各社RSS・Googleニュース検索から取得しており、主要ニュースは10件、仕事・AI・スポーツ・ガジェットは各5件を目安に、6時間以内→12時間以内→18時間以内→24時間以内の順に該当件数が集まるまで表示範囲を広げます（24時間以内でも5件に満たない場合はある分だけ表示。会社情報は3日以内）。経済セクションは各指標の銘柄名の下に、その値がいつ時点のものかを日本時間で表示しています（為替はECBが営業日ごとに公表するため日付のみ。ライブ取得が届く前の初期表示は「参考値」と表示します）。ドル/円・ユーロ/円・金価格をブラウザから直接取得し、日経平均・TOPIX（連動ETF）・NYダウ・NASDAQ・S&P500はYahoo FinanceのデータをGitHub Actionsがサーバー側で定期取得してmarket-data.jsonとして保存し、それをページが読み込んでいます（Yahoo Finance自体はブラウザから直接fetchできないCORS制限があるため）。この定期実行はGitHub側のスケジュール事情で間隔が空くことがあり、実際には1時間程度おきの更新になります。ニュースの取得は変換APIが混雑・制限された場合に備えて2系統用意しており、片方が失敗すると自動的にもう一方へ切り替えます。それでも取得できなかった場合は、古い内容を出し続けずにその旨を表示します。このページに掲載する情報は、自動で取得・更新できるもののみに限定しています。</p>
+    <p>「<span class="live-dot" style="margin-right:2px;"></span>ライブ更新」が付いたセクション（天気・主要ニュース・仕事・AI・スポーツ・ガジェット・会社情報）は、ページを開いたときと5分ごとに無料公開データを取得しています（APIキー不要）。天気（現在の気温・時間ごとの気温と降水確率・最高/最低気温・週間予報）はブラウザの位置情報が許可された場合は現在地、許可されない・取得できない場合は大阪をOpen-Meteo APIから表示します。その他のニュースは、GitHub Actionsが各社RSS・Googleニュース検索をサーバー側で取得してnews-data.jsonに保存し、ページはそれを読み込んでいます（ブラウザから他サイトのRSSを直接読むことはCORS制限でできないため）。主要ニュースは10件、仕事・AI・スポーツ・ガジェットは各5件を目安に、6時間以内→12時間以内→18時間以内→24時間以内の順に該当件数が集まるまで表示範囲を広げます（24時間以内でも5件に満たない場合はある分だけ表示。会社情報は3日以内）。経済セクションは各指標の銘柄名の下に、その値がいつ時点のものかを日本時間で表示しています（為替はECBが営業日ごとに公表するため日付のみ。ライブ取得が届く前の初期表示は「参考値」と表示します）。ドル/円・ユーロ/円・金価格をブラウザから直接取得し、日経平均・TOPIX（連動ETF）・NYダウ・NASDAQ・S&P500はYahoo FinanceのデータをGitHub Actionsがサーバー側で定期取得してmarket-data.jsonとして保存し、それをページが読み込んでいます（Yahoo Finance自体はブラウザから直接fetchできないCORS制限があるため）。この定期実行はGitHub側のスケジュール事情で間隔が空くことがあり、実際には1時間程度おきの更新になります。各セクションは取得先を複数登録してあり、1つ目が取得できない場合は自動的に次の候補に切り替わります。取得できなかった場合は、古い内容を出し続けずにその旨を表示します。このページに掲載する情報は、自動で取得・更新できるもののみに限定しています。</p>
   </div>
 </footer>
 
@@ -763,7 +763,7 @@
 
   /* ============================================================
      LIVE DATA — 無料・APIキー不要・CORS対応の公開APIから取得
-     ページを開いたとき、および5分ごと（会社情報は30分ごと）に以下を取得して表示を差し替える。
+     ページを開いたとき、および5分ごとに以下を取得して表示を差し替える。
      取得に失敗した場合（オフライン・CORS変更・障害等）は、直前の表示
      （実データのスナップショット）をそのまま維持し、UIを壊さない。
        ・天気　　 : ブラウザのGeolocationで現在地を取得し、Open-Meteo API（無料keyless、
@@ -772,140 +772,33 @@
                     気象庁（JMA）公式 防災情報JSON（大阪）にフォールバック
        ・為替　　 : Frankfurter API（ECB系列・無料keyless）
        ・金価格　 : gold-api.com（無料keyless）
-       ・ニュース : 各社RSSフィードを rss2json 経由でJSON化
+       ・ニュース : GitHub Actionsが定期的に各社RSSをサーバー側で取得して
+                    コミットする news-data.json を同一オリジンで取得
        ・株価指数 : GitHub Actionsが定期的にYahoo Financeを取得して
                     コミットする market-data.json を同一オリジンで取得
      オルカン（eMAXIS Slim全世界株式）の基準価額のみ、無料でkeyless・
      CORS対応の実データAPIが見つからなかったため掲載していません。
   ============================================================ */
-  var RSS2JSON = 'https://api.rss2json.com/v1/api.json?rss_url=';
-  var CORS_PROXY = 'https://api.allorigins.win/raw?url=';
+  var NEWS_DATA_URL = './news-data.json';
   var JMA_URL = 'https://www.jma.go.jp/bosai/forecast/data/forecast/270000.json';
   var OPEN_METEO_URL = 'https://api.open-meteo.com/v1/forecast';
   var REVERSE_GEOCODE_URL = 'https://nominatim.openstreetmap.org/reverse';
   var OSAKA_COORDS = {lat: 34.6937, lon: 135.5023};
 
-  /* urls は先頭から順に試し、最初に取得できたものを使う。
-     NHKのRSSはクラウド上のサーバーからの繰り返しアクセスを遮断しており、
-     RSS変換API・CORSプロキシのどちらを経由しても取得できない。そのため
-     主要ニュースとスポーツは、同じ構成で実績のあるGoogleニュースを主にし、
-     NHK直URLは将来復活した場合に備えて予備として残している。 */
-  var GNEWS_SUFFIX = '?hl=ja&gl=JP&ceid=JP:ja';
-  function gnewsSearchUrl(query){
-    return 'https://news.google.com/rss/search?q=' + encodeURIComponent(query) + '&hl=ja&gl=JP&ceid=JP:ja';
-  }
+  /* 表示側の設定のみ。どのRSSから取ってくるかは scripts/build_news.py が持ち、
+     GitHub Actions がサーバー側で取得して news-data.json に書き出す。 */
   var LIVE_FEEDS = {
-    news:   {urls:['https://news.google.com/rss' + GNEWS_SUFFIX,
-                   'https://www3.nhk.or.jp/rss/news/cat0.xml'],
-             source:'Googleニュース', containerId:'newsGrid', sectionId:'sec-news', sort:true, targetCount:NEWS_TARGET_COUNT},
-    /* LNEWSは物流専門紙で内容が最も合うので第一候補のまま。取得できない場合に
-       セクションごと空になるのを避けるため、Googleニュースの物流系検索を予備にする。 */
-    work:   {urls:['https://www.lnews.jp/feed',
-                   gnewsSearchUrl('物流 OR ロジスティクス OR サプライチェーン OR 物流DX')],
-             source:'LNEWS', containerId:'workGrid', sectionId:'sec-work', sort:true},
-    ai:     {urls:['https://rss.itmedia.co.jp/rss/2.0/itmedia_all.xml'], source:'ITmedia', containerId:'aiGrid', sectionId:'sec-ai', sort:true,
-             keywords:['AI','Claude','ChatGPT','Copilot','Anthropic','OpenAI','Gemini','生成AI','エージェント','LLM']},
-    sports: {urls:['https://news.google.com/rss/headlines/section/topic/SPORTS' + GNEWS_SUFFIX,
-                   'https://www3.nhk.or.jp/rss/news/cat7.xml'],
-             source:'Googleニュース', containerId:'sportsGrid', sectionId:'sec-sports', sort:false},
-    gadget: {urls:['https://pc.watch.impress.co.jp/data/rss/1.0/pcw/feed.rdf'], source:'PC Watch', containerId:'gadgetGrid', sectionId:'sec-gadget', sort:false}
+    news:   {source:'Googleニュース', containerId:'newsGrid',   sectionId:'sec-news',   sort:true,  targetCount:NEWS_TARGET_COUNT},
+    work:   {source:'LNEWS',          containerId:'workGrid',   sectionId:'sec-work',   sort:true},
+    ai:     {source:'ITmedia',        containerId:'aiGrid',     sectionId:'sec-ai',     sort:true},
+    sports: {source:'Googleニュース', containerId:'sportsGrid', sectionId:'sec-sports', sort:false},
+    gadget: {source:'PC Watch',       containerId:'gadgetGrid', sectionId:'sec-gadget', sort:false}
   };
 
   function stripHtml(html){
     var d = document.createElement('div');
     d.innerHTML = html || '';
     return (d.textContent || '').replace(/\s+/g,' ').trim();
-  }
-
-  /* ============================================================
-     RSS取得 — 経路を2系統用意する
-     rss2json は無料枠に上限があり、混雑・レート制限で落ちることがある。
-     1系統だけに頼るとニュースが丸ごと止まってしまうため、失敗したら
-     CORSプロキシ経由で生のRSS(XML)を取得し、DOMParserで解析する。
-     どちらの経路でも {title, link, pubDate, description} の形にそろえて返す。
-  ============================================================ */
-  /* 応答を返さないまま黙って止まる取得先があり（NHKのRSS遮断がこの挙動）、
-     そのままだと後続の候補に切り替わらず読み込み中のまま止まってしまう。
-     一定時間で打ち切って、確実に次の経路を試せるようにする。 */
-  function fetchWithTimeout(url, ms){
-    var ctrl = typeof AbortController !== 'undefined' ? new AbortController() : null;
-    // 候補を順に試すので、1件あたりは短めに切り上げる（全滅しても十数秒で結論が出る）
-    var timer = setTimeout(function(){ if (ctrl) ctrl.abort(); }, ms || 6000);
-    function done(){ clearTimeout(timer); }
-    return fetch(url, ctrl ? {signal: ctrl.signal} : undefined)
-      .then(function(r){ done(); return r; }, function(e){ done(); throw e; });
-  }
-
-  function fetchFeedViaRss2Json(url){
-    return fetchWithTimeout(RSS2JSON + encodeURIComponent(url))
-      .then(function(r){ return r.json(); })
-      .then(function(data){
-        if (data.status !== 'ok' || !data.items || !data.items.length){
-          throw new Error('rss2json: ' + (data.message || data.status || 'no items'));
-        }
-        return data.items.map(function(it){
-          return {
-            title: it.title,
-            link: it.link,
-            pubDate: it.pubDate,
-            description: it.description || it.content
-          };
-        });
-      });
-  }
-
-  function fetchFeedViaXml(url){
-    return fetchWithTimeout(CORS_PROXY + encodeURIComponent(url))
-      .then(function(r){
-        if (!r.ok) throw new Error('proxy HTTP ' + r.status);
-        return r.text();
-      })
-      .then(function(text){
-        var doc = new DOMParser().parseFromString(text, 'application/xml');
-        if (doc.getElementsByTagName('parsererror').length) throw new Error('XML parse error');
-        // RSS2.0/RDFの<item>とAtomの<entry>の両方に対応する
-        var nodes = doc.getElementsByTagName('item');
-        if (!nodes.length) nodes = doc.getElementsByTagName('entry');
-        if (!nodes.length) throw new Error('no items in XML');
-
-        return Array.prototype.map.call(nodes, function(n){
-          function text(tag){
-            var e = n.getElementsByTagName(tag)[0];
-            return e ? (e.textContent || '').trim() : '';
-          }
-          // Atomは<link href="...">で本文を持たないため属性も見る
-          var link = text('link');
-          if (!link){
-            var le = n.getElementsByTagName('link')[0];
-            if (le && le.getAttribute('href')) link = le.getAttribute('href');
-          }
-          return {
-            title: text('title'),
-            link: link,
-            // RDF(PC Watch等)はdc:date、Atomはpublished/updatedを使う
-            pubDate: text('pubDate') || text('published') || text('updated') || text('dc:date') || text('date'),
-            description: text('description') || text('summary') || text('content')
-          };
-        });
-      });
-  }
-
-  function fetchFeedItems(url){
-    return fetchFeedViaRss2Json(url).catch(function(err){
-      console.warn('[live] rss2json failed, falling back to XML proxy:', url, err);
-      return fetchFeedViaXml(url);
-    });
-  }
-
-  // 候補URLを先頭から順に試し、最初に取得できたものを {url, items} で返す
-  function fetchFeedItemsFromAny(urls){
-    var chain = Promise.reject(new Error('no feed url'));
-    [].concat(urls).forEach(function(url){
-      chain = chain.catch(function(){
-        return fetchFeedItems(url).then(function(items){ return {url: url, items: items}; });
-      });
-    });
-    return chain;
   }
 
   function hoursAgoFromPubDate(pubDate){
@@ -935,61 +828,10 @@
     }
   }
 
-  // 一度でもライブ取得に成功したセクションを覚えておく。取得に失敗したとき、
-  // まだ一度も表示できていなければ理由を出し、既に実データが出ていればそれを残す。
+  // 一度でも表示できたセクションを覚えておく。取得に失敗したとき、まだ一度も
+  // 表示できていなければ理由を出し、既に記事が出ていればそれを残す。
   var liveLoaded = {};
 
-  function loadLiveFeed(key){
-    var cfg = LIVE_FEEDS[key];
-    fetchFeedItemsFromAny(cfg.urls)
-      .then(function(res){
-        // Googleニュースは見出しが「タイトル - 媒体名」形式で、説明文は
-        // 関連記事へのリンク集なので、配信元を切り出して説明文は使わない。
-        var fromGNews = res.url.indexOf('news.google.com') !== -1;
-        var items = res.items;
-        if (cfg.keywords){
-          items = items.filter(function(it){
-            var title = it.title || '';
-            return cfg.keywords.some(function(k){ return title.indexOf(k) !== -1; });
-          });
-        }
-        items = pickFreshTiered(items, function(it){ return hoursAgoFromPubDate(it.pubDate); }, cfg.targetCount);
-        if (!items.length) throw new Error('no items within 24h');
-        var cards = items.map(function(it, i){
-          var rawTitle = stripHtml(it.title);
-          var title = rawTitle, source = cfg.source, summary = '';
-          if (fromGNews){
-            var parsed = splitGNewsTitle(rawTitle);
-            title = parsed.title;
-            source = parsed.source;
-          } else {
-            summary = stripHtml(it.description || '');
-          }
-          if (summary.length > 90) summary = summary.slice(0, 88) + '…';
-          return {
-            id: key + '-live-' + i,
-            title: title,
-            source: source,
-            hoursAgo: hoursAgoFromPubDate(it.pubDate),
-            summary: summary || '詳細は元記事でご確認ください。',
-            importance: i === 0 ? 4 : 3,
-            url: it.link
-          };
-        });
-        if (cfg.sort) cards = byImportanceDesc(cards);
-        renderList(cfg.containerId, cards);
-        markLiveSection(cfg.sectionId);
-        liveLoaded[key] = true;
-      })
-      .catch(function(err){
-        console.warn('[live] feed failed:', key, err);
-        // 古いデータを黙って表示し続けると「更新されている」と誤解されるため、
-        // まだ実データを一度も出せていないセクションには理由をはっきり出す。
-        if (!liveLoaded[key]) renderMessage(cfg.containerId, 'ニュースを取得できませんでした。次の更新で再試行します。');
-      });
-  }
-
-  var COMPANY_QUERIES = ['日本ペイントグループ', 'ハウス食品グループ', 'F-LINE', 'ハウス物流サービス', 'モノタロウ', '山善', 'アイカ工業'];
   var COMPANY_PRIORITY_KEYWORDS = ['役員', '取締役', '代表取締役', '社長', '会長', '執行役員', '人事異動', '就任', '退任',
     '物流', 'ロジスティクス', '倉庫', '配送', 'IT', 'システム', 'DX', 'デジタル'];
 
@@ -997,46 +839,87 @@
     return COMPANY_PRIORITY_KEYWORDS.some(function(k){ return text.indexOf(k) !== -1; }) ? 1 : 0;
   }
 
-  function splitGNewsTitle(rawTitle){
-    var idx = rawTitle.lastIndexOf(' - ');
-    if (idx === -1) return {title: rawTitle, source: 'Google ニュース'};
-    return {title: rawTitle.slice(0, idx), source: rawTitle.slice(idx + 3)};
+  /* news-data.json の1セクション分を描画する。
+     鮮度の絞り込み（6→12→18→24時間）と件数はここで行うので、
+     JSONが1時間ほど前のものでも「6時間以内」の見え方は常に正しくなる。 */
+  function renderFeedSection(key, section){
+    var cfg = LIVE_FEEDS[key];
+    var items = (section && section.items) || [];
+    items = pickFreshTiered(items, function(it){ return hoursAgoFromPubDate(it.pubDate); }, cfg.targetCount);
+    if (!items.length){
+      if (!liveLoaded[key]) renderMessage(cfg.containerId, '現在、24時間以内の記事は見つかりませんでした。');
+      return;
+    }
+    var cards = items.map(function(it, i){
+      return {
+        id: key + '-live-' + i,
+        title: it.title,
+        source: it.source || cfg.source,
+        hoursAgo: hoursAgoFromPubDate(it.pubDate),
+        summary: it.summary || '詳細は元記事でご確認ください。',
+        importance: i === 0 ? 4 : 3,
+        url: it.link
+      };
+    });
+    if (cfg.sort) cards = byImportanceDesc(cards);
+    renderList(cfg.containerId, cards);
+    markLiveSection(cfg.sectionId);
+    liveLoaded[key] = true;
   }
 
-  function loadLiveCompanyNews(){
-    Promise.all(COMPANY_QUERIES.map(function(q){
-      return fetchFeedItems(gnewsSearchUrl(q))
-        .then(function(items){
-          return items.slice(0, 3).map(function(it, i){
-            var parsed = splitGNewsTitle(stripHtml(it.title));
-            var priority = companyNewsPriority(parsed.title);
-            return {
-              id: 'company-' + q + '-' + i,
-              sub: q,
-              title: parsed.title,
-              source: parsed.source,
-              hoursAgo: hoursAgoFromPubDate(it.pubDate),
-              summary: q + 'に関する報道です。詳細は元記事でご確認ください。',
-              importance: priority ? 5 : 3,
-              priority: priority,
-              url: it.link
-            };
-          });
-        })
-        .catch(function(err){ console.warn('[live] company feed failed:', q, err); return []; });
-    })).then(function(resultsPerCompany){
-      var all = [].concat.apply([], resultsPerCompany).filter(function(it){ return it.hoursAgo <= 72; });
-      if (!all.length){
-        renderMessage('companyGrid', '現在、該当するニュースは見つかりませんでした。');
-      } else {
-        all.sort(function(a,b){
-          if (b.priority !== a.priority) return b.priority - a.priority;
-          return a.hoursAgo - b.hoursAgo;
-        });
-        renderList('companyGrid', all.slice(0, 10));
-      }
-      markLiveSection('sec-company');
+  // 会社情報は3日以内。役員変更・IT/物流に関する記事を優先して並べる。
+  function renderCompanySection(section){
+    var items = ((section && section.items) || []).filter(function(it){
+      return hoursAgoFromPubDate(it.pubDate) <= 72;
     });
+    if (!items.length){
+      if (!liveLoaded.company) renderMessage('companyGrid', '現在、該当するニュースは見つかりませんでした。');
+      return;
+    }
+    var cards = items.map(function(it, i){
+      var priority = companyNewsPriority(it.title);
+      return {
+        id: 'company-' + i,
+        sub: it.company,
+        title: it.title,
+        source: it.source || 'Google ニュース',
+        hoursAgo: hoursAgoFromPubDate(it.pubDate),
+        summary: (it.company || '対象企業') + 'に関する報道です。詳細は元記事でご確認ください。',
+        importance: priority ? 5 : 3,
+        priority: priority,
+        url: it.link
+      };
+    });
+    cards.sort(function(a, b){
+      if (b.priority !== a.priority) return b.priority - a.priority;
+      return a.hoursAgo - b.hoursAgo;
+    });
+    renderList('companyGrid', cards.slice(0, 10));
+    markLiveSection('sec-company');
+    liveLoaded.company = true;
+  }
+
+  /* ニュースはGitHub Actionsがサーバー側で取得してコミットした news-data.json を
+     読むだけ。同一オリジンなのでCORSも外部サービスの制限も関係しない。 */
+  function loadLiveNews(){
+    fetch(NEWS_DATA_URL, {cache:'no-store'})
+      .then(function(r){
+        if (!r.ok) throw new Error('news-data.json HTTP ' + r.status);
+        return r.json();
+      })
+      .then(function(data){
+        var sections = data.sections || {};
+        Object.keys(LIVE_FEEDS).forEach(function(key){ renderFeedSection(key, sections[key]); });
+        renderCompanySection(sections.company);
+      })
+      .catch(function(err){
+        console.warn('[live] news-data.json fetch failed:', err);
+        var msg = 'ニュースを取得できませんでした。次の更新で再試行します。';
+        Object.keys(LIVE_FEEDS).forEach(function(key){
+          if (!liveLoaded[key]) renderMessage(LIVE_FEEDS[key].containerId, msg);
+        });
+        if (!liveLoaded.company) renderMessage('companyGrid', msg);
+      });
   }
 
   function weatherCodeIcon(code){
@@ -1377,7 +1260,7 @@
     initWeatherLocation();
     loadLiveStockIndices();
     loadLiveMarket();
-    Object.keys(LIVE_FEEDS).forEach(function(key){ loadLiveFeed(key); });
+    loadLiveNews();
   }
 
   /* ============================================================
@@ -1434,9 +1317,7 @@
     initTheme();
     updateHeaderClock();
     loadAllLiveData();
-    loadLiveCompanyNews();
     setInterval(refreshData, 5 * 60 * 1000);
-    setInterval(loadLiveCompanyNews, 30 * 60 * 1000);
   }
 
   init();

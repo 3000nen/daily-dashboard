@@ -127,7 +127,13 @@ def split_gnews_title(title):
     idx = title.rfind(" - ")
     if idx == -1:
         return title, ""
-    return title[:idx].strip(), title[idx + 3:].strip()
+    source = title[idx + 3:].strip()
+    # 「motorsport.com 日本版｜モータースポーツ情報サイト」のように極端に長い
+    # 媒体名があり、カード上部の情報行を圧迫するので頭だけ使う
+    source = re.split(r"[｜|]", source)[0].strip()
+    if len(source) > 20:
+        source = source[:19] + "…"
+    return title[:idx].strip(), source
 
 
 def fetch(url, timeout=25):
