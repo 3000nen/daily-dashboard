@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-08-19T06:01:42Z",
+  "updatedAt": "2026-08-19T08:00:10Z",
   "nikkei": {
-    "price": 65228.97,
+    "price": 65326.42,
     "prevClose": 67460.73,
-    "marketTime": 1787118235
+    "marketTime": 1787121903
   },
   "topixEtf": {
-    "price": 417.6,
+    "price": 417.4,
     "prevClose": 431.0,
-    "marketTime": 1787118228
+    "marketTime": 1787121000
   },
   "dow": {
     "price": 53343.4,
