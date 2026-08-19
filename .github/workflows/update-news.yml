@@ -1,0 +1,49 @@
+name: Update news data
+
+on:
+  schedule:
+    # GitHub側の都合で実際は1時間程度おきの実行になる
+    - cron: '*/15 * * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-news
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build news-data.json
+        run: python3 scripts/build_news.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add news-data.json
+
+          if git diff --cached --quiet; then
+            echo "news-data.json に変更なし。コミットしない。"
+            exit 0
+          fi
+
+          git commit -m "Update news data"
+
+          # 他のpushと競合したときのために、rebaseしてから数回リトライする
+          for attempt in 1 2 3; do
+            if git push; then
+              echo "pushed (attempt $attempt)"
+              exit 0
+            fi
+            echo "push に失敗。rebaseして再試行する (attempt $attempt)"
+            git pull --rebase origin main || true
+          done
+
+          echo "3回試しても push できなかった" >&2
+          exit 1
