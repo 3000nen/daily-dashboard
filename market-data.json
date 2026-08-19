@@ -1,19 +1,19 @@
 {
-  "updatedAt": "2026-08-18T23:46:16Z",
+  "updatedAt": "2026-08-19T03:12:06Z",
   "nikkei": {
-    "price": 67460.73,
-    "prevClose": 69220.25,
-    "marketTime": 1787035503
+    "price": 65724.25,
+    "prevClose": 67460.73,
+    "marketTime": 1787106903
   },
   "topixEtf": {
-    "price": 431.0,
-    "prevClose": 435.9,
-    "marketTime": 1787034600
+    "price": 419.4,
+    "prevClose": 431.0,
+    "marketTime": 1787106600
   },
   "dow": {
     "price": 53343.4,
     "prevClose": 53732.41,
-    "marketTime": 1787085606
+    "marketTime": 1787083200
   },
   "nasdaq": {
     "price": 26289.71,
@@ -23,6 +23,6 @@
   "sp500": {
     "price": 7691.76,
     "prevClose": 7785.76,
-    "marketTime": 1787085504
+    "marketTime": 1787083200
   }
 }
