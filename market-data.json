@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T09:52:53Z",
+  "updatedAt": "2026-08-19T10:59:27Z",
   "nikkei": {
     "price": 65326.42,
     "prevClose": 67460.73,
@@ -11,9 +11,9 @@
     "marketTime": 1787121000
   },
   "dow": {
-    "price": 53343.4,
-    "prevClose": 53732.41,
-    "marketTime": 1787085606
+    "price": null,
+    "prevClose": null,
+    "marketTime": null
   },
   "nasdaq": {
     "price": 26289.71,
