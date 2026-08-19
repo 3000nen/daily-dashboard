@@ -355,8 +355,12 @@
     .tab-bar{padding:0 12px 7px;}
     .layout{padding:8px 12px 32px;gap:10px;}
     footer.site-footer{padding:0 12px 20px;}
-    .market-row{grid-template-columns:1.3fr 1fr 1fr;}
-    .market-row .m-delta{display:none;}
+    /* 前日比は率だけでなく差額も見たいので、狭い画面でも差額の列を残す。
+       幅を確保するため列比率とフォントを詰め、余白も少し縮めている。 */
+    .market-row{grid-template-columns:1.25fr .8fr .7fr .8fr;gap:6px;padding:6px 10px;}
+    .market-row .m-value{font-size:11.5px;}
+    .market-row .m-delta{font-size:10px;}
+    .market-row .m-pill{padding:2px 5px;font-size:9.5px;}
     .weekly-row{grid-template-columns:repeat(4,1fr);}
     .weekly-row .weekly-day:nth-child(n+5){display:none;}
     .section-head .section-desc{display:none;}
@@ -730,7 +734,7 @@
     return new Date(t).toLocaleString('ja-JP', {
       timeZone:'Asia/Tokyo', month:'numeric', day:'numeric',
       hour:'2-digit', minute:'2-digit', hour12:false
-    }) + '時点';
+    });
   }
 
   /* 為替（ECB）は日付単位の公表なので時刻を付けない。
@@ -738,7 +742,7 @@
   function formatAsOfDate(ymd){
     var p = String(ymd || '').split('-');
     if (p.length !== 3) return null;
-    return Number(p[1]) + '/' + Number(p[2]) + '時点';
+    return Number(p[1]) + '/' + Number(p[2]);
   }
 
   function renderMarket(){
@@ -787,11 +791,18 @@
      主要ニュースとスポーツは、同じ構成で実績のあるGoogleニュースを主にし、
      NHK直URLは将来復活した場合に備えて予備として残している。 */
   var GNEWS_SUFFIX = '?hl=ja&gl=JP&ceid=JP:ja';
+  function gnewsSearchUrl(query){
+    return 'https://news.google.com/rss/search?q=' + encodeURIComponent(query) + '&hl=ja&gl=JP&ceid=JP:ja';
+  }
   var LIVE_FEEDS = {
     news:   {urls:['https://news.google.com/rss' + GNEWS_SUFFIX,
                    'https://www3.nhk.or.jp/rss/news/cat0.xml'],
              source:'Googleニュース', containerId:'newsGrid', sectionId:'sec-news', sort:true, targetCount:NEWS_TARGET_COUNT},
-    work:   {urls:['https://www.lnews.jp/feed'], source:'LNEWS', containerId:'workGrid', sectionId:'sec-work', sort:true},
+    /* LNEWSは物流専門紙で内容が最も合うので第一候補のまま。取得できない場合に
+       セクションごと空になるのを避けるため、Googleニュースの物流系検索を予備にする。 */
+    work:   {urls:['https://www.lnews.jp/feed',
+                   gnewsSearchUrl('物流 OR ロジスティクス OR サプライチェーン OR 物流DX')],
+             source:'LNEWS', containerId:'workGrid', sectionId:'sec-work', sort:true},
     ai:     {urls:['https://rss.itmedia.co.jp/rss/2.0/itmedia_all.xml'], source:'ITmedia', containerId:'aiGrid', sectionId:'sec-ai', sort:true,
              keywords:['AI','Claude','ChatGPT','Copilot','Anthropic','OpenAI','Gemini','生成AI','エージェント','LLM']},
     sports: {urls:['https://news.google.com/rss/headlines/section/topic/SPORTS' + GNEWS_SUFFIX,
@@ -813,8 +824,20 @@
      CORSプロキシ経由で生のRSS(XML)を取得し、DOMParserで解析する。
      どちらの経路でも {title, link, pubDate, description} の形にそろえて返す。
   ============================================================ */
+  /* 応答を返さないまま黙って止まる取得先があり（NHKのRSS遮断がこの挙動）、
+     そのままだと後続の候補に切り替わらず読み込み中のまま止まってしまう。
+     一定時間で打ち切って、確実に次の経路を試せるようにする。 */
+  function fetchWithTimeout(url, ms){
+    var ctrl = typeof AbortController !== 'undefined' ? new AbortController() : null;
+    // 候補を順に試すので、1件あたりは短めに切り上げる（全滅しても十数秒で結論が出る）
+    var timer = setTimeout(function(){ if (ctrl) ctrl.abort(); }, ms || 6000);
+    function done(){ clearTimeout(timer); }
+    return fetch(url, ctrl ? {signal: ctrl.signal} : undefined)
+      .then(function(r){ done(); return r; }, function(e){ done(); throw e; });
+  }
+
   function fetchFeedViaRss2Json(url){
-    return fetch(RSS2JSON + encodeURIComponent(url))
+    return fetchWithTimeout(RSS2JSON + encodeURIComponent(url))
       .then(function(r){ return r.json(); })
       .then(function(data){
         if (data.status !== 'ok' || !data.items || !data.items.length){
@@ -832,7 +855,7 @@
   }
 
   function fetchFeedViaXml(url){
-    return fetch(CORS_PROXY + encodeURIComponent(url))
+    return fetchWithTimeout(CORS_PROXY + encodeURIComponent(url))
       .then(function(r){
         if (!r.ok) throw new Error('proxy HTTP ' + r.status);
         return r.text();
@@ -982,9 +1005,7 @@
 
   function loadLiveCompanyNews(){
     Promise.all(COMPANY_QUERIES.map(function(q){
-      var gnewsUrl = 'https://news.google.com/rss/search?' +
-        'q=' + encodeURIComponent(q) + '&hl=ja&gl=JP&ceid=JP:ja';
-      return fetchFeedItems(gnewsUrl)
+      return fetchFeedItems(gnewsSearchUrl(q))
         .then(function(items){
           return items.slice(0, 3).map(function(it, i){
             var parsed = splitGNewsTitle(stripHtml(it.title));
