@@ -990,7 +990,10 @@
       '&current=temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m,wind_direction_10m' +
       '&hourly=temperature_2m,precipitation_probability,weather_code' +
       '&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,uv_index_max' +
-      '&timezone=Asia%2FTokyo&forecast_days=7&models=jma_seamless';
+      // モデルは指定しない（Open-Meteoのおまかせ）。以前 models=jma_seamless を
+      // 指定していたが、気象庁モデルは降水確率とUV指数を持たず、時間別・日別とも
+      // すべてnullになって表示が消えてしまうため。
+      '&timezone=Asia%2FTokyo&forecast_days=7';
     fetch(url)
       .then(function(r){ return r.json(); })
       .then(function(data){
