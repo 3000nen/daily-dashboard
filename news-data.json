@@ -1,57 +1,218 @@
 {
- "updatedAt": "2026-08-19T12:01:57.861948Z",
+ "updatedAt": "2026-08-19T14:09:06.564623Z",
  "sections": {
   "news": {
-   "sourceUrl": "https://www3.nhk.or.jp/rss/news/cat0.xml",
+   "sourceUrl": "https://news.google.com/rss?hl=ja&gl=JP&ceid=JP:ja",
    "items": [
     {
-     "title": "北日本と東日本中心 9日も大気の状態が非常に不安定の見込み",
-     "link": "http://www3.nhk.or.jp/news/html/20260808/k10015200211000.html",
-     "pubDate": "2026-08-08T14:17:32Z",
-     "source": "",
-     "summary": "8日は北日本から西日本にかけての広い範囲で大気の状態が非常に不安定になり、「記録的短時間大雨」の気象防災速報があわせて7回発表されるなど局地的な大雨となりました。9日も大気の状態が非常に不安定になる見込みで、低い土地の…"
+     "title": "米財務省、長期債買い入れオペ倍増 期間9月9日─11月4日",
+     "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBqZ29oUnBnWU40ZE5rMDVIZGFpbTlNQ09YSGl5VXp6aEpocUNtZWFyS2xSbVJiVU5LQ0RSTUg1M2d3Y0VCcWdhMGkwb0ZtZkFHNGNoVnlJWmpBaEZEZ0hYLXd5Y05LalFjcWVKVlJRd0lkZEMzT1Boaw?oc=5",
+     "pubDate": "2026-08-19T13:01:43Z",
+     "source": "ロイター",
+     "summary": ""
     },
     {
-     "title": "愛知県内で水難事故相次ぐ 2人死亡",
-     "link": "http://www3.nhk.or.jp/news/html/20260808/k10015200261000.html",
-     "pubDate": "2026-08-08T14:06:51Z",
-     "source": "",
-     "summary": "8日、愛知県内の海と川で水難事故が相次ぎ、2人が死亡しました。"
+     "title": "59歳 カズ 三浦知良 サッカー天皇杯で2得点 福島ユナイテッド",
+     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9BLWtsbFFPV0FQSzdZZHVEOWpicGdrYkNVb1haZVVreU8yTGhOejJHQ05HREs1aXg4cHBIclZPSzBHYkZSZGdLQ1F4SEdRMEd6U0FET3drZUJNems4UExj?oc=5",
+     "pubDate": "2026-08-19T12:04:00Z",
+     "source": "NHKニュース",
+     "summary": ""
     },
     {
-     "title": "台風13号 影響は長時間続く 警戒を 台風15号の動きは?",
-     "link": "http://www3.nhk.or.jp/news/html/20260808/k10015199841000.html",
-     "pubDate": "2026-08-08T12:54:30Z",
-     "source": "",
-     "summary": "大型で非常に強い台風13号は、沖縄本島の西の海上を進んでいます。沖縄・奄美では風や雨の影響が長時間続いていて、土砂災害などに厳重な警戒を続けてください。"
+     "title": "千葉豪雨 浸水面積31平方キロ 山手線内側の半分ほどに達したか",
+     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5mRU1PeEE2UXdwdUJROUF5ZWpJVGV4RldBTUkxMjF5VlU3Z1FwNmdoa1VVc2V1SW14MTNOVTgtLXRsaUprNlY2dy00bktqMTJ1LThaNDlDZUcyVm43OVBJ?oc=5",
+     "pubDate": "2026-08-19T11:56:43Z",
+     "source": "NHKニュース",
+     "summary": ""
     },
     {
-     "title": "イチローさん マリナーズOBのホームラン競争でファンわかせる",
-     "link": "http://www3.nhk.or.jp/news/html/20260808/k10015200331000.html",
-     "pubDate": "2026-08-08T11:55:50Z",
-     "source": "",
-     "summary": "大リーグ、マリナーズなどで活躍し去年アメリカで野球殿堂入りしたイチローさんが、マリナーズの創設50周年を記念したOBによるホームラン競争に参加し、フェンスを越える当たりを連発して多くのファンをわかせました。"
+     "title": "＜国内男子ゴルフ＞武藤俊憲「ロッジに6年住んでいました」発祥の地で大好きなジャンボさんを追悼",
+     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE55UmlaVGNsalFkTUoxRHF3THdVOTZvbUdoLTZtaW5EYVNQZlRPOWhYYmhZMWpubDlzUkdZYm5ibG4yNC1JMlhyZDYzUzdNaDRibGllLW1uVWxLeWF3bmwwaGpXNTY3c1RDRHpfWmVGcUljdVU?oc=5",
+     "pubDate": "2026-08-19T11:40:00Z",
+     "source": "スポーツナビ",
+     "summary": ""
     },
     {
-     "title": "熊本地震 10年前の地震と隣り合う領域で発生か 専門家分析",
-     "link": "http://www3.nhk.or.jp/news/html/20260808/k10015200121000.html",
-     "pubDate": "2026-08-08T11:53:49Z",
-     "source": "",
-     "summary": "7月28日に発生した最大震度7の地震は、「日奈久断層帯」のうち、10年前の熊本地震の際に活動した場所と隣り合う領域がずれ動き、発生したとみられることが専門家の分析で分かりました。断層帯には割れ残っているところがあるとし…"
+     "title": "角田裕毅のF1代役参戦が正式発表！ レーシングブルズからオランダGPに挑む",
+     "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5BVllnN0Q1LVZkY2g5aU8yS0Fra1dTUk9wUEdjdFdCZlgxSzgyM0gxMmlENEJGTnE1alFzVHdKLUZqZmZtSm9v?oc=5",
+     "pubDate": "2026-08-19T11:33:00Z",
+     "source": "autosport web",
+     "summary": ""
     },
     {
-     "title": "ラグビーリーグワン フィジー出身選手が死亡 熱中症疑いで搬送",
-     "link": "http://www3.nhk.or.jp/news/html/20260808/k10015200291000.html",
-     "pubDate": "2026-08-08T11:29:37Z",
-     "source": "",
-     "summary": "ラグビーリーグワンの2部にあたるディビジョン2の「九州電力キューデンヴォルテクス」は、チームに所属するサイモニ・ヴニランギ選手が熱中症の疑いで病院に搬送され、その後、死亡したと発表しました。"
+     "title": "SixTONES松村北斗、AI相手にケンカ「言い草を真似するようになって」 和解エピソードを明かす",
+     "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5mck9MSVFfM3BLOHI5RDFUeHlMMFp4bUViUjlZLWx6NGUtT0tKVHI4VmVsclRPOW0wY2FtaFllQ2JQM3ZSQUgzSzcwTllPYjA?oc=5",
+     "pubDate": "2026-08-19T11:32:00Z",
+     "source": "オリコンニュース",
+     "summary": ""
     },
     {
-     "title": "「韓国サッカー協会が外国人審判員に性的接待」韓国メディア",
-     "link": "http://www3.nhk.or.jp/news/html/20260808/k10015200271000.html",
-     "pubDate": "2026-08-08T09:38:23Z",
-     "source": "",
-     "summary": "韓国のサッカー協会が、代表チームの国際試合を担当した日本を含む外国の審判員などに「性的な接待を行っていた」と複数のメディアが伝え、協会は8日、組織運営に批判が高まっていることなどを含め、一連の騒動を謝罪しました。"
+     "title": "【速報】両陛下、被災者見舞うため熊本訪問の意向",
+     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB1d2VVSklHLXZJalYxdU1xeHdRZTRuVmhVV1Q4S1pZczNBSkRJaUY5TzZqS0lVd0F2R2t2S1kzMGEtQXVodW1BNlNZVQ?oc=5",
+     "pubDate": "2026-08-19T10:53:47Z",
+     "source": "47NEWS",
+     "summary": ""
+    },
+    {
+     "title": "PSブランドのゲーマー向けワイヤレススピーカー「PULSE Elevate」が11月12日に発売",
+     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFAzWjNROE82aGFPaW1LbjhHSlVyak96SUk1c1lORThIc0dXWTVhNm44X3RUbzdseHlSR19HOXp5VFJ6WTJpRzUtanY4THExRGcwaS1KTy1RODBrbmUtOTB4LTRpdw?oc=5",
+     "pubDate": "2026-08-19T10:22:48Z",
+     "source": "4Gamer.net",
+     "summary": ""
+    },
+    {
+     "title": "米ＩＣＣ制裁に衝撃 日本政府、対応に苦慮：時事ドットコム",
+     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE8xUEIyc2RBQ3RWbWJkVkdtZXFJbnpaX2Q5RU8wbUR2REdUcG02SU9lUUF2N1MzVTZLYjVsRVhpWlQ4TzdnenFPWXhCdllLWkE5U25WNEU4YVpkakVuaFQtOTI2TQ?oc=5",
+     "pubDate": "2026-08-19T09:33:00Z",
+     "source": "時事ドットコム",
+     "summary": ""
+    },
+    {
+     "title": "【↓】日経平均 大引け｜ 続急落、AI・半導体関連中心に売り優勢 (8月19日)",
+     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5LRVJMTnJac2tnYlh6ZXZTbGRlWUpkTk5RYnNzaTc0RHg3Z2JiVVRiZk4xTUc3MVBrZlVlMTh1WktLYXRmTmwxVHFTeU1BVWJ0a193bUFOVWZsOGV1NDFNSA?oc=5",
+     "pubDate": "2026-08-19T09:17:07Z",
+     "source": "kabutan.jp",
+     "summary": ""
+    },
+    {
+     "title": "映画「細雪」で共演の吉永小百合さん「大好きな先輩」 岸惠子さん死去に悼む声相次ぐ",
+     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1RSVVWTUhhVWpVQk5aUTV0UHJ0WWN0TXNqbkdJeGZwTTMxbnd1eFowZXdGTWt3OGdmVHdydVlneTdRQ0Uxb2t6dUN6SHRTOUZBd1FSSFFUeXRrdldvMEdFaDkxQWtlaWZCaC1zZldkSGZCZGV2Tnc?oc=5",
+     "pubDate": "2026-08-19T09:13:08Z",
+     "source": "産経ニュース",
+     "summary": ""
+    },
+    {
+     "title": "「ファルコン９」の残骸が衝突した月面に幅１８ｍのクレーター出現…ＮＡＳＡが画像公開",
+     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBCQzFhRS1QaXY0dXJ6VG5Ddk1UQ1RlLW5JSHFkWXB2OWR3UDhtWDViNGNxblRuRWFHT0ZONmUwV3RrTjBhaDdrZjk1Z0xoSDFTbDNRMU1iVlkzZ0tYMExCNmU3VGM?oc=5",
+     "pubDate": "2026-08-19T09:13:00Z",
+     "source": "読売新聞",
+     "summary": ""
+    },
+    {
+     "title": "明日は前線南下で北日本は雨 関東なども天気の急変に注意",
+     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE95QWZBQVB3aUprMWJheW4wZFd2UmtRbFp2VUFYa0NBdVV2SkFqcG5CWHFDdmRFMzc1ZEZoT19yaGkzQS1vUWhnb0FNdDZYaE83dnRtSA?oc=5",
+     "pubDate": "2026-08-19T08:59:00Z",
+     "source": "ウェザーニュース",
+     "summary": ""
+    },
+    {
+     "title": "踏切内で後続車の進路ふさぎ電車に衝突させたＪＡＦ職員、殺人未遂容疑で逮捕…容疑否認",
+     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBUS3NzZUp1VWoxNEgwbzk4SVI4T19WckR1UjBpN2xfQ1hMQ2ZYb0M0M09waGFtWG1jMEJjQjFlanJQdUtLTGU3SVhPRjFSdmdEdmQ1ZzVhOFItNzZDTHl5dXJyemVzUQ?oc=5",
+     "pubDate": "2026-08-19T08:36:00Z",
+     "source": "読売新聞",
+     "summary": ""
+    },
+    {
+     "title": "さくら、別のシステムでも不正アクセスか 会員情報136万アカウントが漏えいの可能性 調査で判明",
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE16SGFKTHFWS0YtTS1ieVB1bWVJVUZ3MG00RVY4ODZOemZ0VkNpNHBhZkx5d0RpVWMtQlhfaG14QnlrN0ltalZEenZZOU5kOUdYWGwxNW81QWpQLWoybE1iN0E4bXVndkZZOWc?oc=5",
+     "pubDate": "2026-08-19T08:33:59Z",
+     "source": "ITmedia",
+     "summary": ""
+    },
+    {
+     "title": "【速報】中学生運転の車が覆面パトカーと衝突、三重",
+     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBPbzUxaUpUeGpGQWVrWnp0am42SXNVclNIUFRnNFhkQ3RIZEFzQTFrMk1DclFYS3JRV1BWT21lOHBLdEpwbDZTdndFVQ?oc=5",
+     "pubDate": "2026-08-19T08:17:49Z",
+     "source": "47NEWS",
+     "summary": ""
+    },
+    {
+     "title": "解任されたウクライナ前国防相、大統領選挙の実施を要求",
+     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9HYzJQZ1JuMk0yekRHR1lxemtuZWQwbURWQ3FnQ3paUUVnQkNwTW1EUFRZQUNQVW1hblJwX1FkSXR3TTB5WkdObm1FODBhRWhoWHZueUlCakw4TVlVRFVV0gFkQVVfeXFMUHcyRDhiNG4tZzZqdDNYMVp1X01jSnZ6WVVQQjgwTFRILW5NbGdOUDhydXNGdHAwSUhXZl9odk53bHRqOHJDRnR6cGgtbjY4eXU2MmNKRHdMcVNGZkljWk56SC1IZw?oc=5",
+     "pubDate": "2026-08-19T08:00:43Z",
+     "source": "BBC",
+     "summary": ""
+    },
+    {
+     "title": "トランプ氏、イラン戦争で新たな試み 時間をかけて「締め上げる」（CNN.co.jp）",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9xZzdoN1NrVVd3THVrRkFWbm5HdUgxMVZUSmR6UFJscjJtTW1aaURKMmNxZzdWbk9Bd2hYTEFNYVAyczl4aFJPSHZoSGdZOUlKbllaOHhyQk83NFhaaXNsWFQxSGRHVnhWZHFUczk0T1FibHJVOXloeGRBbGxSQ00?oc=5",
+     "pubDate": "2026-08-19T07:47:00Z",
+     "source": "Yahoo!ニュース",
+     "summary": ""
+    },
+    {
+     "title": "患者の列に車が突っ込み、74歳の看護師女性が死亡 宮崎の眼科医院駐車場",
+     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5WWHhESlNzbFZIZXNEQzZBUDFkZ2pxSzk1b0t1SUhCRXNzX3BNMU1laGVMSmwyS0VTWkFPQ2dYQ1hrVXFzQzdpVXJrd2k5bDhVVFJSYkQySG1xOU9VV21ULVFGbVVaazZDRzdMTTdvTVdfTEV2OUE?oc=5",
+     "pubDate": "2026-08-19T07:27:32Z",
+     "source": "産経ニュース",
+     "summary": ""
+    },
+    {
+     "title": "福岡県議会の蔵内勇夫議長が議長職を辞任意向…「しかるべき時期に自ら判断し、辞職したい」",
+     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9lOThaWTdtNzV6V1dFTVRZdXNEM3E1VjY2NHp6YnRuRkkyRVIxUmtBTm1hc3JYUDhnb2hlb2htZmhqWXpOLUMwZ01rMlhuY01zcXNWR2wyVVNsZGMyUk9NSGE5ZUtIUQ?oc=5",
+     "pubDate": "2026-08-19T07:25:00Z",
+     "source": "読売新聞",
+     "summary": ""
+    },
+    {
+     "title": "四千頭身・都築拓紀“痴漢容疑”当日の証言入手》「DJしながら4〜5時間飲酒」スカートの上から体をまさぐり…都築が興じた“音楽イベント”「酔うとボディタッチも少なくない」（NEWSポストセブン",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5EMFUtTHFfN3ZkZ0lHNlhqM0UtdV9iay0zZk8xWWtYVU52LW1tZGthQmFackZwVldRV0xhMWhSTUY0YmsxZDVpRFA3RTNzSGlTT19TQ0lsa09oQlE2RlNsYVJvcHN6Qmd4X2RrTDNCQUJiWGJqRTVFWG43dDJhdms?oc=5",
+     "pubDate": "2026-08-19T07:15:00Z",
+     "source": "Yahoo!ニュース",
+     "summary": ""
+    },
+    {
+     "title": "大谷翔平が“6年連続30号”の偉業 ジャッジ＆トラウトも未踏の地 現在メジャートップのシュワバーは？",
+     "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9INzJpTTMtZE5TODNUUi03MXdOQ3hBNHNnMWI5ZGNhNXJiNDIwSGlLM0hPOWZRUEVBaThBazdmcXo0Nnk0UTlxV0k1SnlyZ1hBcDVnUC1hVWFoV1VXNGgxZVJ6ZDc3QjU3QXptWnNRR0tQMm5nTUM0ZkczMA?oc=5",
+     "pubDate": "2026-08-19T07:10:00Z",
+     "source": "日テレNEWS NNN",
+     "summary": ""
+    },
+    {
+     "title": "井の頭自然文化園でアムールヤマネコ２匹死ぬ…ほか４匹にも歩行障害などの症状",
+     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBoVDhJUzVhMWotZkZfWElDc016cUtCV0FxQ1pfWG9pQWFsRmFadno1SUpCRTU3SE9XSE1BZVNhMkp4OGdid0o3dnhaRFY4ZEcyUTAwMUxqQXNSYU9jZGl2ckVFeG50dw?oc=5",
+     "pubDate": "2026-08-19T05:54:00Z",
+     "source": "読売新聞",
+     "summary": ""
+    },
+    {
+     "title": "「残業月４５時間以内」の一律抑制見直しへ…高市首相が規制緩和に意欲・相談窓口も開設",
+     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5PbWJPODlrNzhGRlQ4dFI5endzOFcybVVaTDVZeFg4WTlZVWtQZjQ4VFdhc0Nqa0l2VG4xRnBSaFlzaEdvdkNPeXZrRUxDMl9MZERtMEJRdm5FZ1ZCTF8zZ2hBUWlPQQ?oc=5",
+     "pubDate": "2026-08-19T05:30:00Z",
+     "source": "読売新聞",
+     "summary": ""
+    },
+    {
+     "title": "トランプ氏が秋の米朝会談模索と米報道 非公式に側近動かす",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE40ajJHNzJ1U3kzZ3dab2p5UHJCQ2FMR2dSQ29sLTlqYWViUWFoR05SajZNRTlnNUEwYW9rUnREQVJpdnA5ay1OUzBrSE5KQmVNdTZ2cWlvcWNqX1l3SnJVdTJMazUzZ1c4dzhTZg?oc=5",
+     "pubDate": "2026-08-19T04:40:32Z",
+     "source": "日本経済新聞",
+     "summary": ""
+    },
+    {
+     "title": "対カナダ５０％の追加関税、トランプ氏「発動を３日間停止」…自動車巡る関税の取り扱い焦点に",
+     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFAya3VuVFl3Q2daMnYwR2U3cGFiNmdrYm1mQ29vaFRlQ0hjdVE5dGRFOXJMYTBkM0Y5eDh2WG11a1NVQmhQMjVLNFlNUmlCX0NsNFptd0pRZmxIMk00VTBvMngtRTM?oc=5",
+     "pubDate": "2026-08-19T03:46:00Z",
+     "source": "読売新聞",
+     "summary": ""
+    },
+    {
+     "title": "Apple未発表デバイスがmacOS 26.7から多数判明か｜iPhone 18、Mac、AirPods、ホーム製品の手掛かり",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFA1YzJLUG9iNjM0cmFJUnFCM2NEMDdjOVZoTXZaVTlHdWlROGpyYms5LXd0b2Nwd2tzRmJ3c1pBVFFkV0ZjOTBrLWVUR1FVeFlIdDhsbXZfOUZWRm9LNmc?oc=5",
+     "pubDate": "2026-08-19T03:06:55Z",
+     "source": "innovaTopia",
+     "summary": ""
+    },
+    {
+     "title": "6千万円以上の「見返り」か、万博工事で水増し請求 背任容疑の竹中工務店元会場責任者",
+     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5yRlZXRzhlOV9zQU5FWExRWDZvX1ZFRDA2aFVvWm9FaDZLTm5KRGpFWjFwaUN1LVpjaERLaHpodEluQTVHTkd2MlIwUTV1eWVJWkRmbW0wV2RINzVrY2VROFN0MHc5b21BSF95NkdkdC1JNDdkMEE?oc=5",
+     "pubDate": "2026-08-19T02:50:06Z",
+     "source": "産経ニュース",
+     "summary": ""
+    },
+    {
+     "title": "イラン、ＵＡＥにミサイル発射 「対話計画なし」と米大統領",
+     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE8wdE16YXYxb1NTdmpRV01nQ2I2Qnl6aUxKNS1ka1pzejlPcWlxbmNHeXFlYnE3N1MzZkpma1J0S2NESC1VVER6Ny1tRV81eWVuYzBscnlGZk5sc251OWgxWEM1VQ?oc=5",
+     "pubDate": "2026-08-18T23:33:00Z",
+     "source": "時事ドットコム",
+     "summary": ""
+    },
+    {
+     "title": "折りたたみiPhone Ultraは9月発表か。初回在庫は「極めて限定的」とのリーク",
+     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNNk9fUzhrVDNmNmhTS0VVUXNVd0dSdjcyeFUwX1dZNm9UeTRLN1B1akFBUVJPYUNZT21fSFlsc1JyZ25tTE9GbmZ3OWpHM2ZHSGZaWjAxM0JYZ3UxQVpFOC0tV1JZRmNLR294alRQZ1o2UUxQQjdFWFdHUkxXLWxwdA?oc=5",
+     "pubDate": "2026-08-17T15:13:29Z",
+     "source": "apple-hacks.com",
+     "summary": ""
     }
    ]
   },
@@ -244,158 +405,151 @@
      "pubDate": "2026-08-19T01:00:00Z",
      "source": "",
      "summary": "プログラミング経験がほぼない筆者が、Claude Codeを使い、Tesla専用のiPhoneアプリを数日で2本開発。自然言語だけで進める「バイブコーディング」の手軽さと、AI時代のアプリ開発の可能性、起業まで見据えた…"
-    },
-    {
-     "title": "[ITmedia News] OpenAI、「ChatGPT for Teens」発表──宿題の“丸投げ”検知、自傷や摂食障害などの保護も強化",
-     "link": "https://www.itmedia.co.jp/news/article/2608/19/2000000606/",
-     "pubDate": "2026-08-18T22:54:32Z",
-     "source": "",
-     "summary": "OpenAIは、13?17歳向けの新環境「ChatGPT for Teens」を発表した。年齢推定や申告に基づいて自動適用され、段階的な理解を促す「Study Mode」などの学習機能を提供。自傷行為や摂食障害などの高…"
     }
    ]
   },
   "sports": {
-   "sourceUrl": "https://www3.nhk.or.jp/rss/news/cat7.xml",
+   "sourceUrl": "https://news.google.com/rss/headlines/section/topic/SPORTS?hl=ja&gl=JP&ceid=JP:ja",
    "items": [
     {
-     "title": "【プロ野球結果】中日 首位阪神に勝利 今シーズン初の5連勝",
-     "link": "http://www3.nhk.or.jp/news/html/20260808/k10015200281000.html",
-     "pubDate": "2026-08-08T16:38:10Z",
-     "source": "",
-     "summary": "プロ野球は6試合が行われ、セ・リーグの中日が首位・阪神に勝って今シーズン初の5連勝です。"
+     "title": "【阪神】週刊誌報道の伊原陵人について球団対応「事実関係の確認最中。明日以降はチームで協議」",
+     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8xbUt3ZUhQa2FrRTBfOV9EalN1dVBmOE4tUWYzYjFFMlkzZTI2TTUzaThnNFlwWi1ESDBsSDcyVHpLMFBkd0NJaG5DUEE4aUxtQjVScWFXQXlPYmtUOVRnTnp2UHpjTXoySEQ0aUpjVmLSAXhBVV95cUxOdEV1Z2N3cFpiV1NXNktyanFJNmluUWo4VndtWU9sd3FsSVJVWGZTeHo2S2hYQUt4ZE9XbDlTYURlX21jNjNwVDhUTTBFb3ZOa1h2dlJuZktNc2dBaElCSi15Rms4ZHFHZjI1WWtvbWxpSEVmM0pmbW0?oc=5",
+     "pubDate": "2026-08-19T12:52:37Z",
+     "source": "日刊スポーツ",
+     "summary": ""
     },
     {
-     "title": "高校野球 夏の甲子園【大会5日目の見どころ】",
-     "link": "http://www3.nhk.or.jp/news/html/20260809/k10015200371000.html",
-     "pubDate": "2026-08-08T15:37:15Z",
-     "source": "",
-     "summary": "夏の全国高校野球は大会5日目、1回戦4試合が行われます。"
+     "title": "【2回戦】天皇杯JFA第106回全日本サッカー選手権大会・対戦カード決定",
+     "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBWOW9FVFBVRUp5eVZIVFNNQmFVM0FzcXExM1pZQmFldnJMaW4zOGVNYlpvSG5fRi14X0pDZ25LRjhZSWRXaTdmVzNvRG9ldw?oc=5",
+     "pubDate": "2026-08-19T12:09:40Z",
+     "source": "albirex.co.jp",
+     "summary": ""
     },
     {
-     "title": "高校野球 英明が関東第一に逆転勝ち 夏の甲子園15年ぶり勝ち星",
-     "link": "http://www3.nhk.or.jp/news/html/20260808/k10015200321000.html",
-     "pubDate": "2026-08-08T15:30:22Z",
-     "source": "",
-     "summary": "夏の全国高校野球、大会4日目の第4試合は、香川の英明高校が東東京の関東第一高校に4対1で逆転勝ちし、夏の甲子園で15年ぶりに勝ち星を挙げました。"
+     "title": "59歳 カズ 三浦知良 サッカー天皇杯で2得点 福島ユナイテッド",
+     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9BLWtsbFFPV0FQSzdZZHVEOWpicGdrYkNVb1haZVVreU8yTGhOejJHQ05HREs1aXg4cHBIclZPSzBHYkZSZGdLQ1F4SEdRMEd6U0FET3drZUJNems4UExj?oc=5",
+     "pubDate": "2026-08-19T12:04:00Z",
+     "source": "NHKニュース",
+     "summary": ""
     },
     {
-     "title": "ラグビー日本代表 3点及ばず テストマッチで豪州に競り負ける",
-     "link": "http://www3.nhk.or.jp/news/html/20260808/k10015200361000.html",
-     "pubDate": "2026-08-08T14:55:46Z",
-     "source": "",
-     "summary": "ラグビー日本代表は8日夜、大阪で行われたテストマッチで来年のワールドカップの開催国のオーストラリア代表と対戦し、32対35で競り負けました。"
+     "title": "【巨人】橋上監督代行、井上温大は「勝ちに等しいような投球」坂本勇人２週間ぶり出場で安打も打線不発スミ１完封負け…一問一答",
+     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE00c2oxZGZpcHFsSFAxaXpGZjJ2Qi1OZjUzdWZqb3VSZDRCdzFsVnVkeWU5UzEwMDFLWEFNazBTc1U2Q2k0WlI3a2RINDV6RnZGY292amk5REREY0pRVUlfNG1n?oc=5",
+     "pubDate": "2026-08-19T11:59:00Z",
+     "source": "スポーツ報知",
+     "summary": ""
     },
     {
-     "title": "サッカーJ3 ロアッソ熊本 大地震を乗り越え開幕戦 大きな拍手",
-     "link": "http://www3.nhk.or.jp/news/html/20260808/k10015200391000.html",
-     "pubDate": "2026-08-08T14:26:55Z",
-     "source": "",
-     "summary": "サッカーJ3、ロアッソ熊本が8日夜にアウェーで開幕戦に臨み、熊本地震で大きな被害が出た宇城市出身のディフェンダー、薬師田澪選手をはじめ、選手たちが体を張った守備で苦しい展開を無失点でしのぎ、引き分けとしました。"
+     "title": "＜国内男子ゴルフ＞武藤俊憲「ロッジに6年住んでいました」発祥の地で大好きなジャンボさんを追悼",
+     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE55UmlaVGNsalFkTUoxRHF3THdVOTZvbUdoLTZtaW5EYVNQZlRPOWhYYmhZMWpubDlzUkdZYm5ibG4yNC1JMlhyZDYzUzdNaDRibGllLW1uVWxLeWF3bmwwaGpXNTY3c1RDRHpfWmVGcUljdVU?oc=5",
+     "pubDate": "2026-08-19T11:40:00Z",
+     "source": "スポーツナビ",
+     "summary": ""
     },
     {
-     "title": "サッカーJ1 第1節 ヴィッセル神戸が白星スタート",
-     "link": "http://www3.nhk.or.jp/news/html/20260808/k10015200381000.html",
-     "pubDate": "2026-08-08T13:57:00Z",
-     "source": "",
-     "summary": "7日に開幕したサッカーJ1は8日に第1節の6試合が行われ、特別大会に続いて優勝を目指すヴィッセル神戸がアビスパ福岡に勝って白星スタートを切りました。"
+     "title": "阪神まさか 岩崎が４四球で先制点を献上 痛恨の押し出しに球場騒然 両軍無得点の投手戦が八回に動く",
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB3akJIRFdRUlRRTkRNVW9MQTUwaEFfa0FLTnh1b0NUUTVUU0Rrdi1jWUVTU3JUNk5iSkNONHZQRGEwTXRzMXpVMmF1ZEVtSGowM1REZy02SmhXeGhDMHBTbTllbDNJZkhfWkE?oc=5",
+     "pubDate": "2026-08-19T11:39:00Z",
+     "source": "デイリースポーツ",
+     "summary": ""
     },
     {
-     "title": "高校野球 大分商 エース平田が流れ引き寄せ逆転勝ち 2回戦へ",
-     "link": "http://www3.nhk.or.jp/news/html/20260808/k10015200251000.html",
-     "pubDate": "2026-08-08T13:23:53Z",
-     "source": "",
-     "summary": "夏の全国高校野球、大会4日目の第3試合は、大分商業が新潟の日本文理高校に6対4で逆転勝ちして、2回戦に進みました。"
+     "title": "巨人・橋上監督代行、坂本勇人の1カ月ぶり先発起用に「残りの試合も今まで以上にやってもらいたいという気持ちもありましたし」",
+     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZHRTRG82OUNGOUc2T3VZQmxETE8xSWpOYmUxSVlUbTBJVGhzaEpZSEpLajhnbzk2VFU0WmJNdjVrTlFwUmlnSGtNNzViaG4wQXlDM1QwdXFBQTRIZkNlcV9VSDdrNG5makdoYXdqNXpBZndldTNfaXlmaWd4REdyTkJWVDVVV3RxNm1JV2RPa2tRYkdKWGfSAYoBQVVfeXFMTWk5RXYzM1dEbFdDRGhJMzRIclNrTi05WTRuR010Vjk2RG9xV0xZNTVUWnlLaXhCYXlZZVdVLXlTeVhRR2tVeHJOQ2FNanZrT2ZESXhkWGhXeEEybks0ZEhYbVlaTGcyQlBHdjF5MXVRd0pDUlc3dXRFYkVmUXN2TUhxMHRCUzJONk9n?oc=5",
+     "pubDate": "2026-08-19T11:37:50Z",
+     "source": "サンスポ",
+     "summary": ""
     },
     {
-     "title": "高校野球 夏の甲子園 全試合をハイライト動画で【随時更新】",
-     "link": "http://www3.nhk.or.jp/news/html/20260805/k10015196491000.html",
-     "pubDate": "2026-08-08T13:11:25Z",
-     "source": "",
-     "summary": "「球児たちの熱き戦いを動画で」ことしで108回目を迎えた夏の全国高校野球。甲子園球場での熱戦を全試合、ハイライト動画でお伝えしていきます。対戦カードの画像をクリックすると試合のニュース動画を見ることができます。（※デー…"
+     "title": "角田裕毅のF1代役参戦が正式発表！ レーシングブルズからオランダGPに挑む",
+     "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5BVllnN0Q1LVZkY2g5aU8yS0Fra1dTUk9wUEdjdFdCZlgxSzgyM0gxMmlENEJGTnE1alFzVHdKLUZqZmZtSm9v?oc=5",
+     "pubDate": "2026-08-19T11:33:00Z",
+     "source": "autosport web",
+     "summary": ""
     },
     {
-     "title": "イチローさん マリナーズOBのホームラン競争でファンわかせる",
-     "link": "http://www3.nhk.or.jp/news/html/20260808/k10015200331000.html",
-     "pubDate": "2026-08-08T11:55:50Z",
-     "source": "",
-     "summary": "大リーグ、マリナーズなどで活躍し去年アメリカで野球殿堂入りしたイチローさんが、マリナーズの創設50周年を記念したOBによるホームラン競争に参加し、フェンスを越える当たりを連発して多くのファンをわかせました。"
+     "title": "清宮幸太郎 サヨナラ打で激戦にケリ 選手会長としての〝矜持〟",
+     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5HUlUxaGExd0duWlZiY1ltRUJ6eTNrbGl5bWJxc1lXczFYc29HVFRmMGYwZlR0emVoY3ZDWGRLOThBeHcxWWdNT0xJLVltbEZiMkdaeDBYcmQ2ZlJKTlVhZGxB?oc=5",
+     "pubDate": "2026-08-19T11:08:13Z",
+     "source": "道新スポーツ",
+     "summary": ""
     },
     {
-     "title": "高校野球 初出場の東日大昌平 9回のタイムリーで2回戦へ",
-     "link": "http://www3.nhk.or.jp/news/html/20260808/k10015200171000.html",
-     "pubDate": "2026-08-08T11:37:56Z",
-     "source": "",
-     "summary": "夏の全国高校野球大会4日目の第2試合、福島の東日本国際大昌平高校が北北海道の白樺学園に2対1で競り勝って2回戦に進みました。"
+     "title": "【一問一答】今川優馬 劇勝呼んだ３ラン「代打をコールされた時の歓声。余計にパワーをもらえた」",
+     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBaN1I0X0RGRHNJQzFoOE1MQjIwZ2U4V0ZvTXU3dUF5U0FiZnpNb2lncktYRGo0cGppZk5CTkhCNWpQa1BKdm9EazA3VXNXXzIyQkVYUXZfc2tEdW1Kc2VNV0N3?oc=5",
+     "pubDate": "2026-08-19T10:38:27Z",
+     "source": "道新スポーツ",
+     "summary": ""
     },
     {
-     "title": "長友佑都がFC東京と再契約 40歳迎える今シーズンも現役続行",
-     "link": "http://www3.nhk.or.jp/news/html/20260808/k10015200311000.html",
-     "pubDate": "2026-08-08T11:31:03Z",
-     "source": "",
-     "summary": "サッカーワールドカップ北中米大会で日本選手最多の5回目の出場を果たした39歳の長友佑都選手が、今シーズンもJ1・FC東京で現役を続けることを明らかにしました。"
+     "title": "韓国サッカー協会の性接待疑惑 韓国警察「公訴の時効は過ぎた」 (2026年8月19日掲載)",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE80QVplQlBUT3JoYXNzMzl5TEtlUWNhbW1FT0sxNWRKbVVuazFDdzdfblF5SXBKbldlemRpM2JmRkg2RkYtVnYwY0lsellTeHBQNEVJVXdiS0tFM0IwcFE?oc=5",
+     "pubDate": "2026-08-19T10:04:01Z",
+     "source": "ライブドアニュース",
+     "summary": ""
     },
     {
-     "title": "ラグビーリーグワン フィジー出身選手が死亡 熱中症疑いで搬送",
-     "link": "http://www3.nhk.or.jp/news/html/20260808/k10015200291000.html",
-     "pubDate": "2026-08-08T11:29:37Z",
-     "source": "",
-     "summary": "ラグビーリーグワンの2部にあたるディビジョン2の「九州電力キューデンヴォルテクス」は、チームに所属するサイモニ・ヴニランギ選手が熱中症の疑いで病院に搬送され、その後、死亡したと発表しました。"
+     "title": "「打線は言うことなし」ソフトバンク小久保監督、逆転満塁弾浴びても反発した打線に手ごたえ 廣瀨隆太1号3ラン、柳田悠岐は3安打1打点",
+     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5ES2ZEUDFFVnpDSmtubWo3SC1nckVndFpnQ0tyT1NkTE1NS0diZ2FMeEFzbW83SWxZN2F3X0dKTnU0T2xFM2dVT19ianNIclNqYzRKNE0yQUVVLXlZdTNV?oc=5",
+     "pubDate": "2026-08-19T09:36:45Z",
+     "source": "西スポWEB OTTO!",
+     "summary": ""
     },
     {
-     "title": "「韓国サッカー協会が外国人審判員に性的接待」韓国メディア",
-     "link": "http://www3.nhk.or.jp/news/html/20260808/k10015200271000.html",
-     "pubDate": "2026-08-08T09:38:23Z",
-     "source": "",
-     "summary": "韓国のサッカー協会が、代表チームの国際試合を担当した日本を含む外国の審判員などに「性的な接待を行っていた」と複数のメディアが伝え、協会は8日、組織運営に批判が高まっていることなどを含め、一連の騒動を謝罪しました。"
+     "title": "浅間大基 恩師・渡辺元監督に感謝 今でも思い出す、汗だくで飲んだスポーツドリンクの味",
+     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9LWTMtb0V1UUszckVtQTZoZTBHYmJvTlh2Rm9FdUtTYXFCSEd1RWhJb1dYLURHZ0htWlpILS1HYXVDMTkyVzhTOVJuR2pYeEVEcEdUU3pPSUdJbDlwQ0xGdjhR?oc=5",
+     "pubDate": "2026-08-19T09:31:41Z",
+     "source": "道新スポーツ",
+     "summary": ""
     },
     {
-     "title": "ドジャース 佐々木朗希 6回2失点 チームはサヨナラ負け7連敗",
-     "link": "http://www3.nhk.or.jp/news/html/20260808/k10015200161000.html",
-     "pubDate": "2026-08-08T07:11:30Z",
-     "source": "",
-     "summary": "大リーグ、ドジャースの佐々木朗希投手がダイヤモンドバックス戦に先発登板し、6回を2失点にまとめたもののチームはサヨナラ負けを喫して7連敗となりました。"
+     "title": "第３次森保ジャパン 名波浩コーチ、中村俊輔コーチら現体制の続投が内定",
+     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1zUUctQjBHNVR4aUtWaGdrWmJWQlA5SlFBek8zWVNDUDNqQU9scTQybzZwcWJySk02NU4zSjQyQ243UEt0UTdzMWVnSC05aXdHZVdCMXB6NUdicm9CNHlXYTRB?oc=5",
+     "pubDate": "2026-08-19T09:07:00Z",
+     "source": "スポーツ報知",
+     "summary": ""
     },
     {
-     "title": "高校野球 青森山田が遊学館に競り勝ち2回戦へ",
-     "link": "http://www3.nhk.or.jp/news/html/20260808/k10015199911000.html",
-     "pubDate": "2026-08-08T06:38:39Z",
-     "source": "",
-     "summary": "夏の全国高校野球、大会4日目の第1試合は、先に6点をリードした青森山田高校が、石川の遊学館高校の追い上げを振り切って6対5で勝ち、2回戦に進みました。"
+     "title": "天理、攻守念入りに確認 健大高崎は「聞こえない」想定の守備練習も",
+     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBPRUg1aXp3NGhYNDlBeVBXTnBUaWJyR2ZpY2xERkU2ckdVTnFueFgyYWdicHhzMkI3anZNcHFfd0NHcTRoRmpyQjh0MVF0dW40WXMtTUZjc3E4Zm5aUkJWcExWenU0Yi1sUXAxNmxZdzRmQjVYM0E?oc=5",
+     "pubDate": "2026-08-19T08:55:00Z",
+     "source": "バーチャル高校野球",
+     "summary": ""
     },
     {
-     "title": "パドレス 松井裕樹 リリーフで登板し2回1失点",
-     "link": "http://www3.nhk.or.jp/news/html/20260808/k10015200191000.html",
-     "pubDate": "2026-08-08T06:34:10Z",
-     "source": "",
-     "summary": "大リーグ、パドレスの松井裕樹投手がアストロズ戦にリリーフ登板しソロホームランを打たれて2回を1失点でした。"
+     "title": "［アルビレックス新潟］スーパーボレーをアシストのＭＦ白井永地「僕の立場で求められるのは勝利への貢献」",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBibWF5c0UxQ2ZyLTFVTjY1VlZ2LWdQbEVmQTNRTkhtY2ppWFVoZV9KMFV0MTRlYWJNYXJFcnEwdDBMMldoZHdkejhXdzJYX3RQUzRlcnA1TTBXVzVVTUE?oc=5",
+     "pubDate": "2026-08-19T08:50:00Z",
+     "source": "新潟日報",
+     "summary": ""
     },
     {
-     "title": "レッドソックス 吉田正尚 2安打2打点 チームの9連勝に貢献",
-     "link": "http://www3.nhk.or.jp/news/html/20260808/k10015200181000.html",
-     "pubDate": "2026-08-08T06:30:45Z",
-     "source": "",
-     "summary": "大リーグ、レッドソックスの吉田正尚選手が、アスレティックス戦でタイムリーツーベースを含む、2安打2打点と活躍し、チームの9連勝に貢献しました。"
+     "title": "阪神・中野拓夢、痛みは「落ち着いてはいますね」途中交代→左足引きずって病院→球場…どうする568試合連続出場中の〝鉄人〟…",
+     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNamFYOGxwVE0tRFVmTUw4amZoRzRYcDRBb25TNnJROG9hdzM2b0hLQUtPOWpuVmNTRVJlLTR1eU9aLVZGaVpCaUhkOXk2SWZVanZSOVFWelZ6RjNBNXpDZXdoX0R1ZDk1U2t6NV9DdU00SUY0bXowQzByY2swc0tFbUd0cXBvQ1Exd3ZTZUNBRERlOFh0UnfSAYoBQVVfeXFMT2txVjc0SDJmOTlOaE1VSnpxbEpZMjRGaG5rdnBnR1BROE1VTHFGdGJDYWRCWFF2eTAyTVNmM3pLVEhLX2hnbGc3Q1h2dW1qOTcxUGZJd1ZxOGNoU19XTXlMZFdHS3pkS2pGTXl1LWRDVUdvcW5tbE1Ld3VrUHdwVmF0bklqR2tid19R?oc=5",
+     "pubDate": "2026-08-19T08:37:11Z",
+     "source": "サンスポ",
+     "summary": ""
     },
     {
-     "title": "ブルージェイズ 岡本和真はノーヒット チームは競り勝つ",
-     "link": "http://www3.nhk.or.jp/news/html/20260808/k10015200131000.html",
-     "pubDate": "2026-08-08T05:10:02Z",
-     "source": "",
-     "summary": "大リーグ、ブルージェイズの岡本和真選手はフィリーズ戦でチャンスに凡退するなど5打数ノーヒットでした。"
+     "title": "クラセンU-15の8強決定、街クラブは2チームが残る…ハットの鹿島FW礒部、2発の川崎F新堀が得点ランク首位タイ:ラウンド16全結果",
+     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9NNnpsS040N0huaTZ1S1Z4UFVLbThEYS1qQUhBVFJWYWh2REhrcjQtMlFmQUt0Y0tQdS1vRTl3ejJvQXlDODQ3TDVlUTBFVGRzeWNVZzBGaE1YMkR5aVlFd21sUzNxTXFJaFdvaE9B?oc=5",
+     "pubDate": "2026-08-19T08:16:00Z",
+     "source": "gekisaka.jp",
+     "summary": ""
     },
     {
-     "title": "カブス 鈴木誠也 タイムリーヒット打ち2打点 5連勝に貢献",
-     "link": "http://www3.nhk.or.jp/news/html/20260808/k10015200111000.html",
-     "pubDate": "2026-08-08T04:40:26Z",
-     "source": "",
-     "summary": "大リーグ、カブスの鈴木誠也選手はロイヤルズ戦で、タイムリーヒットを打って2打点を挙げチームの5連勝に貢献しました。"
+     "title": "【速報】仙台育英ナインが甲子園から帰仙 須江航監督「彼らの人生がより豊かになるきっかけをいただいた」",
+     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9hSWRPWkxLdklHSlJJTXN3U0x5VnFLZWN0d2tqZmlJLUZyUkFZZWhjLTA4ZHdLaFdoS3Yzak5HV19UWnZwNEMzNkdpVFRlS2Jyd1hlRk1Vb1hqMW5nU1RaQg?oc=5",
+     "pubDate": "2026-08-19T08:15:00Z",
+     "source": "河北新報オンライン",
+     "summary": ""
     },
     {
-     "title": "高校野球 夏の甲子園 長崎日大高が立正大淞南に快勝 2回戦へ",
-     "link": "http://www3.nhk.or.jp/news/html/20260807/k10015199641000.html",
-     "pubDate": "2026-08-08T03:47:56Z",
-     "source": "",
-     "summary": "夏の全国高校野球、大会3日目の第4試合は、長崎日大高校が島根の立正大淞南高校に15対1で打ち勝って2回戦に進みました。"
+     "title": "鈴木彩艶がアストン・ヴィラに加入！ PSG行きは破談もEL王者へ…移籍金は日本人最高額タイか",
+     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9NZ0xfVjZERlRoOW10TG02ZWV5THppUXQwbkpnNWtGNXRVNDlVdTdxbGUwMGVZTkt3RmZGeU9EcGpGTlVOOFhKcVNUNFNZMk5FNWpaWEdnOUhReUY0SlU2VHlMb0w3M3F3MUtjek0zMmk?oc=5",
+     "pubDate": "2026-08-19T08:10:21Z",
+     "source": "サッカーキング",
+     "summary": ""
     }
    ]
   },
@@ -546,7 +700,176 @@
   },
   "company": {
    "sourceUrl": "https://news.google.com/rss/search",
-   "items": []
+   "items": [
+    {
+     "title": "ハウス食品グループ フライパンキーマを伝授 大学生向け食育活動実施（食品新聞）",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBkb1JZX09WbXdkZGRucHpFWDdCbl9QRXlpVTJ4a2ZQNlViZWI5U3EzaFJVSzY2Z3NTbWxVYUV5OXVVZFg4c0tJQ20wcDlUeVVSV0FMZ2V3anprRkpMTGQydEQ4NDVwbWxtVGZKNWpadmFKZEdMQkUzenpjX05DUTg?oc=5",
+     "pubDate": "2026-08-19T08:53:45Z",
+     "source": "Yahoo!ニュース",
+     "summary": "",
+     "company": "ハウス食品グループ"
+    },
+    {
+     "title": "温風も送風も送れる人感センサー付き「山善 HOT＆COOLサーキュレーター YA-ZT1000（W）」が10％オフの9882円に - ITmedia Mobile",
+     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8tUVhEd2xGUmVlc0tLUGU3MURUXzkzQ21KX19zSVc1ODFLeEtobVlxRmRfQ3l1SXMyUmo3SExpcnhLazJOekdMTVJTampCaUZBNVR0S3BlazFYUGxtM1FzOUNaNHBxMllM0gFoQVVfeXFMTy1RWER3bEZSZWVzS0tQZTcxRFRfOTNDbUpfX3NJVzU4MUt4S2htWXFGZF9DeXVJczJSajdITGlyeEtrMk56R0xNUlNqakJpRkE1VHRLcGVrMVhQbG0zUXM5Q1o0cHEyWUw?oc=5",
+     "pubDate": "2026-08-19T04:58:00Z",
+     "source": "ITmedia",
+     "summary": "",
+     "company": "山善"
+    },
+    {
+     "title": "神戸大学発スタートアップのTearExo、MUIC Kansai実証事業をハウス食品グループ本社と実施",
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1FQjJGZXVYT3RrSXU0VkpNN3pjWmgxOW02bEVVVHpraGU4UkNqbkNlRXM1cWJSZHU0eFU3T0Y4YTB2aWp5SjRPTzVOU3plVjRRNTEzTEJ5dlh6bUpTLXBZUGN6R2lWZmllRFE?oc=5",
+     "pubDate": "2026-08-19T02:00:02Z",
+     "source": "PR TIMES",
+     "summary": "",
+     "company": "ハウス食品グループ"
+    },
+    {
+     "title": "山善の8インチAndroid 15タブレットが13,200円！Amazonでタイムセール - 本日みつけたお買い得情報",
+     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE01dEVUV3BHelRkZkpmRzB6enJmTzl4eG9DSS1LVWFHanNIeE1GNG85SlVoQmgyTFlWRFZsWnl1eDEyZUZYZ1lQeHRFeUpad2twVzFQRXRmS01Cc3JLdVdPdDBzNlNVUVBVNnhESHRLYVJMR1kwWXc?oc=5",
+     "pubDate": "2026-08-19T01:32:37Z",
+     "source": "窓の杜",
+     "summary": "",
+     "company": "山善"
+    },
+    {
+     "title": "山善、3事業統合基盤で物流拠点開設を柔軟化",
+     "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1EU2d6RmhmZVRQSTRmNTFmd0NoWmctblJkd09rNkZnNWw5emU3YXU1ME83SjZ6X1REUnEyNW9vUzlXYnZXV1llMg?oc=5",
+     "pubDate": "2026-08-18T09:52:48Z",
+     "source": "LOGISTICS TODAY",
+     "summary": "",
+     "company": "山善"
+    },
+    {
+     "title": "MonotaRO 「お届け希望日指定サービス」を開始",
+     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9qeHNKcFVoZU4xSUo2QnhYZWdJTmMwLUpHQllMREZOc0ZGZXdVSFpJUFJxNGg3NlhRN2JUYjRMVlZBZ2ZSX3hzcE43NHpEblN1Ymg3U3ZKb0J6aXRaTGlF?oc=5",
+     "pubDate": "2026-08-17T21:00:00Z",
+     "source": "カーゴニュースオンライン",
+     "summary": "",
+     "company": "モノタロウ"
+    },
+    {
+     "title": "住宅関連資材値上げ情報（8月14日時点）",
+     "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1MWVhMc2xiUDFkYm1ZaXBjZU5RQ3BUMXpoWnRQN1dxNHlFNWliN2FQdE9WZkpUakNEZU9ZdmhsYVYtc0w5TVpCWWphd3JVWG9qYWthelFB?oc=5",
+     "pubDate": "2026-08-14T07:00:00Z",
+     "source": "Housing Tribune Onl…",
+     "summary": "",
+     "company": "アイカ工業"
+    },
+    {
+     "title": "大手化学メーカーのアイカ工業、データ活用推進に向け「Sansan」および「Sansan Data Intelligence」を導入",
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE12cHhTQ0VXWjBMOUlGdGZ0TXVPTTZxbEZsd1R1c3BENlRFVHFHWXd6UWR0QnZCekZJVkx2TGhkV2FUZkY2M1l2OXdhNTU1OU5wa0l6YWduQ2Q5cGtqb0UzM1RPczA4dkVsUUE?oc=5",
+     "pubDate": "2026-08-12T02:00:01Z",
+     "source": "PR TIMES",
+     "summary": "",
+     "company": "アイカ工業"
+    },
+    {
+     "title": "ハウス食Ｇ",
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE80cEthUTJJTWNxeXNIU3A0aWppN0JfMF9FQnpRbGJHSG9CQlZpdFdCMFFiQUt2VHhMdGZSSmlDRkNhT25zbG1zRmtwcm5IeHEtc2UzN3duTkpXYUNGdEQyU1FrMV9sSmY1RUE?oc=5",
+     "pubDate": "2026-08-04T07:00:00Z",
+     "source": "日本経済新聞",
+     "summary": "",
+     "company": "ハウス食品グループ"
+    },
+    {
+     "title": "アイカ工業(株)【4206】：決算情報",
+     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9CekV2Y3lXN1ZvcWNneDNKYUw3WmJLXzJpeEFVcnA0dGRHZWxKamNuUllzQnpxXzU5dE9pUHpzZ2t0ZWlmOFFoUUpsVnZxUk9PYVUwREhZV2QzbTZCMDZZag?oc=5",
+     "pubDate": "2026-08-04T07:00:00Z",
+     "source": "Yahoo!ファイナンス",
+     "summary": "",
+     "company": "アイカ工業"
+    },
+    {
+     "title": "モノタロウ、熊本県に支援物資 熱中症対策の冷却製品など",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1odk50ZUFUeTZWR3A3X0xOdURYdnRaWUEtNWJVSWJXbFZnYTBKeVJMSEEzNVFsRUlRc0JOeWpxeF9URlE1N19Md1Z4WS0wbjducTNXVjdLU2lmNWU1Y1JpUk1wRWlsYjVOVF96Mg?oc=5",
+     "pubDate": "2026-07-31T07:00:00Z",
+     "source": "日本経済新聞",
+     "summary": "",
+     "company": "モノタロウ"
+    },
+    {
+     "title": "モノタロウ／茨城の物流拠点に太陽光発電設備を導入、再エネ化を推進",
+     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE02Z2MwRk9ZbTBYdzdtODJ4WWZ2WFRXb0cxTk1uTHZqT1pTalhjazIzb2hJN2dyOU9Gb1JJWXNUU3ZoUm5nUm01MXFXNFg5ckZ2dmZUMQ?oc=5",
+     "pubDate": "2026-07-23T07:00:00Z",
+     "source": "物流ニュースのLNEWS",
+     "summary": "",
+     "company": "モノタロウ"
+    },
+    {
+     "title": "F-LINE／「F-LINE No.1グランプリ」を初開催、業務改善など表彰",
+     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5XSnczR0FrXzNUT2hYYXZfb09meVNyUmpLRV8yMGtSRDBuajlsRlktWkY4MlgzU245QWkzWlZrYVdPcU5JRkRaWmJFWmRMcGtxeDFTXw?oc=5",
+     "pubDate": "2026-07-07T07:00:00Z",
+     "source": "物流ニュースのLNEWS",
+     "summary": "",
+     "company": "F-LINE"
+    },
+    {
+     "title": "F-LINE、群馬・太田に2.5万㎡の物流拠点建設へ",
+     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1oZmtVLVJfOUNJZExwXzRhVEVGbzVPY1dycU1WSDEwdnRuM2ZMNmdGOTlobFZEN040dTluUDRoSjFjenNGN09Palg3QQ?oc=5",
+     "pubDate": "2026-06-17T07:00:00Z",
+     "source": "LOGI-BIZ online",
+     "summary": "",
+     "company": "F-LINE"
+    },
+    {
+     "title": "日本ペイントG、コンテナ船積計画にAIエージェント 作業時間を76％削減",
+     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9QS0JCTUM4ZlVISE1wcFB3WnpWTGg4ZkI0a1I2a1lyZnNMakxvaUNGbk01emFoU1d5ZDl1cU5kSDhBYWc0Qzl5WVBWSVNScFdDNmdsdV9XRlRQdHhZUHZpd1RSaGMzeWs?oc=5",
+     "pubDate": "2026-05-19T07:00:00Z",
+     "source": "日経クロステック",
+     "summary": "",
+     "company": "日本ペイントグループ"
+    },
+    {
+     "title": "製造業のノウハウを融合した「物流革新プロジェクト」を本格始動(ニュースレター) | 大和ハウス工業株式会社のプレスリリース",
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBoRjlEcHpHbUM5OVlaZXVkUXdBbGE2bTYxb2pKcHNCNlhtM3hsV201NndocjBqdG1QRzZDNWtfUGlid01GZ2FVeWdSVVl2aUhwbDNkRXowZ2N2N05wQTRldTNEdG94Rm5KNXc?oc=5",
+     "pubDate": "2026-05-07T07:00:00Z",
+     "source": "PR TIMES",
+     "summary": "",
+     "company": "ハウス物流サービス"
+    },
+    {
+     "title": "都心近接の東京都江東区にヤマトグループ最大級の統合型ビジネスソリューション拠点を開設",
+     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9CUkVtcVprV2pfQlZnaGI3Y1FwZ2hpUVBZY1R1eVR0cVB6RE5UaENCTGhUenoyalhrLWs3V3F2UFI4Y3U5N0d3dzV1R0ZIRm1oRF9wREhIbnNrazhkbXJpN2ROQy1mNVVWS2hCUjF0Vm5hd1E?oc=5",
+     "pubDate": "2026-04-07T07:00:00Z",
+     "source": "ヤマトホールディングス株式会社",
+     "summary": "",
+     "company": "ハウス物流サービス"
+    },
+    {
+     "title": "145周年特設サイト公開のお知らせ",
+     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1rVG0xUWtpUFJONVJXSXh5azZ1eV9OaUh4ZTRtQXVJcDN3QXdsYm1rTnJfZ2lFLU5qTGNmYkR4ZXpSZDhpbUEyMnRhX1U1Z08yVEtQUzdQTXpEQXNrQlp5SGx3LXdsU2ZBdEd6RlY1dw?oc=5",
+     "pubDate": "2026-03-10T07:00:00Z",
+     "source": "nipponpaint-holding…",
+     "summary": "",
+     "company": "日本ペイントグループ"
+    },
+    {
+     "title": "東京大学と日本ペイントグループの産学協創 ―第2期「革新的コーティング技術の創生」で社会課題解決へ―",
+     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9lNG5kdmtkVmhmeGtld2pvSk40ak1WNDRVcTdKWGhBc3V6dy1idGQtY0k2MkdjaHZJOVRoZmptRU1HZXRTTTlJalQ2TmZXVFlrMC00TVdodVB0YXg4dlVB?oc=5",
+     "pubDate": "2026-02-12T08:00:00Z",
+     "source": "t.u-tokyo.ac.jp",
+     "summary": "",
+     "company": "日本ペイントグループ"
+    },
+    {
+     "title": "F－LINE株式会社｜物流効率化事例｜3時間の待機時間が30分以内に。導入3か月で費用対効果を発揮 〜2024年問題に備えMOVO Berthを導入した三郷物流センター",
+     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9fWjJsNE0wN2ZhaTB0R0NYeWtGM25HbnJoajlhQlVXUl9tcUtPeDRHYThSMmc3U1R2QWF5dG9RVGtiVEdLdlNwRzg1VQ?oc=5",
+     "pubDate": "2025-09-29T07:00:00Z",
+     "source": "株式会社Hacobu",
+     "summary": "",
+     "company": "F-LINE"
+    },
+    {
+     "title": "ハウス物流サービス「きめ細かいサービスで信頼得る」｜運送会社",
+     "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1MMTRqVEI0c3JsUDlGSzJWWjE5SlVOVnNobHNMTGctV1ZWLUVObmMzWlkyTF9XUE5hT0FhUGZPc2pLN3NfNGNaMU5SQUFNbXQ4?oc=5",
+     "pubDate": "2017-12-30T10:16:59Z",
+     "source": "物流ウィークリー",
+     "summary": "",
+     "company": "ハウス物流サービス"
+    }
+   ]
   }
  }
 }
