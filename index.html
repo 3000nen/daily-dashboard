@@ -501,7 +501,7 @@
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <p>「<span class="live-dot" style="margin-right:2px;"></span>ライブ更新」が付いたセクション（天気・主要ニュース・仕事・AI・スポーツ・ガジェット・会社情報）は、ページを開いたときと5分ごとに無料公開データを取得しています（APIキー不要）。天気（現在の気温・時間ごとの気温と降水確率・最高/最低気温・週間予報）はブラウザの位置情報が許可された場合は現在地、許可されない・取得できない場合は大阪をOpen-Meteo APIから表示します。その他のニュースは、GitHub Actionsが各社RSS・Googleニュース検索をサーバー側で取得してnews-data.jsonに保存し、ページはそれを読み込んでいます（ブラウザから他サイトのRSSを直接読むことはCORS制限でできないため）。主要ニュースは10件、仕事・AI・スポーツ・ガジェットは各5件を目安に、6時間以内→12時間以内→18時間以内→24時間以内の順に該当件数が集まるまで表示範囲を広げます（24時間以内でも5件に満たない場合はある分だけ表示。会社情報は3日以内）。経済セクションは各指標の銘柄名の下に、その値がいつ時点のものかを日本時間で表示しています（為替はECBが営業日ごとに公表するため日付のみ。ライブ取得が届く前の初期表示は「参考値」と表示します）。ドル/円・ユーロ/円・金価格をブラウザから直接取得し、日経平均・TOPIX（連動ETF）・NYダウ・NASDAQ・S&P500はYahoo FinanceのデータをGitHub Actionsがサーバー側で定期取得してmarket-data.jsonとして保存し、それをページが読み込んでいます（Yahoo Finance自体はブラウザから直接fetchできないCORS制限があるため）。この定期実行はGitHub側のスケジュール事情で間隔が空くことがあり、実際には1時間程度おきの更新になります。各セクションは取得先を複数登録してあり、1つ目が取得できない場合は自動的に次の候補に切り替わります。取得できなかった場合は、古い内容を出し続けずにその旨を表示します。このページに掲載する情報は、自動で取得・更新できるもののみに限定しています。</p>
+    <p>「<span class="live-dot" style="margin-right:2px;"></span>ライブ更新」が付いたセクション（天気・主要ニュース・仕事・AI・スポーツ・ガジェット・会社情報）は、ページを開いたときと5分ごとに無料公開データを取得しています（APIキー不要）。天気（現在の気温・時間ごとの気温と降水確率・最高/最低気温・週間予報）はブラウザの位置情報が許可された場合は現在地、許可されない・取得できない場合は大阪をOpen-Meteo APIから表示します。その他のニュースは、GitHub Actionsが各社RSS・Googleニュース検索をサーバー側で取得してnews-data.jsonに保存し、ページはそれを読み込んでいます（ブラウザから他サイトのRSSを直接読むことはCORS制限でできないため）。主要ニュースは10件、仕事・AI・スポーツ・ガジェットは各5件を目安に、6時間以内→12時間以内→18時間以内→24時間以内の順に該当件数が集まるまで表示範囲を広げます（24時間以内でも5件に満たない場合はある分だけ表示。会社情報は3日以内）。経済セクションは各指標の銘柄名の下に、その値がいつ時点のものかを日本時間で表示しています（ライブ取得が届く前の初期表示は「参考値」と表示します）。日経平均・TOPIX（連動ETF）・NYダウ・NASDAQ・S&P500・ドル/円・ユーロ/円・金は、いずれもYahoo FinanceのデータをGitHub Actionsがサーバー側で定期取得してmarket-data.jsonとして保存し、それをページが読み込んでいます（Yahoo Finance自体はブラウザから直接fetchできないCORS制限があるため）。この定期実行はGitHub側のスケジュール事情で間隔が空くことがあり、実際には1時間程度おきの更新になります。各セクションは取得先を複数登録してあり、1つ目が取得できない場合は自動的に次の候補に切り替わります。取得できなかった場合は、古い内容を出し続けずにその旨を表示します。このページに掲載する情報は、自動で取得・更新できるもののみに限定しています。</p>
   </div>
 </footer>
 
@@ -543,8 +543,8 @@
     {name:'NYダウ', sub:'NY・前日終値', value:'53,732.41', delta:'-37.86', pct:'-0.07%', up:false, asOf:'参考値'},
     {name:'NASDAQ', sub:'NY・前日終値', value:'26,729.16', delta:'+140.67', pct:'+0.53%', up:true, asOf:'参考値'},
     {name:'S&P 500', sub:'NY・前日終値', value:'7,785.76', delta:'+37.26', pct:'+0.48%', up:true, asOf:'参考値'},
-    {name:'ドル/円', sub:'東京外国為替', value:'￥152.34', delta:'+0.42', pct:'+0.28%', up:true, asOf:'参考値'},
-    {name:'ユーロ/円', sub:'東京外国為替', value:'￥164.10', delta:'-0.18', pct:'-0.11%', up:false, asOf:'参考値'},
+    {name:'ドル/円', sub:'外国為替', value:'￥152.34', delta:'+0.42', pct:'+0.28%', up:true, asOf:'参考値'},
+    {name:'ユーロ/円', sub:'外国為替', value:'￥164.10', delta:'-0.18', pct:'-0.11%', up:false, asOf:'参考値'},
     {name:'金 (Gold)', sub:'NY先物', value:'$2,486.30', delta:'+11.20', pct:'+0.45%', up:true, asOf:'参考値'}
   ];
 
@@ -737,14 +737,6 @@
     });
   }
 
-  /* 為替（ECB）は日付単位の公表なので時刻を付けない。
-     "YYYY-MM-DD" をそのまま切り出し、タイムゾーン変換で日付がずれないようにする。 */
-  function formatAsOfDate(ymd){
-    var p = String(ymd || '').split('-');
-    if (p.length !== 3) return null;
-    return Number(p[1]) + '/' + Number(p[2]);
-  }
-
   function renderMarket(){
     var list = document.getElementById('marketList');
     list.innerHTML = MARKET.map(function(m){
@@ -770,12 +762,11 @@
                     気象庁JMAの予報モデルを指定）から現在・時間ごと・週間の予報を取得。
                     取得できない場合は大阪の座標で同APIを使用し、それも失敗した場合のみ
                     気象庁（JMA）公式 防災情報JSON（大阪）にフォールバック
-       ・為替　　 : Frankfurter API（ECB系列・無料keyless）
-       ・金価格　 : gold-api.com（無料keyless）
        ・ニュース : GitHub Actionsが定期的に各社RSSをサーバー側で取得して
                     コミットする news-data.json を同一オリジンで取得
        ・株価指数 : GitHub Actionsが定期的にYahoo Financeを取得して
-                    コミットする market-data.json を同一オリジンで取得
+                    コミットする market-data.json を同一オリジンで取得。
+                    為替（ドル/円・ユーロ/円）と金もここに含める
      オルカン（eMAXIS Slim全世界株式）の基準価額のみ、無料でkeyless・
      CORS対応の実データAPIが見つからなかったため掲載していません。
   ============================================================ */
@@ -1182,38 +1173,6 @@
     markLiveSection('sec-economy');
   }
 
-  function loadLiveMarket(){
-    var yesterday = new Date(Date.now() - 86400000).toISOString().slice(0,10);
-
-    ['USD','EUR'].forEach(function(base){
-      var rowName = base === 'USD' ? 'ドル/円' : 'ユーロ/円';
-      Promise.all([
-        fetch('https://api.frankfurter.dev/v1/latest?from='+base+'&to=JPY').then(function(r){ return r.json(); }),
-        fetch('https://api.frankfurter.dev/v1/'+yesterday+'?from='+base+'&to=JPY').then(function(r){ return r.json(); })
-      ]).then(function(res){
-        var today = res[0].rates.JPY, prev = res[1].rates.JPY;
-        var delta = today - prev, pct = prev ? (delta/prev*100) : 0;
-        updateMarketRow(rowName, {
-          value: '￥'+today.toFixed(2),
-          delta: (delta>=0?'+':'')+delta.toFixed(2),
-          pct: (pct>=0?'+':'')+pct.toFixed(2)+'%',
-          up: delta >= 0,
-          // ECBは営業日ごとの公表なので、APIが返すレート日付をそのまま時点として使う
-          asOf: formatAsOfDate(res[0].date) || '取得時点不明'
-        });
-      }).catch(function(err){ console.warn('[live] forex fetch failed:', base, err); });
-    });
-
-    fetch('https://api.gold-api.com/price/XAU')
-      .then(function(r){ return r.json(); })
-      .then(function(g){
-        // APIが更新時刻を返さない場合は、取得した今この時点の値として扱う
-        var asOf = formatAsOfTime(g.updatedAt) || formatAsOfTime(Date.now());
-        updateMarketRow('金 (Gold)', {value:'$'+g.price.toFixed(2), delta:'', pct:null, up:true, asOf:asOf});
-      })
-      .catch(function(err){ console.warn('[live] gold fetch failed:', err); });
-  }
-
   /* ============================================================
      株価指数 — Yahoo Financeの非公式APIはブラウザからのCORSに
      対応していないため直接fetchできない。そこでGitHubActions
@@ -1229,13 +1188,16 @@
       .then(function(r){ if (!r.ok) throw new Error('market-data.json not found'); return r.json(); })
       .then(function(data){
         [
-          ['nikkei','日経平均','ja-JP'],
-          ['topixEtf','TOPIX','ja-JP'],
-          ['dow','NYダウ','en-US'],
-          ['nasdaq','NASDAQ','en-US'],
-          ['sp500','S&P 500','en-US']
+          {key:'nikkei',   name:'日経平均',   locale:'ja-JP'},
+          {key:'topixEtf', name:'TOPIX',      locale:'ja-JP'},
+          {key:'dow',      name:'NYダウ',     locale:'en-US'},
+          {key:'nasdaq',   name:'NASDAQ',     locale:'en-US'},
+          {key:'sp500',    name:'S&P 500',    locale:'en-US'},
+          {key:'usdjpy',   name:'ドル/円',    locale:'ja-JP', prefix:'￥'},
+          {key:'eurjpy',   name:'ユーロ/円',  locale:'ja-JP', prefix:'￥'},
+          {key:'gold',     name:'金 (Gold)',  locale:'en-US', prefix:'$'}
         ].forEach(function(m){
-          var d = data[m[0]];
+          var d = data[m.key];
           if (!d || d.price == null || d.prevClose == null) return;
           var delta = d.price - d.prevClose;
           var pct = d.prevClose ? (delta / d.prevClose * 100) : 0;
@@ -1244,8 +1206,8 @@
           var asOf = (d.marketTime != null ? formatAsOfTime(d.marketTime * 1000) : null)
             || formatAsOfTime(data.updatedAt)
             || '取得時点不明';
-          updateMarketRow(m[1], {
-            value: d.price.toLocaleString(m[2], {minimumFractionDigits:2, maximumFractionDigits:2}),
+          updateMarketRow(m.name, {
+            value: (m.prefix || '') + d.price.toLocaleString(m.locale, {minimumFractionDigits:2, maximumFractionDigits:2}),
             delta: (delta>=0?'+':'')+delta.toFixed(2),
             pct: (pct>=0?'+':'')+pct.toFixed(2)+'%',
             up: delta >= 0,
@@ -1262,7 +1224,6 @@
   function loadAllLiveData(){
     initWeatherLocation();
     loadLiveStockIndices();
-    loadLiveMarket();
     loadLiveNews();
   }
 

@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Fetch indices from Yahoo Finance and build market-data.json
+      - name: Fetch indices, forex and gold from Yahoo Finance and build market-data.json
         run: |
           UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
 
@@ -29,6 +29,11 @@ jobs:
           dow=$(fetch_json '%5EDJI')
           nasdaq=$(fetch_json '%5EIXIC')
           sp500=$(fetch_json '%5EGSPC')
+          # 為替と金もYahoo Financeに寄せる。ECBの為替APIは営業日に1度しか更新されず
+          # 前日比が出せない、金のAPIは前日終値を返さない、という制約があったため。
+          usdjpy=$(fetch_json 'USDJPY%3DX')
+          eurjpy=$(fetch_json 'EURJPY%3DX')
+          gold=$(fetch_json 'GC%3DF')
 
           jq -n \
             --argjson nikkei "$nikkei" \
@@ -36,6 +41,9 @@ jobs:
             --argjson dow "$dow" \
             --argjson nasdaq "$nasdaq" \
             --argjson sp500 "$sp500" \
+            --argjson usdjpy "$usdjpy" \
+            --argjson eurjpy "$eurjpy" \
+            --argjson gold "$gold" \
             --arg updatedAt "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
             '
             def pick: {
@@ -49,7 +57,10 @@ jobs:
               topixEtf: ($topix  | pick),
               dow:      ($dow    | pick),
               nasdaq:   ($nasdaq | pick),
-              sp500:    ($sp500  | pick)
+              sp500:    ($sp500  | pick),
+              usdjpy:   ($usdjpy | pick),
+              eurjpy:   ($eurjpy | pick),
+              gold:     ($gold   | pick)
             }' > market-data.json
 
           cat market-data.json
