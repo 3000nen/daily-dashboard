@@ -25,10 +25,10 @@ jobs:
           }
 
           nikkei=$(fetch_json '%5EN225')
-          topix=$(fetch_json '1306.T')
           dow=$(fetch_json '%5EDJI')
-          nasdaq=$(fetch_json '%5EIXIC')
-          sp500=$(fetch_json '%5EGSPC')
+          # オールカントリー: eMAXIS Slimの基準価額CSVはサーバーからは403で取得できないため、
+          # 同じMSCI ACWIに連動し円建てで東証に上場しているETF(2559)の価格で代替する。
+          allcountry=$(fetch_json '2559.T')
           # 為替と金もYahoo Financeに寄せる。ECBの為替APIは営業日に1度しか更新されず
           # 前日比が出せない、金のAPIは前日終値を返さない、という制約があったため。
           usdjpy=$(fetch_json 'USDJPY%3DX')
@@ -37,10 +37,8 @@ jobs:
 
           jq -n \
             --argjson nikkei "$nikkei" \
-            --argjson topix "$topix" \
             --argjson dow "$dow" \
-            --argjson nasdaq "$nasdaq" \
-            --argjson sp500 "$sp500" \
+            --argjson allcountry "$allcountry" \
             --argjson usdjpy "$usdjpy" \
             --argjson eurjpy "$eurjpy" \
             --argjson gold "$gold" \
@@ -54,10 +52,8 @@ jobs:
             {
               updatedAt: $updatedAt,
               nikkei:   ($nikkei | pick),
-              topixEtf: ($topix  | pick),
-              dow:      ($dow    | pick),
-              nasdaq:   ($nasdaq | pick),
-              sp500:    ($sp500  | pick),
+              dow:        ($dow        | pick),
+              allCountry: ($allcountry | pick),
               usdjpy:   ($usdjpy | pick),
               eurjpy:   ($eurjpy | pick),
               gold:     ($gold   | pick)
