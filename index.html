@@ -569,8 +569,9 @@
     {time:'21時', icon:'☁️', temp:25, pop:10}
   ];
 
-  function byImportanceDesc(list){
-    return list.slice().sort(function(a,b){ return (b.importance||0) - (a.importance||0); });
+  // どのカテゴリも新しい記事が上に来るように、公開日時の新しい順で並べる
+  function byNewestFirst(list){
+    return list.slice().sort(function(a, b){ return (a.hoursAgo || 0) - (b.hoursAgo || 0); });
   }
 
   /* ============================================================
@@ -778,11 +779,11 @@
   /* 表示側の設定のみ。どのRSSから取ってくるかは scripts/build_news.py が持ち、
      GitHub Actions がサーバー側で取得して news-data.json に書き出す。 */
   var LIVE_FEEDS = {
-    news:   {source:'Googleニュース', containerId:'newsGrid',   sectionId:'sec-news',   sort:true,  targetCount:NEWS_TARGET_COUNT},
-    work:   {source:'LNEWS',          containerId:'workGrid',   sectionId:'sec-work',   sort:true},
-    ai:     {source:'ITmedia',        containerId:'aiGrid',     sectionId:'sec-ai',     sort:true},
-    sports: {source:'Googleニュース', containerId:'sportsGrid', sectionId:'sec-sports', sort:false},
-    gadget: {source:'PC Watch',       containerId:'gadgetGrid', sectionId:'sec-gadget', sort:false}
+    news:   {source:'Googleニュース', containerId:'newsGrid',   sectionId:'sec-news',   targetCount:NEWS_TARGET_COUNT},
+    work:   {source:'LNEWS',          containerId:'workGrid',   sectionId:'sec-work'},
+    ai:     {source:'ITmedia',        containerId:'aiGrid',     sectionId:'sec-ai'},
+    sports: {source:'Googleニュース', containerId:'sportsGrid', sectionId:'sec-sports'},
+    gadget: {source:'PC Watch',       containerId:'gadgetGrid', sectionId:'sec-gadget'}
   };
 
   function stripHtml(html){
@@ -851,13 +852,12 @@
         url: it.link
       };
     });
-    if (cfg.sort) cards = byImportanceDesc(cards);
-    renderList(cfg.containerId, cards);
+    renderList(cfg.containerId, byNewestFirst(cards));
     markLiveSection(cfg.sectionId);
     liveLoaded[key] = true;
   }
 
-  // 会社情報は3日以内。役員変更・IT/物流に関する記事を優先して並べる。
+  // 会社情報は3日以内。並び順は新しい順で、役員変更・IT/物流の記事は重要度の★で示す。
   function renderCompanySection(section){
     var items = ((section && section.items) || []).filter(function(it){
       return hoursAgoFromPubDate(it.pubDate) <= 72;
@@ -880,11 +880,7 @@
         url: it.link
       };
     });
-    cards.sort(function(a, b){
-      if (b.priority !== a.priority) return b.priority - a.priority;
-      return a.hoursAgo - b.hoursAgo;
-    });
-    renderList('companyGrid', cards.slice(0, 10));
+    renderList('companyGrid', byNewestFirst(cards).slice(0, 10));
     markLiveSection('sec-company');
     liveLoaded.company = true;
   }
