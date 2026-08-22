@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-08-22T14:52:27Z",
+  "updatedAt": "2026-08-22T15:42:25Z",
   "nikkei": {
     "price": 66016.36,
     "prevClose": 66216.79,
     "marketTime": 1787294703
   },
   "dow": {
-    "price": 53277.01,
+    "price": 53277.0,
     "prevClose": 53463.05,
-    "marketTime": 1787344917
+    "marketTime": 1787342400
   },
   "allCountry": {
     "price": 2997.0,
