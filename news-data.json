@@ -1,16 +1,9 @@
 {
- "updatedAt": "2026-08-29T23:35:33.387261Z",
+ "updatedAt": "2026-08-29T23:50:20.478537Z",
  "sections": {
   "news": {
    "sourceUrl": "https://news.google.com/rss?hl=ja&gl=JP&ceid=JP:ja",
    "items": [
-    {
-     "title": "テーマは“カフェ”！コック姿のスヌーピーなどをデザインしたモバイルアクセサリーが「iFace」から新発売",
-     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5uSUFkRGNZY01IQ1BZbEQ0MDVNVDBOVlYzWlBXaHdxVzF2TE5tb1Jra1A4NHRQRVhTSlRxNXNsNWluUWhmWGpSMXdTdFhFeWZEaDVLYmVnRmVhaC1QVWN3?oc=5",
-     "pubDate": "2026-08-29T23:00:12Z",
-     "source": "ライブドアニュース",
-     "summary": ""
-    },
     {
      "title": "大谷翔平、復帰登板回避 次回は再び白紙に ロバーツ監督「日付を設定することは得策ではない」",
      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9ENzVoMUlraC1rR0ptY0xLMXZyWTFwYVZscjNkVFA2SWtjR3lqVm9WSmxLclVfMWVzZnNadWhlaE5ULXBGSG9YbTMyak42aVJrNkNGQmNOUXE3ckR5NVpxVV9zRmVKVmdBT0xsMWdHdjBxcnZrcXfSAX5BVV95cUxPMDlKV1RkRE96THZkWUpyUDNaZ3ZIdlFlLUhZTmMxSUNhbUx3a1VhVGpib1M1Smg0bUd3X2U0Yi1NNE9PNDRZV25pV0hpR2FDcHRkT0VSSXZtbVpNVUdLV0hNbVJDbG9JdWk2QlNnMEJUNEVUdF90Y3BRdnMxMWc?oc=5",
@@ -44,13 +37,6 @@
      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB4VV9BOTNRMDZzU1IwQnY2NEl4T0NfRE90TXpRdmt1VklqTm93WXM0M0E0dnFpemI2c24zdDl5SngycElLNXNLRFFnY044blI3NzYtWkkzVEo3QmNmZjJ1ak5ZUjFWTTQ?oc=5",
      "pubDate": "2026-08-29T21:00:00Z",
      "source": "朝日新聞",
-     "summary": ""
-    },
-    {
-     "title": "海外旅行保険、契約者増でも赤字 10年ぶり値上げが映す経済力低下",
-     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE83d0EwOVNrNC03eGR1bHB4Y21oYUozby1kQm5OYUxHZ252UzF1Uk5mY3VXTGVuNUtrZXhjX1YyMEhha2tqMjEtSWNQQ3JmQ2hoQUFiS3pQMFNSbFAxZVh2TGROUEx6ak5rX3ZGZw?oc=5",
-     "pubDate": "2026-08-29T20:00:00Z",
-     "source": "日本経済新聞",
      "summary": ""
     },
     {
@@ -138,13 +124,6 @@
      "summary": ""
     },
     {
-     "title": "風、薫る：次週予告に再登場キャラ続々！ 短髪になったシマケンの姿も 視聴者歓喜「イケメンが大渋滞」「マジで叫んだ」",
-     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9WN1JFR2dycUtlakdWeGF0YmxOT0FwMDhZZVVfZXdnZFJMb0o0UlNTNlZnTFI0dDdHdnRZRkIwdUlMY2lINVYwb2ZQWFYybVNDZ3R1aWVDMFhxbHMwMzN4RUFGWVJkcDFSX2pB?oc=5",
-     "pubDate": "2026-08-29T11:08:46Z",
-     "source": "Mantan Web",
-     "summary": ""
-    },
-    {
      "title": "アイスランド、EU加盟で国民投票 トランプ氏のグリーンランド領有執着でEU接近望む声",
      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBDcFZPQ3FULThheTJmLVNRd19uVkdhNklIeVAxWVltUmNxR0Q1UG01c05MS0VpcjdIaWp3eE1kZDFueEtpZVNrZW5lS0JSRjhvSXVnOUpWSmdyQkNoQTQwaW9XbWtRTEdNb0dKa3NRYWEzVEt5Vnc?oc=5",
      "pubDate": "2026-08-29T09:30:10Z",
@@ -152,10 +131,24 @@
      "summary": ""
     },
     {
-     "title": "行方不明の中高生３人を発見 全員の死亡を確認 いちき串木野市沖海難事故（鹿児島ニュースＫＴＳ）",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE93S1lwTUdVM2p5NkxvSlk1MkhTbFdia09TR0Rva0stRlN1Nk94alNSbnRDZEZTMTNwTzh1Z0paTm9Ka3FhRDU2UklqZkhBUmwwdV9idFVNcHEyV1FtT09Tb0JhUks1OEtVVXdoY0lDZ1ZaSGxhTmkzaTlmMWF4alk?oc=5",
-     "pubDate": "2026-08-29T09:28:01Z",
-     "source": "Yahoo!ニュース",
+     "title": "男子中高生3人不明 全員の死亡を確認 いちき串木野市",
+     "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5uNkNFV21KTjc5MEpsXzdnQW92MnYzbFlvMjRyTU1yU1Z4V0pyc3RmZFVkcVdsNDh5X1ZSb0kyVi12Z2RzRE5QalJ4R1p6eGZ5NGU0ZG5UNA?oc=5",
+     "pubDate": "2026-08-29T09:09:00Z",
+     "source": "南日本新聞",
+     "summary": ""
+    },
+    {
+     "title": "ベッキー かつて〝バチバチ〟だったライバル告白「共演も少ない」「友達になることもなく」",
+     "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9EVkhfai1yTG1XZGJhSkJmdnpsY1dVUXB1dW91UFo0TEM3NFIzUzVpRnY1RFYwTm4yanc3MGJCcEszUDJvdE5Wei1BSEZ2Sl9zdHFicUkyLURya2Rf?oc=5",
+     "pubDate": "2026-08-29T09:04:00Z",
+     "source": "東スポWEB",
+     "summary": ""
+    },
+    {
+     "title": "東武4人死亡「中継見張り員」は事故当時移動中か「除草は始まっていないと考えていた」",
+     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE53SF9HRUxaT2p1WVRiblNnZHdsLUdMNW9QSnYtV09nRXpfN3h0MEN0M0duXzZtaVNlS3l0RW9yOGVGS0VGeHlTYXh6TUVLdzlzZ1ZKSG85eTRxVFlXOXI2SnBSV3ZKdnhZdU90UzZFYXNEbFN6aFE?oc=5",
+     "pubDate": "2026-08-29T08:37:39Z",
+     "source": "産経ニュース",
      "summary": ""
     },
     {
@@ -187,6 +180,13 @@
      "summary": ""
     },
     {
+     "title": "ウォーシュ氏発言で日本の金利｢上昇｣・円｢162円に下落｣ 市場関係者",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBvWC1GSG12WDV4NEpZWjMxZ3UzYm5sR1FhYm4tV1hHeVFGdHFRVjd0SFUwWEZwWUc3WkwtUDF5OE93RWxzQktPOVUtVWRJSHVoLXF6X2dlTi1MZW9DVkw4Y1lneEZEWnpJMjNIOA?oc=5",
+     "pubDate": "2026-08-29T07:21:18Z",
+     "source": "日本経済新聞",
+     "summary": ""
+    },
+    {
      "title": "辞職に追い込まれた福岡県議会のドンの黄昏 肝いりワンヘルス事業新規凍結と闇の中の真相",
      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE85SEltbHpsX1JRMi1WR2ZscVh5ZlFjSWg1ZW9hS2h3SlFtM2s5RkFvVU4zbUY3dEI1c3RQblNyZ3BnelBJVEFWVmlJYzllVE1TYXRhQk5xUHpGa0YwTXVRQVNTXzg1dS03QkNkdS1LLTNkOVFwQlE?oc=5",
      "pubDate": "2026-08-29T03:00:00Z",
@@ -201,10 +201,10 @@
      "summary": ""
     },
     {
-     "title": "NY金先物は急落、ウォーシュFRB議長のタカ派発言で9月利上げ観測が急浮上｜FX・為替ニュース",
-     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5NMThzaVhsRjdRWVhhbnp1bVhOR0pJcXFxcE82ZnF3aW44bzJwSldFTWlpcUNZZkg4U19HakdtdWRCNmxtZUw5OExWVGx3amtUdnc?oc=5",
-     "pubDate": "2026-08-28T22:42:00Z",
-     "source": "ザイFX！",
+     "title": "【20周年アンケート】どんな技術もガジェットも、掘り下げるとこんなに楽しい！",
+     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBkR0FTVFJkTF9HOVJ0SkRfRVFMMkxuQTFYUGVJVmwxaDdWSmdLQXI3M2E5OHA0SWstcVUxU1pQNGk2S3JYcWxMbnhyVDV3aFYyNC1HVnBMVkZkbDZicWxGVmZEWm9YZw?oc=5",
+     "pubDate": "2026-08-28T09:30:00Z",
+     "source": "Gizmodo",
      "summary": ""
     },
     {
@@ -447,6 +447,13 @@
      "summary": ""
     },
     {
+     "title": "阪神M点灯阻止託された田中将大、申告敬遠で勝負した坂本から痛打「抑えられていれば何てことなかった」",
+     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1rN0ctOExnaEFBM3hVUmdUaHNSRmc2MS1PR29zRlctX210WWhCQmhGZzdRdXczUkJ5R2dTYk5EcTQ3cmhKTEF1VHJIREFidVNyNVh6RHVYLXM5OWlEdWFHR2lnWEJzOThD?oc=5",
+     "pubDate": "2026-08-29T21:00:00Z",
+     "source": "読売新聞",
+     "summary": ""
+    },
+    {
      "title": "「地元じゃ知らない人はいない」“足立区伝説の不良”がＢＤ登場も衝撃のＫＯ負け・・・“六本木の黒服”の右拳被弾で崩れ落ちる",
      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBrdjNZckltTXByLTF1cDZnS25HdW1WUl9LYllvUlRjUU5sc2wxWERyUjdFOFJrVEplbjNVaDBSNUVBQ2JSelJXd2JmMEppR1FoY09CYThkdVhwWXZVTzdwSUtrdkFwNDQ?oc=5",
      "pubDate": "2026-08-29T21:00:00Z",
@@ -461,17 +468,17 @@
      "summary": ""
     },
     {
+     "title": "【西武】栗山巧の引退打席に最後の「いざ栗山」が響く…「歌詞を超えられたかな」のプロ25年間",
+     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5sb0o2MGpVRXdVUExQNEt1M3hBWHE2TEFxd20tenk2d3ZGWTRzUkRKV1dhOHp4RzdxSU1ZWThaSzhTNUVfUTl6Qk5xQmdQbm5OUE9XdzFlTGN3eEM2Q25EemVaUUoxdWw1a3Z1ZHdKbnTSAXhBVV95cUxOOFVwZzQ2OVVnbXlmRXEyOGRSVDFld0YxVnl1bVBhZHFOY0NLRzZlZlFYOUtKQUx2LTE2MEc5ZmZ4U0I5SW05NjBMb0Z4eHhtcGQwU1Q1eHlIaEZPY2IwMDBDc2xpYzFLNjhVRDdST0c1a0ZTYzJJeUQ?oc=5",
+     "pubDate": "2026-08-29T19:55:00Z",
+     "source": "日刊スポーツ",
+     "summary": ""
+    },
+    {
      "title": "「大丈夫か」「怖くて映像見たくない」土曜夜、日本代表DFを襲ったデビュー戦の“悲劇”にネット懸念「ヤバそうやった」「心のダメージ大きすぎ」",
      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE16b3pGREtWaTJRNE80dHIySWpPMDBRbXpnazh0SUxxeDhOd1lDNTBWWDgtT0JiSGV0MDJpY29QRmZ5NHFwU2xjTExZT2o1bW4xbk1wTjNnNW9RWkhiN0hEV1JCRdIBc0FVX3lxTFBNeEoyaGk4Vmc3QWZNNksydHROa0lPQk5NdnJhcS16WEpQMng3cXcxMElVR2ZfWXRhRk5zN2pXdmE5Y3FtaFliOUJjTTc5dllkci05RV9WOVRtUUZfaDNxSlhTV1JNLVRLR1BJU2haTnc3Qm8?oc=5",
      "pubDate": "2026-08-29T19:25:00Z",
      "source": "サッカーダイジェストWeb",
-     "summary": ""
-    },
-    {
-     "title": "ソシエダがエスパニョールに勝利。久保建英は今季3試合目で初のベンチスタート…77分から出場も見せ場なく試合を終える",
-     "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPOHFYVWhEWWMyeFlpdUt0UG1KWVRmbHRXMWdRZFFKdVlTWi01N1V5SjRzWWM3VnpoRzdGb05qLXJuRjd6UEZodGRTWTBXdDRvVXBqbG9lbFA5bWkydHc1VjNzeHprdi1fN2MzMGF1ZFNjQnNSbXMyTGJjSXZDUm5VMksyekowQ1N6UnJJX09FWG1HWGppdUxwZ2lNeGduMnBFek50R0NSZkNhRnZ6ZzJYTlc1TFlXYUJHWFMzYVdKZTdqcTFwbVVjaV9iY1AxNDVFNkFmYnZsREVMSmtoWkl1OQ?oc=5",
-     "pubDate": "2026-08-29T19:12:00Z",
-     "source": "Goal.com",
      "summary": ""
     },
     {
@@ -510,10 +517,10 @@
      "summary": ""
     },
     {
-     "title": "【梨田昌孝】明暗分けた巨人ベンチの２度の「申告敬遠」作戦は阪神に“吉”、巨人に“凶”と出た - 評論家コラム - 野球コラム",
-     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPaHQ2VmlWQlBWakdkMDJ3ZEItWDQzQVB6Uk5DcklWRlVhbkZ3SGpmXzQ2Z3NtTGQyU3dXRGV0Si1ubjBUMGlYb0RIbTdObktzTXAwLUxURHhTRXFERVJPNjNvV09HZmxTZzAxQUlvb3ZWbWZEeEJpY01aZm43NFdWWlI1dWw?oc=5",
-     "pubDate": "2026-08-29T13:42:00Z",
-     "source": "日刊スポーツ",
+     "title": "マラソン夫婦の一山麻緒さんと鈴木健吾に第１子 一山さん「Ｓｕｐｅｒｍｏｏｎ Ｂａｂｙ」と赤ちゃんの足の写真とともに報告",
+     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBnSkxVTmFEMWhJSWZlUEZqSzNGNUZjbS1BMGoxS2taWWUwbUg2S1BLUlYwaGhaX3oyUldneFNrZUhjSXVkaG9ldF9qenl3WlkxdDloRXB0aGhlck1nZ0w3SDBLNjdIRkxPRmVj?oc=5",
+     "pubDate": "2026-08-29T13:39:09Z",
+     "source": "デイリースポーツ",
      "summary": ""
     },
     {
@@ -556,13 +563,6 @@
      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9ncUVUYUhta1lCWjNCaG5GajcxaF9Ld1NiMlR1eEo1UTNHdXRTMF96alZMUlBiUk9XZllYZUZzaXhJZHpyb2hKMFF0RFZRMTluLUVvRG9FQzhHRTY1QUFLRk00OXc3OHBW?oc=5",
      "pubDate": "2026-08-29T12:40:00Z",
      "source": "読売新聞",
-     "summary": ""
-    },
-    {
-     "title": "澤穂希さん 引退時に買った超高額ご褒美「今までの貯金で一括で」 矢作兼「高いですからねえ」",
-     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPYnNDM0pNTzdqV1NyUmloMmM5Tk15aHpOZ0E2UjlSZnE2R3FrQ1VRWVdEd0xZdFpNcEhYUkFxd041UWx0anNKQlczRmVZUkxOVkhpTUZuajgtTzUwelpHQ295WG1pYjdqNG9LZF9yQ21CMDFGektLQVVZV2tGaTN0S2Q1M1JKbGE1NWxGTlE5b2FTUTloNlE?oc=5",
-     "pubDate": "2026-08-29T12:36:00Z",
-     "source": "スポニチ Sponichi Annex",
      "summary": ""
     }
    ]
