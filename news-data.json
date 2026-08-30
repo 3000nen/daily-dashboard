@@ -1,9 +1,16 @@
 {
- "updatedAt": "2026-08-30T19:05:43.828166Z",
+ "updatedAt": "2026-08-30T19:20:38.072120Z",
  "sections": {
   "news": {
    "sourceUrl": "https://news.google.com/rss?hl=ja&gl=JP&ceid=JP:ja",
    "items": [
+    {
+     "title": "滋賀 乗用車とトラックが正面衝突 3人死亡 3人重軽傷",
+     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1jVG1sbHRNS09YMnlEQnhuLTlqNXd3MnVqVTNfMU1icFFYdWJFQUtJei15dkpVSlJlRzA4SXpUYVczSDY0QVZvazN3T0JwSndPTTV0OENlNDAySm9nb0pJ?oc=5",
+     "pubDate": "2026-08-30T16:55:54Z",
+     "source": "NHKニュース",
+     "summary": ""
+    },
     {
      "title": "鈴木唯人がブンデス開幕戦で衝撃のハットトリック!! 後藤啓介もデビューのフライブルクが白星発進",
      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9zX051MWxCQkROTEpyeERwb1lLZUVtYll5Z2NqOXBVejRTdFl0WjFIblc2Z1hNVEd5Q2FtRTVJTUprUGduRjFnQWluY3N3ZU53M0p2VlFZemo0OWprLWl2SG9aUzFBQzJFQUxB?oc=5",
@@ -40,10 +47,10 @@
      "summary": ""
     },
     {
-     "title": "WEST.激震！藤井流星と小瀧望がグループ脱退 時期は未定、重岡と濱田が結婚発表したばかり（スポニチアネックス）",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE00bDl3ZG1MM0I5S0lTS0VEVXFRRlltc1M2RTdCYTBORmZQXzRoQnQ5Wkk5Q0VJUVExeDdMX0ViVThfZFRWX3BJUGQ3RXF5Y1dmb3k1NVE5bEdYT3Q3LWtBYVQwRngybmwwSS1DelJ1alV5NFlfVW1HNmgwdUxaQW8?oc=5",
-     "pubDate": "2026-08-30T14:00:00Z",
-     "source": "Yahoo!ニュース",
+     "title": "WEST.から藤井流星と小瀧望が脱退",
+     "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBDN3hfZVRDN0VibnpmVnhJU1dESS02MUpodWd4bVl3X2tudWZfYnFVOEd4WGNPRGNHTTRaY0pUa09QbngyUzhGNjZYN00?oc=5",
+     "pubDate": "2026-08-30T14:27:00Z",
+     "source": "ナタリー",
      "summary": ""
     },
     {
@@ -89,24 +96,17 @@
      "summary": ""
     },
     {
-     "title": "星野真里のゴール目前〝24時間マラソン〟に乱入者 プラカード掲げ「触るな、お前ら！」",
-     "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5Mb01aalc4dnVMdU05d1o5Qjc3empuZEMtblNXQU1EMFdQd3RtVGNMRDdhbENraDFPVmlIT1E5ekdaaHFpUjNpYWUwb3lhYXJ4Y3NmVnByMXQ4ZjZa?oc=5",
-     "pubDate": "2026-08-30T12:30:00Z",
-     "source": "東スポWEB",
+     "title": "巨人、痛恨3連敗…橋上監督代行、阪神との差は「言ったらきりがない。手本にしなきゃいけない部分もある」",
+     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPUGNWZlZrZm80MVZsTmxONEFQSTc4ZGF2Yjg0c1pDU1QtaW1vWjViMm9RTlkxclZ2UldiQ2JBaElKWTJfcHB3aDl1Rm9MNU5NVzRweHV6dklMUE9ScjFnR0MwdzRFUUxMX0xoQTk1NDdWNklrLVpyd0NoaEphRVVjRjlnQ0RUQWlMOEFlSU9jVW1xeE4zOEHSAYoBQVVfeXFMTWcxWmNtQlZhRU5BYzM1NE9BQXR3dERvaGU3TDkzWWktUmNIVWRvZEFRRUVBcWd5d1FNMTdQVDgtWG1NNXpSYjZWdVphdnFvR2REMndYelNuN1JiaUtOS1hCRDJRUlBNQndSem5nRmdId0t1RjVHWjQ0TF9NelZCUlhPZmZ4Y2I1VDNR?oc=5",
+     "pubDate": "2026-08-30T12:53:32Z",
+     "source": "サンスポ",
      "summary": ""
     },
     {
-     "title": "【巨人】屈辱の天王山３連敗で4・5差…阪神戦７連敗で89年ぶり球団ワーストタイ",
-     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBKTmhEMG1ab29SNU55VWZab3hzS0VPeXRNZFZ2ajJhYkszLVdjeFN5U2JfZmhSbjBxamM2b0tDSFg5S1ZEOFlqVndxM3lZVnUyZm9BYlpOY0pObkZwdDBUcWp2c1Q0OTE5ZHd4NVBQT03SAXhBVV95cUxQLW4wQVA0dU00MHRGRlNrMWY3RkQ3X1BYNVlJMHBVeHdaeXo0bXhxNF91S3ViQUpWblRzYmJ1TTdJUzZzb0dQekNIYnlEYUJnSFU1LWNkLWsycy1vM0FQVzl6OVpBSTJSVVE2bWhTcjA5aEJvQzhRbEU?oc=5",
-     "pubDate": "2026-08-30T12:27:00Z",
-     "source": "日刊スポーツ",
-     "summary": ""
-    },
-    {
-     "title": "ＮＡＳＡが新型宇宙望遠鏡を打ち上げ…太陽系外にある惑星を探索、観測できる範囲「ハッブル」の２００倍",
-     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE82TW1FNTlFR1U2OURnSkR6RWlHMHc2Sl90T0c1VTFwTFE2elpfNFF2dHIyZzUxLVBCNHNWRW9ybGxJanNEYjNkblhMV0lnLVZYZ1p5UnpKblVMYVRnUU1jdFdZNUw?oc=5",
-     "pubDate": "2026-08-30T11:36:00Z",
-     "source": "読売新聞",
+     "title": "星野真里、先天性ミオパチー患う１１歳娘とゴールで涙の熱い抱擁 夫・高野氏「おかえり。そして、ありがとう。頑張ったね、頑張った」…「２４時間テレビ」マラソンを完走（スポーツ報知）",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1UcVNkam03LVVma29Wd3hwNVdTZTVhLXBSS2hJQlM0NG1JUnZ1Nk44MW05Y1QycnBDOHpzNUZLY2NzNHEyRVpLWlNjbDlycThBQV8waUpFVm94WlpLbklzQ1VzNm9zN21BV3J5cWpqSjlGMXREaS0xRFd2eXotY3c?oc=5",
+     "pubDate": "2026-08-30T11:42:45Z",
+     "source": "Yahoo!ニュース",
      "summary": ""
     },
     {
@@ -121,13 +121,6 @@
      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5rN1k3TElzenFSSW9vLXNadHo2WW1YSS1CdWNTWktCVTkxZ0pNR052NDRnWXlsSGZDcnQwcUplcUxTQ2ZXTFEyR3AtX2VkcFM1LWc1UHdwbThDOTVyZ2tTNHBvOVJLdDBBUk5zQUs3VjZwNjQwSTJoUWFNVHFoSDQ?oc=5",
      "pubDate": "2026-08-30T10:56:43Z",
      "source": "Yahoo!ニュース",
-     "summary": ""
-    },
-    {
-     "title": "沖縄 読谷村 ダムで中学生含む2人が溺れる 搬送時意識なし",
-     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB3clhiR3dXOTI5OEVEQ25mLVYxazNJWDBkR1paZ0lvTkRBX2V6RDBhZGYyWnRBVmJiR2M3MHlRbWxRSjBLWGJFQzVjR1ZLd2gzb0ptSHV2WGRQZF9UWmRv?oc=5",
-     "pubDate": "2026-08-30T10:46:49Z",
-     "source": "NHKニュース",
      "summary": ""
     },
     {
@@ -149,6 +142,13 @@
      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE81T1d6SGZiSExlMjF2SkxWcVRRT25STWhQanV4WlNDNE5wbU1qZmpXRlJCUGdZT3ZvbWQtUUlrVXpkNWdyYWkzLUduZGNkS1U2OXExWDBRS3ZrMkRYSElJRXV5SVRDc01Od1FUM0VRcmV5dWVaYXcyWG41a3BlQ2M?oc=5",
      "pubDate": "2026-08-30T10:00:39Z",
      "source": "Yahoo!ニュース",
+     "summary": ""
+    },
+    {
+     "title": "高市内閣支持4ポイント上昇62% 減税「社会保障に不安」64%",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE03UnRNbFJ5dmdQUnpKWGJaRURWMC1hSFp4TXoxUzd0OEI1cy1Yc0JXc0tyRVVscWNSRHlKcF9falhKc3ZFTTFsanE0YVFjbU1JNE9PMWV3cmtIVmdOXzJ3ZUZzeGgtZTdudFhONQ?oc=5",
+     "pubDate": "2026-08-30T10:00:00Z",
+     "source": "日本経済新聞",
      "summary": ""
     },
     {
@@ -461,13 +461,6 @@
      "summary": ""
     },
     {
-     "title": "【吉見一起の目】「昨年もそうだが…」指摘したチームとしての大きすぎる課題 これからは「トーナメントに近い気持ちで臨んでいくことが大事」",
-     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA0anMzV05IVWMwWExHTU1CZEcxRnREa2cySHBQODZVUF9oYXd3OVRDd1RKVjlFWjhtcm16MHMwRjNPbnJqakdhdHc4OG9GZW8tMkQwMA?oc=5",
-     "pubDate": "2026-08-30T14:25:46Z",
-     "source": "中日新聞Web",
-     "summary": ""
-    },
-    {
      "title": "フェイエノールト上田綺世が３戦連発！ 相手GKの股を抜く強烈な一撃を突き刺す",
      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE96bkt6eDg3NWlVUk1fa1M4U3RvajFGWVEyUGR0OW9jZ1NMU0FmVWw1YUllSE1aZ0FvN2U1NUg4aGpta29uc0hfdHdRWmM0SUZNQ00yTlNRT1F5UGxoMVZoZ1NWRdIBc0FVX3lxTFB5MjA5aWI5WlRZNXhOa3hHSEV0OE14LWpDOHl3WU1SYTRRbE1oTGRxcDRNaWVua044ZmU0RVFWME5fMDFzVXllQnlDMFBEMHBRazdFZk1RYW51MGZ2eVQ4YXczS2NQcUtPRVRrX21OdjRMWUE?oc=5",
      "pubDate": "2026-08-30T14:18:00Z",
@@ -489,6 +482,13 @@
      "summary": ""
     },
     {
+     "title": "巨人、痛恨3連敗…橋上監督代行、阪神との差は「言ったらきりがない。手本にしなきゃいけない部分もある」",
+     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPUGNWZlZrZm80MVZsTmxONEFQSTc4ZGF2Yjg0c1pDU1QtaW1vWjViMm9RTlkxclZ2UldiQ2JBaElKWTJfcHB3aDl1Rm9MNU5NVzRweHV6dklMUE9ScjFnR0MwdzRFUUxMX0xoQTk1NDdWNklrLVpyd0NoaEphRVVjRjlnQ0RUQWlMOEFlSU9jVW1xeE4zOEHSAYoBQVVfeXFMTWcxWmNtQlZhRU5BYzM1NE9BQXR3dERvaGU3TDkzWWktUmNIVWRvZEFRRUVBcWd5d1FNMTdQVDgtWG1NNXpSYjZWdVphdnFvR2REMndYelNuN1JiaUtOS1hCRDJRUlBNQndSem5nRmdId0t1RjVHWjQ0TF9NelZCUlhPZmZ4Y2I1VDNR?oc=5",
+     "pubDate": "2026-08-30T12:53:32Z",
+     "source": "サンスポ",
+     "summary": ""
+    },
+    {
      "title": "選手を見限らない鬼木式マネジメントが結実！遂にエウベル覚醒でチームは新たなステージへ／【レビュー】J1第4節 東京V対鹿島",
      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE50YnhPZ1NSTmRiS2dKeHJ2QXR3bUFhbEp4b281R2xvcjhOTW1ybVdqNmM4T2ZsRldwNUJwQTFHUW9nMU9rR0RmQUQ2T0lwc0JXRGdFMDNVb080OUNXQzJKbA?oc=5",
      "pubDate": "2026-08-30T12:53:06Z",
@@ -496,10 +496,10 @@
      "summary": ""
     },
     {
-     "title": "【巨人】屈辱の天王山３連敗で4・5差…阪神戦７連敗で89年ぶり球団ワーストタイ",
-     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBKTmhEMG1ab29SNU55VWZab3hzS0VPeXRNZFZ2ajJhYkszLVdjeFN5U2JfZmhSbjBxamM2b0tDSFg5S1ZEOFlqVndxM3lZVnUyZm9BYlpOY0pObkZwdDBUcWp2c1Q0OTE5ZHd4NVBQT03SAXhBVV95cUxQLW4wQVA0dU00MHRGRlNrMWY3RkQ3X1BYNVlJMHBVeHdaeXo0bXhxNF91S3ViQUpWblRzYmJ1TTdJUzZzb0dQekNIYnlEYUJnSFU1LWNkLWsycy1vM0FQVzl6OVpBSTJSVVE2bWhTcjA5aEJvQzhRbEU?oc=5",
-     "pubDate": "2026-08-30T12:27:00Z",
-     "source": "日刊スポーツ",
+     "title": "中日まさか九回に逆転サヨナラ負け 守護神・松山がリード守れず 最下位転落に左翼スタンド呆然（デイリースポーツ）",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5oOGtzZWNHVy1ib1AxYjVienBWTkNPYWt2cUhjYWlSc01XVm1neVV2T3plUU1mWlRQMDBOT2FTNzVmSkR1V2lQdkYwUWQ1cFFQNldkRU5TSmxFYlRBSktPandQZW1HeFFOQmF0N1R4Tlk1VUtPWERWOVpwU1RycGs?oc=5",
+     "pubDate": "2026-08-30T12:28:48Z",
+     "source": "Yahoo!ニュース",
      "summary": ""
     },
     {
@@ -524,9 +524,9 @@
      "summary": ""
     },
     {
-     "title": "【ボートレース】ボートレース界初の偉業達成…峰竜太はどんな人？ 峰竜太アラカルト／桐生SG",
-     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1jMnI5UEkwZFRJYUVhUk5zV0ZCRnJqdV93NEhHeGFYRDkwcTBHMGtiVTRuWVR3MGtUbVhCWExDOGhFX1ZKVE9SRTRoNXhqNUJLVE5IV2h5eDg2Q0lYa25MVXl3MTZzWC11OEdQN2YxRzhDRGs10gF8QVVfeXFMT1FMZTVoRFBIVTZVSTFJcmV5TFFONU02a0tpcm9lcE1OTjAyc3hod3k2UG80UXFIbGsyNkF3UmlfWkJHb2JGdzdSMWNhYmVLSVF2V0VwNzdPS29DM1M5MGlNaW83akQwN1BJa2xIcllFNUVlNTJJZW4xdVhGbA?oc=5",
-     "pubDate": "2026-08-30T11:53:00Z",
+     "title": "【ボートレース】GRANDE5完全制覇の峰竜太に“本家”がお祝いメッセージ／桐生SG",
+     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB4YnZSN3hEelBHSEtjWmlhV2VhNUxjYlY0RDNoM2xjQ2FOejJVMHRwR01hODNyOFhhdVZHbzVaY1VodVkxWTVvR3FEZDhnZU83ZHhseHQ1WlVQaUw1UTc5d0N1a3REN2FHYW1kanlNUTByQmJt0gF8QVVfeXFMTVlTNmxvZTh5YUkxVEZjZjViZVltc2lXTm9hWVlwS05laVBnOXRzV3djSDVzS3dHVFlXc1ZoV0lJbVpPSVFRS0VIaWRERFc0d2dQYkpqVFEtZHd6UzhmUmUwNVhhMmFNeVZib1lMVDVjdmZ4R2FBOEJybFFQRg?oc=5",
+     "pubDate": "2026-08-30T11:52:35Z",
      "source": "日刊スポーツ",
      "summary": ""
     },
