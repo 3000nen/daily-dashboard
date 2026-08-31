@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-08-31T07:20:38.959119Z",
+ "updatedAt": "2026-08-31T07:35:30.840517Z",
  "sections": {
   "news": {
    "sourceUrl": "https://news.google.com/rss?hl=ja&gl=JP&ceid=JP:ja",
@@ -9,6 +9,13 @@
      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1fb2dxd3h5Ni1GeERpOEVfMk1jS1ZWOXg5LXdJd2taUmU0bkoxdnBjODg4QTNqXzR4NVBBaW0xc2E1RUF6dEI5Z3YtbHdqQktReWpTV1o3T2hnVENDeGt3?oc=5",
      "pubDate": "2026-08-31T07:05:33Z",
      "source": "NHKニュース",
+     "summary": ""
+    },
+    {
+     "title": "東証大引け 日経平均は反落 米利上げ観測強まり",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1nZ3BCd1BHLUFIZHZMLXNFM1ZmM2RBYnRVdHRTUGdOcktzS3RJRDM0S1puUlFkc3dqZk04cmpFOE5xNmMzclNDRjdpdG1BdHRucGJEU0dDbkJiclRPZWY0UnRxSG1SSS1sLXZLMA?oc=5",
+     "pubDate": "2026-08-31T06:52:51Z",
+     "source": "日本経済新聞",
      "summary": ""
     },
     {
@@ -33,10 +40,10 @@
      "summary": ""
     },
     {
-     "title": "週間天気予報 前線や熱帯低気圧による大雨注意 週後半は西日本も暑さ控えめに",
-     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1zMjJKUEVScGtWYjVPVS1SSHVJcGJRX0NNR1FjeUJQV19LaGdZaU1rYVJHZUd1cWYxZFItLTFSdWxIb2lOXy1WbHRnN3otd240b3RFbg?oc=5",
-     "pubDate": "2026-08-31T05:40:00Z",
-     "source": "ウェザーニュース",
+     "title": "中ロイラン首脳ら集結、トランプ政権に対抗 上海協力機構会議が開幕",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBiQVZRb2hWQV92VFJYbUh3bi1FWkFmWXFFbVp4WWY4SUxBRVNub0FhUmQ1eHlnLUc1Sl9IelM5TUExaG52MklSa3JTSUJlV3FhNW1OOGUxemo4N1hjakVIRlZTWnpCOG9CYW5tdQ?oc=5",
+     "pubDate": "2026-08-31T06:00:00Z",
+     "source": "日本経済新聞",
      "summary": ""
     },
     {
@@ -61,6 +68,27 @@
      "summary": ""
     },
     {
+     "title": "年間王者シェフラーが破格16億円ゲット 松山英樹の獲得賞金は？",
+     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBOZG1RUVZyUUkzODhabXRlNDlZTXNMODFNblNpQllxc0Y5cFV1OHRuQmxXNnYxTkEwWkxWcUpGYnEyLUZrdVp0WWJnZGRPbmZVNUpiX19NeUZ1d1ozWHZOZk01bVVhTG4tdWRaOHg1OE9jWV85?oc=5",
+     "pubDate": "2026-08-31T05:03:07Z",
+     "source": "ALBA Net",
+     "summary": ""
+    },
+    {
+     "title": "アップル、折りたたみiPhone専用ペンシル開発も「発表見送り」の可能性",
+     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1abkZYYXBWVnhuN1B3SHA3bXdWVVNKYW5OdkZuRGpCT3VyUHNvMDRoZjFhWEwzT2N6c2p1ZlZiMUk2TlQ4TlczdFZGLTZzaUdWNmdVR1RCZ0RUZw?oc=5",
+     "pubDate": "2026-08-31T05:00:00Z",
+     "source": "Forbes JAPAN",
+     "summary": ""
+    },
+    {
+     "title": "『映画ちいかわ』特典第４弾発表 島二郎・セイレーン・ヒトハ・フタバのチャームミニフィギュア",
+     "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5RX2VtNjJEOVNlSFhKdmg1Rkg5NnhiRFVOX2NlX21UdjJWU1k3bG5OQnUtWkxENGViWWJ2ZTFyZFdLM2JxekFDZlpjWHg0MHZCYzJsOHpR?oc=5",
+     "pubDate": "2026-08-31T05:00:00Z",
+     "source": "オリコンニュース",
+     "summary": ""
+    },
+    {
      "title": "熱帯低気圧 24時間以内に台風へ 今週後半に沖縄へ影響の恐れ",
      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5fQ3dwc2JTZHdLMV8tdE5hdFBLX0t1TDlWRWxPenllQnNvOFI4REhWSGRFQ2ZJRS0wZDhKN3lkczhrWVcySFZGeTlkdzJ0Wl9sbmNFRVFkRFVrMm9rUVE?oc=5",
      "pubDate": "2026-08-31T04:14:00Z",
@@ -75,10 +103,10 @@
      "summary": ""
     },
     {
-     "title": "松山英樹は26位 プレーオフシリーズ最終戦Vのシェフラーが盤石の首位／男子世界ランク",
-     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1zT3JjS0FVQzFHRk5WTDVpSTIzbHJ6MmI0STR4SVZTbXpiZDk4eUxTenpYckVJU2dCZmlXOU9sTDB0aW90c3JVMjc0T2xCQmZxdDNQN0dia1U5NjJLNWhPZXpMR2pVMDJKa3pOdGJiMVJNcDjSAYcBQVVfeXFMUE9lTEJJTm5xTTNBNVNCYmZORm5fVnBDeDFncUlaYmNBVjZNZmVudTQyNGFZckktVm4yWnpEV19nNHVlTngxTVk0QmFDdUc4RWh1dWZIWUcwLTJDcUNDNmNtQUJYUXppM0NVSDNNVFpqRFgwM2RFMTdnQmhmalEzTE42YjFyRldV?oc=5",
-     "pubDate": "2026-08-31T04:07:16Z",
-     "source": "GDOゴルフニュース",
+     "title": "米NASA、新型宇宙望遠鏡を打ち上げ 史上最大級の「宇宙地図」作成へ",
+     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBQdWluUWR0LXAyTEU1cWtwdmNnODdkNGwzTklwMjFHNlFjT01KRXoyQlp4T1RhakFObWMxTVhCR2tsQUNweFdQc0dqOENaSkpLX0HSAVRBVV95cUxPZFcwN2EtbFB1c1I2ZzVaanVFc1BsRGt3Z3AzRmV4MnZwOUt3TDlBd2hQMWxIa3VmYy12dFEwWXVKdUVsNHIyWEtyYVY0Q1FpUnotUU8?oc=5",
+     "pubDate": "2026-08-31T04:04:00Z",
+     "source": "AFPBB News",
      "summary": ""
     },
     {
@@ -96,6 +124,13 @@
      "summary": ""
     },
     {
+     "title": "福井大雨、避難指示は全て解除も一部で冠水状態続く…住宅・道路で復旧作業",
+     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB6bWxlU2tBeko1enJvV0huaEdqYXJFWm9yNUQ4S2pNWmJxTmxGZFduNFBxbS1EbE55bHA2eGZLU2E2MER6V1hZVS1sS2M1d2xiYlF5YTJ6dC1XQmU3dXlNbWs0Yk5UQQ?oc=5",
+     "pubDate": "2026-08-31T03:14:00Z",
+     "source": "読売新聞",
+     "summary": ""
+    },
+    {
      "title": "米軍がイランのミサイル発射施設を攻撃、「脅威を作ったのはイラン」…ヨルダンの米軍基地に報復（読売新聞オンライン）",
      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE93QmVEdjRfMnlSd2dobmhGWEtfeC1zOWNBeFF5OWNuNDhQcGJJUkVEREUtdTZuVi1TdkFSU29YR29obGFsSk9XcFVPSkd1eUUtRDZMUnY2YVN0Q0JyOTc3WTZZNFRzb1gzUmxHcWg1V1B2WDJNVWZWZENBdHdsc0U?oc=5",
      "pubDate": "2026-08-31T03:05:53Z",
@@ -103,17 +138,10 @@
      "summary": ""
     },
     {
-     "title": "【ドジャース】大谷翔平の投手復帰に「ＮＯ！」の嵐 地元ＬＡ紙まで「やめろ。もうやめろ」（東スポWEB）",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE84RFdjUHRVZDhDZkE3Qy1lNk5fNlVsYnNfU2F0Q29CRTVxSVhoV1pWMHhiY1NGVGFIaHJFeU9ZaGxVSm03WU9wZU5kb3BFR3lPN2p2cVBsMG0xMkNRd05rSUZzMzVyaW5TVU5hbXNocVJKX2xWNnlwcF9YcWZybjQ?oc=5",
-     "pubDate": "2026-08-31T03:05:24Z",
-     "source": "Yahoo!ニュース",
-     "summary": ""
-    },
-    {
-     "title": "『ドラクエ』見た目が良すぎる「スラミチの麻雀牌キーホルダー」に注目！「ギガンテス＆アトラス フィギュア」ほか4プライズが9月順次展開",
-     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1PWlQxbGxfZmphUFhGbWRmblBJUHM3N1FXX1NvNjktWG0xV0tRMU03UFU2cFJmbk9IbHdycHBnd0FQalFmcjBNaVMwbmNqSXo3UGhtY05EUjg3QmFhZlNkdUN2cVFFNkJiQjctMi13?oc=5",
-     "pubDate": "2026-08-31T03:05:03Z",
-     "source": "au Webポータル",
+     "title": "未婚の若者３割が「将来結婚するつもりはない」、結婚より「余暇・趣味を楽しむ」優先…初の１０万人調査",
+     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9Pekx1Vk03UmFvMFhvbEdYZ2laY2xvZGQwSjFBTHNpTXQwTGJLb0k1dExaQUY0Z3JQcEh4VXJnZXh3cXJNNGZUTlZVWmVuTTdyWUg5R2dNaHhzZjJsRVI1RHd6VFBVdw?oc=5",
+     "pubDate": "2026-08-31T03:00:00Z",
+     "source": "読売新聞",
      "summary": ""
     },
     {
@@ -124,20 +152,6 @@
      "summary": ""
     },
     {
-     "title": "日経平均午前1043円安 崩れるAI半導体、FRBタカ派的発言が冷や水",
-     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFAzd2JBZlRzVmFaM1pjVzVidFpPck10RzlzeTRlOEhtTmxZRVc1bmFES01PMUM5THpERGs5NW4tQ09fbEhiOUlIR3Q5a3FqWVREbnZqT1lRRG5pQWFQTFZlNVNIS3FpOUxRT0syOA?oc=5",
-     "pubDate": "2026-08-31T02:51:55Z",
-     "source": "日本経済新聞",
-     "summary": ""
-    },
-    {
-     "title": "福井県 記録的大雨 被害から一夜明け片づけ作業",
-     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1QWVFMci1Pb1Vtamx4dy1VZ2x3dFo1dXJqMTZ2bmU0Mmh1aXlPaGJJZkQ5VW5zbTRoaGV5bEUtLWQ1UFNfYTZnamlLdTlrVUdhZVpqOW5DZWlySWxXYzlj?oc=5",
-     "pubDate": "2026-08-31T02:51:00Z",
-     "source": "NHKニュース",
-     "summary": ""
-    },
-    {
      "title": "「カレーハウスCoCo壱番屋」運営子会社の売却を検討 ハウス食品、株式の非公開化も",
      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBSUk4yWXJvNmF2MUlYVXY3Q015c0FVeFB5ajdlaERWbHVsejlWZWlIS2x4QWx4cklYQVh5VklrSFU0TVhaUkRCRTRmZ1JLMHZidGVWY2dHcFE0UG9LY0p1eTdPWm94VGtvZnptWnR2b000ZURWY0E?oc=5",
      "pubDate": "2026-08-31T02:46:53Z",
@@ -145,17 +159,17 @@
      "summary": ""
     },
     {
-     "title": "NASAが｢ローマン宇宙望遠鏡｣打ち上げ 佐久市の深宇宙探査用地上局でデータ受信",
-     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBtTVJ3TzhLb0d2RXJnOElnWFdyajBQSi0zVlU1M2Z5cnBSRzRXV0pwODc1OEdiSFZkRUZQUXNSd2VJY0prTHRaa1ZENGd3RlUxQVFiLXM5QkdlTWw0NnUtdDBhbXlqNEt3TzhoMzY4NlU?oc=5",
-     "pubDate": "2026-08-31T02:27:00Z",
-     "source": "信濃毎日新聞デジタル",
-     "summary": ""
-    },
-    {
      "title": "\"1000年に1回\"のずれ3回も 熊本地震の「不都合な真実」",
      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE0tU2I0Y3VQaXJ6VDM5SUFIbm9nTU9oWE1JYWhSbUc4THRXY3R0X3kwNkdEMWpPNnJEMDNsM2JyX0FiTHNHWGloSUZDS01ac3V1b1Rob0dpdEFxc21SVldaSnNpTERlM0di?oc=5",
      "pubDate": "2026-08-31T02:00:00Z",
      "source": "毎日新聞",
+     "summary": ""
+    },
+    {
+     "title": "国内最速タイ記録となる5戦目で世界奪取を狙う吉良大弥のルーツをたどる 小・中・高校時代の指導者の証言",
+     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE91d2FkWXY5VHJ0UW1vZ0lYVnQ4VUpDSnZsc29CTW8wMVFzYlJZc1BmT2Y3MHNjUjB1Z1dSRWNPZDdWaGNNMERYeFM0Nmt2bmxHOFdPdlpDbWtPYjFHaTdvX2VSUDBraXg0OUdvcUdR?oc=5",
+     "pubDate": "2026-08-31T02:00:00Z",
+     "source": "スポーツナビ",
      "summary": ""
     },
     {
@@ -180,24 +194,10 @@
      "summary": ""
     },
     {
-     "title": "Googleマップ、オンタリオ湖を｢アメリカ湖｣に 米国で表記見直し",
-     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBMTU1mTE1OMVVrT2ZMWjJTWXF3N2Z0VUZ2VkNTOXBRbjB3UGoybEhpTnlVdzBvU2EyV3RxRkNjZmRqVTlxd2x4Z3VsU1hNRjNFZHJsNjJwd1ZlcG96bVpoemNJVFZOMHhCR1VGRg?oc=5",
-     "pubDate": "2026-08-30T21:11:18Z",
-     "source": "日本経済新聞",
-     "summary": ""
-    },
-    {
      "title": "トランプ米大統領、司会者に圧力 「中傷」と怒り、処分要求",
      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9LaTd3NjdKWlBpSm5zRkVfQWxWS2FCWXlFcXNzR0RjLU50bHJ6QUlrWFpWT3g1anFnZ0xJVVpELXJPdjI3TmJmYWFhc0NwVWtoVnVhY1lhMTdkSGJTLWJEWnY0dXVUalFSSmpkb0NBaHVZeWZuVVE?oc=5",
      "pubDate": "2026-08-30T21:07:04Z",
      "source": "産経ニュース",
-     "summary": ""
-    },
-    {
-     "title": "【SixTONES松村北斗＆今田美桜「白鳥とコウモリ」インタビュー】関係性は「友達の友達」初共演の2人がフラットに居られた理由",
-     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4wci13Q1dhOFN0UDFUNVdBMlMwS3I5WWJNcEdVQUwydWxYTFpWLTVxN0d2NTFFVE1RRjJEOXQ0UEp4RFVTU0FCNmRMREFvMm1XVVHSAU5BVV95cUxQTlJvb1pzY1pFUWVpOFJaQnFHZGExT3JvNktlNEFpMnRWRVVoUnRYd0NHV2dKRHlnRVZQTXE1dnl2VnFvZmxwU0dhclJkTFE?oc=5",
-     "pubDate": "2026-08-30T21:00:00Z",
-     "source": "モデルプレス",
      "summary": ""
     },
     {
@@ -219,6 +219,13 @@
   "work": {
    "sourceUrl": "https://www.lnews.jp/feed",
    "items": [
+    {
+     "title": "ダイビル／静岡県袋井市で冷凍自動倉庫開発へ、霞ヶ関キャピタルの事業に参画",
+     "link": "https://www.lnews.jp/2026/08/s0831610.html",
+     "pubDate": "2026-08-31T07:26:00Z",
+     "source": "",
+     "summary": "ダイビルは8月31日、霞ヶ関キャピタルがプロジェクトマネジメントを担う特定⽬的会社への出資にかかる契約を締結し、静岡県袋井市で冷凍⾃動倉庫の開発事業に参画すると発表した。延床面積約5万m2の自動倉庫で、2027年春着工…"
+    },
     {
      "title": "SGリアルティ／子ども向け環境・物流教室を開催、ピッキング体験や自動倉庫見学も",
      "link": "https://www.lnews.jp/2026/08/s0831609.html",
@@ -351,13 +358,6 @@
      "pubDate": "2026-08-28T07:15:21Z",
      "source": "",
      "summary": "メディパルホールディングス（HD）は8月28日、グループの医薬品卸4社が運用する医薬品Web発注システム「Order-epi」に、物流センター「ALC（エリア・ロジスティクス・センター）」の在庫状況を発注画面上で確認で…"
-    },
-    {
-     "title": "【PR】CBRE／茨城県「守谷ロジスティクスセンター」内覧会9月15・16日開催",
-     "link": "https://www.lnews.jp/2026/08/s0828702.html",
-     "pubDate": "2026-08-28T07:10:15Z",
-     "source": "",
-     "summary": "シービーアールイー（CBRE）は9月15、16日、茨城県常総市の物流施設「守谷ロジスティクスセンター」で内覧会を開催する。 守谷ロジスティクスセンターは延床約4万7844m2（約1万4473坪）で、内守谷工業団地に立地…"
     }
    ]
   },
@@ -419,13 +419,6 @@
      "pubDate": "2026-08-30T23:00:00Z",
      "source": "",
      "summary": "社内のマニュアルや過去資料をAIに読み込ませれば、使える「社内Q＆A」が作れる――。そう考えてRAG導入を進めた企業で、思わぬ問題が起きている。2つの“しくじり事例”から、その教訓を探る。"
-    },
-    {
-     "title": "[ITmedia エンタープライズ] Anthropic、OpenAIが明かす「AI利用拡大でユーザーに何が起きているか」",
-     "link": "https://www.itmedia.co.jp/enterprise/articles/2608/27/news091.html",
-     "pubDate": "2026-08-30T23:00:00Z",
-     "source": "",
-     "summary": "AIの利用が業務に定着し始めた今、労働市場と業務内容はどう変わりつつあるのか。AnthropicとOpenAIがそれぞれ公開した独自データから、AIの浸透がユーザーに与えているインパクトを明らかにする。"
     }
    ]
   },
@@ -447,17 +440,17 @@
      "summary": ""
     },
     {
+     "title": "年間王者シェフラーが破格16億円ゲット 松山英樹の獲得賞金は？",
+     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBOZG1RUVZyUUkzODhabXRlNDlZTXNMODFNblNpQllxc0Y5cFV1OHRuQmxXNnYxTkEwWkxWcUpGYnEyLUZrdVp0WWJnZGRPbmZVNUpiX19NeUZ1d1ozWHZOZk01bVVhTG4tdWRaOHg1OE9jWV85?oc=5",
+     "pubDate": "2026-08-31T05:03:07Z",
+     "source": "ALBA Net",
+     "summary": ""
+    },
+    {
      "title": "岡泰誠が3位表彰台 グランフォンド・メディオフォンドを走った日本人選手たち",
      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE45QXNYSURFSjNVR2c4VXlrTVd1dmh5UU5pZXM1VDlIQ0lNemR2MHdQdnpkLXJwWFh0MEdpU0N3MThPeW5yQlB1WFp6TEVwNm1va2NYdA?oc=5",
      "pubDate": "2026-08-31T04:09:20Z",
      "source": "cyclowired.jp",
-     "summary": ""
-    },
-    {
-     "title": "松山英樹は26位 プレーオフシリーズ最終戦Vのシェフラーが盤石の首位／男子世界ランク",
-     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1zT3JjS0FVQzFHRk5WTDVpSTIzbHJ6MmI0STR4SVZTbXpiZDk4eUxTenpYckVJU2dCZmlXOU9sTDB0aW90c3JVMjc0T2xCQmZxdDNQN0dia1U5NjJLNWhPZXpMR2pVMDJKa3pOdGJiMVJNcDjSAYcBQVVfeXFMUE9lTEJJTm5xTTNBNVNCYmZORm5fVnBDeDFncUlaYmNBVjZNZmVudTQyNGFZckktVm4yWnpEV19nNHVlTngxTVk0QmFDdUc4RWh1dWZIWUcwLTJDcUNDNmNtQUJYUXppM0NVSDNNVFpqRFgwM2RFMTdnQmhmalEzTE42YjFyRldV?oc=5",
-     "pubDate": "2026-08-31T04:07:16Z",
-     "source": "GDOゴルフニュース",
      "summary": ""
     },
     {
@@ -472,13 +465,6 @@
      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBHY0dKVlBYazhLMnluUU1uWXp6b3RLampVcjBUbFBfbnJvbC0tLU5QM0JZVGkyeS1rVWRNV1lDdThzY0RscWIzTlhXSjM2UDJhVUFnQ3BWa0lSM0dVNzdMRDFMWWZHclBIWE5zWVRBd3FfaGZVQ3VLeHgyLW5RekE?oc=5",
      "pubDate": "2026-08-31T03:31:30Z",
      "source": "Yahoo!ニュース",
-     "summary": ""
-    },
-    {
-     "title": "NFL目指すキッカー松澤寛政 日本選手初の登録選手入りならず",
-     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE83QXhxVkFKWENZQmpaNk1hMnMxc3hrU3hBZ1NGbmRkcXEtMF9kLVVhR3dXQU84Nng0Y3BDZUxjMjJwcGRyVjlrX21kZ1NDb1FYX3pLZVVhekRONnVXbGVB?oc=5",
-     "pubDate": "2026-08-31T03:25:32Z",
-     "source": "NHKニュース",
      "summary": ""
     },
     {
@@ -503,6 +489,13 @@
      "summary": ""
     },
     {
+     "title": "松澤寛政はNFL開幕ロスター入りならず キッカーをカットしたのは5チーム（スポーティングニュース日本版）",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5JV2JNdlY2WWtISlVTVnQzUDhJbWdUNmp2RW5fYzhXeldRTzN1MmRMUzVLRmc2QUI5Sjl2ZFFCTnZVZFo3T0R3bXM1ZWN2NjBvVTBzRzNkTVNmYTdnQUxpcERMRTA2dlA5NnkzMFdPSWloQjFLaXB5WVdmZG9YN0U?oc=5",
+     "pubDate": "2026-08-31T02:27:20Z",
+     "source": "Yahoo!ニュース",
+     "summary": ""
+    },
+    {
      "title": "「兄弟？ と何度も聞かれた」ロッテ・石垣元気が石垣聡志（健大高崎）に送った言葉…母校の準優勝が励み「いつ一軍に呼ばれてもいいように」ドラ１右腕の今（Number Web）",
      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5IaDJVZVZZOXBtRFk1MEZPTldiV2lZV2JKLTFPcTVwMEJkdGV0VEl6Y1NHZ0tWUmlnY0g0VEV5SmpxeGhYUWVoaFRWTjc5eVBIN0l0Z1lnSkVPVk5ma19UQWdZbl8xQW1LeU1ZWU91cU82eWRSMmVOd1VqMXJtRDg?oc=5",
      "pubDate": "2026-08-31T02:11:13Z",
@@ -514,6 +507,13 @@
      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE91d2FkWXY5VHJ0UW1vZ0lYVnQ4VUpDSnZsc29CTW8wMVFzYlJZc1BmT2Y3MHNjUjB1Z1dSRWNPZDdWaGNNMERYeFM0Nmt2bmxHOFdPdlpDbWtPYjFHaTdvX2VSUDBraXg0OUdvcUdR?oc=5",
      "pubDate": "2026-08-31T02:00:00Z",
      "source": "スポーツナビ",
+     "summary": ""
+    },
+    {
+     "title": "巨人・阿部前監督「9月復帰」情報の真偽 読売グループ内には同情論も、懸案は…？｜野球",
+     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9tRm8wRmZXaDZERVFEUmN4bUVUT1hpTlV1cTVQanh5amlhcWVUNXBWOE5OMU5scllkMFVkNndrSUg5TGczNnpNQjgweERVZGVEeFljSHZ3c2dzb1M1SzEwWjFSck1JWGhh?oc=5",
+     "pubDate": "2026-08-31T01:54:00Z",
+     "source": "日刊ゲンダイDIGITAL",
      "summary": ""
     },
     {
@@ -563,13 +563,6 @@
      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1EWE9id0VvN094QVJwY29xVU9DNDNuaXpBbmtEQXJyQ0VyX3lkcU81cFhpQ0NDQUQzRkVsTVJoSzZxMElZNlRPWUU3TXpwV1BaYkhyTlRPbVRQNVpXT25TellSc1ZxMF9uMUtDOQ?oc=5",
      "pubDate": "2026-08-30T23:44:39Z",
      "source": "targma.jp",
-     "summary": ""
-    },
-    {
-     "title": "錦織圭に惜別 ワウリンカ&モンフィス",
-     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5DalZpMWNTcDI4R2ZVZGJZN2NMTUtyVnNjcVJMNHVCaDlyOGF2NmpUNUViWVVzM1dEOElsZFlpZ0lIRWp5UXkwVUJPeTkwanVPZ1RQSnlYaGxhak9FNWF5c0RHeDJTT3c?oc=5",
-     "pubDate": "2026-08-30T23:44:00Z",
-     "source": "tennis365.net",
      "summary": ""
     }
    ]
@@ -723,12 +716,20 @@
    "sourceUrl": "https://news.google.com/rss/search",
    "items": [
     {
-     "title": "【速報】ハウス食品グループ本社、壱番屋売却報道に決定はなし あらゆる選択肢を検討",
-     "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAtTloxbGJ1MTlOa09fb19LcV8tRDFZblFGbGI4T3pCaWVGb18xd3ZyTFZRdDdOckpJVHUxY2lTY2N0bWF2SWNaeTVod3RYVWxEc0p3?oc=5",
-     "pubDate": "2026-08-31T04:30:34Z",
-     "source": "日本食糧新聞・電子版",
+     "title": "ハウス食品グループ ｢壱番屋｣について｢非公開化を含むあらゆる選択肢の検討を行っている」",
+     "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOU1B5NTBwVTh0MUpORnlBSTJCSmVPRVNSZU1XU1pZWmthSldDREI5U0xZa3lmMDRJMHhTZmctTGQ1M0p6QWRuRUZnN2d1bFY3MlJOTlBfc3ptSWZkYmVERXZ1eG9zUjJFbzVQWWhkRUpWeTZXOXJmUFhHM1FvdWFsV2tOZkZlckdHVk0xblhBTXAxVW9zWXgyUnFXcS16SUZsWUN0X0o1Y3Vkand6ZkRHUlpUcURBeVpHTE1qaXg3VzFCX3ppVldEVExmSXl2dDhOSWZKLVpXd2daTngwWjRkOE9HRHlVQQ?oc=5",
+     "pubDate": "2026-08-31T07:20:20Z",
+     "source": "ABEMA",
      "summary": "",
      "company": "ハウス食品グループ"
+    },
+    {
+     "title": "セイノー情報サービス ロボット導入の最適解を提案する「物流自動化構想ワンデー診断サービス」を開始",
+     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBwRmpNemFva3NBODZNdWNhLVhQT2I4UWtTeS12NHpTd1JGMWdRS0VRMFc1QnFHcXVDNWJlRUc0YU9WN0xBLVowaFFRdw?oc=5",
+     "pubDate": "2026-08-31T07:14:19Z",
+     "source": "LOGI-BIZ online",
+     "summary": "",
+     "company": "セイノー情報サービス"
     },
     {
      "title": "ハウス食品G 壱番屋の売却検討",
@@ -755,14 +756,6 @@
      "company": "日本ペイントグループ"
     },
     {
-     "title": "【Amazonセール】山善の大容量「オープンラック」がお買い得。コミック本を約560冊収納可能",
-     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9HTzgwbmNPUUthVXE1STY1dXVkbWVYVUdoUURjcFJVZFVGeE1SbWJ1Ulc0bmpZYjVjY0tBQ08tOVA1MTVyVkxHUmh4VnFQMkRNYS1ndkpDWTdWWUtueVM4?oc=5",
-     "pubDate": "2026-08-31T00:54:18Z",
-     "source": "千葉テレビ放送",
-     "summary": "",
-     "company": "山善"
-    },
-    {
      "title": "ヒューマノイドを現場でどう使う？ J-HRTI「全国10拠点」構想、ツムラやDMS、山善、芙蓉らが描くフィジカルAIの社会実装",
      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1yUGl1eFNXZ3RhRmN5T1BicHNtaWpoSG1VeUZNRmFKZC02NlZJWUlBZmZhWV9DcFZxQ0F4bjdvaGJNbURFSHZ5Q3gwNWxlNzlPWVJNRjVNNW1jV3M3aS1ja2hzZFc?oc=5",
      "pubDate": "2026-08-31T00:15:03Z",
@@ -775,6 +768,14 @@
      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9JTWlDR1RQU1RkYlhmLVBwVi1VR1ZtOV9wNk9LWUQzWVdKRnduNXNCOTdGeTU1VjZob3FIa2RoNXBGS1REVmJaTTBETlZuTzVPYmFv?oc=5",
      "pubDate": "2026-08-30T20:03:59Z",
      "source": "化学工業日報 電子版",
+     "summary": "",
+     "company": "山善"
+    },
+    {
+     "title": "この微妙なスペース、じつは有効活用できた！山善の「スマートワゴン」がシンデレラフィット",
+     "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5Hb3JVcWp1WFRONUxoS3FYS0FyZ3NEZGtNcHlLTFU1S1hRZF9WUVZ3U2JCLUNTOEEtdUItUTkyVzBhVkRtME1YaXZzNC1FR1E?oc=5",
+     "pubDate": "2026-08-29T15:39:37Z",
+     "source": "まぐまぐ",
      "summary": "",
      "company": "山善"
     },
@@ -803,14 +804,6 @@
      "company": "アイカ工業"
     },
     {
-     "title": "セイノー情報サービス、物流自動化を1日で診断",
-     "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE8zMXdFMnJpdmxaakliNHhqMzJnaUllWmR5UllaSTM4RjloTXkyVVdWTDJ6dF9sZm5qVl96M084Z3lXSjhfX2JxSg?oc=5",
-     "pubDate": "2026-08-27T19:04:17Z",
-     "source": "LOGISTICS TODAY",
-     "summary": "",
-     "company": "セイノー情報サービス"
-    },
-    {
      "title": "モノタロウ、自社株買いの実施を発表",
      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5EdUZLSURWVVZGU0E5OFprS09BWHBhS05VekV2MC1YRXR1RVduNk45a2M5U1pHeE9Ha2Zpbmt0ODBGSW9RVU5LdHBpSEtBU3ZUUW1tUDlsVU5lQUlwM25GMg?oc=5",
      "pubDate": "2026-08-27T07:00:00Z",
@@ -827,6 +820,14 @@
      "company": "セイノー情報サービス"
     },
     {
+     "title": "アイカ工業、化粧板の水平再生目指す",
+     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBhcktVU21VZE5lTDFKRkphQnM4S1ItcElXT1Q4cUVyMkxMUmswM3MyQURWMXlSOU51c0lrVVl4QmhBQ0xCQmtZU3ZKX0lsOXRLNUdVTzNPQnA?oc=5",
+     "pubDate": "2026-08-27T03:00:00Z",
+     "source": "日刊工業新聞",
+     "summary": "",
+     "company": "アイカ工業"
+    },
+    {
      "title": "セイノー情報サービス ロボット導入の最適解を提案する「物流自動化構想ワンデー診断サービス」を開始",
      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8xRkRhalRocENReXVYLTlRMG81N3BMQmt5U3ZrVmVOMjBkWDEwZGNqNFVKODBZdTNzLWhiYjliNFhmNEx4MjRhcWh4OGh3ak53cHl5eVZmSHB3ekEtcmMyVDk3YS1mQkRJQWc?oc=5",
      "pubDate": "2026-08-27T01:00:02Z",
@@ -841,14 +842,6 @@
      "source": "物流ニュースのLNEWS",
      "summary": "",
      "company": "モノタロウ"
-    },
-    {
-     "title": "大手化学メーカーのアイカ工業、データ活用推進に向け「Sansan」および「Sansan Data Intelligence」を導入",
-     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE12cHhTQ0VXWjBMOUlGdGZ0TXVPTTZxbEZsd1R1c3BENlRFVHFHWXd6UWR0QnZCekZJVkx2TGhkV2FUZkY2M1l2OXdhNTU1OU5wa0l6YWduQ2Q5cGtqb0UzM1RPczA4dkVsUUE?oc=5",
-     "pubDate": "2026-08-12T07:00:00Z",
-     "source": "PR TIMES",
-     "summary": "",
-     "company": "アイカ工業"
     },
     {
      "title": "菱友システムズ－急落 1Q営業益16％減 商材販売減少や販管費増が重荷(トレーダーズ・ウェブ)",
@@ -931,10 +924,10 @@
      "company": "ハウス物流サービス"
     },
     {
-     "title": "製造需要が急増するインドで、ヤマトグループとして海外最大のロジスティクスセンターを開設",
-     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1NRmxaamZrV2lXNDNYaTN4dzZLeDdaZUlKQlRHMmt1STJkTWRNcnNNSHJjTEZxTWlJQjdRTkswZXBrdGZiR3ducU9NclBxMThQN2I4eWlsWDQ2RVNkTmdtdFpfRjZxU3Vhal85MzJTZ1NyQWc?oc=5",
-     "pubDate": "2026-01-08T08:00:00Z",
-     "source": "ヤマトホールディングス株式会社",
+     "title": "大和ハウス工業／埼玉県加須市に12.1万ｍ2のマルチテナント型物流施設着工",
+     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9KSVNTRHpJVG81YnhEZDZNT01JSDlDVW12NXkzdFJCUXhMTm1BOVhxcGRMeEtybHN4VWNTV01DWnhPamI2LVZMQVUzOC1BVTBvTUVPWQ?oc=5",
+     "pubDate": "2025-10-15T07:00:00Z",
+     "source": "物流ニュースのLNEWS",
      "summary": "",
      "company": "ハウス物流サービス"
     },
