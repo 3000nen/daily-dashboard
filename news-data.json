@@ -1,21 +1,21 @@
 {
- "updatedAt": "2026-09-01T19:36:26.352959Z",
+ "updatedAt": "2026-09-01T19:51:04.557338Z",
  "sections": {
   "news": {
    "sourceUrl": "https://news.google.com/rss?hl=ja&gl=JP&ceid=JP:ja",
    "items": [
     {
+     "title": "青森県に「記録的短時間大雨」（03:32）",
+     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBuWDdSWGRUckltUkdQR1FkY0ZnYlFLUm1zNUNuYUtYYjVUa2hTLUJ3WU5VX3F5OUk2SlJSeHRXQm1BUThuZE5XVGlEbWd6Y2ltQnpiLVV1TFZNSEQ2SlhV?oc=5",
+     "pubDate": "2026-09-01T18:41:00Z",
+     "source": "NHKニュース",
+     "summary": ""
+    },
+    {
      "title": "アップル、iPhone 18 Proの予約開始を土曜日に変更——2015年の9.11前例を踏襲",
      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9VVFAwaFNiRDV0Ty12MnFYZEVuRlcxTXBSUnlZbE1pbDVYMHhiUnhxc09ZRjMtUHpNME9Jbl9LYnZSU1ZfRk5sWnZhMTJiMl82Nk0zT2EtbHJhMkVCc0RlOGVJVWRiSlN1SEJvUngtVVptLXFj?oc=5",
      "pubDate": "2026-09-01T18:29:00Z",
      "source": "BigGo ファイナンス",
-     "summary": ""
-    },
-    {
-     "title": "青森県津軽で「線状降水帯発生」",
-     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1ycU5JUVp4TE5aYkUxaGE4SDI4Zl9tdnY1aUpZcE9BalZreUkwMVRYdFFwRE1ad2lXYkFDMXRRdE1ud2pfQmF5UnZKRWFTcldIV1BFRlh2NGxlcUtfX0tv?oc=5",
-     "pubDate": "2026-09-01T17:26:19Z",
-     "source": "NHKニュース",
      "summary": ""
     },
     {
@@ -40,13 +40,6 @@
      "summary": ""
     },
     {
-     "title": "ロシア財務相の議論を遮ったベッセント氏「ウクライナ戦争が終わるまで何もできない」…経済支援は不可能と伝達か",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAyNFRMVDFyS0o1aXZtb3lPNWpiUjRsRWViMTluY1B1Tkx6Qk53ZWQ3OHltWlRyRks5X1hNR2pHNHpDWU43VktER054QXJMLTAyYjVVdUlORFFfdlpGNm1obm54TWVzWUxvZHl4V25mclR1QkpQbm5VOExhUVlhdHc?oc=5",
-     "pubDate": "2026-09-01T14:47:03Z",
-     "source": "Yahoo!ニュース",
-     "summary": ""
-    },
-    {
      "title": "【市場反応】米・8月ISM製造業景況指数/7月JOLT求人件数は予想下回る、ドル買い後退｜FX・為替ニュース",
      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBseGJZMmwybklsTVlXY1Z3eGtCcTB2RFM0NzR0V3EtWHRMU01rVS1DbUU0RDRvdUdsZXMyeXNkMlpwZWtvSnpleGNtRG1SdHNaUkE?oc=5",
      "pubDate": "2026-09-01T14:35:00Z",
@@ -68,10 +61,10 @@
      "summary": ""
     },
     {
-     "title": "【速報】高校生平和大使が反核署名を提出",
-     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE55S2NuWVg3UUdnMmdwOV93eVl4azRrVkFFdmNOQTJXdmxZSVE2NkR6SmFPTnVqUHdqUlo2SjhiMDhLQzRxN2ZHeldPdw?oc=5",
-     "pubDate": "2026-09-01T13:39:20Z",
-     "source": "47NEWS",
+     "title": "高市首相、長期金利3%台へ上昇「様々な要因で決まる」 発言全文",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9keWlJLWZubDRUQ2Z2Q2xJQ2dRYkUwY0FzWWpMVHROdVhYQjlYR0o2YXV6VDExT0hWX0RWZG5sZm1STUpmU3VkTlEzS3pZV1hoaHRldnE4OEhQZTQ4bHV2eE5FRnF5MjI5Q0lzcg?oc=5",
+     "pubDate": "2026-09-01T13:21:48Z",
+     "source": "日本経済新聞",
      "summary": ""
     },
     {
@@ -103,24 +96,10 @@
      "summary": ""
     },
     {
-     "title": "長期金利3%、家計への影響は? 住宅ローン「言葉を失う固定金利」",
-     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB5eTg3S1pDeG1NMVV6eWlSV2JhMWZHa1VnS1QzeGRKdk5GcXQzcGNCcjU3UXRnS1FSS3lMb1M0TGZ0TTNydEN6Sm1ISXVnd1lRU1VNaENET1NyWGd3djVrR3h0QWNzR0U?oc=5",
-     "pubDate": "2026-09-01T11:54:02Z",
-     "source": "朝日新聞",
-     "summary": ""
-    },
-    {
      "title": "【阪神】高橋遥人７回途中２失点も13勝目の権利 ピンチで降板、火消しは亜大の後輩・岡留英貴",
      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE00d2VwVGRNS3JuOU1yVEJoNjA1VGdIVml0RW5DYjhQbjQyZTZLUURrRW5reENQSkQwUTZqTXhkOF8yY0Ytc2pabTh4ZkNJZlVhNzlGTnNjaDdWaVFsbXlGWHBuNnZuRzN5Z0hxU0hnc2fSAXhBVV95cUxPcDBuaG1NdERvQWtVbnAyOEJpUGxEUFpzZjF5OXk1YW80ZnE5dTRTZHduYUdiOWoyRUV1Skg3QjZaZUFsUDl5V3lnX1NPZmt4cFRqZUZXcUczc3k5QndYUmpXZFBPODFYTFBkalFhbHpNanRJcEZjc2Q?oc=5",
      "pubDate": "2026-09-01T11:52:58Z",
      "source": "日刊スポーツ",
-     "summary": ""
-    },
-    {
-     "title": "山口一郎 群発頭痛再発を報告「鬱病の揺り戻しの波も続く中」小学時代からの持病が…8日から全国ツアー",
-     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNaXJELWJlbHg4Si0yUm0zUDRzTlM1VXkySlZTWmpsTGpCQ1k5ako5bmVBSnRvb1lLLXY2UEpPNE8wQ2pfZS16RXJWaE1sRnJkS2ZVeThMb2V0a3BQQUJJSDBRQVdmTzVlR2I5eFJ4MGlzZS1iajl1S3YzVGw2aVRsSS1FQ3paRjFBamxYQXltckZlSXBhNVJB0gGcAUFVX3lxTE9CdmY5YTlkSGJKdTAtWU5uRkVZTUVLV09aNlYyam9RaThod25DY0xPWXladVlqX0xIWnNkb250b0gyaDdtR1Ztd25NZmdkekVyd2hMT080aXhiSXQ1ajloM05hZEZpOXZSNFlSNW5DeUlhYUZXekFXU0RyVUtPY3pQVlhoLUtxNDJCNDdYcms0SXBxem5tbEJ3MXp2Zw?oc=5",
-     "pubDate": "2026-09-01T11:38:00Z",
-     "source": "ｄメニューニュース",
      "summary": ""
     },
     {
@@ -152,20 +131,6 @@
      "summary": ""
     },
     {
-     "title": "生活道路、１日から法定速度３０キロに 岡山県警が速度取り締まりや啓発活動",
-     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE90WXNjc3djMm5tZUM3UEVydURpQ1J0Mzc5SkIzVjdBZV9lVC11MDBDNkJrU1JmWW1LbHh4OFVlZjFhT0RjS3RyVVAyb2UxaTh2V0E?oc=5",
-     "pubDate": "2026-09-01T10:25:00Z",
-     "source": "山陽新聞",
-     "summary": ""
-    },
-    {
-     "title": "リョキたんかわいくてさすが》自称“波瀾万丈男”の三山凌輝に注がれる熱視線、密会報道も「ノーダメ」の裏側（週刊女性PRIME",
-     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBOLTQ4c0ZqSzZvWTRBUjY0QVhfZ3pzVnFSMVVEamRrX2ozSGMyOFB3QXBGRUxhcDZkSXBVZWxhSzRTa1cyOU9ub25vMzJ0VUxlNVJtYk44bFB3OEtTTVdTRUc3emU1VUloZEJKbkRTTjdvSnladk5DSkVpNHlXUQ?oc=5",
-     "pubDate": "2026-09-01T10:00:00Z",
-     "source": "ｄメニューニュース",
-     "summary": ""
-    },
-    {
      "title": "伊勢神宮近くの商店街火事 発生から一夜 58棟燃える「出火原因は？」",
      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9lVXFVa2F3cC1CM0diOUM5ODdsVVZ2RWI3d20yQm11Z1daYzFuQ2dSNzBEUEhkUnRWUFczSzI0UVBzLXRBNW8xTTdWVzR2Y2RmRGJ4N095VGlCRG1iRFhhODNEWEhWdDI4R2hNVGc2WGNBdw?oc=5",
      "pubDate": "2026-09-01T09:49:56Z",
@@ -173,10 +138,45 @@
      "summary": ""
     },
     {
+     "title": "イラン、長期戦にらみ中国・ロシアに接近 米国の経済制裁強化に対抗",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1MZW10ZEdkRVJKTGhyakNJUUZkX3RhelQ3cmNVcjhTbDRKcGhaWU9NbDZLczFNcVl1NUVKZ2ROWkdiQWxYTzB3TmVudGJNampzZjVtdlMtaVUwa0phYjI0QWpFUG05Y2tyR2FTNQ?oc=5",
+     "pubDate": "2026-09-01T09:49:34Z",
+     "source": "日本経済新聞",
+     "summary": ""
+    },
+    {
+     "title": "日曜劇場「VIVANT」第16話 リュウミンシュエンは野崎を裏切っていない。その理由を説明します。#堺雅人 #阿部寛 #二階堂ふみ #二宮和也 #松坂桃李 #6969b｜考察食堂 -ドラマを噛んで味わう-｜6969b～ろくろっ首",
+     "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1IZWZhQnpmN19WMzg2c3Z4U2trV1lfNjNtbW5ubXJqWkt4Ql90VUhNSWFEaWlTaGFSbzhNaVZ2LWZ6eC1welVzLWRFa3kxeUE?oc=5",
+     "pubDate": "2026-09-01T09:00:00Z",
+     "source": "幻冬舎plus",
+     "summary": ""
+    },
+    {
+     "title": "【ネパール・中国土石流】安否不明の日本人5人の生年月日をネパール当局が公開 子ども含む家族か",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1NZHg1RVFLTkcxTXhuZHVDWEN6bzltMkY1OVdFRjVfbkpfUndvMGRRaURrSmNtMEw2cXNoUzM4SzhkZGVUTTk4UElqVUpVLXFxMVRtckJyc1ZqSEhqWUc1X2VRUTI3VUJuUlRjZElpaWpKRzV0cjJjbkZkWFE0RXM?oc=5",
+     "pubDate": "2026-09-01T08:57:44Z",
+     "source": "Yahoo!ニュース",
+     "summary": ""
+    },
+    {
+     "title": "福井 生活道路の法定速度引き下げで警察などが啓発",
+     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5KUnkyMER2U3VNQVVVSThld3N0NzlPSC1FTVBjZktMTThtMkt6OHl6OFlMZkFtN2E3Zi1fUkFnYk1pMDROUzYwajg0WXFadzYxS0pBeHB5OF9FVlBqSU4w?oc=5",
+     "pubDate": "2026-09-01T08:36:45Z",
+     "source": "NHKニュース",
+     "summary": ""
+    },
+    {
      "title": "KEY TO COMBAT(KTC)、TGS2026に出展決定!",
      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9uOFNBS1RNVm9NYy1HcFNPTFJjdk53ZjVHUmM1OVYtMkFkMlpJcWpVTXV4VWpyQmo5dFhrdnlfRFdhbk9fWTZMaXNGTWxTRnNBUzBMZk5keXQxVjJ3WUUxRlRjSlJGUmJXQ2c?oc=5",
      "pubDate": "2026-09-01T08:08:07Z",
-     "source": "prtimes.jp",
+     "source": "PR TIMES",
+     "summary": ""
+    },
+    {
+     "title": "１００歳迎えた石井ふく子さん“まだ８０歳宣言”「今のテレビドラマのセリフは信じられない。寂しいです」",
+     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1yNE1pN3EzYnRjSkw3SFpMMmJ6aW1pWXMzTDc3N1dLQ0VTbXk2RkhfNURFS0lEQXlpMndzRFBEem91clkxNHZtdGJ1bGhyUl92T0F1N3djbFFOS2Z4N1lFWS1R?oc=5",
+     "pubDate": "2026-09-01T06:27:00Z",
+     "source": "スポーツ報知",
      "summary": ""
     },
     {
@@ -187,17 +187,10 @@
      "summary": ""
     },
     {
-     "title": "福岡県議会に自主解散など求める決議案、北九州市議会が採決へ…福岡市議会でも同様の動き",
-     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5NRUdoTi10OURNVXZTdFlpb0plejhlVllhMS1JTXFEc2dCYjl5eF9nTWY1ckt1RUNzOEVSRlBhaWxuLVg4bzNmcnc3NEJMUTJtQURENmVZZ0xWQmpzZk1UX2xWQnV1QQ?oc=5",
-     "pubDate": "2026-09-01T04:24:00Z",
-     "source": "読売新聞",
-     "summary": ""
-    },
-    {
-     "title": "土石流の死者、計1000人を超す ネパールで水力発電所に閉じ込められた600人以上の救助活動続く",
-     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1ZTHdVOTAwbWxvZ3Bzc0tfbWJuYnhBbmc1UVIxWVpRZXJiTDk4Mm8xWHNnRVNLak9WUmFvcm1WQl9zak5XTnZITXlOX3oyaHFxc2dVYUJPSHZoU1ZXTEtJ0gFkQVVfeXFMT2dhR2JBUHNLMDkwREdwS1VqNk9aazRzYmVldEZVdjZmNHJpWndaM1ZuU0tkam5NdWFNMnZOaUtYd3JoMFVVcl9yVEJSRWpReUNPUDBiRHJmRjQyMWtCZ0VWamFfOA?oc=5",
-     "pubDate": "2026-09-01T02:49:37Z",
-     "source": "BBC",
+     "title": "台風発生へ あす以降大東、沖縄本島に接近 台風18号も復活、北進か【1日朝】",
+     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1KWUpXUXd3Y1JHQllSWklSM2VPbmFudVBRQUFuc1FaamRXNmlZZV9PVWZ3SHFMVnhUTEZSSW44WGpLQnFNTHdaV0FCSnhtMVlrOTFzMkdfMWYzVk5GXzQzSw?oc=5",
+     "pubDate": "2026-08-31T21:01:14Z",
+     "source": "琉球新報デジタル",
      "summary": ""
     },
     {
@@ -208,10 +201,17 @@
      "summary": ""
     },
     {
-     "title": "「中ロ関係の基盤一段と強固」、習氏がプーチン氏に ウクライナ問題も協議",
-     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE00ekZNYUxwMWUteXBlXzdYSzhPc0FyRzZJUlpyWlI3RjhDN3VqVExUSjdZTjU1VmZsNFozUDBfRENDcl82SWdZdkFySHg5U3U4R1RObEVYVGk3a0pLWjNRMlFyNmF6eTMtWklzYUNSNHhCcDk4NEtSNkl2RnhLQQ?oc=5",
-     "pubDate": "2026-08-31T16:59:43Z",
-     "source": "Reuters",
+     "title": "羽咋の古刹、水害甚大 永光寺、住職悲痛「地震よりひどい」 巨石、土砂参道埋める｜社会｜石川のニュース",
+     "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1jSHp6a1NJdFNqUHktSmx2RGhxaUpHNmRhUmwweTlCQ2thTjdtN2NBbFpPTUplREFQUk1YaVBLR0ZxVFpFWUpFOWUzS2ttMUVOM05KTUlvOA?oc=5",
+     "pubDate": "2026-08-31T20:00:00Z",
+     "source": "hokkoku.co.jp",
+     "summary": ""
+    },
+    {
+     "title": "自民福岡、採決中止反対の県議を処分 前議長辞職巡り",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1RdWFyLWNDb2h3ekpqakQwbjh6SVZBVkw5cE1EMkhIS2ZkVTJ0cDdtaTBjUmNNbUxLdG5yaGJTQXVTYXdnRlZXVFZfOHFEWHNFWDdfTEZ5VDl3TU5VdE9CSFpNTmtLMHAwcW9PXw?oc=5",
+     "pubDate": "2026-08-31T07:51:24Z",
+     "source": "日本経済新聞",
      "summary": ""
     }
    ]
@@ -440,6 +440,13 @@
      "summary": ""
     },
     {
+     "title": "【巨人】「戸郷に負担をかけることをしてしまったので」丸佳浩がミス帳消しのタイムリー ２戦連続スタメンで存在感",
+     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5lSGxsaS1PaDhCR3F4ZmtRUVNyd3hneEU4MDNQYk1KQXFzUkhxX2V6MWR5TU81ekRwVWVYQzlVTUNJUlBjVHNjd1pSd2ZOSnFtVkhlTVZmMllsQlZ3a1JocGpB?oc=5",
+     "pubDate": "2026-09-01T14:52:13Z",
+     "source": "スポーツ報知",
+     "summary": ""
+    },
+    {
      "title": "巨人・戸郷翔征、１軍復帰戦で５回３失点 白星はお預けも「無事に終わったのは僕の中での安心材料」",
      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE94bFMxWXlvSkVQVVBtd0ZpaWowODIycjRIYXg4dkoxYW9tRlNzcDl1Q3ZpT083ZV80RXREbXZxNzNYRWs2cUV2b3NGV2ZUNnFhQmZ1bmpwNlJnNTZaVmNPNnFB?oc=5",
      "pubDate": "2026-09-01T13:56:00Z",
@@ -517,13 +524,6 @@
      "summary": ""
     },
     {
-     "title": "４児ママ女優、奇跡の４１歳が地元で２年連続始球式 加藤夏希 今年は上手投げで場内大歓声「反応が昨年の『あ～』から今年は『お～』に。嬉しかった」",
-     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB2aFBzMmxRT3pBNGxSdEl3ZFdxdWY0Sjl5eDNVRTVjTktPXzgzdGR5ZVFoTks5SjYwdk1jLXlFVjBnWmJtanRfd1F6NXAwYTdkYml5b05KaXUwdnF4TkFQVWtfc0l5M2FpVkV5eQ?oc=5",
-     "pubDate": "2026-09-01T11:47:00Z",
-     "source": "デイリースポーツ",
-     "summary": ""
-    },
-    {
      "title": "高井幸大がベルギーリーグへ イングランド・トットナムから（共同通信）",
      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBYbGM4ejhkNVFmT0poS2ZlQnlkak1CVzcwVW9mVzZaX0hFb3gyblRDVWNWNk9iWmlJM3VxU2VYVTlMZ0RDWXIzakRXNGlPREo1cmNUOVlsQVc2MzVDcWVmUDRjTjdFMVZwNnZqaFJ2eTE2bTFteWpZU0ExSGNGWjQ?oc=5",
      "pubDate": "2026-09-01T11:07:10Z",
@@ -538,20 +538,6 @@
      "summary": ""
     },
     {
-     "title": "阪神・佐藤輝が９月も初戦から一発 ３１号２ランで森下に並んでホームランキングに返り咲き ８月は８本塁打",
-     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9lVFJ5RmN3dFpQRi1iX2hFX3h0NDRzcmFpNm9RU2k1dUh2U1hkcFBJZkYxakt6akNLdUo1WGlNaVpJUHZ2TFVrLWlnbWRNYi00MDBZem1PWGY5bTcxQXZReE5iNWktRHR1Z3c?oc=5",
-     "pubDate": "2026-09-01T10:47:56Z",
-     "source": "デイリースポーツ",
-     "summary": ""
-    },
-    {
-     "title": "トーマスアウエヤン選手 完全移籍加入のお知らせ",
-     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1mQ3RyaVNYUjM3MXlFNjVld2w4Z3g2dTRoUmtWMEpoRmIzaUstMjdBMkpDLWlUTl9SN1Z4bTlSWTRNNmRSRS0xR1ZHUld1WEphcmZBVg?oc=5",
-     "pubDate": "2026-09-01T10:01:19Z",
-     "source": "町田ゼルビア",
-     "summary": ""
-    },
-    {
      "title": "【ヤクルト】狩野舞子 始球式ワンバンで〝小ボケ〟「フォークボールみたいに見えたかな」",
      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBaN1Z5M29pQWg5MDlzbEdzUUlsaFBVc1d6a0FDbTRHdGR2Y2NHZkZ3YjYtT1JFQVJsX2pVWDc3RTgxbVdfQnVGMUwwdUV3bldoNVRJZ3AzcmFrc24x?oc=5",
      "pubDate": "2026-09-01T10:00:00Z",
@@ -563,6 +549,20 @@
      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5zMkZGSF9BUGQ5ajJlVjk2MHBUeFZ4RUlYUXo5Y1l5Nk5kZWRDeGlKWXAybExTUFo0eFpyTUhJeVFjY29wRXFibHJ6ZWtWcFpTYVd3STlteXlpbjZQRlNV?oc=5",
      "pubDate": "2026-09-01T09:19:48Z",
      "source": "NHKニュース",
+     "summary": ""
+    },
+    {
+     "title": "天皇杯JFA第106回全日本サッカー選手権大会 3回戦の試合日程について",
+     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA3ZDZ3ekxhc1ZfS0hVLUV6N21JS2hJUmw3MS13VEoyU2NwTTlqOEdIZC15RlhrSjJRRThQUl9GejdBNFpBTW9YLS1OX1hiY2VXazBNRThiYVlGSjhsUkhN?oc=5",
+     "pubDate": "2026-09-01T08:55:09Z",
+     "source": "fagiano-okayama.com",
+     "summary": ""
+    },
+    {
+     "title": "“ゾンビ売人”との写真流出の広島・小園海斗、離婚声明で憶測を加速させた意味深な“一文”（週刊女性PRIME）",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9IUDlVQ0tvQnJ6dlBfc0VOOGE5QjctMHlKZkJqQ0R3LUNRVms3bDQ3MFB0Y0hSbHNoYjdRamt4R19IVVE5S3VyNjFPdHJwRndUVWZOc2pwT2kzQ0h1LUtMQVRrNDU5aTcybGtwYTVidnJfVEdyN0VfM2NJZDBxT2c?oc=5",
+     "pubDate": "2026-09-01T07:30:34Z",
+     "source": "Yahoo!ニュース",
      "summary": ""
     }
    ]
@@ -716,14 +716,6 @@
    "sourceUrl": "https://news.google.com/rss/search",
    "items": [
     {
-     "title": "山善、カバーのずれを抑える業界初加工のホットカーペット「ほかピタ ホットカーペット」",
-     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBKX1gtZmJ3czNMN1JERUVKMEd1TklYQllMTFpiNzdTeTNIaUtTcWd0UlVvRTZkTG5ReGFxMm95REpuNU92cTJ4dHJrMXRpaGNKZXF3ZFplMlJPem0zUC11QURnZ2JlM0h6ZG1xN2Fn?oc=5",
-     "pubDate": "2026-09-01T06:38:00Z",
-     "source": "kakaku.com",
-     "summary": "",
-     "company": "山善"
-    },
-    {
      "title": "ＭｏｎｏｔａＲＯ[3064]：自己株式の取得状況および取得終了に関するお知らせ 2026年9月1日(適時開示) ：日経会社情報DIGITAL",
      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQWk5jc0xwcG02REtXQWNGQzFLVkFVUGhwMzBqYXA1YmppaXZjbHNCcEd1V2VPU1ZjWktneTMtdTU5OE1JM0puLVM0cjhtY2lxMUlFeUVsSHFlQi00dmtQRHM5UGFDSm1USTFUVXVDOHFpakZUdDdFbkM1X0F5aF93RXJkcGZLZWRlYi1uVVhVUmdiQkhVM2NEeDBkWkVKZXVya0oyRy1kUG0yaW5UTGRFdDZaSTdIZzhabHN3bnFrUDFlY3hBQXBxR3gwU2w?oc=5",
      "pubDate": "2026-09-01T06:30:00Z",
@@ -735,7 +727,7 @@
      "title": "2016年に誕生した\"誰も知らない冬のサンダル\"「SUBU」10周年を迎えたシーズンが9月1日スタート。定番F-LINEに新色〈MATCHA〉〈LAVENDER〉が登場。",
      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9XTEt3TkNrYXU1ajYzdzZlTkdUNXloanJPRDdVbVRnQVNkdUxlTWhFcU1NcVNWaGlYSzJxYlRocUlyVUpzLUZhZnQyRVpOZUFKR3NVZlc3TDdyR3dROXJjUDVlZU1yTHllWHc?oc=5",
      "pubDate": "2026-09-01T05:03:28Z",
-     "source": "prtimes.jp",
+     "source": "PR TIMES",
      "summary": "",
      "company": "F-LINE"
     },
@@ -744,6 +736,14 @@
      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQaXR2SUtEdzUwdGg4QW4xd0JHTENLTDBmYlByanltalJZSUpRaVZ0N3dkUkRIM3B3M3pHeHFQZXFYSGdQbFZtclZpVEdDM1dWekxTRXdyVnQ5dGgxbHFuX1ppbDlNN2JjM3Q4cXFQbnZCVW5Xb3Q3VE5lb0YxYnBVM2ZVbEl5ajI3MUE5aHUyRG5zNDduc0tkOFozV3NWR29sUFdDYmdPUWU1YzBjWlVveEYzT2FlSmxDZE9iS3FQcWNVQWVRa1Q1bXh4WkI?oc=5",
      "pubDate": "2026-09-01T05:00:00Z",
      "source": "日本経済新聞",
+     "summary": "",
+     "company": "山善"
+    },
+    {
+     "title": "「ほかピタ™ ホットカーペット」 2026年9月上旬より順次発売 株式会社山善",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1OZXhMa2luaGtPREFIMWFBdGxMWHE0T2RWX2dxWmJpekZlczRPTW1wT0VHWVJHdTNDeWdyWGVmc21WT3NsNS1ROHVHbEdfTk50X2pvS25Rc3lKbUxjVlE?oc=5",
+     "pubDate": "2026-09-01T02:30:00Z",
+     "source": "新潟日報",
      "summary": "",
      "company": "山善"
     },
@@ -791,7 +791,7 @@
      "title": "「第9回 塗料・塗装設備展」出展のお知らせ",
      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5vWGxNeDZ6VXlDWlhNWG85QVBqLS1XaUpMTnJVd1I4d0FlU3dPN05UOFVrbTlGMmNZdnRHUFhnSjdoMDBjenlXRHZwV3J1TGk3VXMwa0xDNEF3SFpyTkNmRkdHb1d5MmdTS1E?oc=5",
      "pubDate": "2026-08-31T01:00:02Z",
-     "source": "prtimes.jp",
+     "source": "PR TIMES",
      "summary": "",
      "company": "日本ペイントグループ"
     },
@@ -799,7 +799,7 @@
      "title": "山善「フィッシュロースター」ならサンマを4匹まとめて焼けるらしい！「外パリ中ふわ」も叶うんだ",
      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1qS0RRNnQwb0JNeWk4Q1ZMejRPNGw0NkVLdUhmcERkZmItQ1hQWXlhdThpRGYyU044VjFKZURUV1FkcFJ1R2pwSy02MUNrNWc?oc=5",
      "pubDate": "2026-08-29T07:07:05Z",
-     "source": "roomie.jp",
+     "source": "ROOMIE（ルーミー）",
      "summary": "",
      "company": "山善"
     },
@@ -855,7 +855,7 @@
      "title": "セイノー情報サービス ロボット導入の最適解を提案する「物流自動化構想ワンデー診断サービス」を開始",
      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8xRkRhalRocENReXVYLTlRMG81N3BMQmt5U3ZrVmVOMjBkWDEwZGNqNFVKODBZdTNzLWhiYjliNFhmNEx4MjRhcWh4OGh3ak53cHl5eVZmSHB3ekEtcmMyVDk3YS1mQkRJQWc?oc=5",
      "pubDate": "2026-08-27T01:00:02Z",
-     "source": "prtimes.jp",
+     "source": "PR TIMES",
      "summary": "",
      "company": "セイノー情報サービス"
     },
@@ -919,7 +919,7 @@
      "title": "製造業のノウハウを融合した「物流革新プロジェクト」を本格始動(ニュースレター) | 大和ハウス工業株式会社のプレスリリース",
      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBoRjlEcHpHbUM5OVlaZXVkUXdBbGE2bTYxb2pKcHNCNlhtM3hsV201NndocjBqdG1QRzZDNWtfUGlid01GZ2FVeWdSVVl2aUhwbDNkRXowZ2N2N05wQTRldTNEdG94Rm5KNXc?oc=5",
      "pubDate": "2026-05-07T07:00:00Z",
-     "source": "prtimes.jp",
+     "source": "PR TIMES",
      "summary": "",
      "company": "ハウス物流サービス"
     },
