@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-09-05T19:08:55.338236Z",
+ "updatedAt": "2026-09-05T19:22:41.535731Z",
  "sections": {
   "news": {
    "sourceUrl": "https://news.google.com/rss?hl=ja&gl=JP&ceid=JP:ja",
@@ -9,6 +9,13 @@
      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE04ajBQNGIyaWNYXzBNWXFIWWw0ZF9rUmRUN29aS01aaGlvdjlqeE53MlQ3TFFzdmI2d1R3QkFYajctc1ZQeUoxcGJXeG9Fb3h3VXZELUhsenR6ZFJ4cUItWkg5SUx5Zw?oc=5",
      "pubDate": "2026-09-05T17:47:00Z",
      "source": "読売新聞",
+     "summary": ""
+    },
+    {
+     "title": "惑う家計、住宅ローン払い「定年後まで」7割 金融教育の遅れ挽回を",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8xa2RNSFVNb2gzZHR3QlAxWk5DSkFNbl9LNEFoNUxuRDhhejcyMXBoeF9lSEUwdDRoMXR5V1dxd0h6WXB1NDhONGlpQXJwelRCajRFemRYRHZyRkpFcG9uNlV2VWEwZzFGS3czNw?oc=5",
+     "pubDate": "2026-09-05T17:00:00Z",
+     "source": "nikkei.com",
      "summary": ""
     },
     {
@@ -71,7 +78,7 @@
      "title": "佐藤駿が２位 中田璃士は崩れて５位―木下杯フィギュア",
      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9pM3ZhUXJ3bTRGbUd0dGtUMTk0Z2pGUHZSRkNRamMxemkxZ0MxS3BvZXYzY3cyYVBRQnFkakt0MkpsZUlCSzlnc1FmME9FelZHdHRld2JEdDh6b3dNV3ZrN0RRWQ?oc=5",
      "pubDate": "2026-09-05T11:58:00Z",
-     "source": "jiji.com",
+     "source": "時事ドットコム",
      "summary": ""
     },
     {
@@ -191,13 +198,6 @@
      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9lZHRTbHEybC1XcTRjXzAxd0ZONE5Ud0s2dTY5dF9SR0xDTnVocmtWMVlMeG8xMXJhcXVSNEZCMkdjbXdKSE43ZHdFNmFTekEzd0xTSHowUFVrc0IzTkJZcWF6RzFjenViVjMtMQ?oc=5",
      "pubDate": "2026-09-04T23:37:26Z",
      "source": "nikkei.com",
-     "summary": ""
-    },
-    {
-     "title": "金利上昇、住宅購入急ぐ若者…20代以下持ち家率が過去最高 超長期ローンに返済リスクも",
-     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5yVzE1MXRWYlVUVDQ4ZDVFZ1JXa1lWbl9kaUh0RGIyN29sbHR5VThxWFhabGw1Q0VmY3YwWk5BNnJzRXhHMXhwNGl6OEN3dm9XNjR4UDdmSDNKTlduaGdYVkJWT2tkR3lIVjk5OE16TkMyMElCbHc?oc=5",
-     "pubDate": "2026-09-04T23:00:00Z",
-     "source": "産経ニュース",
      "summary": ""
     },
     {
@@ -527,7 +527,7 @@
      "title": "佐藤駿が２位 中田璃士は崩れて５位―木下杯フィギュア",
      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9pM3ZhUXJ3bTRGbUd0dGtUMTk0Z2pGUHZSRkNRamMxemkxZ0MxS3BvZXYzY3cyYVBRQnFkakt0MkpsZUlCSzlnc1FmME9FelZHdHRld2JEdDh6b3dNV3ZrN0RRWQ?oc=5",
      "pubDate": "2026-09-05T11:58:00Z",
-     "source": "jiji.com",
+     "source": "時事ドットコム",
      "summary": ""
     },
     {
@@ -541,7 +541,7 @@
      "title": "ワリエワの中立資格取り消し フィギュアスケート：時事ドットコム",
      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5STEx4dHhwNU4yeldFenUwSU1WYTlUTXg3RzV5b0VCTGQzbjhzN0otYk56TllTMUxxOXFrb2pHdWdMQlVPaWM0ZHdoakNSWTRYWGh1cDZ5b2FlVllJU2Znc3BKaw?oc=5",
      "pubDate": "2026-09-05T11:32:00Z",
-     "source": "jiji.com",
+     "source": "時事ドットコム",
      "summary": ""
     },
     {
@@ -736,7 +736,7 @@
      "title": "【アナリスト評価】アイカ工業、レーティング強気に引上げ、目標株価5,000円に引上げ（日系大手証券）(アイフィス株予報)",
      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPNzhtbWVWMmNGeTc4OW9LeHlKX2VIR1VmR0FiOUFpTTNaaDJxdzlsNmx0N2lUYWNyeHFBcXRNSTRENjZmV1hvRDZKRmNrLU1KcXZQLXcyMFhlcjBzY3VENXplTkFqajNZQnlrTl9nMDFqTXZyY01ZWTg2RFh1YzRfc3RnOWp0Wms?oc=5",
      "pubDate": "2026-09-04T10:58:00Z",
-     "source": "finance.yahoo.co.jp",
+     "source": "Yahoo!ファイナンス",
      "summary": "",
      "company": "アイカ工業"
     },
@@ -744,7 +744,7 @@
      "title": "(株)ＭｏｎｏｔａＲＯ【MONOY】：株価・株式情報",
      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE41U1pFbmdJM2JsMG9uSmlqdzhiTHJFYkRfczl0X1NmXzFYOUtxUkpGNVBXNGpnMjUyTHotOVBSODRMVG5oRWJJb05YVHNSMWk2?oc=5",
      "pubDate": "2026-09-04T07:00:00Z",
-     "source": "finance.yahoo.co.jp",
+     "source": "Yahoo!ファイナンス",
      "summary": "",
      "company": "モノタロウ"
     },
@@ -880,7 +880,7 @@
      "title": "菱友システムズ－急落 1Q営業益16％減 商材販売減少や販管費増が重荷(トレーダーズ・ウェブ)",
      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQaEQ1M1Z0NWtQallKSzBIdVp2SEFJS2dJNjVSaWRWU2tWR1ZxRDZyRVUyaDF6eXM5NXlqa1JqVy16NnBvaHZQRnFPY01ENWVVbkZla2RrT2RSaE1TY2tDNlZ0S1gwN041aFZkOU9COTE0TGZ6UFFySW1XU0lQc0hwM0lJUld3dlU?oc=5",
      "pubDate": "2026-08-03T07:00:00Z",
-     "source": "finance.yahoo.co.jp",
+     "source": "Yahoo!ファイナンス",
      "summary": "",
      "company": "菱友システムズ"
     },
