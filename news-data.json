@@ -1,21 +1,14 @@
 {
- "updatedAt": "2026-09-05T03:25:45.600857Z",
+ "updatedAt": "2026-09-05T03:39:12.586267Z",
  "sections": {
   "news": {
    "sourceUrl": "https://news.google.com/rss?hl=ja&gl=JP&ceid=JP:ja",
    "items": [
     {
-     "title": "【ド変態スマホ】正方形ボディ×物理キーボード!? 異端児IKKO「MindOne Pro」のギミックが面白すぎる",
-     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9Sa3kzR01tZXE1eDc4UjlzbmJZbUhkOVlHWmVPTTBESEN0SEh6aURBY0lEWWgycURJOFBEeWFsVGNWbVAtYUFNQ29mNEZ1anU2em1nQQ?oc=5",
-     "pubDate": "2026-09-05T03:00:00Z",
-     "source": "ASCII.jp",
-     "summary": ""
-    },
-    {
      "title": "iPhone 18 Proの画面、より見やすく、省エネへ？",
      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQS0xKNURxRWJnN2MzdzFNTkRtYWFDU0pGWnFOVVFyRlpOb0FwVmhMSkdSQ3ZFa0FoN2lqRFBKR20wQU45WVU5Szc0ZVNkd2swQ25CU1p0T25POGdCckZ6VF9KSHhUbWhtUEh4VkV6ZHpIX2U1Nkx3UF9ncGF6RnVmNg?oc=5",
      "pubDate": "2026-09-05T02:35:00Z",
-     "source": "gizmodo.jp",
+     "source": "Gizmodo",
      "summary": ""
     },
     {
@@ -40,6 +33,13 @@
      "summary": ""
     },
     {
+     "title": "カブス クローアームストロングが“ホームランキャッチ” 今永昇太は驚き 敵地ファンも騒然 ３３個目盗塁も 大谷翔平のＭＶＰライバルがインパクト残す",
+     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBmWGh4cTNjZDlkeVpQOUNpNm1BbTkyTGY4Z05vclljV1lTNHRQR3dBN0tZNnNtSzltc1hGUUdTXzdzek54SlJBWVJON09ieExELWdDTnZtaExLbVlRMWlZa21waklYUQ?oc=5",
+     "pubDate": "2026-09-05T01:03:00Z",
+     "source": "デイリースポーツ",
+     "summary": ""
+    },
+    {
      "title": "アンソロピックのIPO、10月後半以降か ロイター報道",
      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9mT0hlTGkzM1dBQjltZS1EUW50SklKTWZKRm1WN2tfRG9pT3dYZnlRdHJIbkc5UnU3T3BYLXpLR3FrUUZQMVM5OVVNelA1bVpSbU5VUU5IRkJmRlk3N01KTUdqc3NMZ1BpVXVpVg?oc=5",
      "pubDate": "2026-09-05T00:55:36Z",
@@ -47,9 +47,9 @@
      "summary": ""
     },
     {
-     "title": "２試合連続スタメン外の大谷翔平「本人も納得している。協力的だ」ロバーツ監督が意思疎通を明かす「ゴーサインを出せるタイミングを一緒に見極めようと伝えた」（デイリースポーツ）",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0yMHBvSEFubmNRVWp0bEZtV2NxVGVqQndMM1JnSFhlSlBpUHRDeDRPaW94Y2RhTnFXQUV6UnVrdV82N0JVR1Z4ZVJrcG5HSEx1RmpVckIzRUdJTE1Ka3hxX2hmSzFpNXRCQ0NucDVNRzFHZ3NVbm5UVS16ZGJCeGs?oc=5",
-     "pubDate": "2026-09-04T23:49:41Z",
+     "title": "大谷翔平 今季の投手復帰は絶望的か ロバーツ監督「今は投げていない。当然、後ろ倒しになる」ＩＬ入りにもトーンダウン「どうなるかはまだ分からない」（デイリースポーツ）",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBXYzBLYnZwbHpxNDVHdEVKSEZqdS1rdXdzUUx3R2Jmc1F6VmZxcldwemotUm5MWHZvRGlyLVBEQVpCRkM3ZjB1bml0cFVEQlp6MG5nUENwUnIzVU9CQmh2OXgxZlVyNWkyV29QVlJxdHZUM3ZoNmxNWC02eU5Nd2s?oc=5",
+     "pubDate": "2026-09-05T00:06:13Z",
      "source": "Yahoo!ニュース",
      "summary": ""
     },
@@ -96,13 +96,6 @@
      "summary": ""
     },
     {
-     "title": "イスラエル軍がレバノン南部空爆、国防相「ヒズボラ一掃」も表明",
-     "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5jNngzTU54NE1JTDlUeFdtRGFPQ3gxMXAtQkM1enVQSXZId0tCYjhMdGVHMjhTb0J5dk9wQXFncmFzLTQ2eVVCbmpnZjlvRllXNjNQcFhFcXNZbDZYbGRBUXpsVm10RGdLbU1zMkR1dlpiM2wtTmhwUg?oc=5",
-     "pubDate": "2026-09-04T21:36:44Z",
-     "source": "ロイター",
-     "summary": ""
-    },
-    {
      "title": "これから｢シン･トリプル安｣が起きるか注視する必要がある",
      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1MYnlVanVkWWNXdWdRVnhjekx2VUVLYl9KSVl1Z3BZSUhTNTdVSEJ4OE1KZmsxNFhSX1F1dHlINkhlV1BpelAxbndNc1RkQ2dncFRsLUNYTQ?oc=5",
      "pubDate": "2026-09-04T21:30:00Z",
@@ -117,13 +110,6 @@
      "summary": ""
     },
     {
-     "title": "イサクが開始９分で圧巻２発！リバプールがイプスウィッチを撃破し今季初勝利！前田大然は攻守に奮闘も…遠藤航はまたも出番なし",
-     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9aU2g4R0RqamNnQWJ1cUpHZFF5VzNweGZLaEoydHJrNjBIcWtpX2FrT1d6dDN3VnlZVzJadTR1VDdPd3docHo2cVU2VDlpWjBvN3VaS0lHNWhGVEhKc3pheGV1Z9IBc0FVX3lxTE1iQmU3LWowTnlPOGgyeXpiQ0NicUEyakVaMVlOcGd4NUtCMGZfTkVsZDR4YmoySHFTSmdDUnZtTEhkUjkteUtQX05icFlNMEx0c29UVWdvOHJQdHZMS3R3VmJtQ2czY205eHA3TVQ0VDJPSGM?oc=5",
-     "pubDate": "2026-09-04T20:54:00Z",
-     "source": "サッカーダイジェストWeb",
-     "summary": ""
-    },
-    {
      "title": "【速報】鹿児島県・屋久島町にレベル5土砂災害特別警報 命を守る行動を",
      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE8zWlBJT0N6TkY5RWM5U2tIajZVdmQxdkl5Z3V4Mm9BUXNZQXhYWnVvMXo5SU5yMlJ0TUl6c1ZWSzRReEpBMElGX2dZdlVKbURfR2MwUg?oc=5",
      "pubDate": "2026-09-04T20:37:00Z",
@@ -135,6 +121,13 @@
      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5DMzI5NEtHMXJBT2ZrNGd0MDV5ekNqU21Bd04wR09wOUdXSDN0ZXJCLU9oS1Rmc09oMHB4X3RNMUpmVjFWbjktMWF2a3Jla2pjSThnbjNFcWVnWGE0MWRibXVGYw?oc=5",
      "pubDate": "2026-09-04T20:30:00Z",
      "source": "時事ドットコム",
+     "summary": ""
+    },
+    {
+     "title": "昭和リーゼント×平成ギャル夫妻、「私をずっと感じて」妻が夫に送った“強烈プレゼント”にMC驚き",
+     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBDb3lNT1l2ZEhVRW1XUWNJQ1R0V2RjMUxpTGVucmtfaG9EY1FvOEl2cUc5aHpoYU9vMkdsRVJDRWZXUWFZN0J6TEZkOWF2TGwxd1M3WQ?oc=5",
+     "pubDate": "2026-09-04T20:21:07Z",
+     "source": "Lmaga.jp",
      "summary": ""
     },
     {
@@ -166,10 +159,10 @@
      "summary": ""
     },
     {
-     "title": "米9月利上げ予想優勢に トランプ氏｢高金利許さず｣、板挟みのFRB議長",
-     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5qblpDbGpxUjBDRnk3MHdsREFxTmdBSENGU1hLWk44elN3bUZRT05hbjVmRUFtYWtEUl9qTXJ3RGhacUFsVHp4V2dLa2NHWFVGVmFDZURCaEd6TjNKUEkzVU5lTnNjUlhkdXl4RA?oc=5",
-     "pubDate": "2026-09-04T18:20:00Z",
-     "source": "日本経済新聞",
+     "title": "米シティ、次回利下げ予想を27年6月に先送り 堅調な雇用統計受け",
+     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOYU5TT0d4TWpaUHdxeUlsMENDemxjS1VqS0VVX1lJaklvNmxBYV90U3dzNXZXMURkU2s4MEE1Y3FKQWJZMm9UUFpXaEdmY2JiOE5jWVBLUlFiOEs4UHg4cHlDOThUZ0xYZWJ1ZFc2S2NHSFgwZXNUR2dXZEZOSlhMXw?oc=5",
+     "pubDate": "2026-09-04T18:27:45Z",
+     "source": "ロイター",
      "summary": ""
     },
     {
@@ -187,6 +180,13 @@
      "summary": ""
     },
     {
+     "title": "ついに出た「NVIDIA DLSS 5」はそのうち「GeForce RTX 40シリーズ」にも対応予定。40シリーズを“事実上対象外”とする発表からわずか3日での告知",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBCR2JRNmkyMk9sV1JKXzZxamZHYzQwTmw3X1ZSeDBHQTdsTGhkSm9CLVhTcEY5VWpDTnlHVDRPZ1B6eW83dk5TRzA5V3JBM3BIVVZGRUUydDlHd0pEYzd4OGhkMDJGcXFWZno4Mw?oc=5",
+     "pubDate": "2026-09-04T10:57:20Z",
+     "source": "AUTOMATON",
+     "summary": ""
+    },
+    {
      "title": "シティ、9月9日のiPhone 18発売前にサプライチェーンを分析 執筆 - Investing.com",
      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBRdHZKRXVUbDEyel9LTE96R3lyQUptNlpoQnc4MTJkQlhjc01meDhTR0FrR1E5cWdodWVnbGM4Qm5yNkdOd3V4TGRJUC1BTzVHVHBJajE0dHFkSV93M2lrajh5UjJWQndKOEJHdFNiYVVnUURRRl9r?oc=5",
      "pubDate": "2026-09-04T09:59:00Z",
@@ -197,14 +197,14 @@
      "title": "関東甲信地方で「警報級の大雨」可能性 前線や前線に向かって流れ込む暖かく湿った空気の影響 24時間予想降水量は関東地方北部・南部、甲信地方150ミリ、伊豆諸島200ミリ（6日午後6時から・多い所で）",
      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBHTXhIS2NXNy14T0NiT1JtQUdsRzJSWjYzci0zYTA1a3RPVkZQQjBHSzl0MzVtNWprOXpXSFMtMmJVVjFXUS1uUGdKU3BfQQ?oc=5",
      "pubDate": "2026-09-04T09:14:00Z",
-     "source": "fnn.jp",
+     "source": "FNNプライムオンライン",
      "summary": ""
     },
     {
-     "title": "次週最終回！ ドラマ「Tシャツが乾くまで」、華麗なる俳優たちの演技に改めて注目。",
-     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5sS3BId2QxQVNCSnU4eVU1a3VSaDdwR0VLQ1VZSWs0UnhxeVh1bHltZE5oeGdaaldjV3RIVjg4UGdUaFhXUzZ5V3VQdHFVLXpEYkk3WURsdnNVZHNYdGcya214QXlJaEphNnVJaw?oc=5",
-     "pubDate": "2026-09-04T07:00:00Z",
-     "source": "madameFIGARO.jp",
+     "title": "島しょ国、中国ミサイルに「懸念」 外圧に苦慮、全会一致ならず―首脳会議",
+     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5pRmVIQkpqUVM3TE9sWTEwTk1qMDNmQWt3dnZGTnZKcXdiVlAwYUo4N1RyVC1FYTdyRkRER3ZabDN1dk9ueEJ3ME9US192b2o5QWZ3Z2Etck5DZDRZN24wcFJmaw?oc=5",
+     "pubDate": "2026-09-04T08:12:00Z",
+     "source": "時事ドットコム",
      "summary": ""
     },
     {
@@ -365,6 +365,13 @@
    "sourceUrl": "https://rss.itmedia.co.jp/rss/2.0/itmedia_all.xml",
    "items": [
     {
+     "title": "[ITmedia News] OpenAIのAIエージェント、休眠サイトを掲示板化してタスク回答を共有か 研究団体が報告書公開",
+     "link": "https://www.itmedia.co.jp/news/article/2609/05/2000001200/",
+     "pubDate": "2026-09-05T03:06:58Z",
+     "source": "",
+     "summary": "OpenAIの社内AIエージェントが休眠状態の外部Wikiサイトを不正に“掲示板”として利用し、評価タスクの答えや制限回避の手法を共有していたとする報告書を研究団体が公開した。閲覧のみ許可されていた環境の抜け道を突き、…"
+    },
+    {
      "title": "[ITmedia エンタープライズ] OpenAI「GPT-6 Astra」発表 \"重大\"と判定された使用不可の能力とは",
      "link": "https://www.itmedia.co.jp/enterprise/articles/2609/05/news006.html",
      "pubDate": "2026-09-04T22:00:00Z",
@@ -426,16 +433,9 @@
      "summary": ""
     },
     {
-     "title": "元なでしこジャパン阪口夢穂が語る、運送会社社長業のリアルすぎる裏側「連帯保証人は全部、私です」（webスポルティーバ）",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE16OXJwbUdMZEF6S285ak5udWFEZDRFZlVRZVhRdVM2TnZDOGExRHhfdWRVbllVcm9ueFM5QkFscVhMRk5FZ1JIQlJ5Y1lMM0ZXRkVESWNhZEFiQlFyWHF6Nm5mWFBnRndlRG9ESGZhVUNsczNSVlVqSGd1QlV0VDA?oc=5",
-     "pubDate": "2026-09-05T00:57:57Z",
-     "source": "Yahoo!ニュース",
-     "summary": ""
-    },
-    {
-     "title": "２試合連続スタメン外の大谷翔平「本人も納得している。協力的だ」ロバーツ監督が意思疎通を明かす「ゴーサインを出せるタイミングを一緒に見極めようと伝えた」（デイリースポーツ）",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0yMHBvSEFubmNRVWp0bEZtV2NxVGVqQndMM1JnSFhlSlBpUHRDeDRPaW94Y2RhTnFXQUV6UnVrdV82N0JVR1Z4ZVJrcG5HSEx1RmpVckIzRUdJTE1Ka3hxX2hmSzFpNXRCQ0NucDVNRzFHZ3NVbm5UVS16ZGJCeGs?oc=5",
-     "pubDate": "2026-09-04T23:49:41Z",
+     "title": "大谷翔平 今季の投手復帰は絶望的か ロバーツ監督「今は投げていない。当然、後ろ倒しになる」ＩＬ入りにもトーンダウン「どうなるかはまだ分からない」（デイリースポーツ）",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBXYzBLYnZwbHpxNDVHdEVKSEZqdS1rdXdzUUx3R2Jmc1F6VmZxcldwemotUm5MWHZvRGlyLVBEQVpCRkM3ZjB1bml0cFVEQlp6MG5nUENwUnIzVU9CQmh2OXgxZlVyNWkyV29QVlJxdHZUM3ZoNmxNWC02eU5Nd2s?oc=5",
+     "pubDate": "2026-09-05T00:06:13Z",
      "source": "Yahoo!ニュース",
      "summary": ""
     },
@@ -538,9 +538,9 @@
      "summary": ""
     },
     {
-     "title": "巨人・竹丸和幸は「肝っ玉あった」 小学校時代の恩師がエール「ポストシーズン楽しみ」",
-     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBjS2tvNkIxT3RSanlIckpoWWxHRUpWTTM3U0lSc0JnNVdaeWZJZGc0RUdJWWpDb0NKOTNfWG9JYVg0UzZHUlBzcW0yaEszYy1GYUFpWi1uYTNmdTJzLVdiRWFR?oc=5",
-     "pubDate": "2026-09-04T20:10:00Z",
+     "title": "プロ初安打の地で思い出す阿部前監督の言葉…巨人・石塚裕惺「今でも心の根底にあります」",
+     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1mdXVXZDNidmx4Qk5lSXFJU0NEMThscjRPMVp2c3pNODBqTE84TW9rVXlUUGtGaHBJSkJOUWFKSkV5S05mekt5WUNMQy05cWRkOG5wMk0tczF0Q2NXYkVERkZR?oc=5",
+     "pubDate": "2026-09-04T20:30:00Z",
      "source": "スポーツ報知",
      "summary": ""
     },
@@ -550,12 +550,26 @@
      "pubDate": "2026-09-04T20:00:00Z",
      "source": "デイリースポーツ",
      "summary": ""
+    },
+    {
+     "title": "【ドジャース】大谷翔平「最高価値」も満身創痍 ＬＡ紙が下した〝残酷査定〟最下位はディアス",
+     "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBJNldQdVlVTDVTc2wtME5ibzdQdkRDV04zUGRDcVROLUF2a0wzSzhlNXZTeFRzbUNoc2plU3l5RmJTSFAzU1dVNUxFR1ptaHVyZE9sNWpjZXhhRHg4?oc=5",
+     "pubDate": "2026-09-04T20:00:00Z",
+     "source": "東スポWeb",
+     "summary": ""
     }
    ]
   },
   "gadget": {
    "sourceUrl": "https://pc.watch.impress.co.jp/data/rss/1.0/pcw/feed.rdf",
    "items": [
+    {
+     "title": "GPT-6 Astraを利用可能になった記念でリセット権、ChatGPT有料3プラン全員に配布",
+     "link": "https://pc.watch.impress.co.jp/docs/news/2138527.html",
+     "pubDate": "2026-09-05T03:23:08Z",
+     "source": "",
+     "summary": "「GPT-6 Astra」の提供が前倒しで始まった。OpenAIは9月5日(日本時間)、GPT-6 AstraがChatGPT WorkとCodexにおいて、ProとEnterpriseの全ユーザー、およびBusine…"
+    },
     {
      "title": "【今すぐ読みたい！人気記事】ポータブル電源の中身ってどうなってるの？⾃分じゃ怖いから公式に分解してもらいつつ解説！ - PC Watch",
      "link": "https://pc.watch.impress.co.jp/docs/topic/readitnow/2138515.html",
@@ -688,13 +702,6 @@
      "pubDate": "2026-09-03T21:00:00Z",
      "source": "",
      "summary": ""
-    },
-    {
-     "title": "RTX Spark搭載PCは10月発売。HermesやOpenClawのワンクリックローカル化も",
-     "link": "https://pc.watch.impress.co.jp/docs/news/2138123.html",
-     "pubDate": "2026-09-03T16:00:00Z",
-     "source": "",
-     "summary": "NVIDIAは9月3日(米国時間)、ドイツ・ベルリンで9月4日に開幕するIFA 2026に合わせ、Arm SoC「RTX Spark」の第1弾チップ「N1X」搭載PCが10月に発売されることを明らかにした。あわせて、H…"
     }
    ]
   },
@@ -702,26 +709,10 @@
    "sourceUrl": "https://news.google.com/rss/search",
    "items": [
     {
-     "title": "フードバンクへの寄贈を3年間継続し、川西市社会福祉協議会より感謝状を受領（株式会社MonotaRO）",
-     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9RQlhhRG80ZmlDTU4tZFhiZnAxdllDX3dfSi04a3BYZEJHOGs5alBSQ19TeVNCZjQyTWdwV0J6Y2drMGNxbVl4TGM0WQ?oc=5",
-     "pubDate": "2026-09-04T14:26:21Z",
-     "source": "LOGI-BIZ online",
-     "summary": "",
-     "company": "モノタロウ"
-    },
-    {
      "title": "【アナリスト評価】アイカ工業、レーティング強気に引上げ、目標株価5,000円に引上げ（日系大手証券）(アイフィス株予報)",
      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPNzhtbWVWMmNGeTc4OW9LeHlKX2VIR1VmR0FiOUFpTTNaaDJxdzlsNmx0N2lUYWNyeHFBcXRNSTRENjZmV1hvRDZKRmNrLU1KcXZQLXcyMFhlcjBzY3VENXplTkFqajNZQnlrTl9nMDFqTXZyY01ZWTg2RFh1YzRfc3RnOWp0Wms?oc=5",
      "pubDate": "2026-09-04T10:58:00Z",
      "source": "Yahoo!ファイナンス",
-     "summary": "",
-     "company": "アイカ工業"
-    },
-    {
-     "title": "野村證券株式会社がアイカ工業株式会社＜4206＞株式の変更報告書を提出",
-     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNVWtjNmtrMlh4NzdRbG1OVmpWTUktRXNpaWI0UzhrQ1BnNlozVlNCclo5eFJSZ2JmM0lZbGE2MlU1Tkp4NkU5ejRzOFFHaTFUdDQ1UENuVVdyUHR1allKWGh4czdRc1hOc0FfWkVocTlsOVlKem1kdUZLYnZCRXpNSWJrbGJxczF3ZVHSAYoBQVVfeXFMTVVrYzZrazJYeDc3UWxtTlZqVk1JLUVzaWliNFM4a0NQZzZaM1ZTQnJaOXhSUmdiZjNJWWxhNjJVNU5KeDZFOXo0czhRR2kxVHQ0NVBDblVXclB0dWpZSlhoeHM3UXNYTnNBX1pFaHE5bDlZSnptZHVGS2J2QkV6TUlia2xicXMxd2VR?oc=5",
-     "pubDate": "2026-09-04T04:22:00Z",
-     "source": "topics.smt.docomo.n…",
      "summary": "",
      "company": "アイカ工業"
     },
@@ -745,7 +736,7 @@
      "title": "セイノー情報サービス 国際物流総合展2026でAIエージェント×ロボットをデモンストレーション",
      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1BeTA0cDYza09oLVJsWUJicUxaZDZDX1M3dS1fQjRvYWJ2Q2paVlJoN0N1dkpTRmtEMjhZUUs0UlNITEFScTFPdktJVzRmOE5LTnd4Q0JWWVdRdTVkcUhYNVN1SjRQV2l5MnpqVWowekFuQQ?oc=5",
      "pubDate": "2026-09-03T13:10:02Z",
-     "source": "news.infoseek.co.jp",
+     "source": "Infoseek",
      "summary": "",
      "company": "セイノー情報サービス"
     },
@@ -758,10 +749,26 @@
      "company": "セイノー情報サービス"
     },
     {
+     "title": "住宅関連資材値上げ情報（9月3日時点）",
+     "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1MWVhMc2xiUDFkYm1ZaXBjZU5RQ3BUMXpoWnRQN1dxNHlFNWliN2FQdE9WZkpUakNEZU9ZdmhsYVYtc0w5TVpCWWphd3JVWG9qYWthelFB?oc=5",
+     "pubDate": "2026-09-03T07:00:00Z",
+     "source": "Housing Tribune Onl…",
+     "summary": "",
+     "company": "アイカ工業"
+    },
+    {
      "title": "モノタロウ／3年間のフードバンク寄贈で地域支援、川西市社協から感謝状",
      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5HTHZyOE9XWi1DbmhsT0lQZ21XMjhZc0VfM1lKZ3g2dHZ3Y0JwRnU5ZDNrb2dNalZVcVRkbm41ak5aY2VudEUwdVJacWZpcnQzeVU4WQ?oc=5",
      "pubDate": "2026-09-03T04:33:43Z",
      "source": "物流ニュースのLNEWS",
+     "summary": "",
+     "company": "モノタロウ"
+    },
+    {
+     "title": "フードバンクへの寄贈を3年間継続し、川西市社会福祉協議会より感謝状を受領",
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5SRUdfWXNkcGJiX0cwZXJyYXlscUU4akRscFkzaGpFcTdEaGRaZHIwNGw5U3gzQmJGblNPZVJtT3NBb1FySjdNclY3WllOTzN0YXZTQlNseDhIbl9zWTB5NWxvM3RwQ1lkREE?oc=5",
+     "pubDate": "2026-09-03T03:00:32Z",
+     "source": "PR TIMES",
      "summary": "",
      "company": "モノタロウ"
     },
