@@ -1,16 +1,9 @@
 {
- "updatedAt": "2026-09-05T19:50:19.801627Z",
+ "updatedAt": "2026-09-05T20:10:17.470754Z",
  "sections": {
   "news": {
    "sourceUrl": "https://news.google.com/rss?hl=ja&gl=JP&ceid=JP:ja",
    "items": [
-    {
-     "title": "「人が刺された。ガソリンをまいている」とケーキ店から１１０番、焼け跡から２遺体・３人搬送…岐阜・本巣市",
-     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE04ajBQNGIyaWNYXzBNWXFIWWw0ZF9rUmRUN29aS01aaGlvdjlqeE53MlQ3TFFzdmI2d1R3QkFYajctc1ZQeUoxcGJXeG9Fb3h3VXZELUhsenR6ZFJ4cUItWkg5SUx5Zw?oc=5",
-     "pubDate": "2026-09-05T17:47:00Z",
-     "source": "読売新聞",
-     "summary": ""
-    },
     {
      "title": "惑う家計、住宅ローン払い「定年後まで」7割 金融教育の遅れ挽回を",
      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8xa2RNSFVNb2gzZHR3QlAxWk5DSkFNbl9LNEFoNUxuRDhhejcyMXBoeF9lSEUwdDRoMXR5V1dxd0h6WXB1NDhONGlpQXJwelRCajRFemRYRHZyRkpFcG9uNlV2VWEwZzFGS3czNw?oc=5",
@@ -33,10 +26,17 @@
      "summary": ""
     },
     {
+     "title": "「人が刺された。ガソリンをまいている」と通報 ２人死亡、3人搬送 岐阜県本巣市のケーキ店で火事",
+     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9zbUdWS2huaUxnb2t4NGRLUXBYOGUxaXUzU2IzUjY3dEI1eXZ1T0dvdFpBVjMzWjBhckRUOW40dUNDckpDUkR0UFRZVnhGSXN5bHhWdQ?oc=5",
+     "pubDate": "2026-09-05T14:08:15Z",
+     "source": "中日新聞Web",
+     "summary": ""
+    },
+    {
      "title": "台風24号(クロヴァン)はループして東へ 秋雨前線や熱帯低気圧で大雨のおそれ",
      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBnR3ZlckJuNEhPVHotcHFraUtIbEtkRXBwdlNVdTctd0FGVHdmcm9janY5TW1ZeVAtQ1lRRWVIRXhOcnZkSXlYZjdlRkpiQ0ZPMVNaTw?oc=5",
      "pubDate": "2026-09-05T14:01:00Z",
-     "source": "ウェザーニュース",
+     "source": "weathernews.jp",
      "summary": ""
     },
     {
@@ -54,6 +54,13 @@
      "summary": ""
     },
     {
+     "title": "くら寿司の従業員、景品の「ちいかわ」横領判明しコラボ企画中止…メルカリに大量出品",
+     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBDVWd5N0dQdkxzS0VXT1ZJMVhTSjBVXzBUc1VxVVF4Nk51QlhzSUEyVmdya0xBOXJMa0tYRmlqeDdGUDVKbml6MjNwUnhDNDRTX2w5MDlESDN1NnlfSnpjSFowYXY?oc=5",
+     "pubDate": "2026-09-05T13:08:00Z",
+     "source": "読売新聞",
+     "summary": ""
+    },
+    {
      "title": "『告白』爽太（松村北斗）、命がけで麻里子（岡崎紗絵）を救う→キス 新たな復讐の手が…",
      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9rTTJjcVV4NThrb1VuZlE3Z0FudVJYaEEzUF9wbEN2b1VKMDRRbFhQNmhtWmJKX056UUlUcmVsd2QtTHpYc0Y0UV9hLThnejBteGl1dmlB?oc=5",
      "pubDate": "2026-09-05T12:54:00Z",
@@ -61,24 +68,10 @@
      "summary": ""
     },
     {
-     "title": "プーチン氏、キーウを３日間攻撃しないよう指示…ゼレンスキー氏の米特使らロシア滞在中の空爆停止の対応受け",
-     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9IcFoySDBILTNJRjE1aDloQjZrYmwwN3RfUEtHTktzcnl4QjA5eTlqNS1hWDR0VUwxX0ZRV01uZ0ZVbEJVeFRRZkc4Ul9hQzRPaUpfSjdVbjh2U0VOcFg4bm13?oc=5",
-     "pubDate": "2026-09-05T12:24:00Z",
-     "source": "読売新聞",
-     "summary": ""
-    },
-    {
-     "title": "くら寿司が「ちいかわ」コラボ中止 従業員の不正行為判明と発表",
-     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9ZekhwUWxvdTkybXMySEZ0aW5WQy1wT3AzRDlsNGM3NGN0SjRTWWxwOG1LcGZCeUVQNjZVSi1ieDFILUtkdy1TOWcwTzJCZGhHMjQzSFhKdHFoWEtHLTcwMHREU1ZmaDJJ?oc=5",
-     "pubDate": "2026-09-05T11:58:40Z",
-     "source": "毎日新聞",
-     "summary": ""
-    },
-    {
      "title": "佐藤駿が２位 中田璃士は崩れて５位―木下杯フィギュア",
      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9pM3ZhUXJ3bTRGbUd0dGtUMTk0Z2pGUHZSRkNRamMxemkxZ0MxS3BvZXYzY3cyYVBRQnFkakt0MkpsZUlCSzlnc1FmME9FelZHdHRld2JEdDh6b3dNV3ZrN0RRWQ?oc=5",
      "pubDate": "2026-09-05T11:58:00Z",
-     "source": "時事ドットコム",
+     "source": "jiji.com",
      "summary": ""
     },
     {
@@ -96,13 +89,6 @@
      "summary": ""
     },
     {
-     "title": "【速報】ロ軍がキーウの2空港攻撃",
-     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9nLTJONnVLd25IZDFfU0JhUUNPV3FyTnFwQjNnNVZDNXZucHlXNHNBa0hrTTVEZFF0TDRIMmVYeGVEc1NuOU14RlBKZw?oc=5",
-     "pubDate": "2026-09-05T10:06:03Z",
-     "source": "47NEWS",
-     "summary": ""
-    },
-    {
      "title": "こめおが丸刈り謝罪 〝余った７００食〟に言及「作り置きという意味ではありません」",
      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4yM0tlbUt3ZHJaX1lmUGNOTGNFUkxac0RlQ1B2TEh0OWJmZFBlc0FKSGNGc0JZUlRnNDFmR1RJQU1IcG83MzVQZkE4QVlfbUVYcUNSSUtyYjRkRlJm?oc=5",
      "pubDate": "2026-09-05T09:38:00Z",
@@ -117,10 +103,17 @@
      "summary": ""
     },
     {
-     "title": "高市首相、近く党役員人事と内閣改造に着手 自民・有村総務会長が言及",
-     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5Bb0FDXzJXVENIVmNyaUZHMGhUQzFJZzFLNThYTXZTbno1WFdjY0x3ZmxfMnpaNGkzZ3VsbDVEWk5kUXZzbGJBVzBNWFhuNHc0LVAtalIyYlUtbkRpajBBYlo4clZFS3VUR19IRmY2MUlUSE9KT2c?oc=5",
-     "pubDate": "2026-09-05T08:52:05Z",
-     "source": "産経ニュース",
+     "title": "【速報】米特使搭乗とみられる航空機がロシア到着",
+     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE12SUlWeGljb2haMDVaMGFVcElJOTJIMnBTb2xJazB3aTBJUUFNeUxuX285N0x6Y2JySWRwVGFBb1FsVWFRTnZ0TDBWcw?oc=5",
+     "pubDate": "2026-09-05T08:57:59Z",
+     "source": "47NEWS",
+     "summary": ""
+    },
+    {
+     "title": "【速報】ネパール土石流 水力発電所のトンネルに取り残されていた中国人男性を1人新たに救助",
+     "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBfT21rRnF0UmloSm5sem43QkpMRm03UDNQOFBPVlBTajB5RDVXVzROV2tnbktfdTlDdTN0WVR5NDd6MmlfQXNDZTMyd3UzQQ?oc=5",
+     "pubDate": "2026-09-05T08:56:00Z",
+     "source": "FNNプライムオンライン",
      "summary": ""
     },
     {
@@ -138,17 +131,17 @@
      "summary": ""
     },
     {
-     "title": "ニンダイ告知から「ニンテンドースイッチ」表記が削除され「スイッチ2」のみに。初代スイッチの扱いは節目を迎えるか",
-     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5yTFRkVWFCTm05RmYtOVRod1dUQkY1SmhHdEJ0X3ZqZWxlRmE2dl9YaVlLLWhXc1ZFRXdmRDRjSERYLUR0UmQ5WEVzdE5HaFZmOFp4YVFiTXN6Xy1iZUJpTnZ5NmVXZw?oc=5",
-     "pubDate": "2026-09-05T07:00:03Z",
-     "source": "gamespark.jp",
+     "title": "「殺し屋雇った」と発言したサラ・ドゥテルテ比副大統領、マルコス大統領ら脅迫の疑いで逮捕状…保釈金納付し回避",
+     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1qRVhGUW5wQThpa01DYl9YTHgtOUlqeTI2d1d1VzBtVUlqc2JxbXhuMGxMU1ZfVTVTdGhuZFIxWlE5UXBEdndXY08tRk1GM3RySHRyZ0JCalBWaTBWdDhULWZR?oc=5",
+     "pubDate": "2026-09-05T07:59:00Z",
+     "source": "読売新聞",
      "summary": ""
     },
     {
-     "title": "トランプ氏に物おじせず「強い指導者」、伊メローニ政権が戦後最長３年１０か月…ＥＵと協調し現実路線（読売新聞オンライン）",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8wTGc3OVZfVmM0MzF3RVVOYzBUSFBJb1lyejlIdGxGVXdzSVdqZkxlRFloeFNLSDA0RlFvZk9yaXJDUG0tMTVFak1Xd2w5VEFGdXB2alVDeG9MSmJaLUxUenhKS3FzNDM5dnE5dVVLSXdpZjJhWnlpRVBDcUxKLW8?oc=5",
-     "pubDate": "2026-09-05T06:32:20Z",
-     "source": "Yahoo!ニュース",
+     "title": "ニンダイ告知から「ニンテンドースイッチ」表記が削除され「スイッチ2」のみに。初代スイッチの扱いは節目を迎えるか",
+     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5yTFRkVWFCTm05RmYtOVRod1dUQkY1SmhHdEJ0X3ZqZWxlRmE2dl9YaVlLLWhXc1ZFRXdmRDRjSERYLUR0UmQ5WEVzdE5HaFZmOFp4YVFiTXN6Xy1iZUJpTnZ5NmVXZw?oc=5",
+     "pubDate": "2026-09-05T07:00:03Z",
+     "source": "Game*Spark",
      "summary": ""
     },
     {
@@ -180,10 +173,24 @@
      "summary": ""
     },
     {
+     "title": "私大って減らされるの？ 少子化見据えた国の思惑と大学の苦境",
+     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1STUJBSlNIVXctSXExOVIzTFFpNndmNGRfRHI2eU8zUWNqa00yeS1YMktMd1I0cG9UcC1FTG83TkFPOWFMX2dlMkl4T0ZaX1JhMzV5UXNLZ2pwckZBRmJ6cl9HOGV0Q0hK?oc=5",
+     "pubDate": "2026-09-05T02:30:00Z",
+     "source": "毎日新聞",
+     "summary": ""
+    },
+    {
      "title": "アンソロピックのＩＰＯ、10月中旬に後ずれ＝関係筋",
      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9kaUtaUjF1Z0I5bi1pR3NqR2pFUUlIR1lSYTJ2NF8yRU9Rd1N3eTM4VTJwbjJwN1ZLMDdEbVNyVk1VcXY2anJHcVZxZmIydGo3ZHo3Ul9EMHpmYXpfWjhjamlpOV9XdHN6VDhybi12cmVCc3ozbFQ5ZA?oc=5",
      "pubDate": "2026-09-05T02:10:00Z",
      "source": "ロイター",
+     "summary": ""
+    },
+    {
+     "title": "ウクライナ保安庁本部をロシアがドローン攻撃、ゼレンスキー氏が発表 米特使の訪ロ予定を前に",
+     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFAwTWlJYmtkV1BtTy0yNGtoTXJKSFdYVzdXOXlRZEdxX1RPVWhySmhDT2pQY3h2SHk5cTJDS29TZkFCOWhtQmREMzVpRlJjRlFaNlFVaTVxM2hqZ01oNFYw0gFkQVVfeXFMUGQ3SjFjLTZqY3JmX0lRYUc2MXBsb0lBQXdUclprWGRZSndwSFFkczVla3RaamFxWndWNWFaVHJoSHpPZHJVaUE4VU5EcTBWMW9vVnJTcW1HRm16bFZNcnd2a3dzaA?oc=5",
+     "pubDate": "2026-09-05T01:25:48Z",
+     "source": "BBC",
      "summary": ""
     },
     {
@@ -194,17 +201,10 @@
      "summary": ""
     },
     {
-     "title": "円相場 荒い値動き続く FRB 日銀の利上げ観測や介入警戒で",
-     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8wT3BpQk9nUHhvbFo5STdEeWRxR21YcGxseWpZTkNSVFQxY2czTHZTMGU5NmZHOEhJaFl0eTRQWlZ0OVQwLUhwczgxYnJ6eERIaUJna0tkOFVBWGVxZGRv?oc=5",
-     "pubDate": "2026-09-04T17:12:40Z",
-     "source": "NHKニュース",
-     "summary": ""
-    },
-    {
-     "title": "フィリピン副大統領、大統領を脅迫した容疑 保釈金で逮捕は回避",
-     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9OQXZpZldtekUtc1ZXWkpQSFVNMDNQT0FwWWZFZGZlRFQ1WkgyM3hzV3A3dkpqRDlWSmNCaFlIYVdTRHlQT2h0VC1qeWtXcng5dFRmRFhrTk5ETnJDWUJ0SWpOeVIyaTQ?oc=5",
-     "pubDate": "2026-09-04T15:33:00Z",
-     "source": "朝日新聞",
+     "title": "伊メローニ政権が戦後最長 現実路線で安定もくすぶる懸念",
+     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPaGxhUjFRaEYzUVVBNDkwU0FSRkJUR0JwLWNMM3FXQl9RN2o4RHRIcUtqTkVVa0ZuOHdELW1scnQtUHlBcWhTRWpTUVd2eHNlT3djSjZad1A1Zm5wLWxFZE1nYkNodE9RR2k3YjhqZGdZM3dlb1dDUjhfRnZ2WG9BMUROZkhLVjk3R0xwMmZ5bmp1UdIBlwFBVV95cUxNb0k0eEFoNnl1VlZQZWNnbS0tWDlZRzNRaEVoMHlfbXphbVc5cHdPY1RMUmVjRUNMSDhIVkZldkx2Wk9ibldKMjFtRlFta0E0Mmw0c0hDNWN3SkY5ZVZoVW5DY1VlLXlnVVBWbkJEOGxnT2h2WkFRckJJZzVfNzNOWl9ydTk1YmlqRk5NRVpHWjlreWVfX0M4?oc=5",
+     "pubDate": "2026-09-04T07:02:00Z",
+     "source": "ｄメニューニュース",
      "summary": ""
     },
     {
@@ -496,13 +496,6 @@
      "summary": ""
     },
     {
-     "title": "日本フィギュア長身カップルが「手足が長くて美しい」「ポテンシャル凄い」 自己ベストで観客魅了（THE ANSWER）",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8wUnpEWjFkZGhaR2poVkxqSlFLQ0N5dTNRZDZ6VWdRZmdkMmdxN2FES1FkdDZ0THZwTHlKcXZMM0JWdE9qazlERTFwTnpxZWtTTHVuc21GQUZvc3hrY2wyem0wbHZpMTJ6TmJOeTN5TFdmaFBvUnR1aFoyc2hLNFk?oc=5",
-     "pubDate": "2026-09-05T13:38:00Z",
-     "source": "Yahoo!ニュース",
-     "summary": ""
-    },
-    {
      "title": "「今まで以上のイケメン度」「このビジュやばい」中村敬斗がBMWとのショット披露",
      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE15clZzV3dKdFNlRFBKMmtZWWgtOE5oTmctRW8tc3RnQjlJRUhSRXF3MVZVaFpqVUJibzBlSmQ3czBheTZUN1hYRXNyOHZrWjRrVWxqSHk3M2JkNjVUZ2Q4LXpyQnR0THo0c1Rv?oc=5",
      "pubDate": "2026-09-05T13:06:00Z",
@@ -555,7 +548,14 @@
      "title": "佐藤駿が２位 中田璃士は崩れて５位―木下杯フィギュア",
      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9pM3ZhUXJ3bTRGbUd0dGtUMTk0Z2pGUHZSRkNRamMxemkxZ0MxS3BvZXYzY3cyYVBRQnFkakt0MkpsZUlCSzlnc1FmME9FelZHdHRld2JEdDh6b3dNV3ZrN0RRWQ?oc=5",
      "pubDate": "2026-09-05T11:58:00Z",
-     "source": "時事ドットコム",
+     "source": "jiji.com",
+     "summary": ""
+    },
+    {
+     "title": "9/5(土) プレシーズンゲーム vs.秋田ノーザンハピネッツ DAY1 試合レポート",
+     "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1Hcy1ZckUteUpVUVdPS2RxTU1JakZCRjdGN2ZCNzkwaDJUSFB4d25ya2x2Y3ppbnROeVdfbkVSZFZCTE94aVo4OVliamcxZkNCLW5DWVAySQ?oc=5",
+     "pubDate": "2026-09-05T11:37:59Z",
+     "source": "レバンガ北海道",
      "summary": ""
     }
    ]
@@ -741,6 +741,14 @@
      "company": "アイカ工業"
     },
     {
+     "title": "(株)ＭｏｎｏｔａＲＯ【MONOY】：株価・株式情報",
+     "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE41U1pFbmdJM2JsMG9uSmlqdzhiTHJFYkRfczl0X1NmXzFYOUtxUkpGNVBXNGpnMjUyTHotOVBSODRMVG5oRWJJb05YVHNSMWk2?oc=5",
+     "pubDate": "2026-09-04T07:00:00Z",
+     "source": "Yahoo!ファイナンス",
+     "summary": "",
+     "company": "モノタロウ"
+    },
+    {
      "title": "〈ハウス食品が売却検討か〉ココイチ、中国店舗は10年で半減…ラーメン、夜パフェを次々買収する壱番屋が急ぐ“脱カレー”",
      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE11Vi0zczVBWWVFRVk3bF9YU0pTTlJLNmswcmxXa2drVGhvck5Bc0pXNTBSaGloNGNJa1lJd0hXUEZyZnhTekFvYU1vaTlpVTFVaG1Cem54UE1zREpSNGJDUGJJNXlHN0k1ajBRQTJpQ2F6T1BsMW55cFRRbW91ZWc?oc=5",
      "pubDate": "2026-09-03T22:00:39Z",
@@ -768,7 +776,7 @@
      "title": "セイノー情報サービス、AI×ロボットを実演",
      "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBoeDNFMVd4S1NtYVJhaDZvaFEzdktHTktsYmswMklmVXlGOWUtM09Fb1FjUGd2R1FPTUJ0VWR5ejByNGNiQWVHUg?oc=5",
      "pubDate": "2026-09-03T09:03:46Z",
-     "source": "logi-today.com",
+     "source": "LOGISTICS TODAY",
      "summary": "",
      "company": "セイノー情報サービス"
     },
@@ -789,14 +797,6 @@
      "company": "モノタロウ"
     },
     {
-     "title": "フードバンクへの寄贈を3年間継続し、川西市社会福祉協議会より感謝状を受領",
-     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5SRUdfWXNkcGJiX0cwZXJyYXlscUU4akRscFkzaGpFcTdEaGRaZHIwNGw5U3gzQmJGblNPZVJtT3NBb1FySjdNclY3WllOTzN0YXZTQlNseDhIbl9zWTB5NWxvM3RwQ1lkREE?oc=5",
-     "pubDate": "2026-09-03T03:00:32Z",
-     "source": "PR TIMES",
-     "summary": "",
-     "company": "モノタロウ"
-    },
-    {
      "title": "アルダグラム、現場管理にAI モノタロウなどから20億円調達",
      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1iVGxHLVdHWDdKRkhYcDNwMExCXzljYjhpTWJoUTQ5bWVYeEpzOE5MVnNPeE9sdDU2cG51aGtGRzBfMkFIcTFGeDFOc0VQaE1EdTg4Vk16WDZCT0FSQ3NZN0RUbnFPQUxBVTFWZg?oc=5",
      "pubDate": "2026-09-01T20:00:00Z",
@@ -811,14 +811,6 @@
      "source": "CLASSY.[クラッシィ]",
      "summary": "",
      "company": "日本ペイントグループ"
-    },
-    {
-     "title": "2016年に誕生した\"誰も知らない冬のサンダル\"「SUBU」10周年を迎えたシーズンが9月1日スタート。定番F-LINEに新色〈MATCHA〉〈LAVENDER〉が登場。",
-     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9XTEt3TkNrYXU1ajYzdzZlTkdUNXloanJPRDdVbVRnQVNkdUxlTWhFcU1NcVNWaGlYSzJxYlRocUlyVUpzLUZhZnQyRVpOZUFKR3NVZlc3TDdyR3dROXJjUDVlZU1yTHllWHc?oc=5",
-     "pubDate": "2026-09-01T05:03:28Z",
-     "source": "PR TIMES",
-     "summary": "",
-     "company": "F-LINE"
     },
     {
      "title": "住友林業子会社のホームエコ・ロジスティクス=厚木に初の自社運営施設、資材物流を集約化・効率化",
@@ -885,10 +877,10 @@
      "company": "菱友システムズ"
     },
     {
-     "title": "F-LINE／「F-LINE No.1グランプリ」を初開催、業務改善など表彰",
-     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5XSnczR0FrXzNUT2hYYXZfb09meVNyUmpLRV8yMGtSRDBuajlsRlktWkY4MlgzU245QWkzWlZrYVdPcU5JRkRaWmJFWmRMcGtxeDFTXw?oc=5",
-     "pubDate": "2026-07-07T07:00:00Z",
-     "source": "物流ニュースのLNEWS",
+     "title": "F-LINE、物流品質改善の社内表彰を開催",
+     "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5DUEpfNzh1Rlo2d0E0N0U3ekJlaS1pSVpiaVRoMi0xSGhJZm1Rdk5jblh4TE9oMTN2N1YtU1R3ak5wdm8ydG1Mag?oc=5",
+     "pubDate": "2026-07-08T07:00:00Z",
+     "source": "LOGISTICS TODAY",
      "summary": "",
      "company": "F-LINE"
     },
@@ -897,6 +889,14 @@
      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1oZmtVLVJfOUNJZExwXzRhVEVGbzVPY1dycU1WSDEwdnRuM2ZMNmdGOTlobFZEN040dTluUDRoSjFjenNGN09Palg3QQ?oc=5",
      "pubDate": "2026-06-17T07:00:00Z",
      "source": "LOGI-BIZ online",
+     "summary": "",
+     "company": "F-LINE"
+    },
+    {
+     "title": "F-LINE／群馬県太田市で2.5万m2の物流施設開発、2027年6月完成予定",
+     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE4tM2ZKVU0xanJRZmVDcXNXU0hFRVFIdjEtUEVBLWFaWGQ4Q0J3cVYyY0VSWkhwbnZJZkNEcWd6Y3UyTElicER6U2duTHVvTGw3SGNUbw?oc=5",
+     "pubDate": "2026-06-16T07:00:00Z",
+     "source": "物流ニュースのLNEWS",
      "summary": "",
      "company": "F-LINE"
     },
