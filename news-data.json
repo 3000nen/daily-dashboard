@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-09-06T21:37:08.935904Z",
+ "updatedAt": "2026-09-06T21:51:10.041305Z",
  "sections": {
   "news": {
    "sourceUrl": "https://news.google.com/rss?hl=ja&gl=JP&ceid=JP:ja",
@@ -64,7 +64,7 @@
      "title": "月議：ナンシー、宇宙へ行く＝永山悦子",
      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE80WTYxVjlsMlUwd3VwdjRuS3dWZUN2RjJCUVFMenNyWllkRThTWU1iaFNjWlhjWlc1eHk1Z1JOdDdNTzB0bGh0R20yMEVzaWh4RmZzSXRpU3Q4ckRWRTE1T0JRWE1uMXpH?oc=5",
      "pubDate": "2026-09-06T17:00:46Z",
-     "source": "毎日新聞",
+     "source": "mainichi.jp",
      "summary": ""
     },
     {
@@ -99,7 +99,7 @@
      "title": "バレー推し：深津英臣「一人一人が藍以上にやっていかなきゃ…」アジア選手権",
      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE41cmpJWUdRUHpITlQwRHN0cnN4LV9GS0dUTVhYck5MWndKR2doWDZaU0w3T0dYRkVSdWthcTRzYlFEemREU0pueGFYMmxqSWk4Q2ZlWE8yakxOdzFuME55aV9faGxmWURz?oc=5",
      "pubDate": "2026-09-06T14:47:47Z",
-     "source": "毎日新聞",
+     "source": "mainichi.jp",
      "summary": ""
     },
     {
@@ -107,13 +107,6 @@
      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBWNThjRnJycUVsMDNlQUItUzROR3VrOHRWMTh1MkQxc2trQmtMd2JWWGZ3X1o3aENsSmN6NFZWdXpHQTF4eDVPS252Vk82VG15aThEdHZtTThRVndJczl6WHg3QQ?oc=5",
      "pubDate": "2026-09-06T14:23:00Z",
      "source": "時事ドットコム",
-     "summary": ""
-    },
-    {
-     "title": "日向坂46緊急生配信のアーカイブ映像公開、期限は次回のひなたフェス開催まで（動画あり / 写真15枚）",
-     "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1rRmpCSlBudDBHR252MWdNbjd2YzUyVlR5Z09JVk1jR3N5VmZmaEE1RlhIdVBmU3ZTeXlnOEVIQzZGRkxmXzJCUWNNT0U?oc=5",
-     "pubDate": "2026-09-06T14:09:00Z",
-     "source": "ナタリー",
      "summary": ""
     },
     {
@@ -159,6 +152,13 @@
      "summary": ""
     },
     {
+     "title": "『踊る大捜査線』ユースケ・サンタマリア＆水野美紀、 ツアー中の“息子”増田貴久にラブコール「パパとママも待っているよ」",
+     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBwVWJydnlUSE5RaHRvSlNOdXZVQ2lZRFdTeHN0SEs3S1BqOG5rRXJYbG42NzJ5UWNGRlRMX3JaZGV1TWh0VzduT245MkhyZGpqNkE?oc=5",
+     "pubDate": "2026-09-06T11:38:52Z",
+     "source": "シネマトゥデイ",
+     "summary": ""
+    },
+    {
      "title": "湘南新宿ラインや東海道線の一部など 大雨で７日始発から運転見合わせ",
      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE42R2M5Z3NYYWJlbWpBd2I1VzVTMFZPS25PUG91T3dpbGZwdGVKZThybzBzLWl0YTlpWFExSmx2d1pqaHJ3M2hyY3plX2pDVG1nUUNIaVpNbHZaY2FBNUVOWVVZS2JtX28?oc=5",
      "pubDate": "2026-09-06T11:20:20Z",
@@ -173,17 +173,17 @@
      "summary": ""
     },
     {
-     "title": "【台風24号】近畿地方、7日と8日午後～9日に警報級大雨の恐れ 台風から変わる「熱低」接近か",
-     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1ZVWJrRzJkNm9oa3VCWVlDTnVHU3E5RjNqc3drVFozOUhrcXlpelk0b1VrYkQ5LUptaHNXV1F1eWlmRlVsbkhWaE1UT0xuV3QxaEZMbjlMYjk?oc=5",
-     "pubDate": "2026-09-06T09:10:00Z",
-     "source": "kyoto-np.co.jp",
+     "title": "【台風24号】大阪府、7日未明～夜に警報級大雨の可能性 8日～9日も再び雨が強まる恐れ",
+     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE8tZ1RIQ1B4TUxpMTM2SDJMSVhBdlZzSm10dUdLV2RKemZYOTVMTVRnQUJKMEk1TWJJdlI2N3BCR0tfQUc1NHNnZGRIVVhtSnozY251ZExpd08?oc=5",
+     "pubDate": "2026-09-06T09:00:00Z",
+     "source": "京都新聞デジタル",
      "summary": ""
     },
     {
      "title": "【速報】西濃運輸１２年ぶり優勝 都市対抗野球 決勝戦も接戦制す",
      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5QSFBWbTNfVzB2Q0U0N0UxV25CZVRYanI0S1pKR3BQdEtPRUtiRTBfR005dlpwTGN6V0VKWFlGckhYdUQtOE9sNWstVzJjeDYzeFVlVTB3?oc=5",
      "pubDate": "2026-09-06T08:03:00Z",
-     "source": "gifu-np.co.jp",
+     "source": "岐阜新聞デジタル",
      "summary": ""
     },
     {
@@ -436,7 +436,7 @@
      "title": "バレー推し：深津英臣「一人一人が藍以上にやっていかなきゃ…」アジア選手権",
      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE41cmpJWUdRUHpITlQwRHN0cnN4LV9GS0dUTVhYck5MWndKR2doWDZaU0w3T0dYRkVSdWthcTRzYlFEemREU0pueGFYMmxqSWk4Q2ZlWE8yakxOdzFuME55aV9faGxmWURz?oc=5",
      "pubDate": "2026-09-06T14:47:47Z",
-     "source": "毎日新聞",
+     "source": "mainichi.jp",
      "summary": ""
     },
     {
@@ -475,10 +475,10 @@
      "summary": ""
     },
     {
-     "title": "「野球が軽いというか荒い。強くならないと思う」阪神 岡田彰布顧問がＤｅＮＡの拙攻に苦言 六回の竹田のバントミスに「案の定よね」と厳しく指摘",
-     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5ZSGZMeEZrbVd4ajV3NUg5eHA5MmRyWkpRaGRNVUhjYkNDd2M3TG9lVGVQYmFxN3M4TFlZaE44NTQ3UENaQjNXUVZHYVdDZ2V6MEhCUjVVT0Y4Z2xzVHZVMzZKOElwOVpOOTZtUA?oc=5",
-     "pubDate": "2026-09-06T12:59:40Z",
-     "source": "デイリースポーツ",
+     "title": "【発表コメ全文】日本連盟がカップル競技の育成プログラム開始 五輪金マソ氏を招へい",
+     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPRzVGNmFFNkZSalZzU0ZDZ29LeDUyOGlRZHFjQzd5RWxfclg4SEM5eDhWYlY1eEFKcGhGQ1R1N0pQNUtQRzFaVGYzMGpRNkYwbDBqeFUyX3NPQkpKdnJhbHFSb0dRNnRyOGxnTUZROFdxTGlGY3BDQXJwV3NiMUNweVd3?oc=5",
+     "pubDate": "2026-09-06T12:58:41Z",
+     "source": "日刊スポーツ",
      "summary": ""
     },
     {
@@ -513,14 +513,14 @@
      "title": "リンクサイド：大技成功で圧巻V 島田麻央「今日は雨だったので」 木下杯",
      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9ISm9Fd2I2U1E5a3JHbmh2bjNsUzdHSnQ4NXZIWmZvYXJ3X0RiRU4xd3ZjaThnQ1ZaZ2lUUmlHRGlDejM5Y1JieVBmTTFnaVZ5SWVkTEpUMUlmR3dkSndPQkdkRGktRFBF?oc=5",
      "pubDate": "2026-09-06T12:22:18Z",
-     "source": "毎日新聞",
+     "source": "mainichi.jp",
      "summary": ""
     },
     {
      "title": "【一問一答】進藤勇也 今季５号ソロ ３戦連続スタメンマスクで８連勝けん引",
      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE43T3FUVEYxNEl3RjFjREo2RURWcTVUc3BzWk41UkR4QXZnZzB0RG5XWFdYMXQyZjBYdUZSS1Y0M2Z4aFdIVlJMaFZTU1hhODQwc3ZzVFNKNHNvaU1PT0RkRXhB?oc=5",
      "pubDate": "2026-09-06T12:14:43Z",
-     "source": "道新スポーツ",
+     "source": "doshinsports.com",
      "summary": ""
     },
     {
@@ -712,7 +712,7 @@
      "title": "「コスパ最強」 山善の“焼き肉グリル”に絶賛の声 「本当に煙が少ない」「焼け具合も最高」「お気に入りの一台に」（1/2） | ライフ ねとらぼリサーチ",
      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE93dkwxM1hqU01ZTlQtQ09xREszOC1lRG9zd2hWMnQwOGVsN2EwMmZad3NOSVBha3VDYnlCU253YzlUT3c4UkhMMmFqVU9oWThnTXVUZFBLU01CTWxVOGgzT1F5SdIBaEFVX3lxTE5xLVJvczdjaGZydDJKaTlJUzdhcmlfVnMxVmU1WHJleTlRaGZlemhNakNBQnVLV19lT2prTVV6cC1ZUmhSR0F1V0pTOG9MbTV5emg4SnlaUUxCR1pBanVoZ3FkYzdnLWZq?oc=5",
      "pubDate": "2026-09-05T10:10:00Z",
-     "source": "ねとらぼ",
+     "source": "nlab.itmedia.co.jp",
      "summary": "",
      "company": "山善"
     },
@@ -728,7 +728,7 @@
      "title": "(株)ＭｏｎｏｔａＲＯ【3064】：今の株価の理由は？値動きの背景をAIが解説",
      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE10NlB4c180VnJjSEhVZmJfTW8yTnJXdWRVTzg1S3h2MWlUUER5b05ybWxETVozYkd4bXY3d1hzbVBrSkhCRjVzWHBmaGd2cUdMcWM3N19hQWdMUWdya2Zn?oc=5",
      "pubDate": "2026-09-04T07:01:54Z",
-     "source": "finance.yahoo.co.jp",
+     "source": "Yahoo!ファイナンス",
      "summary": "",
      "company": "モノタロウ"
     },
@@ -736,7 +736,7 @@
      "title": "アイカ工業(株)【4206】：株価・株式情報（夜間PTS含む）",
      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1YMEJ4TFdGZ1A3bFlCWnR1SU9odWNsT1ZGOERLYXlJS1h2SHVtcjI2SGRDVnRoXzQyeDBGb0Z3bnJ4SXByTWNkTTNNQ2JZU3JKUEE?oc=5",
      "pubDate": "2026-09-04T07:00:00Z",
-     "source": "finance.yahoo.co.jp",
+     "source": "Yahoo!ファイナンス",
      "summary": "",
      "company": "アイカ工業"
     },
@@ -784,7 +784,7 @@
      "title": "セイノー情報サービス 国際物流総合展2026でAIエージェント×ロボットをデモンストレーション",
      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE85bEFnRE96dEp3MlU3R0x0aGxpZ1A1N0tVb1haX2pCaEJ3S3FsOTJKdmVmQk1pcGFuTVpGVXJqeE5ydHFLZWE0NG95Wk5pM2FfMUdHTG1USWNaTGt6RTY5by1oRTRxTlRrZ1E?oc=5",
      "pubDate": "2026-09-03T01:00:02Z",
-     "source": "PR TIMES",
+     "source": "prtimes.jp",
      "summary": "",
      "company": "セイノー情報サービス"
     },
@@ -800,7 +800,7 @@
      "title": "日本ペイントグループ、女子卓球・佐藤瞳選手、芝田沙季選手の所属契約締結のお知らせ",
      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5nNUdWSVhOdGN4QS0tcG1iLXdBTHlZQTk4VWlORmp1YmtVcUpyYklsbF9Mc3VNQmNnUlFLbi1oSDNUUDgyMmg2WG1JRzBGNXVhNTRQSzVGRQ?oc=5",
      "pubDate": "2026-09-01T17:53:18Z",
-     "source": "CLASSY.[クラッシィ]",
+     "source": "classy-online.jp",
      "summary": "",
      "company": "日本ペイントグループ"
     },
@@ -808,7 +808,7 @@
      "title": "山善、カバーのずれを抑える業界初加工のホットカーペット「ほかピタ ホットカーペット」",
      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBKX1gtZmJ3czNMN1JERUVKMEd1TklYQllMTFpiNzdTeTNIaUtTcWd0UlVvRTZkTG5ReGFxMm95REpuNU92cTJ4dHJrMXRpaGNKZXF3ZFplMlJPem0zUC11QURnZ2JlM0h6ZG1xN2Fn?oc=5",
      "pubDate": "2026-09-01T06:38:00Z",
-     "source": "kakaku.com",
+     "source": "news.kakaku.com",
      "summary": "",
      "company": "山善"
     },
@@ -840,7 +840,7 @@
      "title": "「第9回 塗料・塗装設備展」出展のお知らせ",
      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5vWGxNeDZ6VXlDWlhNWG85QVBqLS1XaUpMTnJVd1I4d0FlU3dPN05UOFVrbTlGMmNZdnRHUFhnSjdoMDBjenlXRHZwV3J1TGk3VXMwa0xDNEF3SFpyTkNmRkdHb1d5MmdTS1E?oc=5",
      "pubDate": "2026-08-31T01:00:02Z",
-     "source": "PR TIMES",
+     "source": "prtimes.jp",
      "summary": "",
      "company": "日本ペイントグループ"
     },
@@ -848,7 +848,7 @@
      "title": "アイカ工業が高級塗材の床用を発売 継ぎ目ゼロの人造大理石調デザイン：新建材",
      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE94S25WbGVERVh3VVRpOHV4bUFQS095ZFdEQm0zX2E2RzZraW44aWVWRWVFMVRjeTRBTHZMSFh0ZkhDQUl3ZU4xZW5qTDB4bmVuWFRGZ3FQcjZ0dHQ1X0ZReXFLR3VSVEl2ZzN3Vg?oc=5",
      "pubDate": "2026-08-28T07:00:00Z",
-     "source": "ITmedia",
+     "source": "built.itmedia.co.jp",
      "summary": "",
      "company": "アイカ工業"
     },
@@ -872,7 +872,7 @@
      "title": "菱友システムズ－急落 1Q営業益16％減 商材販売減少や販管費増が重荷(トレーダーズ・ウェブ)",
      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQaEQ1M1Z0NWtQallKSzBIdVp2SEFJS2dJNjVSaWRWU2tWR1ZxRDZyRVUyaDF6eXM5NXlqa1JqVy16NnBvaHZQRnFPY01ENWVVbkZla2RrT2RSaE1TY2tDNlZ0S1gwN041aFZkOU9COTE0TGZ6UFFySW1XU0lQc0hwM0lJUld3dlU?oc=5",
      "pubDate": "2026-08-03T07:00:00Z",
-     "source": "finance.yahoo.co.jp",
+     "source": "Yahoo!ファイナンス",
      "summary": "",
      "company": "菱友システムズ"
     },
@@ -912,7 +912,7 @@
      "title": "製造業のノウハウを融合した「物流革新プロジェクト」を本格始動(ニュースレター) | 大和ハウス工業株式会社のプレスリリース",
      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBoRjlEcHpHbUM5OVlaZXVkUXdBbGE2bTYxb2pKcHNCNlhtM3hsV201NndocjBqdG1QRzZDNWtfUGlid01GZ2FVeWdSVVl2aUhwbDNkRXowZ2N2N05wQTRldTNEdG94Rm5KNXc?oc=5",
      "pubDate": "2026-05-07T07:00:00Z",
-     "source": "PR TIMES",
+     "source": "prtimes.jp",
      "summary": "",
      "company": "ハウス物流サービス"
     },
@@ -920,7 +920,7 @@
      "title": "都心近接の東京都江東区にヤマトグループ最大級の統合型ビジネスソリューション拠点を開設",
      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9CUkVtcVprV2pfQlZnaGI3Y1FwZ2hpUVBZY1R1eVR0cVB6RE5UaENCTGhUenoyalhrLWs3V3F2UFI4Y3U5N0d3dzV1R0ZIRm1oRF9wREhIbnNrazhkbXJpN2ROQy1mNVVWS2hCUjF0Vm5hd1E?oc=5",
      "pubDate": "2026-04-07T07:00:00Z",
-     "source": "yamato-hd.co.jp",
+     "source": "ヤマトホールディングス株式会社",
      "summary": "",
      "company": "ハウス物流サービス"
     },
