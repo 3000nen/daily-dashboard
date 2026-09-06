@@ -1,14 +1,21 @@
 {
- "updatedAt": "2026-09-06T06:32:02.657661Z",
+ "updatedAt": "2026-09-06T06:54:00.750616Z",
  "sections": {
   "news": {
    "sourceUrl": "https://news.google.com/rss?hl=ja&gl=JP&ceid=JP:ja",
    "items": [
     {
-     "title": "国民民主党代表、玉木雄一郎氏が再選 対決姿勢に傾斜",
+     "title": "国民民主党代表、玉木雄一郎氏が当選 対決姿勢に傾斜",
      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5uYWwxTlZ6VGI0LVFJcWNKTjlEbEQydGsxRWdJRkVHMmRoSmNTWFNuNnFyMU96Y21qTDBUT2FzY0ZzS3ZTYklqRmViQ01LbWtERXF5b05kbjNtMHp3bVhYMm93Rjc4MkF0SUNLQw?oc=5",
      "pubDate": "2026-09-06T04:56:01Z",
-     "source": "nikkei.com",
+     "source": "日本経済新聞",
+     "summary": ""
+    },
+    {
+     "title": "松坂桃李 妻・戸田恵梨香は料理の師匠「レシピを教えてもらったので」得意料理は？",
+     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1icWNiOEtadFBIMjI1Z1E1WE1QbW1wclN3VEEzU0JNczNBeF9Sbkt0Q0FMSmd5ZktOc2dnUUc0aHYyelk2WEVTSkpKMGthWTFseEFWdWp2MkhJa2dHNXkxM2t0MGQ5ZVVPQTBheE1B?oc=5",
+     "pubDate": "2026-09-06T04:28:14Z",
+     "source": "au Webポータル",
      "summary": ""
     },
     {
@@ -26,17 +33,17 @@
      "summary": ""
     },
     {
-     "title": "大谷翔平は３試合連続欠場もドジャース３連勝 エドマンが逆転３ラン＆スーパーキャッチ／詳細",
-     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE0zTE9HTmtnX3JnQ0V3TjZWZXJFaXZMeC1zd0hiYTFLWWxIcnBMS2lCNW02QTBDcjIzN2JuakNBVnZFR2x5cEpFQ3Q0YlFISFZXZi1PUy1ZOGpNbXhRalRxR0t2QW9lVG5zVU9tUC1QZnJqNHRmcHc?oc=5",
-     "pubDate": "2026-09-06T03:51:00Z",
-     "source": "日刊スポーツ",
-     "summary": ""
-    },
-    {
      "title": "岐阜・本巣のケーキ店火災、搬送の７０歳男性死亡",
      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB6aXQ5YURlUGRPcHZXX3o0cXpJRXVFam5SNHdYR0NVUExGVEpDS2lQNzltRnFzSkZpSmVtb0t4M3FhT0pxZWJKODl2M0NzSl9wQXM5UjZlRzJTSUx6ZkF4T0pfX3drdw?oc=5",
      "pubDate": "2026-09-06T03:43:00Z",
      "source": "読売新聞",
+     "summary": ""
+    },
+    {
+     "title": "関東は今夜から明日にかけて災害級の大雨のおそれ",
+     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5fZk91Um1UTkY3OHFfUkpZTjRFZXdlOUNkQTAtMFJEQnJaR3Y0a1RwYlFhS0dldlNYUnZlVTlOX25wc1NZSThwNjlkeGgtcEZwdURvaA?oc=5",
+     "pubDate": "2026-09-06T02:58:00Z",
+     "source": "ウェザーニュース",
      "summary": ""
     },
     {
@@ -82,13 +89,6 @@
      "summary": ""
     },
     {
-     "title": "【速報】関東に線状降水帯予測情報 東京 埼玉 千葉 神奈川と伊豆諸島は厳重警戒",
-     "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5wOW9xSjZEU2JVdjU3ZlNzNVdsS01NaGxRbGVvaUZpNDJSS0dVTjVEVUp2VWZ0eGlJVlVua1drZWxjdGlRODFRek1USy0zVFduLU5xRnFVVk5XZEppamNoVjNtanlUWFVWRjdlZ3RPZnNyUQ?oc=5",
-     "pubDate": "2026-09-06T01:50:15Z",
-     "source": "テレ朝NEWS",
-     "summary": ""
-    },
-    {
      "title": "波打つ文字盤で夜にイルカが浮かび上がる スピニカーがドルフィン・プロジェクト第2弾コラボ腕時計を発売",
      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5HaElKaDRlZEJWZk9VTlpVQzVTLUtGZjlCQWJWeFZ2d2hDc2pxdV8wN045aVQ1NS1EUTducmRpcUxReWRWQXJEUXNGZlZHS2Nxc20xTHBfUlNTS0JBcFlUWNIBZkFVX3lxTE1OMHlXbExWZkpYOG03RklHTExFNVhoazE2TzNpejVGVkRxS3N1OTRLamF2M3NVeU5YblZwbzNaZENFOG1nZHEyV3lVMFhzTWoySE9oMk5MTE1BV01mQkNwMnpmODlaQQ?oc=5",
      "pubDate": "2026-09-06T01:42:43Z",
@@ -99,14 +99,7 @@
      "title": "フィリピン、サラ・ドゥテルテ副大統領に逮捕状 保釈金納付で失効",
      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE94Z2JvTHFPMF9uaEJNc3F6YmJIRFhMVkNvVHBmR1VYeGNSUVc3RGUxV0RSZzFoaFc5ZGFBNUdDUTJEQ3BHaVF2aFd0RkdTOVZ5OFhOVFppTG1vTllsWTVSZi1rYUxCVkxzMHpGNA?oc=5",
      "pubDate": "2026-09-06T01:12:35Z",
-     "source": "nikkei.com",
-     "summary": ""
-    },
-    {
-     "title": "「学歴イジり」は本当にエンタメなのか 福島大を侮辱「wakatte.TV」炎上で見えた“もう一つの顔”と“受け入れた人たち”",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9jdG5VM2dTcElmaTc0cWxWTXo5amRPTGhrMWMtU1FrWnc2NFZkclN5MUQ4VHEwbEttZkxDczVldl9QN0ZFbzdxcHBoZlMtak05STQ4dzVnSkRySGhBRUk2bmdmZ2xwNEExTE84eDRQOF9RNFN2ODdkWHYxNUJvMFk?oc=5",
-     "pubDate": "2026-09-06T01:00:03Z",
-     "source": "Yahoo!ニュース",
+     "source": "日本経済新聞",
      "summary": ""
     },
     {
@@ -120,21 +113,14 @@
      "title": "MLB:村上宗隆30号、日本選手初メジャー1年目 菊池雄星は今季初勝利",
      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9JaDN2d1F0cmYtMUVPNEhvWXpoRkZOdGFPSkNaZG9RMmFuSUJ3SkRvblVyODRwd3lZdzZYb0RGZ2FHMUdDSlBMQzc0T3RXcUdTNnQ4ZkZLM0VwamQ2bDNSWHQzSjR2MmZtaFBCNw?oc=5",
      "pubDate": "2026-09-06T00:36:58Z",
-     "source": "nikkei.com",
+     "source": "日本経済新聞",
      "summary": ""
     },
     {
-     "title": "モダンウサギと走るカメ",
-     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBudFNoTnY2UEU5TWtMeWliTlVuR2Z1N1N6SUJ5YTFBWVlYMWNSRER5X0FHN1BxQ0hHSXNXQkpteHgzWG93aXcwQmxmSm82Ym1vSkZnSlQ0SjI?oc=5",
-     "pubDate": "2026-09-06T00:34:46Z",
-     "source": "kamen-rider-officia…",
-     "summary": ""
-    },
-    {
-     "title": "「おかずがぺったんこにならない！」 ニトリの“ドーム型弁当箱”が大好評 「こんなに詰めやすいとは」「すごく軽くて使いやすい」「子どもにも大好評でした」（1/2） | ライフ ねとらぼリサーチ",
-     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1GM3pRVWNpaTZONHhXb3NGYVp1UnRUM0xBbmh3VUxhM3M4bXdlNVB2Umhpb1I0ODU1eV95MTVtdnlNRVVXdXJtNjBfVV9BaUVmSGU3M1pFOFVRd0pQV3J0TmlNVdIBaEFVX3lxTE1BbG1nS3BRSnlyUW9ZMGk4UC10alBQNWVMMUZFd0xwUHAtVGhSRC1SQmVndjBCbFVwaWlXaERQeWlqX2dRMU1sQ2lrYWRoUUhieC1fLVlNN2FVZjhxbDRTQkxiYkRyLXlC?oc=5",
-     "pubDate": "2026-09-06T00:20:00Z",
-     "source": "ねとらぼ",
+     "title": "「仮面ライダーマイス」神尾佑が“おやっさん”役で出演決定 「オーズ」Dr.真木役から16年「ワクワクが止まりません」",
+     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBWRlR6MzAtTkhCc1ZSa3RmN1pqcU94MlhIMGU2YkF3M05ZMnFyRGQ1dDVjSi01NzNGVFNQX044OTUxeDZ3QXhNa0w1WHdNSDE1U3c?oc=5",
+     "pubDate": "2026-09-06T00:30:00Z",
+     "source": "シネマトゥデイ",
      "summary": ""
     },
     {
@@ -180,10 +166,17 @@
      "summary": ""
     },
     {
+     "title": "【F1イタリアGP予選の要点】フリー走行から強気だったガスリー。決勝はどこまで踏ん張れるか",
+     "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5STUg3ZmdGRzVyVUdCNzhWYjZveVpjQzRROWFFcXBfdWpScEFMdzlvaHphbWNoRXV4V3R5Q1dIeXllTV9hWkRj?oc=5",
+     "pubDate": "2026-09-05T16:50:00Z",
+     "source": "autosport web",
+     "summary": ""
+    },
+    {
      "title": "アップル、有機EL版MacBook ProにM5 Ultra搭載？ノート型Mac初の最上位チップか",
      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB6MHNYQWVtSnkxcWVoYnVDSGtMemhYSGJiSkNsZkV3MmdWbEt3ZG1BSzlTRlpTdkVwTFNrOFdJSEJDU1JoTE5HVFMxWFBIMTJNQ0YyakVZMnNfSzRGbU5R?oc=5",
      "pubDate": "2026-09-05T11:00:00Z",
-     "source": "ASCII.jp",
+     "source": "ascii.jp",
      "summary": ""
     },
     {
@@ -205,6 +198,13 @@
      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1iNGliaXg5a2pkaFFQdzFkVFpYM0pSYlZMLTJuWjZTTUxidGxrNnYyOVVXSlRJeDg4Uk9WZHJjV0E0dVR3bFlvaHA5TWRFSEw4aVpqQ0RXLTFUZw?oc=5",
      "pubDate": "2026-09-05T03:00:00Z",
      "source": "Forbes JAPAN",
+     "summary": ""
+    },
+    {
+     "title": "屋久島の道路路肩やのり面の一部、複数か所で崩れる…千葉豪雨以来の「土砂災害特別警報」",
+     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE16OFFfMmRDZDh3aHhneHMyQ0t4am9mODJsUkpCZzhMLV9WYmo5SEtPSGRFeWphN0hROWVwd2tpTVllOFlRNHpSNDZlUFNmSFNjZHpyYXpGejBteWwxT3owY3RPRk1RZw?oc=5",
+     "pubDate": "2026-09-05T02:40:00Z",
+     "source": "読売新聞",
      "summary": ""
     },
     {
@@ -419,6 +419,13 @@
    "sourceUrl": "https://news.google.com/rss/headlines/section/topic/SPORTS?hl=ja&gl=JP&ceid=JP:ja",
    "items": [
     {
+     "title": "ロバーツ監督、代役１番エドマンを絶賛「ショウヘイがいない状況で結果を出してくれるのは大きい」打で逆転決勝３ラン 守でフェンス激突超美技 謙虚さにじむ言葉「勝てたことが一番うれしい」（デイリースポーツ）",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5jZV9tTzRuWmU0WXI3V0pRc2ljeUhldzlHcVFTS1J1V1NzTE0wQmhpSW1XVGNLQktaS2plZE00MDl0TjNoU1BIRzVVUGl2dzVwV0NGZ3duVVRjWWtrQVlEMjcyQndtNWEtU1d3UUlkRGZXREJtSWNvYTRXSGU3amM?oc=5",
+     "pubDate": "2026-09-06T05:45:49Z",
+     "source": "Yahoo!ニュース",
+     "summary": ""
+    },
+    {
      "title": "審判団が集まり試合が約３分間中断も説明なし 場内ざわつく 解説者「これだけ試合が止まって説明がなかったらお客さんブーイングですよね」 投手のセットポジションを注意か（デイリースポーツ）",
      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4tVUtXdDNGekgtRXd3aFVjejRiQ2VZOHJXTFF1eXNwc2JhQ0xWakdyc29ScUROMDBLTTNDdmhGT092cElXQ1pHc3BoQ1dlREJEU0hEQ05jTmp0NEswS2RpMlMwNXJsWTFSVjZXWlV3U21WVUItOHFaT3ZDVm8xbzg?oc=5",
      "pubDate": "2026-09-06T04:58:54Z",
@@ -426,10 +433,24 @@
      "summary": ""
     },
     {
-     "title": "大谷翔平は３試合連続欠場もドジャース３連勝 エドマンが逆転３ラン＆スーパーキャッチ／詳細",
-     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE0zTE9HTmtnX3JnQ0V3TjZWZXJFaXZMeC1zd0hiYTFLWWxIcnBMS2lCNW02QTBDcjIzN2JuakNBVnZFR2x5cEpFQ3Q0YlFISFZXZi1PUy1ZOGpNbXhRalRxR0t2QW9lVG5zVU9tUC1QZnJqNHRmcHc?oc=5",
-     "pubDate": "2026-09-06T03:51:00Z",
+     "title": "安青錦の優勝パレードが悪天候で中止、安治川部屋が発表",
+     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE84VFctd3MxWExvYy1jc05DRm95YXh2cm11WWx6QmtwTEViaDRRY3RqSnhHUVVlYVBCNUQ0Q2ctS0hIWmozQnpzM0RCbVFlRHhrYnhjWGFVeTF1RnFBd3R1RkdUdmowYndmT3gxYkIwUXQ1dW800gF8QVVfeXFMTk1GR09YdGlxS1pIdDJwRk1fdmFGejdxRlRFOHBCZjJ6QVZ6aDA2TXdzLXh1MHIwZ256b2RZY0kyZi0zN1p0bFdNWGF2UjhaWDN3Z2tqVi1iYjNNUVdzVnFoOThqLVZFcWI2dmtFZkNEeUNEclR0cVR5TnJaUA?oc=5",
+     "pubDate": "2026-09-06T04:07:35Z",
      "source": "日刊スポーツ",
+     "summary": ""
+    },
+    {
+     "title": "世界最高のパット巧者は誰だ 松山英樹、金谷拓実のグリーン上の強みとは",
+     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBlU0NIZjkxR0pqRXl2Q19tc0pJSW5IQXhjMXFMbGtKcE1Tdk1NdlJPbXU2ZjhSdnlmTnlHc2NNaF80bDJxRmFKQlhmTHBGVk5TZE1MNTAzTGNlSzZOa1pZSnQxY09fbUXSAXtBVV95cUxPNFh2S2R5QzVvbFVESmlrdi00STdSYlpPbm0wWS1TcnBTV3VvLU5zQkN2dWg1bDNxamRlVEk5cGIyTnlIOURUTlVYUUJyemVJVFUwRmNGUjNKYjRtdG5tNjNOZENFN25WVXRCMklpS2NBSzNXVlRpcnk4SDg?oc=5",
+     "pubDate": "2026-09-06T03:01:35Z",
+     "source": "GDOゴルフニュース",
+     "summary": ""
+    },
+    {
+     "title": "玉木宏が柔術世界大会で３位！堂々の表彰台で笑顔 ２０２０年から始め、俳優業の傍らで練習に打ち込む",
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5TRzlQa3hDczZoSzBXb0N4NW9iWUFWUmgtRWxFN2s0U0gya25SNkJ3MUFrUFFHMTJBZHhqbUVoZ0Q3YnU5akVfWE9ldXJqWjhHcGloVDJOUVAzNHJZLXBpQjNMN0VWeGEwZEE?oc=5",
+     "pubDate": "2026-09-06T02:32:00Z",
+     "source": "デイリースポーツ",
      "summary": ""
     },
     {
@@ -485,7 +506,7 @@
      "title": "MLB:村上宗隆30号、日本選手初メジャー1年目 菊池雄星は今季初勝利",
      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9JaDN2d1F0cmYtMUVPNEhvWXpoRkZOdGFPSkNaZG9RMmFuSUJ3SkRvblVyODRwd3lZdzZYb0RGZ2FHMUdDSlBMQzc0T3RXcUdTNnQ4ZkZLM0VwamQ2bDNSWHQzSjR2MmZtaFBCNw?oc=5",
      "pubDate": "2026-09-06T00:36:58Z",
-     "source": "nikkei.com",
+     "source": "日本経済新聞",
      "summary": ""
     },
     {
@@ -503,13 +524,6 @@
      "summary": ""
     },
     {
-     "title": "ロバーツ監督 大谷翔平についての新たな発見「身体の状態が良くないときは…」 今後は健康管理をより重視（スポニチアネックス）",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE10eEdQX2pVZ0tWQjBnU0E3aVgwMHlyS3lZbGhMUUdPSzkwb1Ewa2x4eGJLSnNMOG5fZDZFN2E5ZU4yVUVUVldXazJIS1kzMGNGM0dvS2luMl9YMjBUOS1wSlJhbnctZUs4VUVkZ19ZSl9YN1FTNzMzcFAzU3JZTG8?oc=5",
-     "pubDate": "2026-09-05T23:21:29Z",
-     "source": "Yahoo!ニュース",
-     "summary": ""
-    },
-    {
      "title": "バーンリーMF旗手怜央、“イングランドデビュー戦”でいきなり先制点アシスト 攻守に存在感で現地高評価「明らかに才能がある」",
      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1CWmVvd0RtZFVHcFFTVVBoOTNXZ2d3X1BGYzdNWDdOZ1BKNkV2NDdfdTdTOERXbjJ2MnVsRGZ2Y1YwTGV6WFlBU3IxeEZXajVFYk8yMEZjWW5xQm1pejlfT2ZIWjY?oc=5",
      "pubDate": "2026-09-05T23:16:29Z",
@@ -524,6 +538,13 @@
      "summary": ""
     },
     {
+     "title": "【MLB】大谷翔平、打撃練習再開へ…改善なければIL入りも ロバーツ監督「選択肢になる」 二刀流登録選手は『15日間』 3戦連続先発外",
+     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNSXgtVlNIak5XbXEwMGd5bm0yYnNYX1E0U1JKWEFDX1JlZTZsQldEOGduV2o2ZXktaV9QT0tTN0NKZzROLVZjYmJkVGlpRDludDh1MzMxTTV5WjF3N095SGVMQXdHYU9TWGhrUDl1ODcxang4dTFvVVY3X3huejVkZWF6TXBNU2lJdElJSkpGR3JkZ9IBigFBVV95cUxNZVJhclZBamtubTdXMFNNRFVDZFBoVjFXdDRhc0c2bWltdloxQmNEbVdKQktFWWdWYTN3bkVUQXkzMUFBQ3FSNmhuRTQ4M0hwYUNpY25pTHg5NUxreV9OZnk3NmtxajVIRkU2N0MyWjZmbzUzaTNaNmd6a05kdHc3d0N5bUxYYnJVbnc?oc=5",
+     "pubDate": "2026-09-05T22:51:00Z",
+     "source": "サンスポ",
+     "summary": ""
+    },
+    {
      "title": "ブレンナーがブイトラゴとの一騎打ち制す ガルがログリッチ抜き総合2位へ",
      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9lSzdtZWNYaDlpU2VaNnlZVmxMZWtMTnBaOGRSVFdaWEcycjVlVGJaclNzRGpGS1VqZWhiaHFHR29xeW8tblhnZUFLRFRFZ1BuMEtrYg?oc=5",
      "pubDate": "2026-09-05T22:50:59Z",
@@ -531,31 +552,10 @@
      "summary": ""
     },
     {
-     "title": "ハーランド豪快ヘッド、270億円MFも移籍後初出場でエースのゴール起点 マンＣは開幕３連勝",
-     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBDWnlBRDBTemU2UFVxaUxNamRVOXhVNUp5cUU3ak9xTXlXb29UMUVWSmNSR000Qkg4SnpOcDdhQlhGczdrVGdyUkZtaDRSRUwzdlNXdDJzN2htM19XV3lHZVljNEVfUWd5YnR5ZFFac3plc1dvU0HSAX5BVV95cUxNZnlzUmlsWWFXMmdERGswZW83QUdZMWhiUHBLTEVTWl9XR3NfYkdfX2ttX3kxRk1IUnQxeHN4dmlxWG93VkhFazhSMlBYZHBxZ200SndrZUF5VHhzNENUcnp0NEVsWUhBSks0YlZ4TUlKblQxcm40MDMxRUVDT2c?oc=5",
-     "pubDate": "2026-09-05T22:12:16Z",
-     "source": "日刊スポーツ",
-     "summary": ""
-    },
-    {
-     "title": "復活支えた阪神・石井と「手紙の物語」伏見から「焦るなよ 絶対大丈夫」ファンへ「石井大智はどんな時も踏ん張ります」",
-     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9wNnlEbXVHRzVZLXVEeFRLRE90SE9xbkVEUUN6U2FqbmVpbXRfNW03SGRpcmg1bkVPQ2UxR09ISjdPUURPdTgxa1IyemdteWNPeUNaSnN0QzRiWEs4UW5iSFBIckdXQ09Dd3c?oc=5",
-     "pubDate": "2026-09-05T22:00:00Z",
-     "source": "デイリースポーツ",
-     "summary": ""
-    },
-    {
      "title": "ポール逃したラッセル、4度のF1王者の「急ブレーキ」に不満。一方のフェルスタッペンは… / F1イタリアGP《予選》2026",
      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOYnlWRVlFMzRxaFREZm80eS04Mk9uOWJJc2dhaWx5M1F2RmFzSXB1TnN4ZDR3QjhfakRKY0NqZEJzUVFoQU5wdVkxaVdwVTFwNjdzQlg4bEd0UlhkeWpWSUdZem1MRGZCMDQ2MHpSdGtvZDJYTm43SmJyNzNHRWNNN2VkQlc?oc=5",
      "pubDate": "2026-09-05T21:51:23Z",
      "source": "Formula1-Data",
-     "summary": ""
-    },
-    {
-     "title": "残った野手は２人だけ捕手・小林誠司がブルペンで非常時登板に備え…巨人がプロ野球タイ全１０投手継投、甲斐拓也の延長１１回の決勝弾でつかんだ薄氷の大勝",
-     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBzcGl2b2xXMWdoeWNmd0wyZEY2ajVTWVl6T0ZDaEp0Q0poVGNHRUlUV09IVklaV0VFUUVhNDhrZXc0TGxkOW9mSmxpNEE3ZVlqVGZnenhhSXFFQ0g4M2tlUlFKaDFYeF91?oc=5",
-     "pubDate": "2026-09-05T21:00:00Z",
-     "source": "読売新聞",
      "summary": ""
     }
    ]
@@ -776,7 +776,7 @@
      "title": "モノタロウ／3年間のフードバンク寄贈で地域支援、川西市社協から感謝状",
      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5HTHZyOE9XWi1DbmhsT0lQZ21XMjhZc0VfM1lKZ3g2dHZ3Y0JwRnU5ZDNrb2dNalZVcVRkbm41ak5aY2VudEUwdVJacWZpcnQzeVU4WQ?oc=5",
      "pubDate": "2026-09-03T04:33:43Z",
-     "source": "物流ニュースのLNEWS",
+     "source": "lnews.jp",
      "summary": "",
      "company": "モノタロウ"
     },
@@ -856,7 +856,7 @@
      "title": "セイノー情報サービス／ロボット導入の最適解を提案する診断サービスを開始",
      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1jb3cyd0NwbkR4SW1zQjJEeXA0dFd0VS10ZDVEWFhoUjQzTE9DYVVKUkFMLXBJWHlRMTBxWnhrWm50TDNWeE1UT09CWjc4UmpsN0tOcg?oc=5",
      "pubDate": "2026-08-27T04:30:30Z",
-     "source": "物流ニュースのLNEWS",
+     "source": "lnews.jp",
      "summary": "",
      "company": "セイノー情報サービス"
     },
@@ -864,7 +864,7 @@
      "title": "前日に動いた銘柄 part2フィーチャ、菱友システムズ、 Abalanceなど",
      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5zcmtLQXFHQWdVV1BnNFFOcXpqR3ZlYzdtZkhDMGN2TVlWaHJmNjJ4aDZ2TF83QlRaMG5tRWZiUEhyU2ZUZ0N0Z0pBOWtXT29ueXViY0VyazhZYm9nQ3FpWQ?oc=5",
      "pubDate": "2026-08-04T07:00:00Z",
-     "source": "kabutan.jp",
+     "source": "株探",
      "summary": "",
      "company": "菱友システムズ"
     },
@@ -888,7 +888,7 @@
      "title": "F-LINE／「F-LINE No.1グランプリ」を初開催、業務改善など表彰",
      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5XSnczR0FrXzNUT2hYYXZfb09meVNyUmpLRV8yMGtSRDBuajlsRlktWkY4MlgzU245QWkzWlZrYVdPcU5JRkRaWmJFWmRMcGtxeDFTXw?oc=5",
      "pubDate": "2026-07-07T07:00:00Z",
-     "source": "物流ニュースのLNEWS",
+     "source": "lnews.jp",
      "summary": "",
      "company": "F-LINE"
     },
@@ -904,7 +904,7 @@
      "title": "菱友システムズ[4685]：第58回定時株主総会招集ご通知 2026年6月2日(適時開示) ：日経会社情報DIGITAL",
      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5hWWQ5ZHpSZXV0bDN6U0lKMjRJNDJnT2RwWUFtejdXR18zQzQ2alBuTTJTb3RRQmxSR2xCamNwVktGSWcyR1VrbTZBZm1KQWZyVmdvajNCUjJkYWtZVDFEeVhiY1NxT2JDY2c?oc=5",
      "pubDate": "2026-06-02T07:00:00Z",
-     "source": "nikkei.com",
+     "source": "日本経済新聞",
      "summary": "",
      "company": "菱友システムズ"
     },
