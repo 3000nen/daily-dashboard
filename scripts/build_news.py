@@ -38,9 +38,31 @@ def gnews_topic(topic):
             + topic + "?" + GNEWS_PARAMS)
 
 
-COMPANIES = ["日本ペイントグループ", "ハウス食品グループ", "F-LINE",
-             "ハウス物流サービス", "モノタロウ", "山善", "アイカ工業",
-             "セイノー情報サービス", "菱友システムズ", "小野運送店"]
+# 表示名だけを書くとそれがそのまま検索語になる。社名が一般的な語と衝突する場合は
+# (表示名, 検索語) の形で検索語を別に指定する。
+COMPANIES = [
+    "日本ペイントグループ",
+    "ハウス食品グループ",
+    # 「F-LINE」単独だとサンダルブランド(SUBU ORIGINALS F-LINE)や横浜F・マリノスの
+    # 記事が混ざるため、食品共同物流会社 F-LINE株式会社(f-line.tokyo.jp)に絞り込む
+    ("F-LINE", "F-LINE 物流"),
+    "ハウス物流サービス",
+    "モノタロウ",
+    "山善",
+    "アイカ工業",
+    "セイノー情報サービス",
+    "菱友システムズ",
+    "小野運送店",
+]
+
+
+def company_entries():
+    """(表示名, 検索語) の組を順に返す。"""
+    for entry in COMPANIES:
+        if isinstance(entry, tuple):
+            yield entry
+        else:
+            yield entry, entry
 
 # urls は先頭から順に試し、記事が取れた時点で採用する（1件目が本命）
 SECTIONS = {
@@ -196,16 +218,16 @@ def load_section(name, cfg):
 def load_company():
     """会社情報は1社ずつGoogleニュースを検索し、まとめて1セクションにする。"""
     items = []
-    for company in COMPANIES:
+    for name, query in company_entries():
         try:
-            found = parse_feed(fetch(gnews_search(company)), True)
+            found = parse_feed(fetch(gnews_search(query)), True)
         except Exception as exc:  # noqa: BLE001
-            print(f"  [company] NG {company}: {type(exc).__name__}: {exc}", file=sys.stderr)
+            print(f"  [company] NG {name}: {type(exc).__name__}: {exc}", file=sys.stderr)
             continue
         for item in found[:3]:
-            item["company"] = company
+            item["company"] = name
             items.append(item)
-        print(f"  [company] OK {company} {len(found[:3])}件", file=sys.stderr)
+        print(f"  [company] OK {name} {len(found[:3])}件 (検索語: {query})", file=sys.stderr)
     items.sort(key=lambda i: i["pubDate"], reverse=True)
     return {"sourceUrl": "https://news.google.com/rss/search", "items": items}
 
