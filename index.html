@@ -495,13 +495,21 @@
       <div class="card-grid" id="companyGrid"></div>
     </section>
 
+    <section class="section" data-cat="other" id="sec-other">
+      <div class="section-head">
+        <h2>その他</h2>
+        <p class="section-desc">ブルーインパルスの最新情報</p>
+      </div>
+      <div class="card-grid" id="otherGrid"></div>
+    </section>
+
   </main>
 
 </div>
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <p>「<span class="live-dot" style="margin-right:2px;"></span>ライブ更新」が付いたセクション（天気・主要ニュース・仕事・AI・スポーツ・ガジェット・会社情報）は、ページを開いたときと5分ごとに無料公開データを取得しています（APIキー不要）。天気（現在の気温・時間ごとの気温と降水確率・最高/最低気温・週間予報）はブラウザの位置情報が許可された場合は現在地、許可されない・取得できない場合は大阪をOpen-Meteo APIから表示します。その他のニュースは、GitHub Actionsが各社RSS・Googleニュース検索をサーバー側で取得してnews-data.jsonに保存し、ページはそれを読み込んでいます（ブラウザから他サイトのRSSを直接読むことはCORS制限でできないため）。主要ニュースは10件、仕事・AI・スポーツ・ガジェットは各5件を目安に、6時間以内→12時間以内→18時間以内→24時間以内の順に該当件数が集まるまで表示範囲を広げます（24時間以内でも5件に満たない場合はある分だけ表示。会社情報は3日以内）。経済セクションは各指標の銘柄名の下に、その値がいつ時点のものかを日本時間で表示しています（ライブ取得が届く前の初期表示は「参考値」と表示します）。日経平均・オールカントリー（連動ETF・2559）・NYダウ・ドル/円・ユーロ/円・金は、いずれもYahoo FinanceのデータをGitHub Actionsがサーバー側で定期取得してmarket-data.jsonとして保存し、それをページが読み込んでいます（Yahoo Finance自体はブラウザから直接fetchできないCORS制限があるため）。この定期実行はGitHub側のスケジュール事情で間隔が空くことがあり、実際には1時間程度おきの更新になります。各セクションは取得先を複数登録してあり、1つ目が取得できない場合は自動的に次の候補に切り替わります。取得できなかった場合は、古い内容を出し続けずにその旨を表示します。このページに掲載する情報は、自動で取得・更新できるもののみに限定しています。</p>
+    <p>「<span class="live-dot" style="margin-right:2px;"></span>ライブ更新」が付いたセクション（天気・主要ニュース・仕事・AI・スポーツ・ガジェット・会社情報）は、ページを開いたときと5分ごとに無料公開データを取得しています（APIキー不要）。天気（現在の気温・時間ごとの気温と降水確率・最高/最低気温・週間予報）はブラウザの位置情報が許可された場合は現在地、許可されない・取得できない場合は大阪をOpen-Meteo APIから表示します。その他のニュースは、GitHub Actionsが各社RSS・Googleニュース検索をサーバー側で取得してnews-data.jsonに保存し、ページはそれを読み込んでいます（ブラウザから他サイトのRSSを直接読むことはCORS制限でできないため）。主要ニュースは10件、仕事・AI・スポーツ・ガジェットは各5件を目安に、6時間以内→12時間以内→18時間以内→24時間以内の順に該当件数が集まるまで表示範囲を広げます（24時間以内でも5件に満たない場合はある分だけ表示。会社情報は3日以内、その他（ブルーインパルス）は行事のある時期にしか報道されないため30日以内）。経済セクションは各指標の銘柄名の下に、その値がいつ時点のものかを日本時間で表示しています（ライブ取得が届く前の初期表示は「参考値」と表示します）。日経平均・オールカントリー（連動ETF・2559）・NYダウ・ドル/円・ユーロ/円・金は、いずれもYahoo FinanceのデータをGitHub Actionsがサーバー側で定期取得してmarket-data.jsonとして保存し、それをページが読み込んでいます（Yahoo Finance自体はブラウザから直接fetchできないCORS制限があるため）。この定期実行はGitHub側のスケジュール事情で間隔が空くことがあり、実際には1時間程度おきの更新になります。各セクションは取得先を複数登録してあり、1つ目が取得できない場合は自動的に次の候補に切り替わります。取得できなかった場合は、古い内容を出し続けずにその旨を表示します。このページに掲載する情報は、自動で取得・更新できるもののみに限定しています。</p>
   </div>
 </footer>
 
@@ -529,7 +537,8 @@
     {key:'weather',  label:'天気'},
     {key:'sports',   label:'スポーツ'},
     {key:'gadget',   label:'ガジェット'},
-    {key:'company',  label:'会社情報'}
+    {key:'company',  label:'会社情報'},
+    {key:'other',    label:'その他'}
   ];
 
 
@@ -783,7 +792,10 @@
     work:   {source:'LNEWS',          containerId:'workGrid',   sectionId:'sec-work'},
     ai:     {source:'ITmedia',        containerId:'aiGrid',     sectionId:'sec-ai'},
     sports: {source:'Googleニュース', containerId:'sportsGrid', sectionId:'sec-sports'},
-    gadget: {source:'PC Watch',       containerId:'gadgetGrid', sectionId:'sec-gadget'}
+    gadget: {source:'PC Watch',       containerId:'gadgetGrid', sectionId:'sec-gadget'},
+    // ブルーインパルスは行事のある時期にしか報道されないので、鮮度の段階的拡大では
+    // ほぼ常に0件になってしまう。30日以内の新しいものから順に見せる。
+    other:  {source:'Googleニュース', containerId:'otherGrid',  sectionId:'sec-other', maxAgeHours:24*30}
   };
 
   function stripHtml(html){
@@ -836,9 +848,15 @@
   function renderFeedSection(key, section){
     var cfg = LIVE_FEEDS[key];
     var items = (section && section.items) || [];
-    items = pickFreshTiered(items, function(it){ return hoursAgoFromPubDate(it.pubDate); }, cfg.targetCount);
+    if (cfg.maxAgeHours){
+      items = items.filter(function(it){ return hoursAgoFromPubDate(it.pubDate) <= cfg.maxAgeHours; })
+                   .slice(0, cfg.targetCount || FRESH_TARGET_COUNT);
+    } else {
+      items = pickFreshTiered(items, function(it){ return hoursAgoFromPubDate(it.pubDate); }, cfg.targetCount);
+    }
     if (!items.length){
-      if (!liveLoaded[key]) renderMessage(cfg.containerId, '現在、24時間以内の記事は見つかりませんでした。');
+      var span = cfg.maxAgeHours ? Math.round(cfg.maxAgeHours / 24) + '日以内' : '24時間以内';
+      if (!liveLoaded[key]) renderMessage(cfg.containerId, '現在、' + span + 'の記事は見つかりませんでした。');
       return;
     }
     var cards = items.map(function(it, i){
@@ -1266,7 +1284,7 @@
     renderMarket();
     // ニュース系は実データが届くまでプレースホルダを出す。開発時のサンプルを
     // 初期表示に使うと、取得に失敗したときに古い記事が最新のように見えてしまう。
-    ['newsGrid','workGrid','aiGrid','sportsGrid','gadgetGrid','companyGrid'].forEach(function(id){
+    ['newsGrid','workGrid','aiGrid','sportsGrid','gadgetGrid','companyGrid','otherGrid'].forEach(function(id){
       renderMessage(id, '読み込み中…');
     });
     initTheme();
