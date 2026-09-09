@@ -1,16 +1,9 @@
 {
- "updatedAt": "2026-09-09T19:09:31.301888Z",
+ "updatedAt": "2026-09-09T19:25:07.850806Z",
  "sections": {
   "news": {
    "sourceUrl": "https://news.google.com/rss?hl=ja&gl=JP&ceid=JP:ja",
    "items": [
-    {
-     "title": "AirPods 5発表。ノイキャン向上、イヤホンから直接音量調節が可能に #appleevent",
-     "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1ibUozUEFFYUxtTnZuRWxUMUZtOWkyOVJlRGZvU3RZQ29uSHpfbm1xRE5mc1NaVThHclhMTVVpc3FnZ3hCVnFGN1V5QnJqODZDME5mdk1TUzI1Q2JFdlhuWFY4Z19sUnFtd0w4YzZ5dlpQZmtsTkE0?oc=5",
-     "pubDate": "2026-09-09T18:31:33Z",
-     "source": "Gizmodo",
-     "summary": ""
-    },
     {
      "title": "アップル、折りたたみ「iPhone Duo」発表",
      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBQb0YxdWxXTGJZS1JTRndTTlVmSFpxa1VabllNM1NNcERlZzlDeW5TeHVDZ3VKLTBrMGxMNlRpN3ZvR0JfOHdySzYweVdfdkxvX1Z5RWVaVTNaVFdLdERmNWJJOW83cDA?oc=5",
@@ -19,10 +12,17 @@
      "summary": ""
     },
     {
-     "title": "Apple、「iPhone 18」シリーズ発表",
-     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1MS25KeGh5bUU4eGFyNWF1c1pkZDNKZElSdmh0MmVnTmFqSVJsS2tIZmRIeG9CZC1RSVlGMENIWE5hTkp4NmpZWDl0X0JHVGJSLVVUSzZJS0JVdXpiMGFPYVhkTGd2YWJjTWc?oc=5",
-     "pubDate": "2026-09-09T17:12:11Z",
+     "title": "「AirPods 5」登場 ノイキャン性能向上、従来比でノイズを50％除去 2万3800円から",
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1NaFFUeHhJbTRVWnd6c1R4NkJpdXl5STVnb0JtS3dUQm5xQkM3UnhNMEVmamlqRUN1b0NYWWpWMU9aTElGRWhiU1lTcmFiTjNxWHBTNldUU3ZINVRpQ1ZrX1ExUWpHYzBhWkE?oc=5",
+     "pubDate": "2026-09-09T17:53:15Z",
      "source": "ITmedia",
+     "summary": ""
+    },
+    {
+     "title": "iPhone18Pro/ProMAX発表、バッテリーやカメラは史上最高のスペックに【Apple Event 2026】",
+     "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE80TlV2cVFidElqRWlVbVFTaThZLWJfOE1HdTQ1cFZzcTZZcnNuRk11QTFMNGVMejhtaGM4bFZKMi1qVmpiaG1rb0E1bGxuY09nQ3dmM2dHcw?oc=5",
+     "pubDate": "2026-09-09T17:12:00Z",
+     "source": "ファミ通.com",
      "summary": ""
     },
     {
@@ -33,24 +33,10 @@
      "summary": ""
     },
     {
-     "title": "【ニンダイ】“Nintendo Direct 2026.9.9”発表まとめ。『カービィ』新作、『メトロイド』新作、『ポートピア殺人事件』新作エピソード入りリメイクなどが発表",
-     "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1nZWk0eld6MzA5MVVmcUtmaWY2WWI0ZElkZW01VlhST2lHV0NHVVhib2ZuOWVuOTRWX3lTQWJEQ1B4MnM3cWVFLUZzUGJfOVdZRFd2bDQyUQ?oc=5",
-     "pubDate": "2026-09-09T14:53:19Z",
-     "source": "famitsu.com",
-     "summary": ""
-    },
-    {
-     "title": "『モンスターハンターワイルズ』Nintendo Switch 2版正式発表、今年12月4日発売へ。タイトルアプデ全部盛り",
-     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBiNjdHQXJHV0JJWFRBZmltcTh4R1ZTaUNyXzIwOGl3eE1Gd3ZKRm9pTC02WkZqUEZxZTZpRlNMQnVBcm91WVdYbHB2VURUUldzMTlXejNGekdkbFUxZFVJWUlLUlR3SmtxTk5HWg?oc=5",
-     "pubDate": "2026-09-09T14:04:08Z",
-     "source": "AUTOMATON",
-     "summary": ""
-    },
-    {
-     "title": "【バレーボール男子アジア選手権】「流れを変える」役割を果たした大塚達宣——途中出場で呼び込んだチームの勝機とストレート勝利（バレーボールマガジン）",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9UdlJiYnpFdURhVHJYZm1nZzNZYnZ0Um1PbGVDS3poVThCMkZaRDAtVVVveUhPZGU2ZkMyZGhGeEx5UzBrQlZETG1mcnNMb3JyQ1IxMGJWdGdNY0o4ZC1DZFFGVnVBdHl6WEF2bFZxQWlTa2RzTU5TNlZlcFptQTQ?oc=5",
-     "pubDate": "2026-09-09T13:42:18Z",
-     "source": "Yahoo!ニュース",
+     "title": "【ニンダイまとめ】「Nintendo Direct 2026.9.9」発表内容まとめ！",
+     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1acHdwb3NyOWlZczFoOUpBX2l2aWQzWkpDNG14VlRnQ0d0NmZTWUctdks5ZGc1NkQxN3lqeHdLam41RWQ3Q1BKdDBmdk9ONjlTQUtHX05rbDJEVUNuaTJHUFp6UThWZw?oc=5",
+     "pubDate": "2026-09-09T13:50:00Z",
+     "source": "GAME Watch",
      "summary": ""
     },
     {
@@ -75,24 +61,17 @@
      "summary": ""
     },
     {
-     "title": "阪神 投打奮わず３連敗、２位巨人と２差に 九回に森下の３３号ソロも及ばず 先発・高橋は七回途中、８安打２失点",
-     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB1YXI5MmRpZ29QVXQ0NmF4R3ZnVVhSdmZNWXpTTlVsdTM3YlB1akdZUTJwYWZ6VWJkU1ltWTU2c3NtODdwYnFPZW0wNUxRRG05MnVUdk9ZenZpXzdMQ3ItOGxZWHZDVkU1bmc?oc=5",
-     "pubDate": "2026-09-09T12:33:00Z",
-     "source": "デイリースポーツ",
+     "title": "【巨人】ダルベックがソロ本塁打を含む2安打2打点の活躍、丸佳浩もタイムリー2ベース｜プロ野球結果（DAZN News）",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1fNm0tQlRhTFpaWklaTWZJd1BYWkFpN1hicXgxVlh0TXA2bjJpbFl0Q0tyVUtsQ3Q4VVRKU1dENXpjZ29QbzVtekh2dUFjcTlTdy01NVlHRVFnbWpUUjZNV1NWUG9NMDcyZ0VIUmJ4OWRFN3FqbFp0dkxrRjJDRXM?oc=5",
+     "pubDate": "2026-09-09T12:47:37Z",
+     "source": "Yahoo!ニュース",
      "summary": ""
     },
     {
-     "title": "三浦市の海岸で小学生男児が高波にさらわれ行方不明…白色のＴシャツ、茶色の半ズボン姿",
-     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9tenkwSmdWM1U2S1RiU0FlWlI5NFpxZEl0X3pFN1dPVzkyNlg0SmMtUEJ1cENGY09Rc2dQMm9wU2t6Q3NTVzlfWDNnMVIxaG1oN1o5ZkdQNDJxbVZnVk9nMFRjODFFUQ?oc=5",
-     "pubDate": "2026-09-09T12:25:00Z",
-     "source": "読売新聞",
-     "summary": ""
-    },
-    {
-     "title": "【巨人】超天敵の中日大野を攻略！キャベッジ起用的中、ダルベック23号＆大城先制打",
-     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1oSXJya1pfVDJHVDVRUVBsMVh5N2RudmNleUcyblJpX0RNSmtEUUR5YmR2NUtLN014emVZelpKblNLQ0hSTUZZbXZuTm4wRF9Tc3VZOUNjeEp1VWl2UEZsSi10Z1NfNXFyRm5GV1Fmc2fSAXhBVV95cUxQRlgyM2N3ems1Qzk2UWRfeENtNk1xZWo0RnQ3LVVvaDh5QjIyZ3hIQzN5Q3hXSUxvdE1jR3JkQ1l4U2o0cGJ2S2JPNFVrZTlUTXluYVJ6OU5SMGZZajE4S3A5X3VpSUpxMEdsU1hvaEE5bXRlZjBvNzY?oc=5",
-     "pubDate": "2026-09-09T12:21:38Z",
-     "source": "日刊スポーツ",
+     "title": "阪神 まさかの3連敗…高橋遥人→木下里都の継投も裏目に V争い混沌、巨人とのゲーム差は2に再接近",
+     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPb185RVJVQ2hlamptY2xuZXVpT2pNcTFkUjBGNlJGd1FYU3E4YjUtbUxLNGw0dDdYMGhjRmJwUUxCWEtVQl9lTEluSDE2dTBHRXNyWHFFeHBPc1dXY0FLTlo0TGZBOHVxYnR2WXdGU0dzcmh2azhKOEhRSzZRYXoycHBvRWJwVXo4ejQ2elhn0gGTAUFVX3lxTFBjc2FDbUp5RHZwQXowSkxmUjdXbllFX2Fnd0x5cy13RWVjVHlBcllaNnBiZlYwUGRpU2ZyX3dtRktmUGVWdE54eW9mUVRCekp3UWlNaTV4WDBmYk5uZWN1S0NoYTdESlpPOTdOa3dMTUwtUk0zYWkyeWhuMWxVTko1MW1sOXcxOHdNSVJNYnFqR0lTQQ?oc=5",
+     "pubDate": "2026-09-09T12:30:00Z",
+     "source": "ｄメニューニュース",
      "summary": ""
     },
     {
@@ -103,10 +82,24 @@
      "summary": ""
     },
     {
+     "title": "関東で2日連続の局地的大雨 八王子では道路冠水 善福寺川など一時レベル4「氾濫危険警報」 再び“警報級大雨”か",
+     "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5nUW9NeXV1eWlEZ282d3FROGtpQ3pBbGdHTjNEUndQSXB3UW15QmFxcFNoSEtLTHFFZVFXUGZMcnotZ3lmT0NldzVWVzdCUQ?oc=5",
+     "pubDate": "2026-09-09T12:05:00Z",
+     "source": "FNNプライムオンライン",
+     "summary": ""
+    },
+    {
      "title": "米国ラスカー賞、日本から4人ダブル受賞 睡眠研究の柳沢正史さんら",
      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBaZXBFT0ZDcnRLSTY5dkgwTFh6T2kwLUloZnZWS0JyZ08tTlRVMjB3V3E3MzBlQnlCMWNEVTlUa01IQjhFTVJtaUc2akFneFdZUkM4X0hOMTJ3V0laWG9wb2lkUWJUc2s?oc=5",
      "pubDate": "2026-09-09T12:00:00Z",
      "source": "朝日新聞",
+     "summary": ""
+    },
+    {
+     "title": "【最大85％オフ】『仁王3』43％オフ、『ユミアのアトリエ』50％オフ！ コーエーテクモゲームスTGSセール2026開幕",
+     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5TM1pWNnFxYjQ3M21LcVNOemFnMmdLZm5UOElTeENIVVQ0UVdFTm4zUmNVTmpGcUNacjE5UHhFZElTT0VKWHNhLXNwamlhbEpoMjJscXpfdGxVdw?oc=5",
+     "pubDate": "2026-09-09T11:48:00Z",
+     "source": "dengekionline.com",
      "summary": ""
     },
     {
@@ -117,10 +110,17 @@
      "summary": ""
     },
     {
-     "title": "「ペンギンを返して」→「3匹全部採用して」 批判殺到のSuica新キャラ、ファンアートが空気を変えた？ SNSの声（1/2 ページ）",
-     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1faFNpNjFHbWhHOWNsOXR5SDJuSlJwYWFKejVVVkZPRWF5aG1RQjVjeWMwSGZjbGYybEd3d1N5ZzVNSVNsWTktb0FoVV9tQ0w5T2hCcFc4R3EydEtGSUlSVGRQeHZpU3NfVVE?oc=5",
-     "pubDate": "2026-09-09T11:30:31Z",
-     "source": "ITmedia",
+     "title": "鈴木京香 えっ？５８歳なんて信じられない…発光するような美貌で観客魅了",
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBwOUJsd1pRNnhmRlBxLWtXcFg5WVcxdE54VEJ4S041OUVRZXRPb3M1SGl3OVNDQnJXNktwX0VsQXJ2aUJfTWZEV05SeS1rY1I4ZVhibmVWNjVCbC1uVlBtQnpIOXc2WjhCbXc?oc=5",
+     "pubDate": "2026-09-09T11:33:00Z",
+     "source": "デイリースポーツ",
+     "summary": ""
+    },
+    {
+     "title": "米30年住宅ローン金利、昨年6月以来の高水準に",
+     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNSFR5N21lRFNEUkdDSFJuUGItZFFaUEc5Y1NoMnplQ2ZHYkVvTWpOSzM4TEd5U0ZrS09YZVljUzBZYmVJT3VwMWxERDRoNFUxRjFVa09ncF8zVEpKbzF1cWp4UklhWWNVcHNzNnBhYU4zY0oyay1LVDdWWFl5RzNSSA?oc=5",
+     "pubDate": "2026-09-09T11:15:43Z",
+     "source": "Reuters",
      "summary": ""
     },
     {
@@ -145,6 +145,13 @@
      "summary": ""
     },
     {
+     "title": "【9月11日】バレーボール男子日本代表 VS 男子インド代表｜テレビ放送・ネット配信｜男子アジア選手権2026準々決勝",
+     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE11UXV6eFRJZDRJbjFRaTB0d3lWS0dmV2JkT25iS2hadmNSU1J6cG4xUUdxUE5SYnR0Mnc5RXEwUk9fdkZmUXBsNW1Tal85OFRneFE?oc=5",
+     "pubDate": "2026-09-09T10:00:00Z",
+     "source": "バレーボールキング",
+     "summary": ""
+    },
+    {
      "title": "上智大生殺害事件、未解決のまま３０年…父親「事件の風化を最も恐れている」",
      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1UX0V3UGJPY20xZllvVlh2ZUl2TG9DbjFuQ1NWWi0zRWFnZDNsMzZVMWR5Yllsd1BhQjJ3bExVTEI3X2d3azZzVVZBLUU0WkpvaGdLRXI1eXpXM0lUYkY2MTJ3WWdPZw?oc=5",
      "pubDate": "2026-09-09T09:52:00Z",
@@ -153,9 +160,9 @@
     },
     {
      "title": "【巨人】キャベッジまたまた打った！ 新フォームで再昇格後３打席連続安打 ダルベック、大城も続き３連打で先制",
-     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZzR0Y2FySzZlTHpKcWxHUGx1amJhN0FRS2FEZnJOV3E3bU1qQnlCY011Ni1IQkF6dFUzYTItSHVfclMwVjdVRUJVdG5XTThEYXpZcjBmeFFwNG9rMFhJS0MxY0dNYV96aVV4N0laZ2pzMHV5eGhYTlVZNm1oTUZGVG9GT1DSAYoBQVVfeXFMUGFwTFhOZ2tBaXFJLWpfVDZiOS1lZkJ2d244X2lnWHloUktGUUtHNk9IRnBXSldvN1NEc09SWDlTd29PVE5uR3Z0d3N0WDFzS0tJT2stN1JVWUwxV3pESWZvZVg2dXhTSktlc05aTTY0RTJrRkJWSGRBR2IwWnNCM2E4cjBBWmlGWWtB?oc=5",
+     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5hV1ZqUlFUOGpOQ25hNG1zendEYmdsN3VLb3F1QVgxQU95aVB2bEJEdG1FN3dZUF94ZzVLWUFLYWEwV2FsRENZekhGWllTMXFKWVZMeUw3VHRBMEJnUHFCSXNR?oc=5",
      "pubDate": "2026-09-09T09:24:00Z",
-     "source": "ｄメニューニュース",
+     "source": "スポーツ報知",
      "summary": ""
     },
     {
@@ -166,17 +173,17 @@
      "summary": ""
     },
     {
-     "title": "秋雨前線はこの先も日本付近に停滞 北上タイミングでは残暑厳しい",
-     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9OYjJGTHRzbk0xYWE1cmIwNWNLNjdCLWFsaUZ3WURKTmR1X3p4RG8xM21NZUtjQS1XeVc3MDZ5YjdqOTZpbzhRRUpuUzhYRFd2UEZmYQ?oc=5",
-     "pubDate": "2026-09-09T08:46:00Z",
-     "source": "ウェザーニュース",
+     "title": "史上最大の豪雨、耐え抜いたナゴヤ企業 生かされた26年前の教訓",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1lMWxWbEExLUJ0Q3pBUGtFZjVRdUNEUzFzMTZCWWRReF9Na3pzQkdyd0xZc0J1cmZtZUxMTzNaN19ZbTBGc3FreFptU19SR19XZjhGUWM3eDg2cGlmbXZ4aHRMYzlYZHBaaGxWVw?oc=5",
+     "pubDate": "2026-09-09T08:44:33Z",
+     "source": "日本経済新聞",
      "summary": ""
     },
     {
      "title": "ドル円「150円割れ」のシナリオも？市場が「さらなる円高」を警戒した要因",
      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBIU3RncEVEak5xaWJydVFNYkNHOWZOcFJoc1p6OUNUVjkxM01vR3RONlgyWFFCM1RSdDY4ZUNqUERJeGd4YXJxbENHd0hTTUJfd2hnbGtGQlp5Zw?oc=5",
      "pubDate": "2026-09-09T08:34:00Z",
-     "source": "トウシル",
+     "source": "media.rakuten-sec.n…",
      "summary": ""
     },
     {
@@ -198,13 +205,6 @@
      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE53a216NkNyakFrSWxpZ0NkTGx1ampVaklxYVpsSnN2WDAzMnhJX3hvTXNmRXhOZzRtVnR1MmRtem5QQ1Nfdm9lTDFacnpVT05US2ZUamp1RG1tOWZrOEFN0gFkQVVfeXFMT2gyekN5dXF0THMwa3QyTUNPdDBSdWVGbVR3NlVJZzUtb0hLeUZJU3VGYlNPSGZsR1NzeEMtRDhYZllxS0xrZlA4d2h3T0Z2NGs4OVZVVjl5aGVBd0pqOHFqeUxXag?oc=5",
      "pubDate": "2026-09-09T04:22:06Z",
      "source": "BBC",
-     "summary": ""
-    },
-    {
-     "title": "コメ生産者への前払い目安「概算金」、山形では前年比４割ダウン…コスト割れ「稲作を誰もやらなくなる」",
-     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBld3ptOGs0a0JiaDVHclJwd1VzMHVUZUYtVHBfbnllMDlqeW5WT2wwMGMtUFVadVFIeE11QWg0NzdmenN5bTl5enRZbk96Q3VzWmlIY2JLNW0zZTVkY21wMnc2a24?oc=5",
-     "pubDate": "2026-09-09T03:00:00Z",
-     "source": "読売新聞",
      "summary": ""
     },
     {
@@ -426,20 +426,6 @@
    "sourceUrl": "https://news.google.com/rss/headlines/section/topic/SPORTS?hl=ja&gl=JP&ceid=JP:ja",
    "items": [
     {
-     "title": "２０２６/２７Ｊリーグ ヤマザキビスケット ルヴァンカップ 1stラウンド2回戦 対戦カードについて",
-     "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5ucFVVSGw0eU1td0xoUWNTaDYyd0JDZUtXSXR3RFVCVkJxbjFlWjlUa3lVRUR2cm1BQlExbVljdVJwUzJFOXJITlZNd3htbF9LNUFz?oc=5",
-     "pubDate": "2026-09-09T14:23:48Z",
-     "source": "松本山雅FC",
-     "summary": ""
-    },
-    {
-     "title": "【バレーボール男子アジア選手権】「流れを変える」役割を果たした大塚達宣——途中出場で呼び込んだチームの勝機とストレート勝利（バレーボールマガジン）",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9UdlJiYnpFdURhVHJYZm1nZzNZYnZ0Um1PbGVDS3poVThCMkZaRDAtVVVveUhPZGU2ZkMyZGhGeEx5UzBrQlZETG1mcnNMb3JyQ1IxMGJWdGdNY0o4ZC1DZFFGVnVBdHl6WEF2bFZxQWlTa2RzTU5TNlZlcFptQTQ?oc=5",
-     "pubDate": "2026-09-09T13:42:18Z",
-     "source": "Yahoo!ニュース",
-     "summary": ""
-    },
-    {
      "title": "【DeNA】井上朋也、移籍が“らしさ”取り戻す分岐点「もう長打しか狙っていない」",
      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1OS1QycnZQSkRMY3c5cjZZUUw5eGVCOHBGUnh3RmE5UkhmcmpmNkhfMTVTMFU5SnVRUlNEQVBGNEgza1AwN0JiWXJaLUtkelBZSHBSUEJpdDFXVFpRdkpkZXBGQjJIUGQ3ZnRKaFlHR2XSAXhBVV95cUxQQThBMXVXU0JHVUMxMDZHZGI0RnBQZWFxVEk5emV2ZllzX3RqYzJJYlpid2l1bGMwRXVjZjNBUzRQc3RRR2MxWDZST3kyVENxU1E3NXBqUl9mcGx3V0dKWE9pY2xRNDlieFAyNzJGM0pETi1meWRmVDA?oc=5",
      "pubDate": "2026-09-09T13:25:18Z",
@@ -468,6 +454,13 @@
      "summary": ""
     },
     {
+     "title": "【阪神】まさかの3連敗で2位・巨人が2ゲーム差接近 7回に継投で3失点 9回に森下翔太が33号も空砲（日テレNEWS NNN）",
+     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOSW5nM21sRWFxekhINHc2Y015Tk9UZU9DREJId2JpVVdWaEJnTHVLYW5JUzljYnpPT0pVTmJtTnNwSVpoWlEwaktxVkRLLXU4TVR5cUpMSjEydXdCTFoyWnFwU2lEOTFlSGtEMU5OWnBBcm5HQWFVU204ZkdXbVFubm5lMEM3bEtkdE11LVp3?oc=5",
+     "pubDate": "2026-09-09T12:37:00Z",
+     "source": "ｄメニューニュース",
+     "summary": ""
+    },
+    {
      "title": "小久保監督「自分で刈らなきゃ。つまらないミスをして」 ソフトバンクが薄氷の逃げ切り勝ち 守護神の杉山一樹が失策絡みで1点差に迫られるも優勝マジック12",
      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBvU0xId1NxN2dYMll4UmFIQUVCT0ZoOHpUSW1weEYxWF9KVk5xVjBsampWcjFpTWN4SnRuaEsxWnBPLUpWblFxWmNnbzFFWnJwNVNUSnJCeTQ4WmpTS29v?oc=5",
      "pubDate": "2026-09-09T12:34:44Z",
@@ -475,17 +468,10 @@
      "summary": ""
     },
     {
-     "title": "阪神 投打奮わず３連敗、２位巨人と２差に 九回に森下の３３号ソロも及ばず 先発・高橋は七回途中、８安打２失点",
-     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB1YXI5MmRpZ29QVXQ0NmF4R3ZnVVhSdmZNWXpTTlVsdTM3YlB1akdZUTJwYWZ6VWJkU1ltWTU2c3NtODdwYnFPZW0wNUxRRG05MnVUdk9ZenZpXzdMQ3ItOGxZWHZDVkU1bmc?oc=5",
-     "pubDate": "2026-09-09T12:33:00Z",
-     "source": "デイリースポーツ",
-     "summary": ""
-    },
-    {
-     "title": "【巨人】超天敵の中日大野を攻略！キャベッジ起用的中、ダルベック23号＆大城先制打",
-     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1oSXJya1pfVDJHVDVRUVBsMVh5N2RudmNleUcyblJpX0RNSmtEUUR5YmR2NUtLN014emVZelpKblNLQ0hSTUZZbXZuTm4wRF9Tc3VZOUNjeEp1VWl2UEZsSi10Z1NfNXFyRm5GV1Fmc2fSAXhBVV95cUxQRlgyM2N3ems1Qzk2UWRfeENtNk1xZWo0RnQ3LVVvaDh5QjIyZ3hIQzN5Q3hXSUxvdE1jR3JkQ1l4U2o0cGJ2S2JPNFVrZTlUTXluYVJ6OU5SMGZZajE4S3A5X3VpSUpxMEdsU1hvaEE5bXRlZjBvNzY?oc=5",
-     "pubDate": "2026-09-09T12:21:38Z",
-     "source": "日刊スポーツ",
+     "title": "【巨人】橋上マジックで阪神２差！ 初の「２番・キャベッジ＆３番ダルベック」がズバリ マタ３回緊急降板も小刻み継投で逃げ切った",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1zOFdhZjJJN08zMDVESWNfM0pOX1U3eklDWExZb1hmcjlNeXlid3NZYUlnSHA1ejRtX09qc19PRzNwZnpVcHEtNnpFZTkwN2RpbGJ2ZFNIOEpmcDh0NG8tQlNjWWdHbExLbnZ2V2NuZmpNV2Z5SzFTRXdzQUYxTGM?oc=5",
+     "pubDate": "2026-09-09T12:14:19Z",
+     "source": "Yahoo!ニュース",
      "summary": ""
     },
     {
@@ -500,6 +486,13 @@
      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5mV3hXUlRvNnVVQ1FmclhDR2NBQ1RYQXBoX285bVhvSTNISUhlWnlTc1dDaUdLY19WcXp6ZEFzNE4tMktJNHVENTlCUkRHUDVTc1BfN29aMVE4czRjd0lpTThWbW5VbU1jWFVuRlVTdGRNdw?oc=5",
      "pubDate": "2026-09-09T11:27:00Z",
      "source": "gekisaka.jp",
+     "summary": ""
+    },
+    {
+     "title": "レッドブル、キミ・ライコネンの息子ロビンの育成加入を発表。2015年生まれの現在11歳",
+     "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE53WnFXNFE4VUZUSTc0NjljOExmczE4X0xRZUFFWlZVMzFRNEgzcjRwcmJBR2NZVjBHUDBINk5oaTU3OFBBRlRF?oc=5",
+     "pubDate": "2026-09-09T11:02:00Z",
+     "source": "as-web.jp",
      "summary": ""
     },
     {
@@ -524,17 +517,17 @@
      "summary": ""
     },
     {
-     "title": "選手村造らず…コンテナやクルーズ船に宿泊 「アスリートファースト」なるか アジア大会",
-     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9BeTlscHFsLUdLTTlKOVdzYmEzb3J1OXB2U1JUWkpwWlA0dkRKajNtWnlZc2VKWlUzUEVhLUlxQTNVaGdqX01zUU45Q2l0Rk1zMndid01qYkE2NTh3WjF2dnlTeWs2YmwzVTNxQjVpZTBlZnlhbWc?oc=5",
-     "pubDate": "2026-09-09T09:30:00Z",
-     "source": "産経ニュース",
+     "title": "【9月11日】バレーボール男子日本代表 VS 男子インド代表｜テレビ放送・ネット配信｜男子アジア選手権2026準々決勝",
+     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE11UXV6eFRJZDRJbjFRaTB0d3lWS0dmV2JkT25iS2hadmNSU1J6cG4xUUdxUE5SYnR0Mnc5RXEwUk9fdkZmUXBsNW1Tal85OFRneFE?oc=5",
+     "pubDate": "2026-09-09T10:00:00Z",
+     "source": "バレーボールキング",
      "summary": ""
     },
     {
      "title": "【巨人】キャベッジまたまた打った！ 新フォームで再昇格後３打席連続安打 ダルベック、大城も続き３連打で先制",
-     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZzR0Y2FySzZlTHpKcWxHUGx1amJhN0FRS2FEZnJOV3E3bU1qQnlCY011Ni1IQkF6dFUzYTItSHVfclMwVjdVRUJVdG5XTThEYXpZcjBmeFFwNG9rMFhJS0MxY0dNYV96aVV4N0laZ2pzMHV5eGhYTlVZNm1oTUZGVG9GT1DSAYoBQVVfeXFMUGFwTFhOZ2tBaXFJLWpfVDZiOS1lZkJ2d244X2lnWHloUktGUUtHNk9IRnBXSldvN1NEc09SWDlTd29PVE5uR3Z0d3N0WDFzS0tJT2stN1JVWUwxV3pESWZvZVg2dXhTSktlc05aTTY0RTJrRkJWSGRBR2IwWnNCM2E4cjBBWmlGWWtB?oc=5",
+     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5hV1ZqUlFUOGpOQ25hNG1zendEYmdsN3VLb3F1QVgxQU95aVB2bEJEdG1FN3dZUF94ZzVLWUFLYWEwV2FsRENZekhGWllTMXFKWVZMeUw3VHRBMEJnUHFCSXNR?oc=5",
      "pubDate": "2026-09-09T09:24:00Z",
-     "source": "ｄメニューニュース",
+     "source": "スポーツ報知",
      "summary": ""
     },
     {
@@ -542,13 +535,6 @@
      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5QYmVvN2JHOXFRQ254SnZQY1hkMFFsUzZXVHM1cl9IbjV4UkRTSk9vN2c1NGtOalRYeWpYQTZIOEZjQ1J6enlvbjI2TTMzaWIwUlBNRlVZRTV6SE1nZjZVRW9rTy1ibVRjU3l6eTI3eW50cFI1YW9iOWtQMm4?oc=5",
      "pubDate": "2026-09-09T09:20:00Z",
      "source": "topnews.jp",
-     "summary": ""
-    },
-    {
-     "title": "阪神－広島、開始時刻を遅らせて開催へ 予告先発は阪神・高橋―広島・床田",
-     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQeDE0SUlUS1k3WVB5dWV2Z1B5LWc5NHpFd1lEQU1LczBtLXBMQTctYWZVMnZHYTFhQy1OczRERHptakhFbWJzeHJfc3UxUUVuQ1JfNUFwZkoxaVBKcF91T2h5cGFHVEdMMUpfRGJzNURvOG9CaWtxQlRMR0dsNGdoV3pmQW1JLUM4NGo4R1BBWXZ3Zm84N0HSAYoBQVVfeXFMUHg4eDBXOTVQYlhoODIzRXI4YnpVTnBhTExoMXVQYk9neVM5NnNzUE1ORVpQbFhoaVVQS3VscUs5bW5oak9yRWR5M2EzZmhMcHJDYnRZQXVyenQtZi1WU3RSdG1KWWItemhlcTkyT2tYVHYtTFR1TmxqWUpBRXNHVWZEN1BVVWtpSEdn?oc=5",
-     "pubDate": "2026-09-09T08:19:01Z",
-     "source": "サンスポ",
      "summary": ""
     },
     {
@@ -564,12 +550,40 @@
      "pubDate": "2026-09-09T08:02:30Z",
      "source": "NHKニュース",
      "summary": ""
+    },
+    {
+     "title": "「瓜田さんなら勝てるかも・・・」話題のサンバイザー男がＢＤ登場で騒然「好きなラウンジ嬢ができて」朝倉未来に挑むも無残・・・最後は喧嘩自慢に押し倒されて骨折",
+     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBJaUxhaGtrVVhGRjBOeEZsNTdvb01sVTN4TGxSY3pRZFl5QzZKVzJla1NnY0pSTGdERDNWQWhGX1hONExQY3FDeC0wSFhFRFpYTjhxT2F5cElIRkMyZzBXcUc0TFNHWnM?oc=5",
+     "pubDate": "2026-09-09T07:44:00Z",
+     "source": "デイリースポーツ",
+     "summary": ""
+    },
+    {
+     "title": "U-17日本代表 メンバー・スケジュール 国際ユースサッカーin新潟（9.14-9.21 新潟）",
+     "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE45UWZYSUZXT3YtV1dwSjlGckRrQkhjN2pLVWZQSzBON2x3dDQxNU1vMzZJVC1WRTBaRm9TQm5fQ1NlYjdzUTlpTg?oc=5",
+     "pubDate": "2026-09-09T07:39:27Z",
+     "source": "JFA",
+     "summary": ""
     }
    ]
   },
   "gadget": {
    "sourceUrl": "https://pc.watch.impress.co.jp/data/rss/1.0/pcw/feed.rdf",
    "items": [
+    {
+     "title": "「iPhone 18」は発表されず。メモリ高騰が影響か",
+     "link": "https://pc.watch.impress.co.jp/docs/news/2139681.html",
+     "pubDate": "2026-09-09T19:18:06Z",
+     "source": "",
+     "summary": "Appleは9月9日(米国時間)、2026年のiPhoneラインナップを発表。新製品としてまず「iPhone 18 Pro」と「iPhone 18 Pro Max」、そして最後の隠し玉として「iPhone Duo」を発…"
+    },
+    {
+     "title": "「iPhone Duo」はApple初の7.6型折りたたみで36万円強から",
+     "link": "https://pc.watch.impress.co.jp/docs/news/2139675.html",
+     "pubDate": "2026-09-09T19:03:05Z",
+     "source": "",
+     "summary": "ついに折りたたみiPhoneが手に入る。Appleは、同社初の折りたたみ型iPhone「iPhone Duo」を発表した。10月16日に予約受付を開始し、10月23日に発売する。日本での価格は36万4,800円から。ス…"
+    },
     {
      "title": "「iPhone 18 Pro」登場！A20 Proで性能向上し、可変絞りカメラも搭載",
      "link": "https://pc.watch.impress.co.jp/docs/news/2139664.html",
@@ -695,20 +709,6 @@
      "pubDate": "2026-09-08T21:19:00Z",
      "source": "",
      "summary": "サンワサプライは9月8日、電源コードを本体に巻き取って収納できるモバイルタップ「700-TAP094W」を発売した。直販価格は5,480円。"
-    },
-    {
-     "title": "国連人権高等弁務官、AIが人類を脅かすリスクを警告。安全規制と独立検証を要求",
-     "link": "https://pc.watch.impress.co.jp/docs/news/2139271.html",
-     "pubDate": "2026-09-08T21:07:00Z",
-     "source": "",
-     "summary": "国連人権高等弁務官のフォルカー・テュルク氏は9月7日、ジュネーブで開かれた国連人権理事会で、先進的なAIが制御されなければ「人類にとって存続に関わるリスク」になり得ると警告した。AIの安全性とセキュリティを確保するため…"
-    },
-    {
-     "title": "【プレゼントコーナー】PC Watch創刊30周年特別プレゼント企画【マウスコンピューター製ゲーミングノート「NEXTGEAR J5-A5G50BK-A」】 - PC Watch",
-     "link": "https://pc.watch.impress.co.jp/docs/topic/present/2139269.html",
-     "pubDate": "2026-09-08T21:00:00Z",
-     "source": "",
-     "summary": ""
     }
    ]
   },
@@ -719,7 +719,7 @@
      "title": "みんなのブルーインパルス 令和8年度〈Vol.4〉 「シムピットストアがブルーインパルスOBトークショーを開催」",
      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1xcmQxa3NBSnI2by0xSGNvRkdqREtjQ0VlV2J3QzVvM00zb3dSbWt0NXVDbWF1akt2V1pjVXN5Q2pTaEtZMGFyNGpvMTk0UEM3bi1NbHZCOTRUZw?oc=5",
      "pubDate": "2026-09-08T10:48:20Z",
-     "source": "防衛日報デジタル",
+     "source": "dailydefense.jp",
      "summary": ""
     },
     {
@@ -740,7 +740,7 @@
      "title": "飛ぶんじゃなくて、投げる！？ブルーインパルス松浦1尉、京セラドーム大阪で特別始球式！9月12日",
      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1yMDNOTEVDMEhLbUNSRjhBSFVTNGVKWEl3amRJdi1heGRvUmE2TWZfUnNxV3dJY2NtVG9mUHI5SU1SZnlubGlNN254S3Rub1U?oc=5",
      "pubDate": "2026-09-07T03:02:00Z",
-     "source": "flyteam.jp",
+     "source": "FlyTeam",
      "summary": ""
     },
     {
@@ -817,7 +817,7 @@
      "title": "元ブルーインパルス操縦士らが講演！飛行神社「空祭」9月27日開催、航空ジャンク市も",
      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1ZMjVLNWk2YmRnOXdiWERsYWpVaFRrYVV1RjhQR09NMEVpQllUNUhnc3FlSWVUbENXV2N5S2p2aUVXTW1hZVZKQWQzTE5mMG8?oc=5",
      "pubDate": "2026-09-05T10:02:00Z",
-     "source": "flyteam.jp",
+     "source": "FlyTeam",
      "summary": ""
     },
     {
@@ -888,7 +888,7 @@
      "title": "屋外でも使える山善の延長コードがAmazonでセールに 10mで3口の「EC-T1510B」は1979円",
      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBuWjNPS0IwMGVVWTdoeXdyblhWSW1NQzliTlVnWFpsT2tOa1UwMVVuVjR1dUdWUDByOXRxdXUtSW80WnhyUGlNZ0Rpb19mQ09oY3FSd3Z2RjhDQi0tODhXanJwR3hmOGRuUHJpbmxTT2Y?oc=5",
      "pubDate": "2026-09-09T02:30:00Z",
-     "source": "internet.watch.impr…",
+     "source": "INTERNET Watch",
      "summary": "",
      "company": "山善"
     },
@@ -928,7 +928,7 @@
      "title": "【双葉電子工業】産業用サーボモーター 「モノタロウ」への掲載を開始",
      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5SS0haVzBUTHVZV2NpVkZzREdvX1hxT1hBTUlldVBaM1lmbnAyYnRfMm9raDdTRERnME1ZTzVyTzNnM185UWUwQVJMQkV2TVlIZERzZkdEakJVQk8xREsyRVpnaWhUbU40VUE?oc=5",
      "pubDate": "2026-09-03T01:10:01Z",
-     "source": "PR TIMES",
+     "source": "prtimes.jp",
      "summary": "",
      "company": "モノタロウ"
     },
@@ -936,7 +936,7 @@
      "title": "セイノー情報サービス 国際物流総合展2026でAIエージェント×ロボットをデモンストレーション",
      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE85bEFnRE96dEp3MlU3R0x0aGxpZ1A1N0tVb1haX2pCaEJ3S3FsOTJKdmVmQk1pcGFuTVpGVXJqeE5ydHFLZWE0NG95Wk5pM2FfMUdHTG1USWNaTGt6RTY5by1oRTRxTlRrZ1E?oc=5",
      "pubDate": "2026-09-03T01:00:02Z",
-     "source": "PR TIMES",
+     "source": "prtimes.jp",
      "summary": "",
      "company": "セイノー情報サービス"
     },
@@ -952,7 +952,7 @@
      "title": "「第9回 塗料・塗装設備展」出展のお知らせ",
      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5vWGxNeDZ6VXlDWlhNWG85QVBqLS1XaUpMTnJVd1I4d0FlU3dPN05UOFVrbTlGMmNZdnRHUFhnSjdoMDBjenlXRHZwV3J1TGk3VXMwa0xDNEF3SFpyTkNmRkdHb1d5MmdTS1E?oc=5",
      "pubDate": "2026-08-31T07:00:00Z",
-     "source": "PR TIMES",
+     "source": "prtimes.jp",
      "summary": "",
      "company": "日本ペイントグループ"
     },
@@ -992,7 +992,7 @@
      "title": "ハウス食品グループ東北工場、福島県福島市の業務用レトルト食品の新工場が本格稼働",
      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE01UlRHZGRscldSR0tNOUhaYUxwYzdVNDlfemNtZ1p1MFZySHN4THpGd1BjSzJIcV9yb0g1Y1R0ZkJBTGlCb3M3WVFJTmgzYzlzdmN4WmF5ZzhHZw?oc=5",
      "pubDate": "2026-08-26T07:00:00Z",
-     "source": "automation-news.jp",
+     "source": "オートメーション新聞WEB",
      "summary": "",
      "company": "ハウス食品グループ"
     },
@@ -1053,10 +1053,18 @@
      "company": "F-LINE"
     },
     {
+     "title": "菱友システムズ[4685]：第58回定時株主総会招集ご通知 2026年6月2日(適時開示) ：日経会社情報DIGITAL",
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5hWWQ5ZHpSZXV0bDN6U0lKMjRJNDJnT2RwWUFtejdXR18zQzQ2alBuTTJTb3RRQmxSR2xCamNwVktGSWcyR1VrbTZBZm1KQWZyVmdvajNCUjJkYWtZVDFEeVhiY1NxT2JDY2c?oc=5",
+     "pubDate": "2026-06-02T07:00:00Z",
+     "source": "日本経済新聞",
+     "summary": "",
+     "company": "菱友システムズ"
+    },
+    {
      "title": "製造業のノウハウを融合した「物流革新プロジェクト」を本格始動(ニュースレター) | 大和ハウス工業株式会社のプレスリリース",
      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBoRjlEcHpHbUM5OVlaZXVkUXdBbGE2bTYxb2pKcHNCNlhtM3hsV201NndocjBqdG1QRzZDNWtfUGlid01GZ2FVeWdSVVl2aUhwbDNkRXowZ2N2N05wQTRldTNEdG94Rm5KNXc?oc=5",
      "pubDate": "2026-05-07T07:00:00Z",
-     "source": "PR TIMES",
+     "source": "prtimes.jp",
      "summary": "",
      "company": "ハウス物流サービス"
     },
@@ -1064,17 +1072,9 @@
      "title": "都心近接の東京都江東区にヤマトグループ最大級の統合型ビジネスソリューション拠点を開設",
      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9CUkVtcVprV2pfQlZnaGI3Y1FwZ2hpUVBZY1R1eVR0cVB6RE5UaENCTGhUenoyalhrLWs3V3F2UFI4Y3U5N0d3dzV1R0ZIRm1oRF9wREhIbnNrazhkbXJpN2ROQy1mNVVWS2hCUjF0Vm5hd1E?oc=5",
      "pubDate": "2026-04-07T07:00:00Z",
-     "source": "yamato-hd.co.jp",
+     "source": "ヤマトホールディングス株式会社",
      "summary": "",
      "company": "ハウス物流サービス"
-    },
-    {
-     "title": "菱友システムズ[4685]：株式会社網屋との資本業務提携に関するお知らせ 2026年2月12日(適時開示) ：日経会社情報DIGITAL",
-     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5nME1wSmVKUW1ZNXl2ZE1qU1UydEJzeVFsVE5LVFdkN2JfZW92TUpkM2R5ZXJuVzlDTWU1N05EQmM2LTdmZWR3aXBYVFRwWFNhRXFHN0tqWGhLMTBNNE1aQ1hEaGhmcjB0bVE?oc=5",
-     "pubDate": "2026-02-12T08:00:00Z",
-     "source": "日本経済新聞",
-     "summary": "",
-     "company": "菱友システムズ"
     },
     {
      "title": "【レポート】危険物倉庫の新増設が活発化",
