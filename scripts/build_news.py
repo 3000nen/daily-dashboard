@@ -15,6 +15,7 @@
 import json
 import re
 import sys
+import unicodedata
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -151,6 +152,34 @@ def clean(text, limit=110):
     return text[: limit - 1] + "…" if len(text) > limit else text
 
 
+PAREN_TAIL_RE = re.compile(r"\([^()]*\)\s*$")
+NOISE_RE = re.compile(r"[\s\-—–・,.!?:;\"'\u3000]")
+
+
+def dedupe_key(title):
+    """見出しの表記ゆれを吸収した比較用キー。
+
+    Googleニュースは同じ記事を、末尾の媒体名が全角括弧か半角括弧かだけ違う形で
+    重複して返すことがある。NFKC正規化で全角/半角をそろえ、末尾の括弧書きと
+    記号類を落としてから比べる。
+    """
+    t = unicodedata.normalize("NFKC", title)
+    t = PAREN_TAIL_RE.sub("", t).strip()
+    return NOISE_RE.sub("", t)
+
+
+def dedupe(items):
+    seen = set()
+    out = []
+    for item in items:
+        key = dedupe_key(item["title"])
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(item)
+    return out
+
+
 def split_gnews_title(title):
     """Googleニュースの見出し「タイトル - 媒体名」を分解する。"""
     idx = title.rfind(" - ")
@@ -215,6 +244,7 @@ def load_section(name, cfg):
             print(f"  [{name}] 記事0件 <- {url}", file=sys.stderr)
             continue
         items.sort(key=lambda i: i["pubDate"], reverse=True)
+        items = dedupe(items)
         print(f"  [{name}] OK {len(items)}件 <- {url}", file=sys.stderr)
         return {"sourceUrl": url, "items": items[: cfg["limit"]]}
     print(f"  [{name}] すべての取得先が失敗", file=sys.stderr)
@@ -235,7 +265,7 @@ def load_company():
             items.append(item)
         print(f"  [company] OK {name} {len(found[:3])}件 (検索語: {query})", file=sys.stderr)
     items.sort(key=lambda i: i["pubDate"], reverse=True)
-    return {"sourceUrl": "https://news.google.com/rss/search", "items": items}
+    return {"sourceUrl": "https://news.google.com/rss/search", "items": dedupe(items)}
 
 
 def main():
