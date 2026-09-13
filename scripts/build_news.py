@@ -102,10 +102,16 @@ SECTIONS = {
         "limit": 20,
     },
     # 相場そのものより広い、経済・金融の大きなニュース。
+    # GoogleニュースのBUSINESSトピックは日用品レビューや芸能人の車の話まで入って
+    # くるので、金融政策・景気などの語で絞った検索を主にし、トピックは予備に回す。
     "economyNews": {
-        "urls": [gnews_topic("BUSINESS"),
-                 gnews_search("日銀 OR 金融政策 OR 景気 OR インフレ OR 決算")],
+        "urls": [gnews_search("日銀 OR FRB OR 金融政策 OR 利上げ OR 利下げ OR "
+                              "インフレ OR 物価 OR 景気 OR GDP OR 経済対策"),
+                 gnews_topic("BUSINESS")],
         "limit": 20,
+        "keywords": ["日銀", "FRB", "金融政策", "利上げ", "利下げ", "金利", "インフレ",
+                     "物価", "景気", "GDP", "経済", "財政", "円安", "円高", "為替",
+                     "株価", "市場", "投資", "決算", "貿易", "関税"],
     },
 }
 
