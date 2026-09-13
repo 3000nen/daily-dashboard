@@ -15,7 +15,9 @@
 import json
 import re
 import sys
+import time
 import unicodedata
+import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -199,14 +201,35 @@ def split_gnews_title(title):
     return title[:idx].strip(), source
 
 
+# Googleニュースは短時間に多くのリクエストを送ると503を返す。1回の実行で十数件
+# 取りに行くため、取得の間隔を空けたうえで、503/429は待って再試行する。
+REQUEST_INTERVAL_SEC = 1.5
+RETRY_WAITS_SEC = (3, 8, 20)
+_last_fetch_at = 0.0
+
+
 def fetch(url, timeout=25):
-    req = urllib.request.Request(url, headers={
-        "User-Agent": UA,
-        "Accept": "application/rss+xml,application/xml,text/xml,*/*",
-        "Accept-Language": "ja,en;q=0.8",
-    })
-    with urllib.request.urlopen(req, timeout=timeout) as res:
-        return res.read()
+    global _last_fetch_at
+    for attempt in range(len(RETRY_WAITS_SEC) + 1):
+        wait = REQUEST_INTERVAL_SEC - (time.monotonic() - _last_fetch_at)
+        if wait > 0:
+            time.sleep(wait)
+        req = urllib.request.Request(url, headers={
+            "User-Agent": UA,
+            "Accept": "application/rss+xml,application/xml,text/xml,*/*",
+            "Accept-Language": "ja,en;q=0.8",
+        })
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as res:
+                return res.read()
+        except urllib.error.HTTPError as exc:
+            if exc.code not in (429, 500, 502, 503, 504) or attempt == len(RETRY_WAITS_SEC):
+                raise
+            pause = RETRY_WAITS_SEC[attempt]
+            print(f"    HTTP {exc.code}。{pause}秒待って再試行 ({attempt + 1}回目)", file=sys.stderr)
+            time.sleep(pause)
+        finally:
+            _last_fetch_at = time.monotonic()
 
 
 def parse_feed(raw, from_gnews):
@@ -273,9 +296,32 @@ def load_company():
     return {"sourceUrl": "https://news.google.com/rss/search", "items": dedupe(items)}
 
 
+def load_previous():
+    """前回の news-data.json を読む。取得に失敗したセクションの穴埋めに使う。"""
+    try:
+        with open("news-data.json", encoding="utf-8") as f:
+            return json.load(f).get("sections", {})
+    except (OSError, ValueError):
+        return {}
+
+
 def main():
+    previous = load_previous()
+
     sections = {name: load_section(name, cfg) for name, cfg in SECTIONS.items()}
     sections["company"] = load_company()
+
+    # 配信元の一時的な障害（Googleニュースの503など）で空になったセクションは、
+    # 前回取得できていた記事をそのまま残す。記事には公開日時があるので、
+    # 古くなったものはページ側の鮮度フィルタで自然に消える。
+    for name, section in sections.items():
+        if section["items"]:
+            continue
+        kept = previous.get(name, {}).get("items") or []
+        if kept:
+            section["items"] = kept
+            section["stale"] = True
+            print(f"  [{name}] 取得できなかったため前回の{len(kept)}件を維持", file=sys.stderr)
 
     data = {
         "updatedAt": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
