@@ -1,28 +1,98 @@
 {
- "updatedAt": "2026-09-13T21:21:35.869787Z",
+ "updatedAt": "2026-09-13T23:19:33.989568Z",
  "sections": {
   "news": {
    "sourceUrl": "https://news.google.com/rss?hl=ja&gl=JP&ceid=JP:ja",
    "items": [
     {
-     "title": "沖縄県知事に古謝氏、自衛隊の空港・港湾活用に弾み 中国抑止を念頭",
-     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBwMkZrcnRRanhXSFZwenhHQjFEa3JVLVhXQ1Qya3ljT1E0YzdNR2dtUnZyanRnU05Yb1F3REdHQ1pOa051dW84b1ZyNkxpai1JWDB5VllOWkhBN3Byem01SGl6cFhJRVBPcWJhRQ?oc=5",
+     "title": "Excelの「入力の壁」を越えて、データ活用を高度化：障害者雇用・伴走4年の実証から生まれた『データ活用Excel・マウス術講座』を開講",
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9YeW9ITkMzdWNUaWxZNkRoSXBVaWFHb0wzOUQ2NmxZMVFpNWJLeTYwLUx0Z09yZVlkTC1YRkw4R2wzWEYxWWpGT0dqNjRpZlBfbmhpM3BBTFRxWUF4bmhaX2J2Q3ZKMHN3YXc?oc=5",
+     "pubDate": "2026-09-13T23:00:02Z",
+     "source": "prtimes.jp",
+     "summary": ""
+    },
+    {
+     "title": "レトロ、サイバー、スケルトン。すべてが丸見えのゲーム機",
+     "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9rQVQ5b25GcmY5MnpndXVUMDVMaFVWUGxfU2tSbzRSUDNkT0VTWjlJMTNHNDdzdENjZFFzcUhpbG1vTk1sbGVvV1JhaUdvRXU0Y2RRVGQ3NjJDRml1cGVqU1ZScmNVcC15WU44TWZMeF9HQ0JpNmtZOVlZMFk?oc=5",
+     "pubDate": "2026-09-13T23:00:00Z",
+     "source": "Gizmodo",
+     "summary": ""
+    },
+    {
+     "title": "京都市の商店街で水道管が破損し漏水 周辺に水あふれ「大打撃だ。早くどうにかして」",
+     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBVOFdtUjM0Q09GbkpveFYwdEtLWUhwa3pQWWNxRWpfR2psOEN4Y2RlV09zcmNWZFFkeEswemZndGJiamZnSkRlZXY3RzdJcEhyc3c2ODI0Yl8?oc=5",
+     "pubDate": "2026-09-13T22:59:43Z",
+     "source": "kyoto-np.co.jp",
+     "summary": ""
+    },
+    {
+     "title": "ズベレフとルバキナが全米オープン初優勝…小田凱人のグランドスラムならず、上地結衣は２年連続４度目Ｖ",
+     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5mTmZvd1ZDYm44ODJjdWZlYjZ6dWgzbWl6dktPU0VvTnh5cWdpNzdUQzR6bnMxYTRVemtuMzB5Mzh2VVkwTWthQVd1ZFdCUjlRYVVpRU54Sk1hOEJUbGlRTXZNX0NJQ1Y1?oc=5",
+     "pubDate": "2026-09-13T22:08:00Z",
+     "source": "yomiuri.co.jp",
+     "summary": ""
+    },
+    {
+     "title": "ホルムズ海峡船舶とサウジに新たな攻撃、石油供給の混乱深刻化",
+     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPeVFIMmhQQ2Fvc2dpTlUtOC1ObDR2dnVNZmRYZTJ0TFJTT3VRWS1jejVtanV6M0dIczVQQ05zSGJlRzlCNTB2T0JCNHNrcVpDRUpYRVk1SmRPNWx3UFlKUUUtSno5VHcyMmZCXzZIX2pvamUtY1VGVVVVNkZuem0xLVNHaUhCQQ?oc=5",
+     "pubDate": "2026-09-13T22:04:13Z",
+     "source": "Reuters",
+     "summary": ""
+    },
+    {
+     "title": "元和歌山市長の旅田卓宗氏、県議補選で43年ぶり返り咲き当選 [和歌山県]",
+     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBCQWYtRTBIVXp3MkV4MTNpcm9YS09tYUtzU1ItMkcxSVNuRzdDdWJ2MWcwNUZuNUM3OE5WZDh0NmlfekFYZjYtVm1DamFnaXg2cVFGdnBFWVRmR2R5MEVxVlpUX1hmczg?oc=5",
+     "pubDate": "2026-09-13T21:41:11Z",
+     "source": "朝日新聞",
+     "summary": ""
+    },
+    {
+     "title": "オマーン外相、ホルムズ海峡巡る14日会合「延期」 バーレーンが反発",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE91UGVzdEE2WUIzRGVqZG9MNDFTblU0WktDNmpDSDlkTlIxMFlQWTdXalhuck9xc1FMd2RDTjJRVlQ0WFE4TmM3Q1lLR2xiZGxteFRRT09JeWRLVG5QM2ItV0ZyTTJ5LXB6YW1JVw?oc=5",
+     "pubDate": "2026-09-13T21:01:38Z",
+     "source": "日本経済新聞",
+     "summary": ""
+    },
+    {
+     "title": "今日9月14日(月)の天気予報 広い範囲で雨 関東は厳しい残暑に",
+     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9TMnUyYVIxdnR0QzFWWU5fZ3NXNDlReUhReGhaYVFNREZYdjJkN0JpS0d5VXNGakZGRV9RbHZzT05kTWlxVF94dGNxUW1lVzJMUDV3WA?oc=5",
+     "pubDate": "2026-09-13T20:30:00Z",
+     "source": "ウェザーニュース",
+     "summary": ""
+    },
+    {
+     "title": "補助金カット切り込めぬ霞が関 日本版DOGE、削減明示170億円どまり",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB6VzJOeVFITk9xUDNxT2RZOTBGWF9ONmk0UW1KV3lvWmZENWpHLWxwVDI2bW1sMTZYNWpWTk4tUUVYR0R1aWczTWJxZUxaVlFKRkFIRFBtaVZRSXBsVTBEWWxYSDRubGVoWWtjbw?oc=5",
      "pubDate": "2026-09-13T20:00:00Z",
      "source": "日本経済新聞",
      "summary": ""
     },
     {
-     "title": "阪神 延長で力尽きまさかの5連敗…木下里都が決勝点献上 打線は47イニング連続で適時打なしと深刻（スポニチアネックス）",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1JYkRzelFLMm16T3FoY2xjZTJmdThwUnR4NnRTeXBpN1I5b0hQVFJfYTVudWZNUVR0elFoVC05MGsya2V3UldBT01ta0M1YVVPLXZjUjhyUG0wZi1BRDl2cENrYmFyQ2ZlWGR5RktYTTFPTUxHYkVoSzJ4MlZyMm8?oc=5",
-     "pubDate": "2026-09-13T19:11:31Z",
+     "title": "ブルージェイズ・岡本和真が豪快32号ソロ！ 今季日本勢トップ＆右打者歴代最多タイ スプリンガー＆ゲレーロJr.と3連発共演",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBKLU9WN3d6STRIYW1YOEh0TGtkS1RDZEVDSno4Zm9nRlpGbEM0NXc1M1RqVG40T05Ga2lBVnAtNm9lS2lrWlFwc1Q1S1d3R0VUeVpSbzZTLWFGRDltTDdGQnZ3SVc5TUxQMTZHSmttVUo4OHhZNWJSazE4eVJYVXM?oc=5",
+     "pubDate": "2026-09-13T19:25:51Z",
      "source": "Yahoo!ニュース",
      "summary": ""
     },
     {
+     "title": "新知事に古謝氏 オール沖縄破る最多42万票余獲得 玉城氏に14万7000票差 最年少42歳、復帰後生まれ",
+     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB1VF9NVG9FM1BQVVFIY01RelZRVzhJaEwyaGVheUJlaG9JZUxhNUdXZUswcWFWcE1tY1VOMVp4WDBETjlKZk9nWEREUk1wOWh6ejkweXlMLTZIQjlZSzR5Ng?oc=5",
+     "pubDate": "2026-09-13T19:22:43Z",
+     "source": "琉球新報デジタル",
+     "summary": ""
+    },
+    {
+     "title": "BE:FIRST、2年連続ファミマクリスマスアンバサダー就任 メンバー監修コラボケーキ2種類展開",
+     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1PRk5lbEFVSURHVVoxNHlsMlRrMUk0bXBhc253MkVRNXVwQ2V0QUktLWZOUnAxYVY1LW1ndmJDbmxGZE9EcURjSzY5b9IBR0FVX3lxTFBITnVMUDN6Mko3VnowRGxaQUJiZ0dVbEFMU3paRWNMNkpteUdSd2JNbGZ5OHVaeWJVbXBsRHlSRGo0OHUzdFpr?oc=5",
+     "pubDate": "2026-09-13T19:00:00Z",
+     "source": "mdpr.jp",
+     "summary": ""
+    },
+    {
      "title": "軽油高騰は「ゼレンスキー氏のせい」…トランプ大統領、ロシアのディーゼル燃料施設への攻撃停止するよう要求",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE14QzZ1YnBhZFFRaXJ1a2YzZG03OS0wRGJ0YW5xbVhoUWZLV3R2M3lJbWh6eVJWZ3czQXk3ZXZsZ3U4V0x4WjJDYnhUWnNCQTFzYnVTTHZmUmt1MjNiVWpDS0tDT21QeXlOdGNCTldQclpWYm5nZ2VtdE9CRnhjaHM?oc=5",
-     "pubDate": "2026-09-13T17:10:18Z",
-     "source": "Yahoo!ニュース",
+     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB4YmtVZDFwN2p6c08tWFlFU0JSVEdIR2UyUU45TDJIQUQzdDgwZE9nTmJoenlGZkptM2pfTk83UEYxNzAyNnNZUWw4MFByOTlGQWxySVh1eVdRT2N6bVg4OTd3?oc=5",
+     "pubDate": "2026-09-13T17:07:00Z",
+     "source": "yomiuri.co.jp",
      "summary": ""
     },
     {
@@ -33,10 +103,10 @@
      "summary": ""
     },
     {
-     "title": "櫻坂46谷口愛季、表題曲初センター決定「期待の方が大きい」【「愛MUST BE」フォーメーションあり】",
-     "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBLQWtOUXhlTlNQQnBteEhrencyN3BvQmxUaGpzRjF0OG8tVVBNTXM2WnFtQmdQMjlFSTJZTER3RkktUjBoNDBxOXI1emFsd0pTUUwwb0pR?oc=5",
-     "pubDate": "2026-09-13T16:20:00Z",
-     "source": "オリコンニュース",
+     "title": "浜岡原発データ不正問題で中部電力・林社長 辞任意向示す、後任は安井稔取締役を軸に検討",
+     "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1sNDZZOUlaYnlwclJQOXhkdE9kMUdOSXQtS1VGa1dLWmxaTTFWSm9OMEhEa05UX1ZfTVdaUno5OHJqVTBKLVpnRzk3dWtrTXZHdTZXZmxmaw?oc=5",
+     "pubDate": "2026-09-13T16:31:32Z",
+     "source": "TBS NEWS DIG",
      "summary": ""
     },
     {
@@ -54,38 +124,38 @@
      "summary": ""
     },
     {
-     "title": "【速報】本部町長選、元役場職員の仲宗根章氏が初当選",
-     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9Ec2NwbmN3dmFramhnZ2Z1c3gtTTQ5dzNXMWJkdlJqLTRMY1U0U0pSMDVTVlBkbGhUS0thaVh0VFJkc0hXVzRucjNfc1cwNnBWWENjdkdNdWN2SzE4NlE?oc=5",
-     "pubDate": "2026-09-13T14:13:00Z",
-     "source": "沖縄タイムス社",
-     "summary": ""
-    },
-    {
-     "title": "７年ぶりにインドを訪れた習近平氏、「ＢＲＩＣＳは歴史の主導権を」…首脳会議が閉幕",
-     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5FQkx6TlNxMklrVU1VTkItbG5iUno1cHgwbXV4amVZUzBvS2tkYXpRM3V6SGYxUTFTR3ZVdzZqSEtERHkyVEVqSTBiY0hrNmh5eXpuWS1fLUlDZVBYcF9NTFVR?oc=5",
-     "pubDate": "2026-09-13T13:41:00Z",
-     "source": "読売新聞",
+     "title": "【速報】米大統領、AI開発規制の議論けん制",
+     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFA3RzBucTJNU09zWWc0T0Vrc3hGZm9HcE5hclZqWDN6alNkWUh2YmFDb3dJbW9OZmJRYXpNaDlBWmdIRkJTZmFYLU9OWQ?oc=5",
+     "pubDate": "2026-09-13T14:11:11Z",
+     "source": "47NEWS",
      "summary": ""
     },
     {
      "title": "「VIVANT」後半戦予告編が公開 仲間との別れ、裏切り者…残り6話で決着へ",
      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5qQnFBNXYtM3lHZ0ZpRmJ2YWJYY3p0QzZBd3hEM2psMVR4XzQ2aktsWk5lcnFndFh6Zk5wVUQxZzljQjhVandhTm9TeXEwWTA1eWc?oc=5",
      "pubDate": "2026-09-13T13:38:58Z",
-     "source": "シネマトゥデイ",
+     "source": "cinematoday.jp",
      "summary": ""
     },
     {
-     "title": "＜開票速報＞17市町村議会、本部、伊是名、大宜味の3首長選の当選者決まる 随時更新【統一地方選2026・沖縄】",
+     "title": "23市町村議員選 全当選者322人決まる 本部、伊是名、大宜味の3首長選の当選者も【統一地方選2026・沖縄】",
      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE90eFJlc2w5cHppb3lMS1ZYb1lLUmZfNktoRnQtclptR1MyN3ZCOUxZN1Jfc0ZTWDRxT00zLVZBYWxqUVZETm14SUVLTHVicUkwV1FId0Y5N0ZjN040NDBsMg?oc=5",
      "pubDate": "2026-09-13T13:20:38Z",
-     "source": "ryukyushimpo.jp",
+     "source": "琉球新報デジタル",
      "summary": ""
     },
     {
-     "title": "AI開発「減速」をアンソロピックCEOが提案 アルトマン氏・マスク氏らも賛同（Impress Watch）",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5Nek1pYkE5dmlURENlczl6WHBFWmhZWHBXUzdpa1VhZ05JNzBOdUcxSXNQR3I5cnNsajRCRWVBVVgxa3UtcjdZbVhOaTl2bDRVOHdTQ2FnTHdNbHhfVmVHdUlLS19FNFN1ZDdiOXBFUWF1YWdyZks4eDdzN1BaVFk?oc=5",
+     "title": "『豊臣兄弟！』新キャストにネット騒然「オーラが半端ない」「満を持しての初大河」",
+     "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1YbFlxUVNyMTlUR2ItUmxwbmNaTm5CZGxKang3TUJDaDNlMloyTi1jR3VsWktwY1dCQWN6UVY4b21sTUk0cWl2VXVJV0I5LXM?oc=5",
+     "pubDate": "2026-09-13T11:45:00Z",
+     "source": "オリコンニュース",
+     "summary": ""
+    },
+    {
+     "title": "AI開発「減速」をアンソロピックCEOが提案 アルトマン氏・マスク氏らも賛同",
+     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE05UWU5UTdPSHRXYkVBUkMzSFNfem5aNEZDY29IcC1qVDBxdE9peEt1VVBWWU9MSFFMVTlFOUFnall5dUJfVHNRNHBOcWxHWkNlQkFFSVdEd2ZUeXhFVW1hVXB3cDM?oc=5",
      "pubDate": "2026-09-13T10:50:00Z",
-     "source": "Yahoo!ニュース",
+     "source": "Impress Watch",
      "summary": ""
     },
     {
@@ -96,24 +166,10 @@
      "summary": ""
     },
     {
-     "title": "インドネシアでフェリーが遭難か、１００人以上救助も６人死亡・約１３０人が行方不明…日本人の被害情報なし",
-     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9LX2dlSmQwbW9RTXYwTktmb3BwSFloTGJEbFN3WWVoa0ozQXhrX0NwU3BsNDRsM003dFNDZUdGN3N4TE9QMVRRc2Q3YUxJUHFKQWlKVEs0ckxHdm9rNlFSRldB?oc=5",
-     "pubDate": "2026-09-13T10:14:00Z",
-     "source": "読売新聞",
-     "summary": ""
-    },
-    {
-     "title": "【気がかりな渦】シルバーウィークに前線刺激するおそれ 次の台風のたまごか 全国の天気 ※13日午後6時半現在",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFByZzlBaW5rU3RqZzBRdThEQ1kwV1NWZ0NYTWNrazdmRFdPd1Y1XzAzZFRramtyXzNSMzdTTXNXbVRVR2xqdEhsVFN3SFVRYWhJY0RPR0RjblB4bXNlYm94TnFYYXdCcmlBZnFLZ3NqYnkyMXJieG9uSzczUllpMWs?oc=5",
-     "pubDate": "2026-09-13T09:42:17Z",
-     "source": "Yahoo!ニュース",
-     "summary": ""
-    },
-    {
      "title": "岐阜のケーキ店放火殺人事件、店主の死因は熱傷性ショック",
      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE14cTcxaEtFRWhBcE81dnBMQV9QcVhqOXF5a0o0WHBqSWlBMDl1Ti13d0NPTVhGa1djakJwNEdTdXNjWWlNQThydFVyZldWVkp1bUtmdU1oSnBiekk3X082bmlnVDQ4Zw?oc=5",
      "pubDate": "2026-09-13T09:38:00Z",
-     "source": "読売新聞",
+     "source": "yomiuri.co.jp",
      "summary": ""
     },
     {
@@ -124,87 +180,31 @@
      "summary": ""
     },
     {
-     "title": "イラン「ホルムズで14日にオマーンと合意」 フーシは紅海側で攻勢",
-     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9naDV3WlhJUHNfMlNkWE9qTWlNU1oyUFE1MDEzeHZfdWpyU1lKdkhxaE5DVzQxWkI0TzRZOUlYdThhWmRUQWl0UmZVYS1EUWNYQlZJc0VmOW9nTi1UdWc5WGtsdFVpdkJNZ3Yyaw?oc=5",
-     "pubDate": "2026-09-13T09:22:43Z",
+     "title": "サウジのパイプラインへの攻撃 トランプ氏 イラン関与の可能性示唆",
+     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE0zZjd0RjkwSV9WQndhLW1TS2pVbkh2Z1pOUm5hd0NKY082V241bm1VYl9yVTZLeWgydEI3Q3pydUR6eTFOaGttdWFlTkFTWnZiYl85NXFoeldQdVRSd2VBYnlaei1TVnFHbFpudkpPUWxadDFxajQyN1lR?oc=5",
+     "pubDate": "2026-09-13T04:43:41Z",
+     "source": "テレ朝NEWS",
+     "summary": ""
+    },
+    {
+     "title": "［社説］共和党は米国の病巣直視せよ",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE50UGtnaDFubWpoZ2tZVlNUNEF4NHl2Z2tZSVpGS1ZVWUdtcmkxYkI5MkFvamd4bFRHSXd3TXJPMXBCQnVwNDQwX2lDY1kxcndoUlVDeVRiZHg3cGhRUUlFeWRlUjhuUnBCdWEzTg?oc=5",
+     "pubDate": "2026-09-12T10:00:00Z",
      "source": "日本経済新聞",
      "summary": ""
     },
     {
-     "title": "腕馴染み抜群！【小ぶりで個性豊かな“36mm”モデル】小径トレンドで数を増す黄金サイズの注目作｜性別の垣根を超える腕時計 No.068",
-     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1RcnY3amRSREhJTml4WTBnVE9NZ3JXYmNWQ2M3RmM4MUxmYUZVQUhfMGVtS1FyZjZFb2s2b1hLam5BcmN0aGZSeTNyMktaYW5KazR2Qm9ZWVFQd0E?oc=5",
-     "pubDate": "2026-09-13T09:10:26Z",
-     "source": "Watch LIFE NEWS",
-     "summary": ""
-    },
-    {
-     "title": "ホルムズ海峡でイラン商船に飛翔体 1人死亡…新航路公表の会議にバーレーン不参加",
-     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5qVVIwbGdwQUs5Wl9fdy1DYWpKaU51NWZlc1NpR2JraEJOMGJ1c0JITEJvM1VpR2dVdW1RTFIwY2xuUFh5NG4yQ3lMV1dRMmlCLVpqMkd1dVFFZExCYlowdFczclllcjBJOEh2U3lxYkh1a1R6VC00SVpR?oc=5",
-     "pubDate": "2026-09-13T09:03:41Z",
-     "source": "テレ朝NEWS",
-     "summary": ""
-    },
-    {
-     "title": "中部電力 会長と社長が辞意 浜岡原発データ不正問題",
-     "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1GRzlsaExWaGtXZFk5bXNrN3FiSTBjR000d1NiMng1RzRKWmVsUHNFRTc1NXJaUmJEMlpHdUlHUWp5WGxwOEtraV9KTExibkl3NnJtbHIwTmlraDUwRHZIUnhYbmgzSmJSSEN2QVJnQlFyUQ?oc=5",
-     "pubDate": "2026-09-13T08:57:17Z",
-     "source": "テレ朝NEWS",
-     "summary": ""
-    },
-    {
-     "title": "株価指数先物 【週間展望】―中銀イベント後のアク抜けに期待も、ロングを強めにくい",
-     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5MaWhuR1VBVDBRX3BYcFRSa2xWZDBRN0RMTnhlcG9lcVlOQzZsaUhoZnBFb2FGUC1JVkNlQUF3N0ROSklVZUhfNWRYM3Myd1RNYzYtVjE4Sk9QYkpyLXcxVA?oc=5",
-     "pubDate": "2026-09-13T08:00:00Z",
-     "source": "kabutan.jp",
-     "summary": ""
-    },
-    {
-     "title": "〈ソニー日本女子プロゴルフ〉プレーオフで涙の吉澤 「力が入った」｜スポーツ｜石川のニュース",
-     "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1hc180UkhxQi1Ja1lSc2ZMU1VIN2lxd3pESUlySGlJN2hBNzdPNGU5VmpUSDlEUW9PYmZHa0hqMXgxYWJUMlBEUndFQ3lidjhvWFgtb0hUMA?oc=5",
-     "pubDate": "2026-09-13T06:50:00Z",
-     "source": "北國新聞",
-     "summary": ""
-    },
-    {
-     "title": "明日の関東は久しぶりの貴重な晴天 ぶり返す暑さに注意",
-     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9UeDl1Z2tiOVJNQllDQTVLNzYzeDlCMm1uYldHOTl2RzdTZHhfNC1IdlJEczVtaUNzTUlZMnFfZEVmOVF5REYtR3pNaHdESmx6Y0hQYQ?oc=5",
-     "pubDate": "2026-09-13T06:30:00Z",
-     "source": "ウェザーニュース",
-     "summary": ""
-    },
-    {
-     "title": "Ryzen 7 5700X＆RTX 5060 Tiでコスパを追求したゲーミングPC、見た目もイイ感じで31万円台は買い？ (1/4)",
-     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE03b05oSGNFRV9IS3ltOXh6V0VrUkFfN21CNDhSWVpYOVEzOXRGcDcycENuU240QTNVbGR0R1A2dEg4SmdEd2o5VkxIcUhhcTE5WGRueA?oc=5",
-     "pubDate": "2026-09-13T01:00:00Z",
-     "source": "ASCII.jp",
-     "summary": ""
-    },
-    {
-     "title": "サウジの原油パイプラインを攻撃した装置押収、イラク当局",
-     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBmR2pmdEVLUGoyTURhSkxGOWFwOTB0RmJxak9ZdU4xRy1FY3NkQUtRSFpHcjktZzV5UEVMMGtXdDZ1Y1M1SXZTVmVZTXdlX21DZWdQTXlKdXB2UUJuRlNma0dXeEl6c2daRVB2d2JiTXFoY1pOT2c?oc=5",
-     "pubDate": "2026-09-13T00:08:33Z",
-     "source": "産経ニュース",
-     "summary": ""
-    },
-    {
-     "title": "秀吉の｢勝手な都合｣で一族根絶やしにされ無念の自害…山田涼介演じる｢豊臣秀次｣が辿った\"悲惨すぎる末路\"",
-     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9reG01N2tpYnNxbXoyNUZpYU5MeFVLd3I0bzlkQVluOG9TWDRWTFZ2aFU5QXJFazhLR084enl3MU9xazNnaDBNSFJKN2FCMjFDU2VaZ3EyQkY?oc=5",
-     "pubDate": "2026-09-12T22:00:00Z",
-     "source": "PRESIDENT Online（プレ…",
-     "summary": ""
-    },
-    {
-     "title": "ヘッジファンド、円ショート大幅削減－ベッセント氏「胴元」発言前に",
-     "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1td0gtcDRiY2pOWUVPUlJ0SlFwZzNJdFM4anFoR2lhUUxrNWRIWXZ3N0hJc2taaVVjT2dCZ19JQjVDOGNBMVgyM0luYVZJak1DcWRPdlZiS3hCTENUYzNnSERud0FiVkl3TGNOdS0wNENfNDUzMUdZ?oc=5",
-     "pubDate": "2026-09-12T06:01:00Z",
-     "source": "Bloomberg.com",
+     "title": "シルバーウィークにかけての天気 秋雨前線の影響で雨が多く 台風のたまごにも注意(気象予報士 吉田 友海 2026年09月12日)",
+     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5lNVQ5SnNOQnE5Z2hGdDlpZzhVUGgxYmVzVUlfa0MtTlo5X04wcGg1ZXdGeDU1blYxenJmR09iZi1MT2czcUk0UEdYamxkZVJSRGF5amR4MTh6SGlmbXQ4Y3g1OXlhZ21tOGxV0gFwQVVfeXFMTlVLOVdRajRaTFV2Q0Qwbzd2TXBGczhyeFlmYzBhOE1HRFQxaDRoT01YdFBGRFBzeUl2YXpVekxUdW9WTlJXMlFhd04yajNtamZIVjQyWmNHTG5NcUxEVl8ySUVreUNSQ09kWk5TeTZFUw?oc=5",
+     "pubDate": "2026-09-12T02:54:51Z",
+     "source": "tenki.jp",
      "summary": ""
     },
     {
      "title": "アップル、初の折り畳み式iPhone発表",
      "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxOU081b2JkeEpSV1dVZGtWZ05JbzNMNmZ3V2tsMUVleGRkTmZfTF95b1BicXFBTTVRd2JQdm5VUEJCUnRsUWxoRml6Nm4wTkxpUTFOdUctOVJKMURjOG1XenhhdWlvRnlIRWk0RmJlMHl4SWJpZG1CR05uV3BlU0tPY0ZvTkZEVkpMeVpyLWkxbHEzSTB4aG9VUUtlTG9aN1JxS0F3R0p5blRoemRwWm9XZlRqVGVCQ1VYb29yZC1ndEtlbDFzcDE1Tk13Ung5d0szVEtDdF9GRTRiS05SaUFJVmNRbmUyeVJwVE9sVHVyU2dfZVZXZVFvLWZLaGpjdEFzUV8yUVpfRDlCRkZnRWhQSmE0Z25OdzdFRzZn?oc=5",
      "pubDate": "2026-09-09T19:44:00Z",
-     "source": "smartnews.com",
+     "source": "スマートニュース",
      "summary": ""
     },
     {
@@ -365,6 +365,27 @@
    "sourceUrl": "https://rss.itmedia.co.jp/rss/2.0/itmedia_all.xml",
    "items": [
     {
+     "title": "[ITmedia ビジネスオンライン] 「全部手作業は無理」 新リース会計対応に追われたアルペン、AIで一次判定「3300→80時間」にできたワケ",
+     "link": "https://www.itmedia.co.jp/business/articles/2609/14/news017.html",
+     "pubDate": "2026-09-13T22:00:00Z",
+     "source": "",
+     "summary": "新リース会計基準への対応で、多くの企業が頭を悩ませている。多店舗展開するアルペンでは、過去の契約書1万件超のうち約5000件について、リースに該当するかを判定する必要があった。同社はこの膨大な作業にどう対応したのか。"
+    },
+    {
+     "title": "[ITmedia ビジネスオンライン] AI技術を“無料で公開”、なぜ？ 米IT業界の文化「オープン化」の裏にしたたかな戦略、日本は追随できるか",
+     "link": "https://www.itmedia.co.jp/business/articles/2609/14/news047.html",
+     "pubDate": "2026-09-13T22:00:00Z",
+     "source": "",
+     "summary": "AI分野で「オープン化」が進んでいる。企業はなぜ、自社技術を無料で公開するのか。そこには、AI企業のしたたかな戦略があった。"
+    },
+    {
+     "title": "[ITmedia News] 「死亡事故がゼロの世の中を」──苦節7年、危険な作業をAIで省力化 全国で稼働する「交通誘導AI」の現在地",
+     "link": "https://www.itmedia.co.jp/news/article/2609/14/2000001430/",
+     "pubDate": "2026-09-13T21:46:00Z",
+     "source": "",
+     "summary": "AIカメラとLED表示板で工事現場の交通誘導を行うシステムが、既に全国の国道などで動いている。9月9日開催の展示会「AIエキスポ」で、開発元のKB-eyeに話を聞いた。"
+    },
+    {
      "title": "[ITmedia News] AnthropicのアモデイCEO、AI開発の「ペース調整」訴えるエッセイ公開 アルトマン氏とマスク氏も賛同",
      "link": "https://www.itmedia.co.jp/news/article/2609/13/2000001432/",
      "pubDate": "2026-09-12T23:06:11Z",
@@ -419,13 +440,6 @@
      "pubDate": "2026-09-11T06:57:36Z",
      "source": "",
      "summary": "米Bloombergは9月11日、米OpenAIが最先端AIの開発ペースを緩めることを検討していると報じた。サム・アルトマンCEOが全社会議で従業員に説明したという。"
-    },
-    {
-     "title": "[ITmedia News] VAIOが再び“挑戦”する理由 ノジマが後押し、独自のマルチフリップ機構が復活へ",
-     "link": "https://www.itmedia.co.jp/news/article/2609/11/2000001417/",
-     "pubDate": "2026-09-11T06:32:22Z",
-     "source": "",
-     "summary": "25年にノジマ傘下に入ったVAIO。これまで法人向けの保守的な製品が多かった同社だが、ノジマの後押しを受けて再び挑戦するという。"
     }
    ]
   },
@@ -433,31 +447,94 @@
    "sourceUrl": "https://news.google.com/rss/headlines/section/topic/SPORTS?hl=ja&gl=JP&ceid=JP:ja",
    "items": [
     {
-     "title": "「日本女子ツアーのレベルは上がっている？」の質問に米ツアー4勝の山下美夢有は何と答えたか",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1lamJLbmQ4bk1JRnpJME5vY3dFQjg5V2Q4cVRfTDhDaDIwdC1XM05oQ3BBZTdNTEVGZWU0am9NWnZ2R3FqbFNNbjNPeTd2RGotRklHV3JKb2RWZWhFcldoZjBDRXZGZ3FNMHZkVWpNaTBwd29wenlEOG44RWtXMmM?oc=5",
-     "pubDate": "2026-09-13T20:34:22Z",
+     "title": "ズベレフとルバキナが全米オープン初優勝…小田凱人のグランドスラムならず、上地結衣は２年連続４度目Ｖ",
+     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5mTmZvd1ZDYm44ODJjdWZlYjZ6dWgzbWl6dktPU0VvTnh5cWdpNzdUQzR6bnMxYTRVemtuMzB5Mzh2VVkwTWthQVd1ZFdCUjlRYVVpRU54Sk1hOEJUbGlRTXZNX0NJQ1Y1?oc=5",
+     "pubDate": "2026-09-13T22:08:00Z",
+     "source": "yomiuri.co.jp",
+     "summary": ""
+    },
+    {
+     "title": "阪神 延長で力尽きまさかの5連敗…木下里都が決勝点献上 打線は47イニング連続で適時打なしと深刻（スポニチアネックス）",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1JYkRzelFLMm16T3FoY2xjZTJmdThwUnR4NnRTeXBpN1I5b0hQVFJfYTVudWZNUVR0elFoVC05MGsya2V3UldBT01ta0M1YVVPLXZjUjhyUG0wZi1BRDl2cENrYmFyQ2ZlWGR5RktYTTFPTUxHYkVoSzJ4MlZyMm8?oc=5",
+     "pubDate": "2026-09-13T21:55:28Z",
      "source": "Yahoo!ニュース",
      "summary": ""
     },
     {
-     "title": "ドジャースがリード IL大谷翔平代役21歳ルーキーがメジャー１号３ラン！／速報中",
+     "title": "首位阪神に０・５ゲーム差と肉薄の巨人、「燃え尽き症候群じゃないけれど」指揮官の懸念が現実に…連勝が３で止まる",
+     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBtVXd2UldpSkZqLUEwOU5yWF9OVjAyZkh2SUw2VWdYTjM2TERaR0RjYm12OEJQVThiMmVLX3dBWVJ4Zk9ULUstTnphSHA0eGVfZ3F6VW1WbzBPNmNtZm5xeHhVQTZPeFhv?oc=5",
+     "pubDate": "2026-09-13T21:00:00Z",
+     "source": "yomiuri.co.jp",
+     "summary": ""
+    },
+    {
+     "title": "「スーパーモデルみたい！」全米OP初制覇ルバキナにトロフィー授与 白シャツ姿の“妖精”に視線集中「年を重ねるほど美しくなっている」 | THE DIGEST",
+     "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBKemNzYl8wS3RZeFNkSFh4dS1UN3ZvWjI2RGxfbmFJVUp3cGNiQ2JnTTctdTJ2Slh0UzBsbmNrR1JDMlNySGgwTzFTNjhfXzUwenEzTWNvbVdEWjVl0gFsQVVfeXFMUGRpcUw2cEZOd0N2dE1XM19MTTI4V01SRW5OMkFmejhLNER6enpIQ2dFQ2RKc25uZ2UySGNsY0ZBN2h6NmtiOHRGNlV2aDB5WTk1bnpEWlgwYmtsSTJkUXlSUmwxOFA1NUhZdWp2?oc=5",
+     "pubDate": "2026-09-13T21:00:00Z",
+     "source": "thedigestweb.com",
+     "summary": ""
+    },
+    {
+     "title": "久保建英が2戦連続でベンチスタート…“控え選手”に序列低下か。レアル・ソシエダはアトレティコに0-3敗戦（GOAL）",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBJX1habEFKb1BrVGZEMnpkX3dWenNqcFh0dGRZNkxPYzA1bERfUzMwUjV4UE9va1oybFJ3NXFwN01GeWU4SFEwZUY3TU1nNjA0MXdfbTJjekdwYjU3cDZ0TmtZM0ZybHI4cUY4NDkzTVpiajhfOERQcFk5UngzX28?oc=5",
+     "pubDate": "2026-09-13T20:57:39Z",
+     "source": "Yahoo!ニュース",
+     "summary": ""
+    },
+    {
+     "title": "PSV佐野航大、圧巻のスーパーミドルで移籍後初ゴール！ 5試合連続先発フル出場、衝撃の逆転弾でチームを5連勝に導く",
+     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1sM2UyU0N3N2JjN09GQ0RPZkhUZ2UtekpTbV9OWnZNZkZCbldsY1dsTzBKaVlFOU9aSGdYeHpVSEdmS0stYTZBYmlPMWZuRG55c2NOd2ljbDZVZWxOeHhkWjZiUE0?oc=5",
+     "pubDate": "2026-09-13T20:57:37Z",
+     "source": "フットボールチャンネル",
+     "summary": ""
+    },
+    {
+     "title": "審判団体がハーランドの決勝点は判定ミスと認める…エンソがプレーに関与",
+     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNV3RzSHJxejVpOTc3WFcwTU1lWDNfN3MyRXJRN1hvSlduOEFWWXhTQkxvMGM0NE1ZUzRQc0lJQlVPRzhobkxKbDdnbl9UMDFFbG52SllpRlZ6RHV0ejQ0VW5md1N3dU9uQzlZRnJKQTZESEZZVF96Ukxmb3hjU3dzdmlYZkpkUTByXy1TYWNZcVpwcXNpWlRQVWNsWkE0dw?oc=5",
+     "pubDate": "2026-09-13T20:54:00Z",
+     "source": "Goal.com",
+     "summary": ""
+    },
+    {
+     "title": "ドジャース、悪夢の逆転サヨナラ負け 大谷翔平代役ルーキーがメジャー１号３ランも…／詳細",
      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBNbHhCOHZJbTJQdF9ERDFXUURFUEk3WVJhWnBMZVB4cWJUYW1YdldIVThTbzRDYmZhTjJTQ1dZUWRUVjhmZEl1akJZTXI4dWxUZU8tWkJrU1dndno1Zng2YVUyeWdzRDRpTF9tNEtTb0RmRG1yRGc?oc=5",
-     "pubDate": "2026-09-13T19:50:00Z",
+     "pubDate": "2026-09-13T20:24:00Z",
      "source": "日刊スポーツ",
      "summary": ""
     },
     {
-     "title": "「2位だけどそれで良いんです」五輪銀のロシア選手が出産後1年で驚異の4回転成功…イグナトワが語る“復帰の真相”「私には小さな子供がいるし別の生活も…」（Number Web）",
-     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOYktNY25ZWGVCd2dQVUo0U21sOUswTzBsczJ0eEYwNV85YWxSdVItLURzZEdodE05NnEyaTMwRUUtVWUydTBkcVVLdTNGY3h4MkxaYm9RNFJzOEt3cGYwdWt6UzlXbFlNb3dMQVNnVU1PWUZ4SDQ3M0JPNGJPaEFJUmREeThYTERv?oc=5",
-     "pubDate": "2026-09-13T19:15:35Z",
+     "title": "MLB:大谷翔平、二刀流継続を左右する左膝の回復 フォーム最適化は可能か",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1KazR3S2pBUWstQjNEaHpobWE0TFg1N1d6c1RMS2ZFMEpOX211NHhma2gtUjBEVVB3eWxzcEJlZGQ1LVlFLUdKUldReDczblZ2WmU2Znh0RDBPaGRhUE5mZnd3Z0c2RUdLNUFPWQ?oc=5",
+     "pubDate": "2026-09-13T20:00:00Z",
+     "source": "日本経済新聞",
+     "summary": ""
+    },
+    {
+     "title": "ブルージェイズ・岡本和真が豪快32号ソロ！ 今季日本勢トップ＆右打者歴代最多タイ スプリンガー＆ゲレーロJr.と3連発共演",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBKLU9WN3d6STRIYW1YOEh0TGtkS1RDZEVDSno4Zm9nRlpGbEM0NXc1M1RqVG40T05Ga2lBVnAtNm9lS2lrWlFwc1Q1S1d3R0VUeVpSbzZTLWFGRDltTDdGQnZ3SVc5TUxQMTZHSmttVUo4OHhZNWJSazE4eVJYVXM?oc=5",
+     "pubDate": "2026-09-13T19:25:51Z",
      "source": "Yahoo!ニュース",
      "summary": ""
     },
     {
-     "title": "【写真】（8／99）勝った平本蓮が“悔し涙”、敗者ダウトベックは激怒…RIZIN“微妙判定”に忖度はあったのか？ どよめいた記者室「ブレイクが早い」の声も…採点を徹底検証（布施鋼治）",
-     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5JaXRWV3pQZkxMWXBGQVVOczFpRGNMR2FBVGZJQjNVWENTZTgxZ3ZWLWtZZUp5aml0UmF4YUM3VmVjUVpVRzRwWTUzRGlJMTN4Q2xNR3c5eWJXZy0yb3dUZS13?oc=5",
-     "pubDate": "2026-09-13T17:30:01Z",
-     "source": "Number Web",
+     "title": "大谷翔平の代役で“飛び級”初昇格したドジャース金の卵 １０打席目で出た初安打が確信３ラン ５階席への衝撃特大アーチに敵地騒然",
+     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9rX0tZTl9EOTF1dkJzS3hBVXM4eVRZaXpLZTdpUWVBYVRlYUM0NWVxbWhNZjJ0VnM2ZTBBcnMtUTV2aXY0clJJNkZvcVdhS3oyNWUwWExNeWJsSUE0bVhqTldn?oc=5",
+     "pubDate": "2026-09-13T18:53:00Z",
+     "source": "スポーツ報知",
+     "summary": ""
+    },
+    {
+     "title": "佐々木朗希、メジャー復帰は１９日以降に ロバーツ監督「シンシナティでは先発しない」 右手中指のマメから復帰間近も…後退の可能性（スポーツ報知）",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1ETWhMSDExX0RHTWtQX2FjYktaTlpNTkFZNzdNRExfU0Vqanp3SHZMMnZZcjk0TEppS0xhcUNCZzZId0pXeXUxcTYyUjZ3VlNmWW84YThyNlNHOFV1b1I2T2xnZjhUVVBlT0FxcXRfcmVvSUZGQ2JsYUFOc2RNSVE?oc=5",
+     "pubDate": "2026-09-13T17:40:28Z",
+     "source": "Yahoo!ニュース",
+     "summary": ""
+    },
+    {
+     "title": "ホンダF1にとってスペインGPは厳しい週末に……折原エンジニア「今後はパフォーマンス向上により注力できる」",
+     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOeWpoVEd2UU41RGtGWE52Y2p5SHREY1ktS0VBUzc3MHRDVW40c2wxc0g0Z3QyYTBYVnpzbWMtTTdDcmtqZVBvQ3Zjc3RpdG5kZU1UUXBxbFl1OXk3ajdNZFBhUE5KZGJGSFBpcE1hSHhlQTVEclJsVzhHTnotY0t3RUVaQjJCamE3N0N1UzNQSmg0Q1NjYm1CM2NtRQ?oc=5",
+     "pubDate": "2026-09-13T17:00:10Z",
+     "source": "motorsport.com 日本版",
      "summary": ""
     },
     {
@@ -471,7 +548,7 @@
      "title": "【アメフト】Xプレミアで異例の試合中止 オービックの「プロ契約違反問題」巡り 富士フイルム海老名「棄権」扱いに",
      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5MZ0E0dUJxNlBBM1lHaTVNRm5EblB5NWZsNElzd0tYOTZUelI5Qk9aNDBHYXk1NXVLQjhONzVHS3lDeWtRM2FiMG1ETFgwSnJYSmRkNzFlbWNOUQ?oc=5",
      "pubDate": "2026-09-13T16:12:32Z",
-     "source": "bbm-japan.com",
+     "source": "ベースボール･マガジン社",
      "summary": ""
     },
     {
@@ -482,10 +559,17 @@
      "summary": ""
     },
     {
-     "title": "中日・森博人、2022年4月2日以来の勝利投手 中日・高橋宏斗、阪神・才木浩人の投げ合いで輝いたもう一人の「ヒロト」",
-     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1aY3ZRVFN2anJUVVZpZ3ZvcDZXZ0hub3N6RjNvYUdubXVvUlItc3RVdU9McUh6bFlWbDBWNF9fZFZjeWpNR1ZJazVQR2R4Nm1MQ0I0Sg?oc=5",
-     "pubDate": "2026-09-13T13:37:46Z",
-     "source": "中日新聞Web",
+     "title": "森保監督が張本勲さんへの思い語る 広島つながりで親交「競技の枠を超えて本当に応援いただいた」（東スポWEB）",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAyZUZBNkZmUEJQZkdvcTZjOGVISDI0OG1pY0dic29nWEo1YmVxX29Vcm9fdjFublJkb0l4TDlrMmlKemRCRVk0MjJiWW1CUV85dnJfc1dKYlYySVd5eGFKZ3lKaFBKRmFkUVY3Y1lMM0pKbXY3QTExQ0JyTk81QVE?oc=5",
+     "pubDate": "2026-09-13T14:40:24Z",
+     "source": "Yahoo!ニュース",
+     "summary": ""
+    },
+    {
+     "title": "「見たことないレベル」 日本、韓国左腕に脱帽 U18アジア選手権",
+     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1kUnIteGlnMkVZUFBZdzhMR05mZnU4VVo1dHRZaWd0MDdmcXZLdTBaTVY3MVZ5OGZUckVTNzVZb1Z4OFQ2Y2FBWjV1T2QtODJuNGoyN2daNlA2MF92dUM0TFJ6Mno0ZVB2MGZsbUFfbTdla3BLUWc?oc=5",
+     "pubDate": "2026-09-13T14:23:32Z",
+     "source": "バーチャル高校野球",
      "summary": ""
     },
     {
@@ -500,76 +584,6 @@
      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5yaUFQSW5TeVZYYmJlUnVBdWRUN1lad082d0d4bTlVNlc5eS1BTjIzUmlZNHVxa3VOdDBEeWdKVGI0LXlXbXBUbmFRdWI1czRnb20xdnQ2a2ZwWEt5STV3?oc=5",
      "pubDate": "2026-09-13T13:18:27Z",
      "source": "fagiano-okayama.com",
-     "summary": ""
-    },
-    {
-     "title": "有原航平 ６回１失点で今季７勝目 引退表明の中島へ感謝の思いも「ずっと卓さんがショートで」",
-     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBsRmNLQ1JVWHcxRmo4TnhYd2JLN2dpTF94LVdISFlaSnZxZm95eHVHX0JkODg1TnZZck0wNV82VmF5aUhsc2gzY0l0SFVjOEtreS16RmZxMmpvdXZZVlVUM3VB?oc=5",
-     "pubDate": "2026-09-13T12:48:01Z",
-     "source": "道新スポーツ",
-     "summary": ""
-    },
-    {
-     "title": "【順位結果】2026MotoGP第14戦サンマリノGP 決勝",
-     "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9zVFZheGwxbkVURFZhZzFNeFpHRTNWcS15MGh1OXB2WTdQWmQwcTJYNXN6S2tFMUotRTlKVGNOMDRKRnZpSEVZejNR?oc=5",
-     "pubDate": "2026-09-13T12:48:00Z",
-     "source": "autosport web",
-     "summary": ""
-    },
-    {
-     "title": "立命館大学 vs. 京都産業大学 ラグビー 関西大学リーグ 2026｜視聴画面",
-     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBHY0N3Y3VQSno0N0NWc3VoZHE0V3ZhLXRfS3BYbHY5bjVZdHZabjI5X3phYUVkbWJrZG03SUxzd2hSOWYzcm1sYkJCUlR5Y18xbkRlVVh5OWtrSi16bVd2cXV5R3lDX2hT?oc=5",
-     "pubDate": "2026-09-13T12:43:57Z",
-     "source": "jod.jsports.co.jp",
-     "summary": ""
-    },
-    {
-     "title": "アジア大会で白熱の日韓戦…黒川虎徹が21得点も男子日本代表は敗戦、グループ2位で決勝Tへ",
-     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE85X0s2Ni1vQWRvQ1NGOHdVcDYyUEVOUWFDUkpHdy1YeE9vNEFQd1UxSWozdk1mNUtIVE1QSFZKNDE0LTFqMXI0Tm41RG8tak9iU1VoU2E5ZVpCRGpBblEwNWNHYmJtSllS?oc=5",
-     "pubDate": "2026-09-13T11:59:49Z",
-     "source": "バスケットボールキング",
-     "summary": ""
-    },
-    {
-     "title": "【ＤｅＮＡ】今季３度目の５連勝で借金完済にリーチ 序盤のリードを竹田祐ら４投手の継投で守り抜き完勝（スポーツ報知）",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE92eTlwcDFLRlpuMnRubm01NmhhblAxU0lnYUFuVUhDWlFKVDhEOWI0MjJTU3hNLUFsMVM3N0VuaFIycENxYV9IekpqUGxVcjFGTzFxNVBSRy1RVzAtSUdLd3hZM1Q0TkJzdF9pZmg0cVZVYkYwY0NUQUtrRngyU0U?oc=5",
-     "pubDate": "2026-09-13T11:37:13Z",
-     "source": "Yahoo!ニュース",
-     "summary": ""
-    },
-    {
-     "title": "陸上大会での集団食中毒、京都市保健所が業者に立ち入り調査",
-     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5jUWpUOEI2WnFRcHVsa1NEVUgtUUUzVmNWZHRrTHBiNkg4UGpaQ2xoZGpyUXVJZmVFV3VJazhZQk1HTmNtdUtHOE54MTFDSVBwemEzb0RrZlMtMDJMRGRnNlp1NTd0UQ?oc=5",
-     "pubDate": "2026-09-13T11:08:00Z",
-     "source": "読売新聞",
-     "summary": ""
-    },
-    {
-     "title": "【一問一答】中島卓也 第４打席に意地の安打 ファーム引退セレモニー後に後輩達へ「そういう気持ちを忘れず頑張ってほしい」",
-     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8wWVRRdTczZVd4bU9xYUU0UEVrSVBVU1hzQ1ZwRFlOSE5qV3lLOU1Uc1NDcFpIUnIwRU90ZklISlUwdUlJR0EwVXg2QTBodlpjRzh4eXowaGZfX1FhNjhMMTRB?oc=5",
-     "pubDate": "2026-09-13T11:04:49Z",
-     "source": "道新スポーツ",
-     "summary": ""
-    },
-    {
-     "title": "決勝・日本vs韓国のスタメン！日本は智弁学園の148キロ左腕が先発！【侍ジャパン】｜記事一覧",
-     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5nampfbDU2VzRNT3AtYzVHYXFiSi13QjRKNDJkWkVFSWJ6aUJMcTFvN3VHNndnakVTMnd5TThacENsYy1VdXVyZGVhVDl3d2lGSFE?oc=5",
-     "pubDate": "2026-09-13T10:59:13Z",
-     "source": "高校野球ドットコム",
-     "summary": ""
-    },
-    {
-     "title": "大相撲秋場所初日 大関復帰の安青錦は白星発進",
-     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE83TE42Qi1iMEJlLS1QcC1wX1dxTmhBMnY2M200b1BMMDV6Ql92aHh3SG9ycWE1VVZkSUx5NXUtNEpXUkM1V0d5TG5JQXhpMXByWlJ2VXZBT3Y5czRuRlJn?oc=5",
-     "pubDate": "2026-09-13T10:32:23Z",
-     "source": "NHKニュース",
-     "summary": ""
-    },
-    {
-     "title": "バレーボール - 男子アジア選手権 2026 決勝ラウンド 決勝 日本 vs. イラン - 試合経過",
-     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE8tUzhQY0w2b0UwSWFNZlFEYlFsaTlHYklubmJSandjQVBERjRPUFliRW8yc3Q5N3pqVm5tN1RfTmJpbnN2Q3hHcEFPWXRVWHJqdXZXdEpSOG5PNzIzNHlKdE9WY0hUZHI4cVZ4TXBTMG5Wd045T1VFSzYybXVrQQ?oc=5",
-     "pubDate": "2026-09-13T10:30:00Z",
-     "source": "スポーツナビ",
      "summary": ""
     }
    ]
@@ -723,7 +737,28 @@
    "sourceUrl": "https://news.google.com/rss/search?q=%E6%9D%B1%E4%BA%AC%E6%A0%AA%E5%BC%8F%E5%B8%82%E5%A0%B4%20OR%20%E6%97%A5%E7%B5%8C%E5%B9%B3%E5%9D%87%20OR%20%E5%86%86%E7%9B%B8%E5%A0%B4%20OR%20%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A8%E3%83%BC%E3%82%AF%E6%A0%AA%E5%BC%8F%E5%B8%82%E5%A0%B4&hl=ja&gl=JP&ceid=JP:ja",
    "items": [
     {
-     "title": "日経平均「6万3000円」を割るとどうなる？ 今週の株価を左右する“原油100ドル”｜週間マーケットナビ",
+     "title": "１４日の東京株式市場見通し＝急落スタートも一巡後は持ち直しか 速報",
+     "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE9lcGNSdmJVRXZsdkcwWjJEbkg0eC1xTG4xZUI3dzYtSk44aWhMU19MZ3gzeGhrMlZSTW9RQlNMQzRXVmU0Zzg0?oc=5",
+     "pubDate": "2026-09-13T23:00:00Z",
+     "source": "kabushiki.jp",
+     "summary": ""
+    },
+    {
+     "title": "【今日のドル円】昨日の振り返りと今日のドル円相場見通し 2026年9月14日",
+     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFA2aV9kMGNyYVlGeEtEMFdiUFh2WHBUeVg1N1Mzazh4c0wydHRKcENOakZIUkVqR253QUNrN0RzWXByR01MdjA4OVl6X3J1cXdrV1FVNUtXa1ZCVmRWbDlqQThzTQ?oc=5",
+     "pubDate": "2026-09-13T22:06:00Z",
+     "source": "外為どっとコム",
+     "summary": ""
+    },
+    {
+     "title": "シカゴ日経平均先物 大取終値比 575円高 （9月11日）",
+     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA2T0M3RFlET2VYTTJIYjdZLVM4ZnJHcTcyZ1JIdTFudUh4SEV2RVVqcUh6M0hKaFJRVkhfY2hDVWtIc2NzN3dJdDRVM2sxUlplT1lVVEU4ZFZrSG1VSjFUVw?oc=5",
+     "pubDate": "2026-09-13T21:55:00Z",
+     "source": "kabutan.jp",
+     "summary": ""
+    },
+    {
+     "title": "日経平均「6万3000円」を割るとどうなる？ 今週の株価を左右するのは「原油100ドル」｜週間マーケットナビ",
      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4tVGtjbGJkUnlmMjBZVzZxNUFZYjZXYm5VQjh4Mk0yRXA0ZE5sOWtkQXZBdUlrUWhhNk15M2M0LVlXYlozWUlhdkl1dFBPdnhac3lDWnNtcHlWdEdma3VSaDVBR0JuVFE?oc=5",
      "pubDate": "2026-09-13T21:10:00Z",
      "source": "日刊ゲンダイDIGITAL",
@@ -754,7 +789,7 @@
      "title": "日経平均が下げ止まるきっかけとなる2つのポイントは？",
      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5PY3V4SlR2QzUxXzFnN2VpT0RNRE8xdnJHTXM5RjBKS0JiMzNCSm45bXdjN1ZueTBPNDF5dUF4c241ZmhPY3QyUnVIcElSb3VqdHd0X0VTOA?oc=5",
      "pubDate": "2026-09-12T23:00:00Z",
-     "source": "四季報オンライン",
+     "source": "shikiho.toyokeizai.…",
      "summary": ""
     },
     {
@@ -762,20 +797,6 @@
      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5iaVN6bDBsd1RVUUh3Y2hib2pZbEJPeFNiWFNxRWlrRXUwWVZabXNZOTZOSXV3eWd2cUl5bGxxWnNCeHBVM3gyZVNJQnFZdWlqWmllYXlPbDNwWm1hekdEZVF6aw?oc=5",
      "pubDate": "2026-09-12T21:04:27Z",
      "source": "外為どっとコム",
-     "summary": ""
-    },
-    {
-     "title": "シカゴ日経平均先物 大取終値比 575円高 （9月11日）(株探ニュース)",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQZnFPaElRMUpBaE05R1hkS2VIT2xpNmpmUnI0Z0xzdWx3RHhmM1ViMXhEb0xlZjVpN01JTEtCUnFaUFFQaWVtVk9kM0cwOExBdnplM00xdlRzUmdvX1pPOXA2X1gzMFk0TGtWUGp2SGN0S1N1SUduTm54VmdYTHRvcTltQ1QtbzA?oc=5",
-     "pubDate": "2026-09-11T22:36:24Z",
-     "source": "Yahoo!ファイナンス",
-     "summary": ""
-    },
-    {
-     "title": "シカゴ日経平均先物 大取終値比 575円高 （9月11日）",
-     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBrODA1WkhEODktTEFJNEVVdmJ0aWhsSW92RUdwdk5qTFNqYzBqeVZWMEVEcURKRk9iekh0QXduSEpUX2thSl9ZS0QxV1MxZFlvVUtfTnVaX1BFMlRfMGl6WA?oc=5",
-     "pubDate": "2026-09-11T22:35:44Z",
-     "source": "kabutan.jp",
      "summary": ""
     },
     {
@@ -831,7 +852,7 @@
      "title": "11日の日経平均は大幅反落､原油急伸と金利上昇が重し",
      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE8tcjM2V0JSUHZ3NHlMbkV3d3N1NFdoMkw2RTM5b1RfNURROXlXRTlLZm5ZdnRoNXNPV3Q1QnFWbjgtZ2t0Z04xeDN6THJkakExcnNqSkd0MA?oc=5",
      "pubDate": "2026-09-11T07:50:00Z",
-     "source": "四季報オンライン",
+     "source": "shikiho.toyokeizai.…",
      "summary": ""
     },
     {
@@ -854,19 +875,110 @@
      "pubDate": "2026-09-11T07:18:04Z",
      "source": "kabutan.jp",
      "summary": ""
-    },
-    {
-     "title": "日経平均は急反落、日米金利上昇や原油先物高など嫌気",
-     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPcVBTOXFYbzRMb3dRZkhnLXBYNDQ3Y21Vb2xKRkVwSWRtYkxfd0ljNlpNd1VlRHpsc0M4SlpfTHJ3MmdQVC1oSnBLMmNmT2xvLXVZZjFpUHR2TzZjcDlJODB2UmNQaTl4ajU5QndqOERPZWd1WDY1ZUd4emstem5QMEc0aHU?oc=5",
-     "pubDate": "2026-09-11T07:15:18Z",
-     "source": "Reuters",
-     "summary": ""
     }
    ]
   },
   "economyNews": {
    "sourceUrl": "https://news.google.com/rss/search?q=%E6%97%A5%E9%8A%80%20OR%20FRB%20OR%20%E9%87%91%E8%9E%8D%E6%94%BF%E7%AD%96%20OR%20%E5%88%A9%E4%B8%8A%E3%81%92%20OR%20%E5%88%A9%E4%B8%8B%E3%81%92%20OR%20%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AC%20OR%20%E7%89%A9%E4%BE%A1%20OR%20%E6%99%AF%E6%B0%97%20OR%20GDP%20OR%20%E7%B5%8C%E6%B8%88%E5%AF%BE%E7%AD%96&hl=ja&gl=JP&ceid=JP:ja",
    "items": [
+    {
+     "title": "FX/為替「ドル/円今日の見通し｜CPIでインフレ加速は確認できず FOMC控え様子見」 外為どっとコム トゥデイ 2026年9月14日号",
+     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9fQ2ZOYWk0Y2JyNjZvbnFuN25nNFhpcjlHdGltRzJlUmVtazZ2Qzd6QzFLZWNkeE9iNEozQlFsVWdZaElKekx4TkVua09ZVzRoRlNubkhvQTA1QXJOOEdIQVdJbw?oc=5",
+     "pubDate": "2026-09-13T23:13:00Z",
+     "source": "外為どっとコム",
+     "summary": ""
+    },
+    {
+     "title": "原油高・高物価・高金利の三重苦…世界の緊縮時計が進む（中央日報日本語版）",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9NUTA1elFBNTZkWlNyUGNodC1EU240dmlEUGNhR0h2djlPVm1YSk5hLU5TNHFHMjNOWkNrZU5GcHA1T09qdzR5ZHhuMkd4Qk5Hb0JlUjhPdmJNY3VEcHBwblRTeWFBQ2Z0Q05mY0NfNUo1SXlMRldtUUl0Ry1GYkk?oc=5",
+     "pubDate": "2026-09-13T23:03:39Z",
+     "source": "Yahoo!ニュース",
+     "summary": ""
+    },
+    {
+     "title": "東京為替見通し＝ドル円、日米金融政策決定を控えて動きづらい展開か",
+     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5rYm0zajg0RlBwY0FRTVlJcDhOVzZjR1ZsSDk2UlNDc0kzNUkxT0lWeVE1U3lWVEliOUR5eFMydlh2MmZLcW9TZlQ3eWxBalFyZ2c?oc=5",
+     "pubDate": "2026-09-13T23:00:00Z",
+     "source": "ザイFX！",
+     "summary": ""
+    },
+    {
+     "title": "【本日の見通し】今週は中銀ウイーク、日米ともに利上げに動くかに注目",
+     "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFAxR1BQS3JmeUVvazFPeU9BZjFXMGlCenl6SUlOZVc0X0RqN2thY01SY1ZrbUh3VkU3ZHVOSVVjQko2VjhPRTBCXw?oc=5",
+     "pubDate": "2026-09-13T22:45:57Z",
+     "source": "みんかぶ FX/為替",
+     "summary": ""
+    },
+    {
+     "title": "ドル円午前の為替予想、CPIでインフレ加速は確認できず FOMC控え様子見 2026/9/14",
+     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBJcVZMQmhCVXFIV29oQkNUT0ZCaThJbXZDLTJhV0pVX0ZtY2NyLWpVTUVqbGZXOGdFVUdXaF8ybUUzOFNXN2NqOFRyNGVFZUU0NkZUSW1RU18zcGtSWWFYRV9FVQ?oc=5",
+     "pubDate": "2026-09-13T22:43:00Z",
+     "source": "外為どっとコム",
+     "summary": ""
+    },
+    {
+     "title": "【ヤフコメで話題】「ボーナス支給の二極化」「景気実感とボーナスの関係」 - 日本企業のボーナス事情に寄せられる声",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4wcDdJSTYwOHZoc085LWJHUURxY2lNZlJhNTRUNEFtc2lUdXhnXzlmNy05UU5fU1VtcUtqcHJVc1E2MEtLZzdhM1laYkMzLWtqc0NoU3RVUXcxOGEwZ0xwdEsxalBFU0ZBZEhSNGZ2X1hvdnhVeDRWRWNneGNYXzg?oc=5",
+     "pubDate": "2026-09-13T22:29:17Z",
+     "source": "Yahoo!ニュース",
+     "summary": ""
+    },
+    {
+     "title": "トランプ氏、ＦＯＭＣ控え「米国は世界最低金利であるべき」",
+     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQTHU5VWY5QUxWRlRNV0dwUmVaX0ExU3BBN2xMQXRYMnJKenpuSTFNR1drTEVOZWp1NWNyWVlRZm1objZaU2w0aWNBY0dId0ktOGFDXzVHQmJEZGktQmZLMVRxN3BGenJ3X0NpLVZZYkZTVkNTNFNUYVV0M1FRbHM0VFJXWW4?oc=5",
+     "pubDate": "2026-09-13T22:07:43Z",
+     "source": "Reuters",
+     "summary": ""
+    },
+    {
+     "title": "フィリピンGDP成長率「2.3％」に急減速だが…アジア開発銀行らが予測する「後半回復」の根拠",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9hb3Exdk01U2VxVWJJUW9kc09MNUtCNkNxQzZxUzU3aWgwczFSdFpBZjVLY1F1WDFISVotTW5lQTlKLVl4LXEySzFEM2ZDMGJkd3MyblFYVFdHRzhELXZsNlJWRGduX3ZqdG14aENOc2dzeHA5T25RNERvelNjelE?oc=5",
+     "pubDate": "2026-09-13T22:04:53Z",
+     "source": "Yahoo!ニュース",
+     "summary": ""
+    },
+    {
+     "title": "戦後最長の“景気拡大”にも「全然感じない」 政府が示す数字と生活実感との深い溝 私たちの生活が良くなるのは「来年4月」･･･",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9hbGdJVjJqVEI0MEsxUFhvTUd5UVV6WjFUMW9na05iNTViMjVhTjFvNk1yNmZ3S1JlVUlrbUMwc2otZHZ2d1BscHVEVjI0TUJpSklIN2M1Q0pZZW43VHpnZUJNUHlxcmVGeTYzZFVoN2gwaVIwT3pKU1BQQlRRWTQ?oc=5",
+     "pubDate": "2026-09-13T22:04:16Z",
+     "source": "Yahoo!ニュース",
+     "summary": ""
+    },
+    {
+     "title": "世界的なインフレ再燃で日米欧が金融引き締めへ 米FRBは3年ぶりの利上げ観測",
+     "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5WV1ZETzcwMGFkd3ROal82VFFvVjJlamkwRzVnTXZkTlFUVGtiZWRGNUlKczVZZzFWQkdLWHpmRTVGdmV3Z2RQVDZHbV93ZUVBSXhj?oc=5",
+     "pubDate": "2026-09-13T22:00:02Z",
+     "source": "東京報道新聞",
+     "summary": ""
+    },
+    {
+     "title": "米10年国債利回り5%目前、市場と経済に新たなリスク－FRBに重圧",
+     "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE01Uk9qVWJucmZPMnAyQmRaTUwxX0lDWHROcjVlX3NteWhtY0g4aGxXYjBiakhySzNLNm51QU1VN1VxVEo3ZTRyNW1URFFtUjJFamZxVjJ6TzBuRDZnQTNoVmc3Z09IUy1Gc210RmtUWlp3TGNBbkMw?oc=5",
+     "pubDate": "2026-09-13T21:39:30Z",
+     "source": "Bloomberg.com",
+     "summary": ""
+    },
+    {
+     "title": "ウォーシュFRB議長、トランプ氏と衝突の軌道－CPI受け利上げ観測台頭",
+     "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9DRFhtUXUwaGROeVdVX0pxdGl4NjlpaFMxZ2Y4R09xNDFrdWpKdjhvY0s1ZC1BLTJadV9OZldsRkVsT2d1ZGZrempTTzNDVmdwZ3ZYeFdEWUNnWWFEMXpZcGlFQm1DZmJra2oySURxbmdTaDBVWk9n?oc=5",
+     "pubDate": "2026-09-13T21:38:05Z",
+     "source": "Bloomberg.com",
+     "summary": ""
+    },
+    {
+     "title": "今週、ビットコインは金融政策の山場へ──FOMCと日銀、相次ぐ利上げ判断が試す市場の耐久力【エックスウィン】",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1UZlVqZzhOLWZNUEx0T1lZR2Z5SUUtSTFhdHQwZFVQMG41QTFWTk92VV9xZGQ5bEx3MXFjRXdTLVkyM1plNjhLdGJPd2hjMUtiU1FuSWRueTk0a1VQS3pNR0NVY05sdkZUdFc4UDJ5NXRyNUpEdHdPNGNyREN6NTA?oc=5",
+     "pubDate": "2026-09-13T21:04:51Z",
+     "source": "Yahoo!ニュース",
+     "summary": ""
+    },
+    {
+     "title": "日米金融政策＆１５５円割れetc＝ゼロ金利制約下の財政政策（窪園博俊） - エキスパート",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNV1RDM2FMcmtBYkdGaEtwNzlOcHVyZ1VLVlVqTjVOYlB6Z19nYTVNajIzS3hhRGlybERyd095R0E0Ry1WWXJ4ZU1qZFp3YndFY1B3TDloWVZ6a1F6aHRXQm9yZ2llb3pqelNwUjJzYzZGMS1jSjBHZ2k1QmVXdHpzd0pFSWJ2ZVRM?oc=5",
+     "pubDate": "2026-09-13T21:01:21Z",
+     "source": "Yahoo!ニュース",
+     "summary": ""
+    },
     {
      "title": "ベッセント氏「日銀の複数回利上げ」知る？ 円安再燃も、市場の見方",
      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5SeWpUcFJnNkpvZXBTLTVYelRGTmw0OVo3aGZOOXdyWk15OVlZSkxabERzblJxMGE3NlFjR1lxVTNWV1RpSmJWT1lqR1l2a245cXk2ZFkwVVBObkRSa1VmMU1pdFFoVFRnUEpaOA?oc=5",
@@ -896,13 +1008,6 @@
      "summary": ""
     },
     {
-     "title": "トランプ氏、米FRBが利上げ検討の中「世界最低金利」要求を再表明",
-     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBHa1llT1NyT0ZkSHJ5Q21fdEpPQ29qWnJXMFhNQVhfSWZWOTdvczFGSjR4a3lLVmRrYl93bl9PU09XSzdRZnZkUXlxNHp2R2hldkdHSWJPTmJpUTJRQ0ZNdk1CQkdHaVhZZU5XV2F2ZFhfQkVO?oc=5",
-     "pubDate": "2026-09-13T17:35:00Z",
-     "source": "BigGo ファイナンス",
-     "summary": ""
-    },
-    {
      "title": "トランプ氏「米国の金利は最も低くあるべき」、FRBに利下げ求める",
      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5hei1fbXRXdzFSQ1hRaHVoSm5pcS0xc3V5RGZ0emtfSDFaUFdfVndERjJ0WGppWEdEdlJQcm96Nzg1cldmTjFDeFVLeEY0eG9TamRNd0t1amFVbERmRG5BZjVPOC03RUhabFpyT0hpS0xsRldrbldlMmJn0gF_QVVfeXFMTjBHOUxETWVZU1BXRFlCSWd1cTRWUXZjclB3Mm9ZLWhoX2xCLWRfQTlEVHhGZjlZNldhV2FEOG43Y3pCYnFlSFZicTI2c3A5aU9zM25zVzVNZXFNQk4zZ2lxWk5ZdDJZR3c0WmdWWk00RjNyTkR1R1pwTUJDWldrSQ?oc=5",
      "pubDate": "2026-09-13T16:45:55Z",
@@ -915,97 +1020,6 @@
      "pubDate": "2026-09-13T16:16:12Z",
      "source": "note",
      "summary": ""
-    },
-    {
-     "title": "中央銀行はインフレ期待の設定において市場の見通しを重視すべき＝UBS 執筆 - Investing.com",
-     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE51eHBpTjRHc1N2VEM4WDBGS25vMVZrNTdCYnB4ZVN2QlVXTEZjcUdNa1ZITnNaR1lGam85SThMOFdLSEFpd0VfaFpua0hhNFVFSWZRNW5lQjkwdmxoS1BaZHJvSlBic3hleFE?oc=5",
-     "pubDate": "2026-09-13T15:05:00Z",
-     "source": "FX",
-     "summary": ""
-    },
-    {
-     "title": "世界で戦うための「自己管理能力」気力と体力で負けない 元日銀・清水季子",
-     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1NUFdFZjVQUXktYVBCTXdHSUdwNzg2Q3REM1ZhNmRhMjE1QXM1TWxXY19RUlh1SWVIalpScFFqVkRaVmNCRFh4aEg2czNVd1Z3eXp2R2ZYMENwaG9GMnR3VXRWUEowOUVtVHJiQQ?oc=5",
-     "pubDate": "2026-09-13T15:01:00Z",
-     "source": "日本経済新聞",
-     "summary": ""
-    },
-    {
-     "title": "米連邦準備制度の利上げはインフレではなくウォール街のためだと経済学者が指摘",
-     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNR0RDQkd4akxNUGNINlVERWxwTldYN3AtZTRfNlA1cE1GWUlsb3AyWGpNRm5nMFFjMkt6UWN5LTlDT2tXazY0MXlIcnpsQjhnUU9zeUNpZmxjMmlDU043SzFBekhyVEw0NnZ6LWlERWZGR3RPU2o5eHpqZFlKM3psSVpWNmVWbS1tVTB1dGVqNzdadWlHRGRRWDhuOXJWcEdfczFFREIxaWwyN0hlV1JR?oc=5",
-     "pubDate": "2026-09-13T13:22:55Z",
-     "source": "CoinDesk",
-     "summary": ""
-    },
-    {
-     "title": "米国株式ETFから45億ドルが流出、FRBの利上げを織り込む 執筆 - Investing.com",
-     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9SNDhEMWptUlA2LW1sN2dWUlFmNUtkYnhHbXUxNFA4T3NGOXNndDF6NjY2Z01SYVQ5T3JCZEt3YXVVSEl5aU1rUThYaTBtYmYxT01sNktYN2RjdFVrU1M0N1RNVnE3dFdiX1VjZ0RMUFo?oc=5",
-     "pubDate": "2026-09-13T12:37:00Z",
-     "source": "FX",
-     "summary": ""
-    },
-    {
-     "title": "日銀の利上げ公算大 家計への影響",
-     "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBXd0JGcHBLOGhJWU01SG1PWkVkZU9MLTRkdFhxQ1FDRF9SdzN4eVlrdUFTalVZV3Z4bVRqMlZITGptWGtJNlFlckstcnAyaTZr?oc=5",
-     "pubDate": "2026-09-13T11:12:49Z",
-     "source": "Yahoo!ニュース",
-     "summary": ""
-    },
-    {
-     "title": "日銀は利上げへ、上値余地探る円相場 今週の市場・予定",
-     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBzYWllSUNleUotYTViMzlqYnBMblhnU2xfai1tWkRSNE9sZEtha1FLYXR4WnhsUTdNcGZlUWhiaDBKN0ZibnRhQUpEX0tMYnJCM080WjRoMWhVQzFBRS1pTVJGdUZjcENzZ3UyVQ?oc=5",
-     "pubDate": "2026-09-13T09:00:00Z",
-     "source": "日本経済新聞",
-     "summary": ""
-    },
-    {
-     "title": "株価がわかる日銀短観【モヤモヤサテライト】｜SPECIALコンテンツ",
-     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9ER2hMR0dWRnNqaFI4c05ETUMwcE41eUIyVUFZaTBGaWpuY3BfaWRWOUppU3R5Mk9mRmRRTXhFT1ZESldzazZwaF8xLWtCRWJDc2JLZlo1ZHBMbFV3ajktWF9yaE4?oc=5",
-     "pubDate": "2026-09-13T09:00:00Z",
-     "source": "テレ東BIZ",
-     "summary": ""
-    },
-    {
-     "title": "景気拡大 企業と家計の「明暗」",
-     "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5ZbGs3amRSdjM2YURQQmZZcXE5UVl1YVpjcmI5WGd0ckVfRS1Nd3l2aTRQS2dTQUFpRHdaVl9KMlBZb3ZMS0RNZGxLU3dLLWp6?oc=5",
-     "pubDate": "2026-09-13T08:41:52Z",
-     "source": "Yahoo!ニュース",
-     "summary": ""
-    },
-    {
-     "title": "今週の【重要イベント】米小売売上高、FOMC、日銀金融政策決定会合 (9月14日～20日)",
-     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9xSWhqbjZMLW85aUZ6X3ZLa1ZyUExabVYzYmxPRlJRdjJKNVNJQmdFcmk0YUxyUnpkWjBIWFdqems1ZXAwYm1lelNtZy1GRkRUNGFkSTFmVGpVdk9BNThJdQ?oc=5",
-     "pubDate": "2026-09-13T08:30:00Z",
-     "source": "kabutan.jp",
-     "summary": ""
-    },
-    {
-     "title": "今週の【重要イベント】米小売売上高、FOMC、日銀金融政策決定会合 (9月14日～20日) 投稿日時： 2026/09/13 17:30[株探]",
-     "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFB6alVkd1FBNG1Qc2ROY0hIbVM2U3lLbTB0UFhTazcydmVLVzk5RWpHT1VSWWRIaTRVQ1RRTGxadEloelVLS0E?oc=5",
-     "pubDate": "2026-09-13T08:30:00Z",
-     "source": "みんかぶ",
-     "summary": ""
-    },
-    {
-     "title": "日銀、FRBが注目の会合 日銀利上げ公算大で30代は4万円負担増も トランプ“5000ドルショック”で米金利急騰",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5DN0E0ZW5zUW5uRmhINFl1Qmo3YU1zUDB6UlQ2OTJocHY2VERZQ1JPaTB0SlRFVUUzRlhYS3o1ZTFCZTBhV1RGWjlRRGtYU2RoSGhLVjZ2bG94ckRuOGZvc0oybUY5VEdrWlNmQ3RwTDRiaEhiNzNCelpSVGllZVk?oc=5",
-     "pubDate": "2026-09-13T07:59:19Z",
-     "source": "Yahoo!ニュース",
-     "summary": ""
-    },
-    {
-     "title": "【焦点】FRBと日銀、利上げの公算－G7中銀のタカ派スタンス鮮明に（Bloomberg）",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA2VldJRXp0ejJUbG14T1NZWUJFOURTQ2FjUG5BOVlfaWNNcS01eTBBb1MwdEY2bnh3OXdidy1LNjdXalIxbnNQV0x3a1lISkxCdUdVb29nM2ZiVnQ4a0RqdERCT2NoTVZRaElkS0Q2NGw4TXdRME1iTFBtRFlMSzQ?oc=5",
-     "pubDate": "2026-09-13T05:45:53Z",
-     "source": "Yahoo!ニュース",
-     "summary": ""
-    },
-    {
-     "title": "“実感なき”景気拡大 戦後最長「いざなみ」超えも…立ちはだかる「物価高」の壁 企業と家計の“明暗”が 家計への恩恵見通せず 【サンデーモーニング】（TBS NEWS DIG Powered by JNN）",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBqRXloOURJZlUybktkYmh5clNQMEhBblpZMjZtbGxXX3dQdndwUXFxd0otMUdmT1ZPS0Q3Wi14RGptODZQSTBqOXd3eTQzQTRjQTJUZGs5eDdjcG5mQ29pRzQ0ZVFPOGRlbkxlcHl3QnF3cURnWVdadVBFRk4zeTA?oc=5",
-     "pubDate": "2026-09-13T05:22:14Z",
-     "source": "Yahoo!ニュース",
-     "summary": ""
     }
    ]
   },
@@ -1013,18 +1027,18 @@
    "sourceUrl": "https://news.google.com/rss/search",
    "items": [
     {
+     "title": "「カレーハウスCoCo壱番屋」の“親離れ”は吉と出るか？ ハウス食品が株売却検討の波紋（森岡英樹／経済ジャーナリスト）",
+     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBFSHkwVDRwUERIVjRHUEcyYWJ1eXB4ZFljOXk1dmVLajg1bm94NlRPUkQ3R01JaWdrRVFUM3FZWHloQ09abDZzVmlmM1daSG0zQkRJY0RpdWVJOThjY1puaDUzVEM?oc=5",
+     "pubDate": "2026-09-13T21:55:00Z",
+     "source": "Infoseek",
+     "summary": "",
+     "company": "ハウス食品グループ"
+    },
+    {
      "title": "ロボット倉庫にヒューマノイドを導入 矢崎総業・山善・Cuebusが実証実験を開始",
      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE0xS0FmSElEbVFLN2VrLVN4R09uYUo5TndPRXJYa3BZTzdfb3V3cXdyQnM3aFNDbVNacGpYemlZZ1d1R19KUGtYQlRYRV9vSjgzSXBhX184RmIzQWl3NVdfX3B3?oc=5",
      "pubDate": "2026-09-13T04:30:03Z",
      "source": "レスポンス（Response.jp）",
-     "summary": "",
-     "company": "山善"
-    },
-    {
-     "title": "山善[8051]：発行登録書（株券､社債券等） (有価証券報告書) ：日経会社情報DIGITAL",
-     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1TejQ3WHJsNjZadmZTdHkzY2cyMmxKdGdldy0ybENIeDVrejZzaHJDZ0N4UzlPYWtUQ1drSTNwNFA3OEVlZ0F3MnE2aTg1V19PNjJhb2tXRk5nT2xkZWx5cUJwSWVsazhzQTVEWA?oc=5",
-     "pubDate": "2026-09-11T08:44:13Z",
-     "source": "日本経済新聞",
      "summary": "",
      "company": "山善"
     },
@@ -1056,15 +1070,23 @@
      "title": "アイカ工業、社内の商品・販促データを一元管理する基盤としてLazuliの「PDP」をDAMとして導入",
      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5JbHB5ci1XdkVXMFNJRkdsRS1TSGJ4R3ppZFczRjE2bmxpaEd0MnYxSnl4LWcwNUVoSkRKTWN2VTZWNHp1V3dfWmhZX1N6TGxILTUzaUlZbmxDN19raW1XYUxiOUhJZ2RXdlE?oc=5",
      "pubDate": "2026-09-10T01:00:02Z",
-     "source": "PR TIMES",
+     "source": "prtimes.jp",
      "summary": "",
      "company": "アイカ工業"
+    },
+    {
+     "title": "山善はS/4HANA移行でアドオン肥大化、Mizkan HDは新旧システム並行稼働",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9zRUF2YTN2WTFEVUdpQ1l5Vk9UbmpBX0p5MEVqRUc1UG1MY05lUUdlclctZlFobFFEVjVLMnpBVkd3azVnWU1XMlZ0b1FiczRPVGE5WHF4OFZ4VE8yUE9tSnBPNURZOG1XMEdRVw?oc=5",
+     "pubDate": "2026-09-09T20:00:00Z",
+     "source": "日経クロステック",
+     "summary": "",
+     "company": "山善"
     },
     {
      "title": "屋外でも使える山善の延長コードがAmazonでセールに 10mで3口の「EC-T1510B」は1979円",
      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBuWjNPS0IwMGVVWTdoeXdyblhWSW1NQzliTlVnWFpsT2tOa1UwMVVuVjR1dUdWUDByOXRxdXUtSW80WnhyUGlNZ0Rpb19mQ09oY3FSd3Z2RjhDQi0tODhXanJwR3hmOGRuUHJpbmxTT2Y?oc=5",
      "pubDate": "2026-09-09T02:30:00Z",
-     "source": "internet.watch.impr…",
+     "source": "INTERNET Watch",
      "summary": "",
      "company": "山善"
     },
@@ -1080,7 +1102,7 @@
      "title": "セイノー情報サービス 国際物流総合展2026でAIエージェント×ロボットをデモンストレーション",
      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE85bEFnRE96dEp3MlU3R0x0aGxpZ1A1N0tVb1haX2pCaEJ3S3FsOTJKdmVmQk1pcGFuTVpGVXJqeE5ydHFLZWE0NG95Wk5pM2FfMUdHTG1USWNaTGt6RTY5by1oRTRxTlRrZ1E?oc=5",
      "pubDate": "2026-09-03T01:00:02Z",
-     "source": "PR TIMES",
+     "source": "prtimes.jp",
      "summary": "",
      "company": "セイノー情報サービス"
     },
@@ -1096,17 +1118,9 @@
      "title": "「第9回 塗料・塗装設備展」出展のお知らせ | 日本ペイントホールディングス株式会社のプレスリリース",
      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5vWGxNeDZ6VXlDWlhNWG85QVBqLS1XaUpMTnJVd1I4d0FlU3dPN05UOFVrbTlGMmNZdnRHUFhnSjdoMDBjenlXRHZwV3J1TGk3VXMwa0xDNEF3SFpyTkNmRkdHb1d5MmdTS1E?oc=5",
      "pubDate": "2026-08-31T07:00:00Z",
-     "source": "PR TIMES",
+     "source": "prtimes.jp",
      "summary": "",
      "company": "日本ペイントグループ"
-    },
-    {
-     "title": "カレーのココイチ子会社売却検討 ハウス食品グループ本社（共同通信）",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9UNnZYT1lSbFpnbndNamM5QTFUbVhxWm52M0RnNXJtZFZONUVTX21QQ1lZb0ZWcHh1V25RcUZHRjB0OWJyVXFGVzFUbjRuSlItYUgyenMwYV9ZeWp5U1h4Mnl1T3Q3WXhyd1BmU1lvbFBJSnE4RWJCbHVHRi1tMFk?oc=5",
-     "pubDate": "2026-08-31T07:00:00Z",
-     "source": "Yahoo!ニュース",
-     "summary": "",
-     "company": "ハウス食品グループ"
     },
     {
      "title": "アイカ工業が高級塗材の床用を発売 継ぎ目ゼロの人造大理石調デザイン：新建材",
@@ -1208,7 +1222,7 @@
      "title": "製造業のノウハウを融合した「物流革新プロジェクト」を本格始動(ニュースレター) | 大和ハウス工業株式会社のプレスリリース",
      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBoRjlEcHpHbUM5OVlaZXVkUXdBbGE2bTYxb2pKcHNCNlhtM3hsV201NndocjBqdG1QRzZDNWtfUGlid01GZ2FVeWdSVVl2aUhwbDNkRXowZ2N2N05wQTRldTNEdG94Rm5KNXc?oc=5",
      "pubDate": "2026-05-07T07:00:00Z",
-     "source": "PR TIMES",
+     "source": "prtimes.jp",
      "summary": "",
      "company": "ハウス物流サービス"
     },
@@ -1224,7 +1238,7 @@
      "title": "加工食品メーカー6社の物流を担うＦ－ＬＩＮＥがT2の自動運転トラック商用運行に参画 | 株式会社T2のプレスリリース",
      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5YeHpaekdyYTZfdm90Y0hXVV9reDA4a2tXSndTdU1PajRmNUpBXzBxZURERVNscElqZXJxS0hfNThDY21JcmEzaW96UVp5YzVwUWJKb1p6NFBPa1JlVGlIYkZYRThRV3dsZnc?oc=5",
      "pubDate": "2025-10-30T07:00:00Z",
-     "source": "PR TIMES",
+     "source": "prtimes.jp",
      "summary": "",
      "company": "F-LINE"
     },
