@@ -94,10 +94,15 @@ SECTIONS = {
                  gnews_search("ガジェット OR スマートフォン OR ノートPC")],
         "limit": 20,
     },
-    # ブルーインパルスは航空祭など行事のある時期にまとまって報道されるため、
-    # 毎日記事が出るわけではない。ページ側で長めの期間から新しい順に見せる。
-    "other": {
-        "urls": [gnews_search("ブルーインパルス")],
+    # 相場がなぜ動いたかを説明する市況記事。指標が大きく動いた日の理由がここに出る。
+    "marketNews": {
+        "urls": [gnews_search("東京株式市場 OR 日経平均 OR 円相場 OR ニューヨーク株式市場")],
+        "limit": 20,
+    },
+    # 相場そのものより広い、経済・金融の大きなニュース。
+    "economyNews": {
+        "urls": [gnews_topic("BUSINESS"),
+                 gnews_search("日銀 OR 金融政策 OR 景気 OR インフレ OR 決算")],
         "limit": 20,
     },
 }
