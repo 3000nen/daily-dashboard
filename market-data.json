@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21T05:21:50Z",
+  "updatedAt": "2026-09-21T10:51:26Z",
   "nikkei": {
     "price": 65018.95,
     "prevClose": 64136.25,
@@ -16,18 +16,18 @@
     "marketTime": 1789713000
   },
   "usdjpy": {
-    "price": 156.979,
+    "price": 157.205,
     "prevClose": 156.129,
-    "marketTime": 1789968105
+    "marketTime": 1789987885
   },
   "eurjpy": {
-    "price": 180.164,
+    "price": 180.518,
     "prevClose": 179.198,
-    "marketTime": 1789968109
+    "marketTime": 1789987886
   },
   "gold": {
-    "price": 4392.0,
+    "price": 4386.5,
     "prevClose": 4424.9,
-    "marketTime": 1789967507
+    "marketTime": 1789987281
   }
 }
