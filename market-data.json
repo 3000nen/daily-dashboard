@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-11-14T02:17:32Z",
+  "updatedAt": "2026-11-14T09:05:03Z",
   "nikkei": {
     "price": 61142.35,
     "prevClose": 60819.36,
     "marketTime": 1794552303
   },
   "dow": {
-    "price": 52347.55,
+    "price": 52347.6,
     "prevClose": 52486.49,
-    "marketTime": 1794606206
+    "marketTime": 1794603600
   },
   "allCountry": {
     "price": 2937.0,
@@ -26,7 +26,7 @@
     "marketTime": 1794607186
   },
   "gold": {
-    "price": 3887.6,
+    "price": 3886.3,
     "prevClose": 3885.3,
     "marketTime": 1794607199
   }
