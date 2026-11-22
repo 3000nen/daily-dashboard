@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T01:39:55Z",
+  "updatedAt": "2026-11-22T08:49:37Z",
   "nikkei": {
     "price": 56436.65,
     "prevClose": 59444.21,
@@ -27,7 +27,7 @@
   },
   "gold": {
     "price": 3515.4,
-    "prevClose": 3685.5,
+    "prevClose": 3515.4,
     "marketTime": 1795211997
   }
 }
